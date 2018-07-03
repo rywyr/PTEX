@@ -1,0 +1,52 @@
+\documentclass[a4j , 11pt , twoside]{jbook}
+\usepackage{ascmac} % プログラムリスト等を囲むボックスのため
+\usepackage{matx} % MaTXのロゴ(例)「\MaTX{}を用いた制御系設計」
+\usepackage{manyfloat} % 1ページに多くの図や表をまとめるため
+\usepackage{docmute}
+\usepackage{amsmath}
+\usepackage{ascmac}
+\usepackage{fancybox}
+\usepackage[dvipdfmx]{graphicx}% ポストスクリプトファイルを取り込むため
+\usepackage{url}
+\usepackage{color}
+\begin{document}
+%-----------------------------------------------------------
+% タイトルページ
+\title{倒立振子の安定化制御}
+\author{渡部僚太}
+\date{2018年7月2日}
+\maketitle
+%-----------------------------------------------------------
+% 目次
+\pagenumbering{roman} %ページ番号をローマ数字に設定
+\tableofcontents % 目次
+\listoffigures % 図の目次
+\listoftables % 表の目次
+\cleardoublepage % 次ページが表ページになるように改ページ
+\pagenumbering{arabic} % ページ番号をアラビア数字に設定
+%-----------------------------------------------------------------
+% 本文
+\chapter{はじめに}
+	\input{introduction.tex}
+\chapter{モデリング}
+	\input{modeling}
+\chapter{制御系設計}
+	\input{controldesign.tex}
+\chapter{シミュレーション}
+	\input{simulation.tex}
+\chapter{実験}
+	\input{experiment.tex}
+\chapter{おわりに}
+	\input{conclusion.tex}
+\chapter{まとめのーと（いずれ消してね)}
+	\input{document.tex}
+%---------------------------------------------------------------------
+% 参考文献
+%\bibliographystyle{junsrt}
+%\bibliography{references}
+%--------------------------------------------------------------------
+% 付録
+\appendix
+\chapter{プログラム}
+\section{シミュレーション用}
+\end{document}

@@ -2,6 +2,7 @@
 \usepackage{ascmac} % プログラムリスト等を囲むボックスのため
 \usepackage{matx} % MaTXのロゴ(例)「\MaTX{}を用いた制御系設計」
 \usepackage{manyfloat} % 1ページに多くの図や表をまとめるため
+\usepackage{here} % 画像を好きな位置に配置できる
 \usepackage{docmute}
 \usepackage{amsmath}
 \usepackage{ascmac}
@@ -40,12 +41,11 @@
 	\input{experiment.tex}
 \chapter{おわりに}
 	\input{conclusion.tex}
-\chapter{まとめのーと（いずれ消してね)}
-	\input{document.tex}
+
 %---------------------------------------------------------------------
 % 参考文献
-%\bibliographystyle{junsrt}
-%\bibliography{references}
+\bibliographystyle{junsrt}
+\bibliography{references}
 %--------------------------------------------------------------------
 % 付録
 \appendix

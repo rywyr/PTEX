@@ -447,7 +447,6 @@
 	\[
 		a=0.062[\rm{Kg/V}] = 6.1E-1[\rm{N/V}
 	]\]
-\subsection{Mとfの測定}
 	
 \subsection{Jとcの測定}
 	振子を自由振動させることにより、$J$と$c$を測定できる。その数式モデルは鉛直下向きを基準として
@@ -514,6 +513,148 @@
 		c=5.4E-5[\rm{kgm^{2}/s}]
 	\]
 	
+\subsection{Mとfの測定}
+	
+	$M$と$f$の測定方法には二通りがある。
+	\subsubsection{ステップ応答による測定法}
+		ここでは、台車をアンプ・モータプーリ・ベルト・台車系の等価質量と等価摩擦係数とし、
+		台車のステップ応答を測定することで$M$と$f$を決定する。
+		ただし、振り子は台車から取り外した状態で測定を行う。
+		このときの運動方程式は
+		\[
+			M\ddot{r} = au - f\dot{r}
+		\]
+		であり、$u$から$r$までの伝達関数$G$は
+		\[
+			G(s) = \frac{K}{s(Ts+1)}
+		\]
+		となる。ただし、
+		\begin{equation}
+			K = \frac{a}{f},\ \ T=\frac{M}{f}
+			\label{eq:kt}
+		\end{equation}
+		である。初期状態を0とするとき、このシステムのステップ応答は
+		\begin{equation}
+			r(t) = KU_{0}\left(Te^{\frac{-t}{T}+t-T}\right)
+			\label{eq:step}
+		\end{equation}
+		である。
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1.0\linewidth]{gazo/step.eps}
+			\caption{台車のステップ応答}
+			\label{image:parameterMF}
+		\end{figure}
+		ただし、$U_{0}$はステップの高さである。
+		(\ref{eq:step})において$t→\infty$とすれば
+		\[
+			r(t) = KU_{0}(t-T)
+		\]
+		となり、図\ref{image:parameterMF}を参考に$T$と$K$をもとめ、
+		(\ref{eq:kt})式より$M$と$f$を決定することができる。
+		以下にこの方法を用いて同定したパラメータを示す。
+		\[
+			M=6.9E-1(\rm{kg})
+		\]
+		\[
+			f=7.6(\rm{kg/s})
+		\]
+		
+	\subsubsection{フィードバック入力による測定法}
+		ここでは、入力にステップ応答ではなく、以下に示すようなフィードバック入力を加える。
+		\begin{equation}
+			u = k_{c}(y_{c} - y)
+		\end{equation}
+		ただし、$y_c$は目標値、$y$は出力、$k_{c}$はフィードバックゲインである。
+		このようにすることで不足制動の2次系($\zeta<1$)を実現させる。
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1.0\linewidth]{gazo/feedback.eps}
+			\caption{台車のフィードバック応答}
+			\label{image:parameterMFfeed}
+		\end{figure}
+		図(\ref{image:parameterMFfeed})を参考にして$M$と$f$を同定する。
+		この方法は$J$と$c$の同定の際に用いた方法とほぼ同じであるため、詳しい説明はそちらに
+		譲る。
+		\par
+		同定した$J$と$c$から以下の式を用いて$\zeta$と$\omega_{n}$を計算し求める。
+		\begin{equation}
+			\lambda=\frac{2\pi\zeta}{\sqrt{1-\zeta^{2}}}
+		\end{equation}
+		\begin{equation}
+			T_{2}=\frac{2\pi}{\omega_{n}\sqrt{1-\zeta^{2}}}
+		\end{equation}
+		上の式を式変形して$\zeta$と$\omega_{n}$イコールの式にすると
+		\begin{equation}
+			\zeta=\frac{\lambda}{\sqrt{4\pi^{2}+\lambda^{2}}}
+		\end{equation}
+		\begin{equation}
+			\omega_{n}=\frac{2\pi}{T_{2}\sqrt{1-\zeta^{2}}}
+		\end{equation}
+		以上の式から求めた$\zeta$と$\omega_{n}$は以下の二次系の伝達関数の基本形に代入することで
+		実験で得られたデータから伝達関数を求めることができる
+		\begin{equation}
+			G(s) = \frac{\omega_{n}^{2}}{s^{2}+2\zeta\omega_{n}s + \omega_{n}^{2}}
+		\end{equation}
+		また、今回のフィードバック制御系におけるブロック線図は以下のようになる。
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1.0\linewidth]{gazo/FeedBackCart.eps}\\
+			\caption{フィードバック制御系のブロック線図}
+		\end{figure}
+		ここで、台車の伝達関数は以下の式である。
+		\begin{equation}
+			P(s)=\frac{K}{s(Ts+1)}
+			\label{eq:Ps}
+		\end{equation}
+		ただし、Tは$M/f$、Kは$a/f$である。上のブロック線図から伝達関数を求める。
+		しかし、飽和システムを含んでいると伝達関数を求めることができないので、ここでは飽和システムがなくても
+		台車は問題なく動作するもとして仮定する。以上の仮定から伝達関数は
+		\begin{equation}
+			G(s) = \frac{AK/T}{s^{2}+(1/T)s+(AK/T)}
+			\label{eq:Gs}
+		\end{equation}
+		となる。ただしAはゲインである。(\ref{eq:Ps})式と(\ref{eq:Gs})式を係数比較し、$M,f=$
+		の式にすると以下のようになる。
+		\begin{equation}
+			\left\{
+			\begin{array}{l}
+				M=\frac{aA}{\omega_{n}^{2}} \\
+				f=2\zeta\omega_{n}^{2}M
+			\end{array}
+			\right.
+			\label{eq:mf}
+		\end{equation}
+		よって、（\ref{eq:mf}）式からMとｆは以下のように求まる。
+		\[
+			M=1.59(\rm{kg})
+		\]
+		\[
+			f=13.2(\rm{kg/s})
+		\]
+		
+	\subsubsection{$M$と$f$の決定}
+	パラメータ$M$と$f$についてはステップ応答による方法とフィードバックによる方法の2通りから
+	同定を行った。しかし、それぞれの方法で求めたパラメータを比較するとまるで違うことがわかる。
+	これはフィードバックによる方法では飽和システムを含めずに考えたことが原因であるといえる。
+	シミュレーションにおいては入力にどのような値を加えても倒立振子系に何ら影響はないが
+	実際の倒立振子においてはその入力できる値には制限がある。この制限を考えるか否か
+	で結果が変わってくるということである。
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\linewidth]{gazo/feedback_input.eps}\\
+		\caption{飽和器の有無によるフィードバック入力の比較}
+		\label{image:feedback_saturation}
+	\end{figure}
+	図(\ref{image:feedback_saturation})より飽和器がない場合(non sturation)
+	、入力は最大500(V)まで加えられることがわかる。本実験で用いる倒立振子系の入力限界は
+	$-15<u<15$であるので、その範囲を大きく超えてしまっている。つまり、フィードバックによる方法で
+	同定したパラメータは現実に即していないといえる。
+	以上から本実験においてフィードバックを行う場合必ず飽和システムが必要であるといえる。
+	なので、飽和システムが存在する限り伝達関数を求めることができないので、
+	正確なパラメータの計算を行うことができないといえる。
+	以降、パラメータ$M,f$はステップ応答による方法で同定した値を用いる。
+	
 \subsection{$c_1$と$c_2$の測定}
 	$c_1$と$c_2$に関しては
 	\[
@@ -522,7 +663,105 @@
 	\[
 		c_2 = 1.0[\rm{V/rad}]
 	\]
-	というようにソフトウェアに設定してあるものを使った。
+	というように
+	ソフトウェアに設定してあるものを用いた。
 \subsection{同定結果}
+	同定実験において同定したパラメータを表にまとめる。
+	\begin{table}[htb]
+		\begin{center}
+			\caption{同定したパラメータの一覧}
+			\medskip
+			
+			\begin{tabular}{|c|c|}\hline
+				パラメータ & 同定した値 \\ \hline\hline
+				m[kg]  & 0.031\\ \hline
+				l[m] & 0.15\\ \hline
+				M[kg] & 0.69\\ \hline
+				f[kg/s] & 7.6\\ \hline
+				J[$kgm^{2}$] & 2.5E-4\\ \hline
+				c[$kgm^{2}/s$] & 5.4E-5\\ \hline
+				a[N/V] & 0.61\\ \hline
+				$c_{1}$[V/m] & 1.0\\ \hline
+				$c_{2}$[V/m] & 1.0\\ \hline
+			\end{tabular}
+		\end{center}
+	\end{table}
+	
 \section{パラメータの検証}
+	前節では、実験によって倒立振子のパラメータを同定した。
+	しかし、その同定したパラメータがどれほど有効性があるか現時点では全く分からない状況である。
+	そこで、本節では同定したパラメータの有効性をがどれほどなのかシミュレーションを用いて検証を
+	行う。シミュレーションに用いたツールは\MaTX{}である。ただし、直接同定を行った$m,l$や最初から
+	設定してあった$c_1,c_2$については検証は行わない。
+	\subsection{振子の自由振動シミュレーション}
+		ここでは、$J,c$の検証を行う。
+		以下にシミュレーションと実験データを描画したグラフを示す。
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.5\linewidth]{gazo/free45Auto.eps}\\
+			\caption{振子の自由振動シミュレーション}
+			\label{image:freependulum}
+		\end{figure}
+		図(\ref{image:freependulum}よりシミュレーションと実験結果に少し差異はあるが
+		大きな違いはないといえる。よって同定したパラメータ$J,c$は有効な値であるといえる。
+	\subsection{台車のステップ応答による方法のシミュレーション}
+		ここでは、$M,f,a$の検証を行う。$M,f$はステップ応答による方法で求めた値を用いる。
+		以下にシミュレーションと実験データを描画したグラフを示す。
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.5\linewidth]{gazo/nabe8.eps}\\
+			\caption{台車のステップ応答シミュレーションと実験結果の比較}
+			\label{image:step}
+		\end{figure}
+		図(\ref{image:step})よりシミュレーションと実験結果に少し差異はあるが
+		大きな違いはないといえる。0.5秒以降のグラフが大幅に異なっているが、これはシミュレーションの場合は
+		台車の可動範囲に制限がないためずっと台車が移動し続けるが、実験の場合は台車の可動範囲に
+		制限があるため、ある時間を境に移動が止まっている。また、このときの入力電圧は$8[\rm{V}]$
+		である。以上から同定したパラメータ$M,f,a$は有効な値といえる。
+	\subsection{台車のフィードバック応答シミュレーション}
+		ここでは、$M,f,a$の検証を行う。$M,f$はフィードバックによる方法で求めた値を用いる。
+		以下にシミュレーションと実験データを描画したグラフを示す。
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.5\linewidth]{gazo/feedbackExperiment.eps}\\
+			\caption{フィードバックによる方法のシミュレーションと実験結果の比較}
+			\label{image:feedback}
+		\end{figure}
+		図(\ref{image:feedback})よりシミュレーションと実験結果には大きな差異があることが確認できる。
+		上述した通りこの方法で同定したパラメータは現実に即しておらず、結果飽和器を加えたシミュレーションとの
+		比較において大きな違いが出てきてしまう。よってこの方法で同定したパラメータ$M,f$には
+		有効性がないといえる。
+		
 \section{設計（線形）モデルの決定}
+	ここまでで、パラメータを同定し、その有効性についても確かめた。よって、同定すべきパラメータを決定できたので
+	システム行列A、入力行列B、出力行列Cを\MaTX{}を用いて計算し、倒立振子の線形モデルを確定する。
+	\MaTX{}で計算した各行列を以下に示す。
+	\begin{equation}
+		A=\left[
+		\begin{array}{cccc}
+			0 & 0 & 1 & 0 \\
+			0 & 0 & 0 & 1 \\
+			0 & -0.32 & -10.9 & 0.00038 \\
+			0 & 50 & 53 & -0.059 \\
+		\end{array}
+		\right]
+	\end{equation}
+	\begin{equation}
+		B=\left[
+		\begin{array}{c}
+			0 \\
+			0 \\
+			0.87 \\
+			-4.3 \\
+		\end{array}
+		\right]
+	\end{equation}
+	\begin{equation}
+		C=\left[
+		\begin{array}{cccc}
+			1 & 0 & 0 & 0 \\
+			0 & 1 & 0 & 0 \\
+		\end{array}
+		\right]
+	\end{equation}
+	ただし、倒立振子を立たせることを目的とするので、上向きを基準としたときの線形状態方程式である。

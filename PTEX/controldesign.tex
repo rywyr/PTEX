@@ -98,6 +98,12 @@
 		F = R^{-1}B^{T}P
 	\]
 	のように与えられる。
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\linewidth]{gazo/controll_F.eps}
+		\caption{状態フィードバックを含めたブロック線図}
+		\label{image:cF}
+	\end{figure}
 
 %----------------------------------------------------------------------------------
 \section{最小次元オブザーバの設計}
@@ -143,6 +149,12 @@
 	\]
 	の極との位置関係を考慮する必要がある。
 	% TODO B.6:制御システムの構成の図を作成する必要がある。図は二つに分けて作ってね
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\linewidth]{gazo/controll_obs.eps}
+		\caption{最小次元オブザーバーを含めたブロック線図}
+		\label{image:cOBS}
+	\end{figure}
 
 %----------------------------------------------------------------------------------
 \section{コントローラの離散化}
@@ -175,6 +187,12 @@
 	\]
 	である。
 	具体的には、サンプリング周期を$\Delta$を調整する。
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\linewidth]{gazo/controll_discrete.eps}
+		\caption{離散器（0次ホールド)を含めたブロック線図}
+		\label{image:cDISCRETE}
+	\end{figure}
 %----------------------------------------------------------------------------------
 \section{振り上げ制御及び安定化の実現}
 	ここでは振子の振り上げ制御を行うためのコントローラを設計する。振り上げ制御とは、
@@ -255,5 +273,11 @@
 	とする。ただし、satは最小値が-ng,最大値がngの飽和関数である。ｎは、重力加速度（鉛直下向き）
 	と台車の加速度（水平方向）の比である。\\
 	具体的には、$k$と重力加速度と台車の加速度の比である$n$を調整し、振り上げ制御を実現させる。
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\linewidth]{gazo/controll_huriage.eps}
+		\caption{振り上げ制御及び安定化制御を行うためのブロック線図}
+		\label{image:cHURIAGE}
+	\end{figure}
 
 %----------------------------------------------------------------------------------

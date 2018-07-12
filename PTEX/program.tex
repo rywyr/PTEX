@@ -1,8 +1,288 @@
 \section{非線形モデル}
+	倒立振子の非線形モデルのコードを載せる。下向きを基準としている。
+	\begin{itembox}[l]{diff\_eqs}\baselineskip=1ex
+		\begin{verbatimtab}[4]
+Func Matrix diff_eqs(t,x,u)
+Real t;
+Matrix x,u;
+{
+	Real r,th,dr,dth;
+	Matrix xp,dxp;
+	Matrix K,KZ;
+
+	r=x(1,1);
+	th=x(2,1);
+	dr=x(3,1);
+	dth=x(4,1);
+
+	K=[[M + m , m *l*cos(th)]
+	   [m*l*cos(th) , J + m*l*l]];
+
+	KZ=[[-f*dr+ m*l*sin(th)*dth*dth + a * u(1,1)]
+		[ m*g*l*sin(th) - c*dth ]];
+	
+	dxp=[[x(3:4,1)][K\KZ]]; // 倒立振子の状態の微分（非線形モデル)
+
+	cnt = cnt+1;
+	XX(1,cnt) = dxp(1,1)-Xh(1,1);
+	
+	// 出力を更新
+	return dxp;//Xは６行の行列になる
+}
+		\end{verbatimtab}
+	\end{itembox}
+%-------------------------------------------------------------------
 \section{線形モデル}
+	倒立振子の線形モデルのコードを載せる。下向きを基準としている。
+	\begin{itembox}[l]{main.}\baselineskip=1ex
+		\begin{verbatimtab}[4]
+
+		\end{verbatimtab}
+	\end{itembox}
+%-------------------------------------------------------------------
 \section{システム解析}
+	第4章4.1節のシステム解析に用いたコードを載せる。
+	\begin{itembox}[l]{main.c}\baselineskip=1ex
+		\begin{verbatimtab}[4]
+
+		\end{verbatimtab}
+	\end{itembox}
+%-------------------------------------------------------------------
 \section{状態フィードバック}
+	状態フィードバックを設計算するのに用いたコードを載せる。ただし、LQ最適制御に基づくフィードバック則とする。
+	\begin{itembox}[l]{lqr}\baselineskip=1ex
+		\begin{verbatimtab}[4]
+Matrix A, B, Q, R, F, P;
+
+Q = diag(1, 1, 1, 1);
+R = [1];
+{F,P} = lqr(A, B, Q, R);
+		\end{verbatimtab}
+	\end{itembox}
+%-------------------------------------------------------------------
 \section{最小次元オブザーバ}
+	最小次元オブザーバをゴピナスの方法で計算するのに用いたコードを載せる。
+	\begin{itembox}[l]{obsg}\baselineskip=1ex
+		\begin{verbatimtab}[4]
+CoMatrix obs_p;
+
+obs_p = trans([(-2,0), (-2,0)]);
+{Ah, Bh, Ch, Dh, Jh} = obsg(A, B, C, obs_p);
+		\end{verbatimtab}
+	\end{itembox}
+%-------------------------------------------------------------------	
 \section{コントローラの離散化}
-\section{安定化制御及び目標値変更}
+	連続時間オブザーバを離散化するたために用いたコードを載せる。
+	\begin{itembox}[l]{c2d}\baselineskip=1ex
+		\begin{verbatimtab}[4]
+// ここは関数の先頭
+Real dt;
+Matrix Ah,Bh,Jh;
+Matrix Ahd,Bhd,Jhd,Hhd;
+
+//ここはオブザーバの設計の後
+dt = 0.005;
+{Ahd,Hhd} = c2d(Ah, [Bh Jh], dt);
+Bhd = Hhd(:,1:2);
+Jhd = Hhd(:,3);
+		\end{verbatimtab}
+	\end{itembox}
+%-------------------------------------------------------------------
+\section{シミュレーション}
+	第5章でシミュレーションを行ったコードを載せる。
+	\begin{itembox}[l]{InPeAboveNonLinerDesign3.mm}\baselineskip=1ex
+		\begin{verbatimtab}[4]
+Matrix A; //システム行列
+Matrix B; //入力行列
+Matrix C; //出力行列
+Matrix F; //状態フィードバック行列
+Matrix z; // オブザーバの状態
+Matrix Ah,Bh,Ch,Dh,Jh; //オブザーバに関する行列
+Matrix Ahd,Bhd,Jhd;
+Matrix Xh,XX,Xtest; //推定値
+Real M,m,l,J,f,a,c,g,c1,c2; //パラメータ
+
+Func void main()
+{
+	Real t0,t1,r0,th0,tol;
+	Real dt,dtsav; //離散化に用いる変数
+	Matrix x0,z0,xp0,TC,XC,UC;
+	void calcParameter();
+	Matrix diff_eqs(),link_eqs();
+	
+	t0 = 0.0; //シミュレーション開始時刻
+	t1 = 18.0; //シミュレーション終了時刻
+	r0 = 0; //位置の初期値
+	th0 = 10.0; //角度の初期値
+	x0 = [r0, th0/180*PI ,0 ,0]'; //倒立振子の初期状態'
+	z = [0,0]'; //オブザーバーの初期状態'
+	dt = 0.005; //サンプリング周期
+	tol=1.0E-9;//許容誤差
+	dtsav = 0.05; //データ保存間隔
+	
+	print "Now simulating\n";
+	
+	cnt=0; // 初期化
+    calcParameter(); //シミュレーションに必要なパラメータを計算
+	// Ode()によってシミュレーションを行う
+	{TC,XC,UC} =
+	 Ode45HybridAuto(t0,t1,dt,x0,diff_eqs,link_eqs,tol,dtsav);
+	// diff_eqs() は微分方程式を記述する関数
+	// link_eqs() は複数の微分方程式の関係を記述する関数。
+	// TC:時間の時系列
+	// XC:状態x(t)の時系列
+	// UC:入出力ベクトルの時系列
+	
+	//数値回を表示する。横軸t, 縦軸x(t)
+	mgreplot(1,TC,XC(1,*),{"r"});
+	mgreplot(2,TC,XC(2,*),{"Theta"});
+	
+	print TC >> "TC.mat";
+	print XC >> "XC.mat";
+	print UC >> "UC.mat";
+}
+
+
+
+// diff_eqs() は微分方程式を記述する関数
+Func Matrix diff_eqs(t,x,u)
+// tは時間
+Real t;
+Matrix x,u;
+{
+	Real r,th,dr,dth;
+	Matrix xp,dxp;
+	Matrix K,KZ;
+	
+	r=x(1,1);
+	th=x(2,1);
+	dr=x(3,1);
+	dth=x(4,1);
+
+	K=[[M + m , m *l*cos(th)]
+	   [m*l*cos(th) , J + m*l*l]];
+
+	KZ=[[-f*dr+ m*l*sin(th)*dth*dth + a * u(1,1)]
+		[ m*g*l*sin(th) - c*dth ]];
+	
+	dxp=[[x(3:4,1)][K\KZ]]; // 倒立振子の状態の微分（非線形モデル)
+	
+	cnt = cnt+1;
+	XX(1,cnt) = dxp(1,1)-Xh(1,1);
+
+    // 出力を更新
+	return dxp;//Xは６行の行列になる
+}
+
+
+
+// link_eqs() は複数の微分方程式の関係を記述する関数。
+Func Matrix link_eqs(t,x)
+Real t;
+Matrix x;
+{
+    Matrix u;
+    Matrix xref;
+	Matrix xh,y;
+
+    //台車の可動範囲に関する制限
+    if (x(1,1) <= -0.16 || 0.16 <= x(1,1)) { // r=x(1,1)
+    	OdeStop();
+    }
+	
+	y = C*x; // 出力の計算
+	xh = Ch*z + Dh*y; // 状態の推定値
+	Xh= xh; //推定値を保存
+	xref = [0,0,0,0]'; // 状態の目標値'
+	if(0<=t && t<=5){
+		xref = [0,0,0,0]'; // 状態の目標値'
+	}else if(5<t&&t<=10){
+		xref = [0.1,0,0,0]'; // '
+	}else if(10<t&&t<=15){
+		xref = [0,0,0,0]'; // '
+	}
+    u = F*(xref - xh);
+
+    //入力の大きさに関する制限
+    if(u(1,1) <= -15) {
+        u(1,1) = -15;
+    }else if (u(1,1) >= 15) {
+        u(1,1) = 15;
+    }
+
+	z = Ahd*z + Bhd*y + Jhd*u; // オブザーバの状態更新
+    
+    //入力を更新
+    return u;
+}
+
+Func void calcParameter(){
+
+    CoMatrix pc,obs_p;
+    Matrix A21,A22,B2,K,N;
+	Matrix Ah ,Bh ,Jh ; // 連続時間オブザーバの係数行列
+	Matrix Hhd; // 離散時間オブザーバの係数行列
+	Real dt; //サンプリング周期
+	Matrix Q,R,P;
+
+    
+
+    //物理パラメータの設定
+	M=0.69;   m=0.031; l=0.15;
+	J=2.5E-4; f=7.6; a=0.61;
+	c=5.4E-5; g=9.8; c1=1.0;
+	c2=1.0;
+
+    // システム行列Aの準備
+    K=[[M+m,m*l][m*l,J+m*l^2]];
+	A21 = K~*[[0,0][0,m*g*l]];
+	A22 = K~*[[-f,0][0,-c]];
+	A=[[Z(2),I(2)][A21,A22]];
+
+    //入力行列Bの準備
+	B2 = K~*[[a][0]];
+	B=[[Z(2,1)][B2]];
+
+	//出力行列Cの準備
+    N=[[c1,0][0,c2]];
+    C=[N,Z(2)];
+
+	//状態フィードバック行列Fを準備する
+    //pc=[(-100,0),(-50,0),(-1,0),(-1,0)]'; 閉ループ系の極'
+    //F = pplace(A,B,pc);
+	
+	//LQ最適制御のための状態フィードバック行列Ｆの準備
+	Q = diag(1E5,1E5,1,1);
+	R = [1];
+	{F,P} = lqr(A, B, Q, R);
+
+	//ゴピナスの方法で最初次元観測器を設計する
+	obs_p = trans([(-30,0), (-30,0)]); // オブザーバの極
+	//read obs_p; // 極を編集する
+	{Ah, Bh, Ch, Dh, Jh} = obsg(A, B, C, obs_p); // ゴピナスの方法による設計
+
+	// 連続時間オブザーバをサンプリング周期で離散化
+	dt = 0.005;
+	{Ahd,Hhd} = c2d(Ah,[Bh, Jh], dt); //離散化
+	Bhd = Hhd(:,1:2); //係数行列の取り出し
+	Jhd = Hhd(:,3); // 係数行列の取り出し
+}
+		\end{verbatimtab}
+	\end{itembox}	
+%-------------------------------------------------------------------
+\section{安定化制御及び目標値変更実験}
+	安定化制御及び目標値変更実験を行うために使用したコードを載せる。
+	\begin{itembox}[l]{sample.mm}\baselineskip=1ex
+		\begin{verbatimtab}[4]
+
+		\end{verbatimtab}
+	\end{itembox}
+%-------------------------------------------------------------------
 \section{振り上げ制御及び安定化実験}
+	振り上げ制御及び安定化実験を行うために使用したコードを載せる。
+	\begin{itembox}[l]{sample.mm}\baselineskip=1ex
+		\begin{verbatimtab}[4]
+
+		\end{verbatimtab}
+	\end{itembox}
+%-------------------------------------------------------------------

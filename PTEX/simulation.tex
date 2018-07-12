@@ -130,6 +130,7 @@
 	以上からオブザーバの極配置の調整については以下のことが言える。
 	\begin{itemize}
 	  \item オブザーバの極は虚軸に近いほうが推定誤差が小さくなり応答はよくなるといえる。
+	  \item ただし、閉ループ系の極との位置関係を考慮するひつようがある。
 	\end{itemize}
 	
 %--------------------------------------------------------------------------------------
@@ -166,6 +167,7 @@
 		\caption{サンプリング周期での比較結果（振子角度）}
 		\label{image:simulation_dt_theta}
 	\end{figure}
+	図\ref{image:simulation_dt_r}から、パターン1のほうが若干応答が早いといえる。しかし、
 	図\ref{image:simulation_dt_r}と図\ref{image:simulation_dt_theta}からは大きな違いを確認することはできない。
 	先ほどと同様に推定誤差の応答波形からサンプリング周期の違いによる考察をする。
 	以下に台車の速度と振り子の角速度の推定誤差の図を示す。
@@ -181,14 +183,22 @@
 		\caption{サンプリング周期での推定誤差の比較（振子の各速度）}
 		\label{image:simulation_dt_thetaminusthetah}
 	\end{figure}
-	
+	図\ref{image:simulation_dt_rminusrh}と図\ref{image:simulation_dt_thetaminusthetah}よりサンプリング周期の短いほうが
+	推定誤差が小さいことが確認できる。
+	\par
+	以上からサンプリング周期の調整については以下のことが言える。
+	\begin{itemize}
+	  \item サンプリング周期は短いほうが推定誤差が小さくなり、応答がよくなる。
+	  \item ただし、あまり小さくしすぎるのはよくない。
+	\end{itemize}
 	
 %--------------------------------------------------------------------------------------
 \section{振り上げ制御及び安定化に対する制御性能評価}
 	前節までにおいて、安定化制御における有効なパラメータを考察してきた。
 	ここでは、振り上げ制御におけるパラメータ$k,n$を調整することで振り上げ制御の制御性能を考察する。
 	\par
-	この時、使用した制御器のパラメータの組は以下の表の通りである。
+	この時、安定化制御に用いるパラメータは以下の表の通りである。
+	安定化制御の際に使用するパラメータについてはこれまでの考察に基づいて決定した。
 	\begin{table}[htb]
 		\begin{center}
 			\caption{振り上げ後の安定化制御の際に用いるパラメータの組}
@@ -196,26 +206,30 @@
 			
 			\begin{tabular}{|c|c|c|c|}\hline
 				重み行列$Q$ & オブザーバの極$P$ & サンプリング周期$\Delta[\rm{s}]$ \\ \hline\hline
-				$Q_1$:$\rm{diag}(1E5,1E5,1,1)$ & $P_1$:$((-60,0),(-60,0))^{'}$ & $\Delta_1$:0.005 \\ \hline
+				$Q_1$:$\rm{diag}(1E5,1E5,1,1)$ & $P_1$:$((-30,0),(-30,0))^{'}$ & $\Delta_1$:0.005 \\ \hline
 			\end{tabular}
 		\end{center}
-		\label{table:QRF}
+		\label{table:huriage_control}
 	\end{table}
-	
+	\\
+	振り上げ制御に用いるパラメータは以下の表の通りである。
 	\begin{table}[htb]
 		\begin{center}
-			\caption{重み行列の変更}
+			\caption{振り上げ制御に用いるパラメータの組}
 			\medskip
 			
-			\begin{tabular}{|c|c|c|c|}\hline
-				\ \ & $n$ & $k$ \\ \hline\hline
-				パターン1 & $todo$ & $todo$  \\ \hline
-				パターン2 & $todo$ & $doto$  \\ \hline
-				パターン3 & $todo$ & $doto$  \\ \hline
+			\begin{tabular}{|c|c|c|}\hline
+				& $n$ & $k$ \\ \hline\hline
+				パターン1 & 0.4 & $1.0×10^3$  \\ \hline
+				パターン2 & 0.4 & $1.0×10^4$  \\ \hline
+				パターン3 & 0.4 & $1.0×10^5$  \\ \hline
 			\end{tabular}
 		\end{center}
-		\label{table:QRF}
+		\label{table:huriage_huriage}
 	\end{table}
+	以上の表のパラメータを用いて行ったシミュレーションの結果を示す。
+	
+	
 	
 	
 	

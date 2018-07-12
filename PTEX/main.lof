@@ -1,0 +1,36 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces 数式モデル導出のための参考図}}{3}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces 倒立振子系}}{6}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces 数式モデル導出のための参考図}}{9}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces パラメータaの決定}}{15}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces $J$と$c$の測定}}{16}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces 台車のステップ応答}}{18}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces 台車のフィードバック応答}}{19}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces フィードバック制御系のブロック線図}}{20}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces 飽和器の有無によるフィードバック入力の比較}}{21}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces 振子の自由振動シミュレーション}}{22}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces 台車のステップ応答シミュレーションと実験結果の比較}}{23}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces フィードバックによる方法のシミュレーションと実験結果の比較}}{24}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces 状態フィードバックを含めたブロック線図}}{27}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces 最小次元オブザーバーを含めたブロック線図}}{28}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces 離散器（0次ホールド)を含めたブロック線図}}{28}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces 振り上げ制御及び安定化制御を行うためのブロック線図}}{30}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces 重み行列での比較結果（台車位置）}}{32}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces 重み行列での比較結果（振子角度）}}{32}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces オブザーバーの極での比較結果（台車位置）}}{34}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces オブザーバーの極での比較結果（振子角度）}}{34}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces オブザーバーの極での推定誤差の比較（台車の速度）}}{35}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces オブザーバーの極での推定誤差の比較（振子の角速度）}}{35}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces サンプリング周期での比較結果（台車位置）}}{36}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces サンプリング周期での比較結果（振子角度）}}{37}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces サンプリング周期での推定誤差の比較（台車の速度）}}{37}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces サンプリング周期での推定誤差の比較（振子の各速度）}}{38}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces 安定化制御実験結果（台車位置)}}{41}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces 安定化制御実験結果（振子角度)}}{42}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

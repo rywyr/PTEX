@@ -18,8 +18,8 @@
 			\begin{tabular}{|c|c|c|c|}\hline
 				& 重み行列$Q$ & オブザーバの極$P$ & サンプリング周期$\Delta[\rm{s}]$ \\ \hline\hline
 				パターン1 & $Q_1$:$\rm{diag}(1E5,1E5,1,1)$ & $P_1$:$((-60,0),(-60,0))^{'}$ & $\Delta_1$:0.005 \\ \hline
-				パターン2 & $Q_2$:$\rm{diag}(1E6,1E5,1,1)$ & $P_2$:$((-60,0),(-60,0))^{'}$ & $\Delta_2$:0.005 \\ \hline
-				パターン3 & $Q_3$:$\rm{diag}(1E5,1E6,1,1)$ & $P_3$:$((-60,0),(-60,0))^{'}$ & $\Delta_3$:0.005 \\ \hline
+				パターン2 & $Q_2$:$\rm{diag}(1E6,1E5,1,1)$ & $P_1$:$((-60,0),(-60,0))^{'}$ & $\Delta_1$:0.005 \\ \hline
+				パターン3 & $Q_3$:$\rm{diag}(1E5,1E6,1,1)$ & $P_1$:$((-60,0),(-60,0))^{'}$ & $\Delta_1$:0.005 \\ \hline
 			\end{tabular}
 		\end{center}
 		\label{table:QRF}
@@ -37,6 +37,7 @@
 		\caption{重み行列での比較結果（振子角度）}
 		\label{image:simulation_QRF_th}
 	\end{figure}
+	%図のほう要確認
 	図(\ref{image:simulation_QRF_r})より$Q_2$の応答が一番早く、$Q_3$の応答が一番遅いことが確認できる。このことから台車の位置$r$の応答をよくするには
 	重み行列$Q$の第1成分を大きくすればよいとわかる。また、$Q_1$と$Q_3$の第1成分は同じであるのにもかかわらず、$Q_1$の方が応答が早いことが確認できる。これは
 	振子の角度$\theta$の応答をよくする第2成分を大きくした分、バランスが第2成分のほうに偏ってしまい、台車の位置の応答が悪くなったといえる。
@@ -88,14 +89,48 @@
 			
 			\begin{tabular}{|c|c|c|c|}\hline
 				\ \ & 重み行列$Q$ & オブザーバの極$P$ & サンプリング周期$\Delta[\rm{s}]$ \\ \hline\hline
-				パターン1 & $Q_1$:$\rm{diag}(1E5,1E5,1,1)$ & $P_1$:$((-100,0),(-100,0))^{'}$ & $\Delta_1$:0.005 \\ \hline
-				パターン2 & $Q_2$:$\rm{diag}(1E5,1E5,1,1)$ & $P_2$:$((-20,0),(-20,0))^{'}$ & $\Delta_2$:0.005 \\ \hline
+				パターン1 & $Q_1$:$\rm{diag}(1E5,1E5,1,1)$ & $P_1$:$((-60,0),(-60,0))^{'}$ & $\Delta_1$:0.005 \\ \hline
+				パターン2 & $Q_1$:$\rm{diag}(1E5,1E5,1,1)$ & $P_2$:$((-30,0),(-30,0))^{'}$ & $\Delta_1$:0.005 \\ \hline
 			\end{tabular}
 		\end{center}
 		\label{table:QRF}
 	\end{table}
-	%TODO : シミュレーションを行い図を張り付ける。そのあと考察を述べる
 	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\linewidth]{gazo/simulation_obs_compare_R.eps}
+		\caption{オブザーバーの極での比較結果（台車位置）}
+		\label{image:simulation_obs_r}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\linewidth]{gazo/simulation_obs_compare_THETA.eps}
+		\caption{オブザーバーの極での比較結果（振子角度）}
+		\label{image:simulation_obs_theta}
+	\end{figure} 
+	図\ref{image:simulation_obs_r}と図\ref{image:simulation_obs_theta}よりオブザーバの極の違いによる大きな違いは確認できない。
+	ここで、倒立振子の状態$x(t)$(台車の速度と振り子の角速度)とオブザーバで推定した値$\hat{x}[k・T]$(台車の速度と振り子の角速度)
+	との差である推定誤差($x(t)-\hat{x}[K・T]$)の応答波形からオブザーバの極の違いによる考察をする。
+	以下に台車の速度と振り子の角速度の推定誤差の図を示す。
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\linewidth]{gazo/simulation_obs_compare_RminusRH.eps}
+		\caption{オブザーバーの極での推定誤差の比較（台車の速度）}
+		\label{image:simulation_obs_rminusrh}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\linewidth]{gazo/simulation_obs_compare_THETAminusTHETAH.eps}
+		\caption{オブザーバーの極での推定誤差の比較（振子の角速度）}
+		\label{image:simulation_obs_thetaminusthetah}
+	\end{figure} 
+	図\ref{image:simulation_obs_rminusrh}と図\ref{image:simulation_obs_thetaminusthetah}よりオブザーバの極が
+	虚軸から遠いパターン2のほうが推定誤差の収束が若干遅いことがわかる。また、その大きさもパターン2のほうが大きいこともわかる。
+	\par
+	以上からオブザーバの極配置の調整については以下のことが言える。
+	\begin{itemize}
+	  \item オブザーバの極は虚軸に近いほうが推定誤差が小さくなり応答はよくなるといえる。
+	\end{itemize}
 	
 %--------------------------------------------------------------------------------------
 \section{サンプリング周期の変更による制御性能評価}
@@ -112,13 +147,42 @@
 			
 			\begin{tabular}{|c|c|c|c|}\hline
 				\ \ & 重み行列$Q$ & オブザーバの極$P$ & サンプリング周期$\Delta[\rm{s}]$ \\ \hline\hline
-				パターン1 & $Q_1$:$\rm{diag}(1E5,1E5,1,1)$ & $P_1$:$((-20,0),(-20,0))^{'}$ & $\Delta_1$:0.005 \\ \hline
-				パターン2 & $Q_2$:$\rm{diag}(1E5,1E5,1,1)$ & $P_2$:$((-20,0),(-20,0))^{'}$ & $\Delta_2$:0.01 \\ \hline
+				パターン1 & $Q_1$:$\rm{diag}(1E5,1E5,1,1)$ & $P_1$:$((-60,0),(-60,0))^{'}$ & $\Delta_1$:0.005 \\ \hline
+				パターン2 & $Q_1$:$\rm{diag}(1E5,1E5,1,1)$ & $P_1$:$((-60,0),(-60,0))^{'}$ & $\Delta_2$:0.01 \\ \hline
 			\end{tabular}
 		\end{center}
 		\label{table:QRF}
 	\end{table}
-	%TODO : シミュレーションを行い図を張り付ける。そのあと考察を述べる
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\linewidth]{gazo/simulation_dt_compare_R.eps}
+		\caption{サンプリング周期での比較結果（台車位置）}
+		\label{image:simulation_dt_r}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\linewidth]{gazo/simulation_dt_compare_THETA.eps}
+		\caption{サンプリング周期での比較結果（振子角度）}
+		\label{image:simulation_dt_theta}
+	\end{figure}
+	図\ref{image:simulation_dt_r}と図\ref{image:simulation_dt_theta}からは大きな違いを確認することはできない。
+	先ほどと同様に推定誤差の応答波形からサンプリング周期の違いによる考察をする。
+	以下に台車の速度と振り子の角速度の推定誤差の図を示す。
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\linewidth]{gazo/simulation_dt_compare_RminusRH.eps}
+		\caption{サンプリング周期での推定誤差の比較（台車の速度）}
+		\label{image:simulation_dt_rminusrh}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\linewidth]{gazo/simulation_dt_compare_THETAminusTHETAH.eps}
+		\caption{サンプリング周期での推定誤差の比較（振子の各速度）}
+		\label{image:simulation_dt_thetaminusthetah}
+	\end{figure}
+	
+	
 %--------------------------------------------------------------------------------------
 \section{振り上げ制御及び安定化に対する制御性能評価}
 	前節までにおいて、安定化制御における有効なパラメータを考察してきた。
@@ -132,7 +196,7 @@
 			
 			\begin{tabular}{|c|c|c|c|}\hline
 				重み行列$Q$ & オブザーバの極$P$ & サンプリング周期$\Delta[\rm{s}]$ \\ \hline\hline
-				$Q_1$:$\rm{diag}(1E5,1E5,1,1)$ & $P_1$:$((-20,0),(-20,0))^{'}$ & $\Delta_1$:0.005 \\ \hline
+				$Q_1$:$\rm{diag}(1E5,1E5,1,1)$ & $P_1$:$((-60,0),(-60,0))^{'}$ & $\Delta_1$:0.005 \\ \hline
 			\end{tabular}
 		\end{center}
 		\label{table:QRF}
@@ -152,6 +216,8 @@
 		\end{center}
 		\label{table:QRF}
 	\end{table}
+	
+	
 	
 	
 %--------------------------------------------------------------------------------------

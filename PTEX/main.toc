@@ -46,10 +46,10 @@
 \contentsline {chapter}{\numberline {付 録A }プログラム}{45}
 \contentsline {section}{\numberline {A.1}非線形モデル}{45}
 \contentsline {section}{\numberline {A.2}線形モデル}{45}
-\contentsline {section}{\numberline {A.3}システム解析}{45}
+\contentsline {section}{\numberline {A.3}システム解析}{46}
 \contentsline {section}{\numberline {A.4}状態フィードバック}{46}
-\contentsline {section}{\numberline {A.5}最小次元オブザーバ}{46}
-\contentsline {section}{\numberline {A.6}コントローラの離散化}{46}
-\contentsline {section}{\numberline {A.7}シミュレーション}{46}
-\contentsline {section}{\numberline {A.8}安定化制御及び目標値変更実験}{48}
-\contentsline {section}{\numberline {A.9}振り上げ制御及び安定化実験}{48}
+\contentsline {section}{\numberline {A.5}最小次元オブザーバ}{47}
+\contentsline {section}{\numberline {A.6}コントローラの離散化}{47}
+\contentsline {section}{\numberline {A.7}シミュレーション}{47}
+\contentsline {section}{\numberline {A.8}安定化制御及び目標値変更実験}{49}
+\contentsline {section}{\numberline {A.9}振り上げ制御及び安定化実験}{51}

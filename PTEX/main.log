@@ -1,42 +1,42 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.7.2)  12 JUL 2018 17:46
+This is e-pTeX, Version 3.14159265-p3.7.2-170924-2.6 (sjis) (TeX Live 2017/W32TeX) (preloaded format=platex 2018.1.5)  15 JUL 2018 10:44
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
-pLaTeX2e <2018-04-01>+1 (based on LaTeX2e <2018-04-01> patch level 2)
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(c:/texlive/2018/texmf-dist/tex/platex/base/jbook.cls
-Document Class: jbook 2018/02/04 v1.7h Standard pLaTeX class
-\c@@paper=\count83
-(c:/texlive/2018/texmf-dist/tex/platex/base/jbk11.clo
-File: jbk11.clo 2018/02/04 v1.7h Standard pLaTeX file (size option)
+pLaTeX2e <2017/10/28>+3 (based on LaTeX2e <2017-04-15>)
+Babel <3.16> and hyphenation patterns for 84 language(s) loaded.
+(d:/w32tex/share/texmf-dist/tex/platex/base/jbook.cls
+Document Class: jbook 2017/09/19 v1.7g Standard pLaTeX class
+\c@@paper=\count82
+(d:/w32tex/share/texmf-dist/tex/platex/base/jbk11.clo
+File: jbk11.clo 2017/09/19 v1.7g Standard pLaTeX file (size option)
 )
-\c@part=\count84
-\c@chapter=\count85
-\c@section=\count86
-\c@subsection=\count87
-\c@subsubsection=\count88
-\c@paragraph=\count89
-\c@subparagraph=\count90
-\c@figure=\count91
-\c@table=\count92
+\c@part=\count83
+\c@chapter=\count84
+\c@section=\count85
+\c@subsection=\count86
+\c@subsubsection=\count87
+\c@paragraph=\count88
+\c@subparagraph=\count89
+\c@figure=\count90
+\c@table=\count91
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \symmincho=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
-(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 707.
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 706.
 \toclineskip=\dimen118
 \@lnumwidth=\dimen119
 \bibindent=\dimen120
-\heisei=\count93
+\heisei=\count92
 )
-(c:/texlive/2018/texmf-dist/tex/latex/ascmac/ascmac.sty
-Package: ascmac 2018/03/09 v2.0h ascmac wrapper (community edition) 
+(d:/w32tex/share/texmf-dist/tex/platex/base/ascmac.sty
+Package: ascmac 2017/12/17 v2.0f ascmac wrapper (community edition) 
 
-(c:/texlive/2018/texmf-dist/tex/latex/ascmac/tascmac.sty
-Package: tascmac 2018/03/09 v2.0h ascmac package (community edition) 
+(d:/w32tex/share/texmf-dist/tex/platex/base/tascmac.sty
+Package: tascmac 2017/12/17 v2.0f ascmac package (community edition) 
 \@savetbaselineshift=\dimen121
 \@saveybaselineshift=\dimen122
 \scb@x=\box42
@@ -45,72 +45,69 @@ Package: tascmac 2018/03/09 v2.0h ascmac package (community edition)
 \@nbox=\box44
 \@nbody=\box45
 \@scw=\dimen124
-\ascmac@hoboxa=\box46
-\ascmac@hoboxb=\box47
 \@itemh=\dimen125
 \@iboxpos=\toks15
-\@iboxstr=\box48
-\@bwsp=\box49
-\@@bwsp=\box50
-\@bcal=\count94
+\@iboxstr=\box46
+\@bwsp=\box47
+\@@bwsp=\box48
+\@bcal=\count93
 \shaderule=\dimen126
 )) (./matx.sty)
-(./manyfloat.sty) (c:/texlive/2018/texmf-dist/tex/latex/here/here.sty)
-(c:/texlive/2018/texmf-dist/tex/latex/float/float.sty
+(./manyfloat.sty) (d:/w32tex/share/texmf-dist/tex/latex/here/here.sty)
+(d:/w32tex/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count95
+\c@float@type=\count94
 \float@exts=\toks16
-\float@box=\box51
+\float@box=\box49
 \@float@everytoks=\toks17
-\@floatcapt=\box52
-)
-(c:/texlive/2018/texmf-dist/tex/latex/docmute/docmute.sty
+\@floatcapt=\box50
+) (./docmute.sty
 Package: docmute 2012/03/22 v1.4 Input stand-alone documents
 )
-(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+(d:/w32tex/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+(d:/w32tex/share/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+(d:/w32tex/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen127
 ))
-(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(d:/w32tex/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen128
 )
-(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+(d:/w32tex/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count96
+\inf@bad=\count95
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count97
-\leftroot@=\count98
+\uproot@=\count96
+\leftroot@=\count97
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count99
-\DOTSCASE@=\count100
+\classnum@=\count98
+\DOTSCASE@=\count99
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box53
-\strutbox@=\box54
+\Mathstrutbox@=\box51
+\strutbox@=\box52
 \big@size=\dimen129
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count101
-\c@MaxMatrixCols=\count102
+\macc@depth=\count100
+\c@MaxMatrixCols=\count101
 \dotsspace@=\muskip10
-\c@parentequation=\count103
-\dspbrk@lvl=\count104
+\c@parentequation=\count102
+\dspbrk@lvl=\count103
 \tag@help=\toks19
-\row@=\count105
-\column@=\count106
-\maxfields@=\count107
+\row@=\count104
+\column@=\count105
+\maxfields@=\count106
 \andhelp@=\toks20
 \eqnshift@=\dimen130
 \alignsep@=\dimen131
@@ -125,61 +122,74 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-(c:/texlive/2018/texmf-dist/tex/latex/fancybox/fancybox.sty
+(d:/w32tex/share/texmf-dist/tex/latex/fancybox/fancybox.sty
 Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
-\@fancybox=\box55
+\@fancybox=\box53
 \shadowsize=\dimen136
-\@Sbox=\box56
+\@Sbox=\box54
 \do@VerbBox=\toks23
 \the@fancyput=\toks24
 \this@fancyput=\toks25
 \EndVerbatimTokens=\toks26
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read1
-) (c:/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+) (d:/w32tex/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+(d:/w32tex/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks27
 )
-(c:/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+(d:/w32tex/share/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+(d:/w32tex/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(d:/w32tex/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvipdfmx.def on input line 99.
 
-(c:/texlive/2018/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+(d:/w32tex/share/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
 ))
 \Gin@req@height=\dimen137
 \Gin@req@width=\dimen138
 )
-(c:/texlive/2018/texmf-dist/tex/latex/url/url.sty
+(d:/w32tex/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(c:/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
+(d:/w32tex/share/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-(c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(d:/w32tex/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: dvips.def on input line 147.
 
-(c:/texlive/2018/texmf-dist/tex/latex/graphics-def/dvips.def
+(d:/w32tex/share/texmf-dist/tex/latex/graphics-def/dvips.def
 File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
 )
-(c:/texlive/2018/texmf-dist/tex/latex/graphics/dvipsnam.def
+(d:/w32tex/share/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-)) (./main.aux
+))
+(d:/w32tex/share/texmf-dist/tex/latex/moreverb/moreverb.sty
+Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
+
+(d:/w32tex/share/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks28
+\verbatim@line=\toks29
+\verbatim@in@stream=\read2
+)
+\tab@position=\count107
+\tab@size=\count108
+\listing@line=\count109
+) (./main.aux
 
 LaTeX Warning: Label `eq:eq4' multiply defined.
 
@@ -198,31 +208,31 @@ LaTeX Warning: Label `table:huriage_control' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-\docmute@nestinglevel=\count108
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+\docmute@nestinglevel=\count110
  [1
 
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <20.74> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 23.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <20.74> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 23.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 24.
  (./main.toc
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
@@ -249,86 +259,77 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
  [5] [6
 
 ]
-Á¨¨ 1 Á´†
-(./important.tex
+ëÊ 1 èÕ
+(./todolist.tex
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
- [1
-
-]
-File: gazo/cart.eps Graphic file (type eps)
- <gazo/cart.eps>
-File: gazo/stick.eps Graphic file (type eps)
- <gazo/stick.eps>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[2]) [3] [4
-
-]
-Á¨¨ 2 Á´†
-(./introduction.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
- (c:/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 3.
+ (d:/w32tex/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
-
-[5]
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 18.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 18.
-File: gazo/pendulum.eps Graphic file (type eps)
- <gazo/pendulum.eps> [6]) [7] [8
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 3.
+) [1
 
 ]
-Á¨¨ 3 Á´†
+[2
+
+]
+ëÊ 2 èÕ
+(./introduction.tex [3]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 16.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 16.
+File: gazo/pendulum.eps Graphic file (type eps)
+ <gazo/pendulum.eps> [4]) [5] [6
+
+]
+ëÊ 3 èÕ
 (./modeling.tex
 File: gazo/cart.eps Graphic file (type eps)
  <gazo/cart.eps>
 File: gazo/stick.eps Graphic file (type eps)
- <gazo/stick.eps> [9] [10] [11] [12] [13]
+ <gazo/stick.eps> [7] [8] [9] [10] [11]
 File: gazo/ParameterA.eps Graphic file (type eps)
 
-<gazo/ParameterA.eps> [14] [15]
+<gazo/ParameterA.eps> [12] [13]
 File: gazo/ParameterJC.eps Graphic file (type eps)
- <gazo/ParameterJC.eps> [16]
+ <gazo/ParameterJC.eps> [14]
 File: gazo/step.eps Graphic file (type eps)
  <gazo/step.eps>
-[17] [18]
+[15] [16]
 File: gazo/feedback.eps Graphic file (type eps)
- <gazo/feedback.eps> [19]
+ <gazo/feedback.eps> [17]
 File: gazo/FeedBackCart.eps Graphic file (type eps)
  <gazo/FeedBackCart.eps>
 File: gazo/feedback_input.eps Graphic file (type eps)
 
-<gazo/feedback_input.eps> [20] [21]
+<gazo/feedback_input.eps> [18] [19]
 File: gazo/free45Auto.eps Graphic file (type eps)
- <gazo/free45Auto.eps> [22]
+ <gazo/free45Auto.eps> [20]
 File: gazo/nabe8.eps Graphic file (type eps)
 
 <gazo/nabe8.eps>
 File: gazo/feedbackExperiment.eps Graphic file (type eps)
- <gazo/feedbackExperiment.eps> [23]) [24]
-Á¨¨ 4 Á´†
-(./controldesign.tex [25
+ <gazo/feedbackExperiment.eps> [21]) [22]
+ëÊ 4 èÕ
+(./controldesign.tex [23
 
-] [26]
+] [24]
 File: gazo/controll_F.eps Graphic file (type eps)
- <gazo/controll_F.eps> [27]
+ <gazo/controll_F.eps> [25]
 File: gazo/controll_obs.eps Graphic file (type eps)
 
 <gazo/controll_obs.eps>
 File: gazo/controll_discrete.eps Graphic file (type eps)
- <gazo/controll_discrete.eps> [28] [29]
+ <gazo/controll_discrete.eps> [26] [27]
 File: gazo/controll_huriage.eps Graphic file (type eps)
 
-<gazo/controll_huriage.eps>) [30]
-Á¨¨ 5 Á´†
+<gazo/controll_huriage.eps>) [28]
+ëÊ 5 èÕ
 (./simulation.tex
 Overfull \hbox (1.84451pt too wide) in paragraph at lines 18--24
  [][][][] 
@@ -338,9 +339,9 @@ File: gazo/simulation_QRF_compare_R.eps Graphic file (type eps)
 <gazo/simulation_QRF_compare_R.eps>
 File: gazo/simulation_QRF_compare_THETA.eps Graphic file (type eps)
  <gazo/simulation_QRF_compare_THETA.eps>
-[31
+[29
 
-] [32]
+] [30]
 Overfull \hbox (1.84451pt too wide) in paragraph at lines 90--95
  [][][][] 
  []
@@ -349,12 +350,12 @@ File: gazo/simulation_obs_compare_R.eps Graphic file (type eps)
 <gazo/simulation_obs_compare_R.eps>
 File: gazo/simulation_obs_compare_THETA.eps Graphic file (type eps)
  <gazo/simulation_obs_compare_THETA.eps>
-[33]
+[31]
 File: gazo/simulation_obs_compare_RminusRH.eps Graphic file (type eps)
  <gazo/simulation_obs_compare_RminusRH.eps>
 File: gazo/simulation_obs_compare_THETAminusTHETAH.eps Graphic file (type eps)
 
-<gazo/simulation_obs_compare_THETAminusTHETAH.eps> [34] [35]
+<gazo/simulation_obs_compare_THETAminusTHETAH.eps> [32] [33]
 Overfull \hbox (1.84451pt too wide) in paragraph at lines 149--154
  [][][][] 
  []
@@ -363,42 +364,51 @@ File: gazo/simulation_dt_compare_R.eps Graphic file (type eps)
 <gazo/simulation_dt_compare_R.eps>
 File: gazo/simulation_dt_compare_THETA.eps Graphic file (type eps)
  <gazo/simulation_dt_compare_THETA.eps>
-[36]
+[34]
 File: gazo/simulation_dt_compare_RminusRH.eps Graphic file (type eps)
  <gazo/simulation_dt_compare_RminusRH.eps>
 File: gazo/simulation_dt_compare_THETAminusTHETAH.eps Graphic file (type eps)
 
-<gazo/simulation_dt_compare_THETAminusTHETAH.eps> [37]) [38] [39] [40
+<gazo/simulation_dt_compare_THETAminusTHETAH.eps> [35]) [36] [37] [38
 
 ]
-Á¨¨ 6 Á´†
+ëÊ 6 èÕ
 (./experiment.tex
 File: gazo/experiment_control_R.eps Graphic file (type eps)
  <gazo/experiment_control_R.eps>
 File: gazo/experiment_control_TH.eps Graphic file (type eps)
 
-<gazo/experiment_control_TH.eps> [41]) [42]
-Á¨¨ 7 Á´†
-(./conclusion.tex) (./main.bbl [43
+<gazo/experiment_control_TH.eps> [39]) [40]
+ëÊ 7 èÕ
+(./conclusion.tex) (./main.bbl [41
 
-] [44
+] [42
 
-]) [45] [46
+]) [43] [44
 
 ]
-‰ªò Èå≤ A  
-(./program.tex) [47] (./main.aux)
+ït ò^ A  
+(./program.tex [45] [46]
+Overfull \vbox (1025.90877pt too high) has occurred while \output is active []
+
+
+[47])
+Underfull \hbox (badness 10000) in paragraph at lines 287--55
+
+ []
+
+[48] (./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2107 strings out of 493281
- 27262 string characters out of 6148127
- 104796 words of memory out of 5000000
- 5953 multiletter control sequences out of 15000+600000
- 20441 words of font info for 81 fonts, out of 8000000 for 9000
+ 2248 strings out of 493624
+ 29738 string characters out of 6150123
+ 114397 words of memory out of 5000000
+ 5756 multiletter control sequences out of 15000+600000
+ 20609 words of font info for 82 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 27i,14n,21p,276b,294s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,14n,21p,276b,293s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on main.dvi (54 pages, 129180 bytes).
+Output written on main.dvi (55 pages, 140816 bytes).

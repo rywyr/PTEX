@@ -1,6 +1,6 @@
 \section{非線形モデル}
 	倒立振子の非線形モデルのコードを載せる。下向きを基準としている。
-	\begin{itembox}[l]{diff\_eqs}\baselineskip=1ex
+	\begin{breakitembox}[l]{diff\_eqs}\baselineskip=1ex
 		\begin{verbatimtab}[4]
 Func Matrix diff_eqs(t,x,u)
 Real t;
@@ -30,11 +30,11 @@ Matrix x,u;
 	return dxp;//Xは６行の行列になる
 }
 		\end{verbatimtab}
-	\end{itembox}
+	\end{breakitembox}
 %-------------------------------------------------------------------
 \section{線形モデル}
 	倒立振子の線形モデルのコードを載せる。下向きを基準としている。
-	\begin{itembox}[l]{main.}\baselineskip=1ex
+	\begin{breakitembox}[l]{main.}\baselineskip=1ex
 		\begin{verbatimtab}[4]
 Func void diff_eqs(DX,t,X,UY)
 Real t;
@@ -66,12 +66,12 @@ Matrix X,DX,UY;
 
 }
 		\end{verbatimtab}
-	\end{itembox}
+	\end{breakitembox}
 %-------------------------------------------------------------------
 \section{システム解析}
 	第4章4.1節のシステム解析に用いたコードを載せる。
 	ただし、行列A,B,Cについては別の部分で計算している。
-	\begin{itembox}[l]{main.c}\baselineskip=1ex
+	\begin{breakitembox}[l]{main.c}\baselineskip=1ex
 		\begin{verbatimtab}[4]
 //システムの極(Aの固有値)を計算
 D=eigval(A);
@@ -82,11 +82,11 @@ Nc=[B,A*B,A*A*B,A*A*A*B];
 //可観測性行列もランクを計算し、可観測性を調べる。
 No=[[C][C*A][C*A*A][C*A*A*A]];
 		\end{verbatimtab}
-	\end{itembox}
+	\end{breakitembox}
 %-------------------------------------------------------------------
 \section{状態フィードバック}
 	状態フィードバックを設計算するのに用いたコードを載せる。ただし、LQ最適制御に基づくフィードバック則とする。
-	\begin{itembox}[l]{lqr}\baselineskip=1ex
+	\begin{breakitembox}[l]{lqr}\baselineskip=1ex
 		\begin{verbatimtab}[4]
 Matrix A, B, Q, R, F, P;
 
@@ -94,22 +94,22 @@ Q = diag(1, 1, 1, 1);
 R = [1];
 {F,P} = lqr(A, B, Q, R);
 		\end{verbatimtab}
-	\end{itembox}
+	\end{breakitembox}
 %-------------------------------------------------------------------
 \section{最小次元オブザーバ}
 	最小次元オブザーバをゴピナスの方法で計算するのに用いたコードを載せる。
-	\begin{itembox}[l]{obsg}\baselineskip=1ex
+	\begin{breakitembox}[l]{obsg}\baselineskip=1ex
 		\begin{verbatimtab}[4]
 CoMatrix obs_p;
 
 obs_p = trans([(-2,0), (-2,0)]);
 {Ah, Bh, Ch, Dh, Jh} = obsg(A, B, C, obs_p);
 		\end{verbatimtab}
-	\end{itembox}
+	\end{breakitembox}
 %-------------------------------------------------------------------	
 \section{コントローラの離散化}
 	連続時間オブザーバを離散化するたために用いたコードを載せる。
-	\begin{itembox}[l]{c2d}\baselineskip=1ex
+	\begin{breakitembox}[l]{c2d}\baselineskip=1ex
 		\begin{verbatimtab}[4]
 // ここは関数の先頭
 Real dt;
@@ -122,11 +122,11 @@ dt = 0.005;
 Bhd = Hhd(:,1:2);
 Jhd = Hhd(:,3);
 		\end{verbatimtab}
-	\end{itembox}
+	\end{breakitembox}
 %-------------------------------------------------------------------
 \section{シミュレーション}
 	第5章でシミュレーションを行ったコードを載せる。
-	\begin{itembox}[l]{InPeAboveNonLinerDesign3.mm}\baselineskip=1ex
+	\begin{breakitembox}[l]{InPeAboveNonLinerDesign3.mm}\baselineskip=1ex
 		\begin{verbatimtab}[4]
 Matrix A; //システム行列
 Matrix B; //入力行列
@@ -304,11 +304,11 @@ Func void calcParameter(){
 	Jhd = Hhd(:,3); // 係数行列の取り出し
 }
 		\end{verbatimtab}
-	\end{itembox}	
+	\end{breakitembox}	
 %-------------------------------------------------------------------
 \section{安定化制御及び目標値変更実験}
 	安定化制御及び目標値変更実験を行うために使用したコードを載せる。
-	\begin{itembox}[l]{sample.mm}\baselineskip=1ex
+	\begin{breakitembox}[l]{sample.mm}\baselineskip=1ex
 		\begin{verbatimtab}[4]
 #define LOGMAX 10000
 
@@ -429,7 +429,8 @@ Func void off_task_loop()
 		printf("入力 = %10.4f[N]", u(1));
 
 		gotoxy(5, 14);
-		printf("データ数 = %4d, 時間 = %7.3f [s] ref = %4f", count, count*smtime,ref);
+		printf("データ数 = %4d, 
+				時間 = %7.3f [s] ref = %4f", count, count*smtime,ref);
 		if (rtIsTimeOut()) {
 			gotoxy(5, 18);
 			warning("\n時間切れ !\n");
@@ -483,7 +484,7 @@ Func void machine_ready()
 	gotoxy(5,9);
 	pause "台車と振子を初期位置に移動し，リターンキーを入力して下さい。";
 	gotoxy(5,9);
-	printf("                                                            ");
+	printf("                                         ");
 	gotoxy(5,9);
 	pause "リターンキーを入力すると，制御が開始されます。";
 	clear;
@@ -576,11 +577,11 @@ print "aa" >> "a.txt";
 }
 
 		\end{verbatimtab}
-	\end{itembox}
+	\end{breakitembox}
 %-------------------------------------------------------------------
 \section{振り上げ制御及び安定化実験}
 	振り上げ制御及び安定化実験を行うために使用したコードを載せる。
-	\begin{itembox}[l]{sample.mm}\baselineskip=1ex
+	\begin{breakitembox}[l]{sample.mm}\baselineskip=1ex
 		\begin{verbatimtab}[4]
 #define LOGMAX 10000
 
@@ -674,7 +675,8 @@ Func void on_task()
 {
 	Matrix xh,xref;
 	Matrix xhe,xho;
-	Matrix sensor(),AngleWrapper(),DiscreteEstimator(),DiscreteObserver(),Swinging();
+	Matrix sensor(),AngleWrapper(),DiscreteEstimator()
+						,DiscreteObserver(),Swinging();
 	void actuator();
 
 	y = sensor();				// センサから入力
@@ -772,7 +774,7 @@ Func void machine_ready()
 	gotoxy(5,9);
 	pause "台車と振子を初期位置に移動し，リターンキーを入力して下さい。";
 	gotoxy(5,9);
-	printf("                                                            ");
+	printf("                                           ");
 	gotoxy(5,9);
 	pause "リターンキーを入力すると，制御が開始されます。";
 	clear;
@@ -934,7 +936,8 @@ Matrix xheo;
 	dr = xheo(3,1);
 	dth = xheo(4,1);
 
-	if(isSolverTrial() == 0 && abs(th) <= th_min*PI/180 && abs(r) < r_max) {
+	if(isSolverTrial() == 0 
+			&& abs(th) <= th_min*PI/180 && abs(r) < r_max) {
 		swinging = 0;
 	}
 	if(isSolverTrial() == 0 && abs(th) > th_min*PI/180){
@@ -952,7 +955,8 @@ Matrix xheo;
 			ddth = pre_ddth;
 		}
 
-		u = [((M + m)*ddr + m*l*(ddth*cos(th) - dth*dth*sin(th)) + f*dr)/a];
+		u = [((M + m)*ddr + m*l*(ddth*cos(th) 
+				- dth*dth*sin(th)) + f*dr)/a];
 
 		if(abs(r) > r_max && r*u(1,1) > 0) {
 			u = [0];
@@ -968,5 +972,5 @@ Func Integer isSolverTrial(){
 }
 
 		\end{verbatimtab}
-	\end{itembox}
+	\end{breakitembox}
 %-------------------------------------------------------------------

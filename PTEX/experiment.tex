@@ -42,9 +42,30 @@
 	なお、目標値は5秒ごとに0→0.1→0のように変更される。
 	以下に、重み行列を変更した場合の比較、オブザーバの極を変更した場合の比較、サンプリング周期を変更した場合の比較を
 	行った図を示す。
-	%JAMOXで3種の図を作成
-	%貼り付ける
-	%考察を述べる
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\linewidth]{gazo/Compare_Q_R.eps}
+		\includegraphics[width=0.4\linewidth]{gazo/Compare_Q_TH.eps}
+		\caption{重み行列の違いによる実験結果の比較}
+		\label{image:comp_Q}
+	\end{figure}
+	図中のPatternは以下の表に対応するパラメータである。
+	\begin{table}[H]
+		\begin{center}
+			\caption{パターンとパラメータの対応表}
+			\medskip
+			
+			\begin{tabular}{|c|c|c|c|}\hline
+				パターン & 重み行列$Q$ & オブザーバの極$P$ & サンプリング周期$\Delta[\rm{s}]$ \\ \hline\hline
+				Pattern1 & $Q_1$:$\rm{diag}(1E5,1E5,1,1)$ & $P_1$:$((-30,0),(-30,0))^{'}$ & $\Delta_1$:0.005 \\ \hline
+				Pattern2 & $Q_1$:$\rm{diag}(1E5,1E6,1,1)$ & $P_1$:$((-30,0),(-30,0))^{'}$ & $\Delta_1$:0.005 \\ \hline
+				Pattern3 & $Q_1$:$\rm{diag}(1E6,1E5,1,1)$ & $P_1$:$((-30,0),(-30,0))^{'}$ & $\Delta_1$:0.005 \\ \hline
+			\end{tabular}
+		\end{center}
+		\label{table:huriage_control}
+	\end{table}
+	図\ref{image:comp_Q}を見ると
+	
 	以下に実験結果とシミュレーション結果との比較を行った図を示す。
 	図の数が多いので図のキャプションとその図における各パラメータの対応表を示す。
 	\begin{table}[htb]

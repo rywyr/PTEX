@@ -42,6 +42,8 @@
 	なお、目標値は5秒ごとに0→0.1→0のように変更される。
 	以下に、重み行列を変更した場合の比較、オブザーバの極を変更した場合の比較、サンプリング周期を変更した場合の比較を
 	行った図を示す。
+	\par
+	最初に重み行列を変更した場合の実験結果の比較を見てみる。
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.4\linewidth]{gazo/Compare_Q_R.eps}
@@ -64,8 +66,67 @@
 		\end{center}
 		\label{table:huriage_control}
 	\end{table}
-	図\ref{image:comp_Q}から
-	
+	図\ref{image:comp_Q}の左図を見えると、ノイズがひどいがPattern1、Pattern2は目標値の変更に追従
+	できているが、Pattern3は目標値の変更に追従できていない。また、Pattern1とPattern2では大きな違いは確認できないが、
+	若干Pattern1のほうが応答が目標値に追従できている。
+	右図からは、Pattern3が目標値変更の時間（5秒と10秒）において角度が大きく出ており、一番応答が悪いといえる。
+	このことからシミュレーションで行った考察と概ね一致しているといえる。しかし、シミュレーションのときには
+	現れなかった目標値変化への追従性違いが現れた。また、シミュレーションでは応答を良くしたい状態に対応する成分を
+	大きくすればよいと述べたが、実験結果からは、重み行列に偏りをつけるより、良くしたい状態に対応する成分をバランスよく
+	大きくしたほうが応答がよくなったといえる。
+	\par
+	次にオブザーバの極の違いによる実験結果の比較を見てみる。
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\linewidth]{gazo/Compare_obs_R.eps}
+		\includegraphics[width=0.4\linewidth]{gazo/Compare_obs_TH.eps}
+		\caption{オブザーバの極の違いによる実験結果の比較}
+		\label{image:comp_obs}
+	\end{figure}
+	図中のPatternは以下の表に対応するパラメータである。
+	\begin{table}[H]
+		\begin{center}
+			\caption{パターンとパラメータの対応表}
+			\medskip
+			
+			\begin{tabular}{|c|c|c|c|}\hline
+				パターン & 重み行列$Q$ & オブザーバの極$P$ & サンプリング周期$\Delta[\rm{s}]$ \\ \hline\hline
+				Pattern1 & $Q_1$:$\rm{diag}(1E5,1E5,1,1)$ & $P_1$:$((-30,0),(-30,0))^{'}$ & $\Delta_1$:0.005 \\ \hline
+				Pattern2 & $Q_1$:$\rm{diag}(1E5,1E6,1,1)$ & $P_1$:$((-60,0),(-60,0))^{'}$ & $\Delta_1$:0.005 \\ \hline
+			\end{tabular}
+		\end{center}
+		\label{table:huriage_control}
+	\end{table}
+	図\ref{image:comp_obs}の左図より、台車の位置についてはPattern2よりもPattern1の方が目標値変化に追従できているといえる。
+	つまり、オブザーバの極が虚軸に近い方が目標値変化へ追従できるといえる。
+	シミュレーションのときには大きな違いが出なかったが、実験においては目標値変化への追従性という形で違いが出てきている。
+	右図より、振子の角度については、Pattern1とPattern2では大きな違いは確認できないといえる。
+	\par
+	次にサンプリング周期の違いによる実験結果の比較を見てみる。
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\linewidth]{gazo/Compare_dt_R.eps}
+		\includegraphics[width=0.4\linewidth]{gazo/Compare_dt_TH.eps}
+		\caption{サンプリング周期の違いによる実験結果の比較}
+		\label{image:comp_dt}
+	\end{figure}
+	図中のPatternは以下の表に対応するパラメータである。
+	\begin{table}[H]
+		\begin{center}
+			\caption{パターンとパラメータの対応表}
+			\medskip
+			
+			\begin{tabular}{|c|c|c|c|}\hline
+				パターン & 重み行列$Q$ & オブザーバの極$P$ & サンプリング周期$\Delta[\rm{s}]$ \\ \hline\hline
+				Pattern1 & $Q_1$:$\rm{diag}(1E5,1E5,1,1)$ & $P_1$:$((-30,0),(-30,0))^{'}$ & $\Delta_1$:0.005 \\ \hline
+				Pattern2 & $Q_1$:$\rm{diag}(1E5,1E6,1,1)$ & $P_1$:$((-30,0),(-30,0))^{'}$ & $\Delta_1$:0.010 \\ \hline
+			\end{tabular}
+		\end{center}
+		\label{table:huriage_control}
+	\end{table}
+	図\ref{image:comp_dt}の左図より、台車の位置については2パターンとも大きな違いはないといえる。右図より、振子の角度についても2パターンとも
+	大きな違いはないといえる。このことから概ねシミュレーションと同じ結果を得ることができたといえる。
+	\par
 	以下に実験結果とシミュレーション結果との比較を行った図を示す。
 	図の数が多いので図のキャプションとその図における各パラメータの対応表を示す。
 	\begin{table}[htb]
@@ -189,6 +250,8 @@
 	振子を倒立させるためにベルトが動くので、倒立振子系自体が激しく振動する。本来であれば、倒立振子系のベルトが
 	動いても振動しないように固定しておくべきだが、諸事情により固定ができない状況であったためそのままの状態で
 	実験を行った。この激しい振動が実験結果に影響を及ぼしたのではないかと考えられる。
+	シミュレーションと実験において差異がでたが目標値変更を行っての安定化制御を行うことができたので
+	実験目的の第二項目は達成できたといえる。
 	
 	
 
@@ -196,6 +259,60 @@
 \section{振り上げ制御及び安定化実験}
 	振子を真下に配置し、そこから台車の動きだけで振子を振り上げ、
 	安定化制御が可能か実験を行う。(実験項目の第三項目)
-	以下にその結果とシミュレーション結果との比較を行った図を示す。
-
+	以下に$k$を変更したときの実験結果を示す。
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\linewidth]{gazo/Hexpe_R.eps}
+		\includegraphics[width=0.4\linewidth]{gazo/Hexpe_TH.eps}
+		\caption{$k$の違いによる実験結果の比較}
+		\label{image:Hexpe}
+	\end{figure}
+	図中のPatternは以下の表に対応するパラメータである。
+	\begin{table}[H]
+		\begin{center}
+			\caption{実験に用いたパラメータの組}
+			\medskip
+			
+			\begin{tabular}{|c|c|c|}\hline
+				& $n$ & $k$ \\ \hline\hline
+				パターン1 & 0.4 & $1.0×10^3$  \\ \hline
+				パターン2 & 0.4 & $1.0×10^4$  \\ \hline
+				パターン3 & 0.4 & $1.0×10^5$  \\ \hline
+			\end{tabular}
+		\end{center}
+		\label{table:huriage_huriage}
+	\end{table}
+	図\ref{image:Hexpe}の右図より、$k$の値が大きいほど早く安定化制御に移行していることがわかる。
+	$k$が大きくなるとエネルギーの収束が早くなるため、より早く安定化制御に移行できたといえる。
+	つまり、シミュレーションの章で行った考察は間違っていたということになる。これは、実験に用いた
+	倒立振子系のシミュレーションを行う際に考慮すべき項目が抜けていたか、同定した倒立振子系のパラメータが
+	間違っていたかなど様々な原因が考えられる。
+	以下に実験結果とシミュレーション結果との比較を行った図を示す。
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\linewidth]{gazo/HcompP1R.eps}
+		\includegraphics[width=0.4\linewidth]{gazo/HcompP1TH.eps}
+		\caption{比較結果(Pattern1)}
+		\label{image:HcompP1}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\linewidth]{gazo/HcompP2R.eps}
+		\includegraphics[width=0.4\linewidth]{gazo/HcompP2TH.eps}
+		\caption{比較結果(Pattern2)}
+		\label{image:HcompP2}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\linewidth]{gazo/HcompP3R.eps}
+		\includegraphics[width=0.4\linewidth]{gazo/HcompP3TH.eps}
+		\caption{比較結果(Pattern3)}
+		\label{image:HcompP3}
+	\end{figure}
+	
+	\par
+	シミュレーションの結果と実験の結果に大きな違いが出てしまったが、
+	実験において振り上げ制御から安定化制御を行うことができたので、
+	実験目的の第三項目を達成できたといえる。
+	
 %-----------------------------------------------------------

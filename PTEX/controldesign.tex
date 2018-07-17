@@ -3,14 +3,14 @@
 	判定することができる。具体的には可制御性と可観測性を調べ、それらが存在すれば安定化制御可能であるといえる。
 	以下で行う計算はすべて\MaTX{}を用いた。
 	\subsection{安定性}
-		システムの極（Aの固有値）を計算した結果$D$を以下に示す。
+		システムの極（$A$の固有値）を計算した結果$D$を以下に示す。
 		\begin{equation}
 			D=\left[
 			\begin{array}{c}
-				7.0+0i\\
-				0+0i \\
-				-6.8-0i \\
-				-11+0i\\
+				7.0\\
+				0\\
+				-6.8\\
+				-11\\
 			\end{array}
 			\right]
 			\label{eq:Aeig}
@@ -28,7 +28,7 @@
 		\end{equation}
 		上の行列よりランクは4になれば可制御性があるといえる。ランクを計算したところ
 		\begin{equation}
-			rank  = 4
+			\rm{rank}  = 4
 		\end{equation}
 		となった。よって可制御性を確認できる。\\
 	\subsection{可制御性}
@@ -45,7 +45,7 @@
 		\end{equation}
 		上の行列よりランクは4になれば可観測性があるといえる。ランクを計算したところ
 		\begin{equation}
-			rank = 4
+			\rm{rank} = 4
 		\end{equation}
 		となった。よって、可観測性を確認できる。\\
 	\par
@@ -77,10 +77,10 @@
 		\label{eq:Feq2}
 	\end{equation}
 	\begin{equation}
-		Q = diag(q_{1}^2,q_{2}^2,q_{3}^2,q_{4}^2),\ \ R = 1
+		Q = \rm{diag}(q_{1}^2,q_{2}^2,q_{3}^2,q_{4}^2),\ \ R = 1
 		\label{eq:Feq3}
 	\end{equation}
-	を考える。ただし、 $diag(\ldots)$は、対角行列を表す。これは
+	を考える。ただし、 $\rm{diag}(\ldots)$は、対角行列を表す。これは
 	\begin{equation}
 		J=\int_{0}^{\infty}(q_{1}^{2}r^{2}+q_{2}^{2}\theta^{2}
 		+q_{3}^{2}\dot{r}^{2}+q_{4}^{2}\dot{\theta}^{2})dt
@@ -88,7 +88,7 @@
 	のように表されることから、$q_1,q_2,q_3,q_4$は台車位置$r$、振り子角度$\theta$、
 	台車速度$\dot{\theta}$、振子角速度$\dot{\theta}$の間のバランスをとる重み係数である。
 	\par
-	(\ref{eq:Feq2})、(\ref{eq:Feq3})式を最小にする(\ref{eq:Feq1})式における$F$は、
+	(\ref{eq:Feq2})と(\ref{eq:Feq3})式を最小にする(\ref{eq:Feq1})式における$F$は、
 	リカッチの方程式
 	\[
 		A^{T}P+PA-PBR^{-1}B^{T}P+Q = 0

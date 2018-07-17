@@ -65,6 +65,7 @@
 	のように定義し、(\ref{eq:motion_eq_cart}),(\ref{eq:rotemotion_eq_stick}),
 	(\ref{eq:horizonmotion_eq_stick}),(\ref{eq:vertical_eq_stick})
 	式から倒立振子系の非線形状態方程式を求める。
+	
 	\begin{eqnarray}
 		\dot{x} = f(x,u) = \left[
 		\begin{array}{ccc}
@@ -80,31 +81,37 @@
 	ここで(\ref{eq:horizonmotion_eq_stick})式より$F_{H}$を、
 	(\ref{eq:vertical_eq_stick})式より$F_{V}$を求めると
 	
-	\[F_{H} = m\frac{d^{2}}{dt^{2}}r + ml\frac{d^{2}}{dt^{2}}\sin{\theta}\]
-	\begin{equation}
-		= m\ddot{r}+ml(-\dot{\theta}^{2}\sin{\theta}+\ddot{\theta}\cos{\theta})
+	\begin{align}
+		F_{H} &= m\frac{d^{2}}{dt^{2}}r + ml\frac{d^{2}}{dt^{2}}\sin{\theta} \notag \\
+		&= m\ddot{r}+ml(-\dot{\theta}^{2}\sin{\theta}+\ddot{\theta}\cos{\theta})
 		\label{eq:eq1}
-	\end{equation}
-	\\
-	\[F_{V} = mg + m\frac{d^{2}}{dt^{2}}(l\cos{\theta})\]
-	\begin{equation}
-		= mg + ml(-\dot{\theta}^{2}\cos{\theta}-\ddot{\theta}\sin{\theta})
+	\end{align}
+	
+	\begin{align}
+		F_{V} &= mg + m\frac{d^{2}}{dt^{2}}(l\cos{\theta}) \notag \\
+		&= mg + ml(-\dot{\theta}^{2}\cos{\theta}-\ddot{\theta}\sin{\theta})
 		\label{eq:eq2}
-	\end{equation}
-	である。\\
-	(\ref{eq:eq1})式を(\ref{eq:motion_eq_cart})式に代入すると\\
+	\end{align}
+	
+	である。
+	(\ref{eq:eq1})式を(\ref{eq:motion_eq_cart})式に代入すると
+	
 	\begin{equation}
 		(M+m)\ddot{r} + ml\ddot{\theta}\cos{\theta}-ml\dot{\theta}^{2}\sin{\theta}+f\dot{r}=au
 		\label{eq:eq3}
 	\end{equation}
-	である。\\
-	(\ref{eq:eq1})式、(\ref{eq:eq2})式を(\ref{eq:rotemotion_eq_stick})式に代入すると\\
+	
+	である。
+	(\ref{eq:eq1})式と(\ref{eq:eq2})式を(\ref{eq:rotemotion_eq_stick})式に代入すると
+	
 	\begin{equation}
 		(J + ml^{2})\ddot{\theta} + ml\ddot{r}\cos{\theta} - mgl\sin{\theta} + c\dot{\theta} = 0
 		\label{eq:eq4}
 	\end{equation}
-	である。\\
-	(\ref{eq:eq3})式、(\ref{eq:eq4})式を行列表現すると\\
+	
+	である。
+	(\ref{eq:eq3})式、(\ref{eq:eq4})式を行列表現すると
+	
 	\begin{eqnarray}
 		\left[
 		\begin{array}{ccc}
@@ -113,6 +120,7 @@
 		\end{array}
 		\right]
 	\end{eqnarray}
+	
 	\begin{eqnarray}
 		\left[
 		\begin{array}{ccc}
@@ -139,7 +147,7 @@
 		\end{array}
 		\right]
 	\end{eqnarray}
-	\\
+	
 	$\begin{pmatrix} M + m & ml\cos{\theta} \\ ml\cos{\theta} & J + ml^{2} \end{pmatrix}$を$K$と置いて右辺に逆行列としてかけると\\
 	\begin{equation}
 		\left[
@@ -183,10 +191,8 @@
 		\right]
 		\label{eq:array4}
 	\end{equation}
-	\\
 	である。
-	\\
-	よって倒立振子系の非線形状態方程式は\ref{eq:array3}のように得られる。
+	よって倒立振子系の非線形状態方程式は(\ref{eq:array3})式のように得られる。
 	\par
 	ところで、倒立振子系については、その制御目的から、不安定平衡点$x=0$の近傍での挙動を表す
 	状態方程式を知れば十分である。そこで、この基準状態まわりで一時近似された状態方程式を求め
@@ -420,11 +426,13 @@
 			\dot{\theta}\\
 		\end{array}
 		\right]
+		\label{eq:output}
 	\end{equation}
 	を得ることができる。\\
 	なお、鉛直上向きを基準とした場合でも鉛直下向きを基準とした場合でも出力方程式は変化しない。
+%----------------------------------------------------------------------------------------------------
 \section{倒立振子のパラメータの同定}
-数式モデル(\ref{eq:array6}),(\ref{eq:array7})に含まれる物理パラメータを実際の倒立振子系で実験
+数式モデル(\ref{eq:array6})、(\ref{eq:array7})、(\ref{eq:output})に含まれる物理パラメータを実際の倒立振子系で実験
 を行い同定する。
 \subsection{mとlの測定}
 	倒立振子系から振子を取り外し、バネ秤で振子の質量$m$を測定する。つぎに、振子を鋼尺のエッジ上でバランス

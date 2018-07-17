@@ -31,40 +31,40 @@
 \contentsline {subsection}{\numberline {3.2.4}Mとfの測定}{19}
 \contentsline {subsubsection}{ステップ応答による測定法}{19}
 \contentsline {subsubsection}{フィードバック入力による測定法}{20}
-\contentsline {subsubsection}{$M$と$f$の決定}{23}
+\contentsline {subsubsection}{$M$と$f$の決定}{22}
 \contentsline {subsection}{\numberline {3.2.5}$c_1$と$c_2$の測定}{23}
-\contentsline {subsection}{\numberline {3.2.6}同定結果}{24}
+\contentsline {subsection}{\numberline {3.2.6}同定結果}{23}
 \contentsline {section}{\numberline {3.3}パラメータの検証}{24}
 \contentsline {subsection}{\numberline {3.3.1}振子の自由振動シミュレーション}{24}
 \contentsline {subsection}{\numberline {3.3.2}台車のステップ応答による方法のシミュレーション}{25}
-\contentsline {subsection}{\numberline {3.3.3}台車のフィードバック応答シミュレーション}{26}
+\contentsline {subsection}{\numberline {3.3.3}台車のフィードバック応答シミュレーション}{25}
 \contentsline {section}{\numberline {3.4}設計（線形）モデルの決定}{26}
-\contentsline {chapter}{\numberline {第4章}制御系設計}{29}
-\contentsline {section}{\numberline {4.1}システム解析}{29}
-\contentsline {subsection}{\numberline {4.1.1}安定性}{29}
-\contentsline {subsection}{\numberline {4.1.2}可制御性}{29}
-\contentsline {subsection}{\numberline {4.1.3}可制御性}{30}
-\contentsline {section}{\numberline {4.2}状態フィードバックの設計}{30}
-\contentsline {section}{\numberline {4.3}最小次元オブザーバの設計}{31}
-\contentsline {section}{\numberline {4.4}コントローラの離散化}{32}
-\contentsline {section}{\numberline {4.5}振り上げ制御及び安定化の実現}{33}
-\contentsline {chapter}{\numberline {第5章}シミュレーション}{35}
-\contentsline {section}{\numberline {5.1}重み行列の変更による制御性能評価}{35}
-\contentsline {section}{\numberline {5.2}オブザーバの極の変更による制御性能評価}{37}
-\contentsline {section}{\numberline {5.3}サンプリング周期の変更による制御性能評価}{40}
-\contentsline {section}{\numberline {5.4}振り上げ制御及び安定化に対する制御性能評価}{42}
-\contentsline {chapter}{\numberline {第6章}実験}{45}
-\contentsline {section}{\numberline {6.1}安定化制御実験}{45}
-\contentsline {section}{\numberline {6.2}目標値の変更実験}{46}
-\contentsline {section}{\numberline {6.3}振り上げ制御及び安定化実験}{52}
-\contentsline {chapter}{\numberline {第7章}おわりに}{55}
-\contentsline {chapter}{\numberline {付 録A }プログラム}{59}
-\contentsline {section}{\numberline {A.1}非線形モデル}{59}
-\contentsline {section}{\numberline {A.2}線形モデル}{59}
-\contentsline {section}{\numberline {A.3}システム解析}{60}
-\contentsline {section}{\numberline {A.4}状態フィードバック}{60}
-\contentsline {section}{\numberline {A.5}最小次元オブザーバ}{61}
-\contentsline {section}{\numberline {A.6}コントローラの離散化}{61}
-\contentsline {section}{\numberline {A.7}シミュレーション}{61}
-\contentsline {section}{\numberline {A.8}安定化制御及び目標値変更実験}{65}
-\contentsline {section}{\numberline {A.9}振り上げ制御及び安定化実験}{69}
+\contentsline {chapter}{\numberline {第4章}制御系設計}{27}
+\contentsline {section}{\numberline {4.1}システム解析}{27}
+\contentsline {subsection}{\numberline {4.1.1}安定性}{27}
+\contentsline {subsection}{\numberline {4.1.2}可制御性}{27}
+\contentsline {subsection}{\numberline {4.1.3}可制御性}{28}
+\contentsline {section}{\numberline {4.2}状態フィードバックの設計}{28}
+\contentsline {section}{\numberline {4.3}最小次元オブザーバの設計}{29}
+\contentsline {section}{\numberline {4.4}コントローラの離散化}{30}
+\contentsline {section}{\numberline {4.5}振り上げ制御及び安定化の実現}{31}
+\contentsline {chapter}{\numberline {第5章}シミュレーション}{33}
+\contentsline {section}{\numberline {5.1}重み行列の変更による制御性能評価}{33}
+\contentsline {section}{\numberline {5.2}オブザーバの極の変更による制御性能評価}{35}
+\contentsline {section}{\numberline {5.3}サンプリング周期の変更による制御性能評価}{38}
+\contentsline {section}{\numberline {5.4}振り上げ制御及び安定化に対する制御性能評価}{40}
+\contentsline {chapter}{\numberline {第6章}実験}{43}
+\contentsline {section}{\numberline {6.1}安定化制御実験}{43}
+\contentsline {section}{\numberline {6.2}目標値の変更実験}{44}
+\contentsline {section}{\numberline {6.3}振り上げ制御及び安定化実験}{50}
+\contentsline {chapter}{\numberline {第7章}おわりに}{53}
+\contentsline {chapter}{\numberline {付 録A }プログラム}{57}
+\contentsline {section}{\numberline {A.1}非線形モデル}{57}
+\contentsline {section}{\numberline {A.2}線形モデル}{57}
+\contentsline {section}{\numberline {A.3}システム解析}{58}
+\contentsline {section}{\numberline {A.4}状態フィードバック}{58}
+\contentsline {section}{\numberline {A.5}最小次元オブザーバ}{59}
+\contentsline {section}{\numberline {A.6}コントローラの離散化}{59}
+\contentsline {section}{\numberline {A.7}シミュレーション}{59}
+\contentsline {section}{\numberline {A.8}安定化制御及び目標値変更実験}{63}
+\contentsline {section}{\numberline {A.9}振り上げ制御及び安定化実験}{67}

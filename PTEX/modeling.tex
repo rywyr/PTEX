@@ -541,7 +541,7 @@
 		である。
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=1.0\linewidth]{gazo/step.eps}
+			\includegraphics[width=0.6\linewidth]{gazo/step.eps}
 			\caption{台車のステップ応答}
 			\label{image:parameterMF}
 		\end{figure}
@@ -566,10 +566,11 @@
 			u = k_{c}(y_{c} - y)
 		\end{equation}
 		ただし、$y_c$は目標値、$y$は出力、$k_{c}$はフィードバックゲインである。
+		本節では$k_c=2500$とする。
 		このようにすることで不足制動の2次系($\zeta<1$)を実現させる。
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=1.0\linewidth]{gazo/feedback.eps}
+			\includegraphics[width=0.6\linewidth]{gazo/feedback.eps}
 			\caption{台車のフィードバック応答}
 			\label{image:parameterMFfeed}
 		\end{figure}
@@ -642,14 +643,16 @@
 	で結果が変わってくるということである。
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.5\linewidth]{gazo/feedback_input.eps}\\
+		\includegraphics[width=0.8\linewidth]{gazo/feedback_input.eps}\\
 		\caption{飽和器の有無によるフィードバック入力の比較}
 		\label{image:feedback_saturation}
 	\end{figure}
-	図(\ref{image:feedback_saturation})より飽和器がない場合(non sturation)
+	図\ref{image:feedback_saturation}より飽和器がない場合(non sturation)
 	、入力は最大500(V)まで加えられることがわかる。本実験で用いる倒立振子系の入力限界は
 	$-15<u<15$であるので、その範囲を大きく超えてしまっている。つまり、フィードバックによる方法で
-	同定したパラメータは現実に即していないといえる。
+	同定したパラメータは現実に即していないといえる。また、今回はフィードバックゲインを2500としたが、
+	フィードバックゲインを小さくすると、入力もそれに伴い小さくなるので、
+	正確なパラメータの計算を行うことができるはずである。
 	以上から本実験においてフィードバックを行う場合必ず飽和システムが必要であるといえる。
 	なので、飽和システムが存在する限り伝達関数を求めることができないので、
 	正確なパラメータの計算を行うことができないといえる。

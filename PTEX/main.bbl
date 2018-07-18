@@ -1,6 +1,11 @@
 \begin{thebibliography}{1}
 
+\bibitem{Koga:3inpe}
+古賀雅伸.
+\newblock 制御工学実験第3 倒立振子の安定化制御.
+
 \bibitem{Koga:Binpe}
-B.倒立振子の安定化制御.
+古賀雅伸.
+\newblock B.倒立振子の安定化制御.
 
 \end{thebibliography}

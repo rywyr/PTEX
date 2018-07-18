@@ -15,22 +15,21 @@
 		M\ddot{r}=au-F_{H}-f\dot{r}
 		\label{eq:motion_eq_cart}
 	\end{equation}
-	\\
-	倒立振子の回転の運動方程式は\\
+	
+	倒立振子の回転の運動方程式は
 	
 	\begin{equation}
 		J\ddot{\theta}=lF_{V}\sin \theta -lF_{H}\cos \theta -c\dot{\theta}
 		\label{eq:rotemotion_eq_stick}
 	\end{equation}
 	\\
-	倒立振子の水平方向の運動方程式は\\
+	倒立振子の水平方向の運動方程式は
 	
 	\begin{equation}
 		m\frac{d^{2}}{dt^{2}}(r+l\sin\theta) = F_{H}
 		\label{eq:horizonmotion_eq_stick}
 	\end{equation}
-	\\
-	倒立振子の垂直方向の運動方程式は\\
+	倒立振子の垂直方向の運動方程式は
 	
 	\begin{equation}
 		m\frac{d^{2}}{dt^{2}}(l\cos\theta) = F_{V}-mg
@@ -42,15 +41,16 @@
 	ここで各式の導出過程を述べる。図\ref{image:reference}より台車の運動方程式は、振り子からの水平抗力$F_{H}$を考慮してニュートンの第二法則より(\ref{eq:motion_eq_cart})
 	式を導くことができる。
 	ただし、$M$は台車の質量、$f$は台車の摩擦係数、$a$は駆動アンプへの入力電圧から台車への駆動までのゲイン、$u$はモータの駆動アンプへの入力電圧、$r$は台車の基準位置からの変位である。
-	同様にニュートンの第二法則を用いることで(\ref{eq:horizonmotion_eq_stick})，(\ref{eq:vertical_eq_stick})式の運動方程式を導くことができる。
+	同様にニュートンの第二法則を用いることでそれぞれの方向における(\ref{eq:horizonmotion_eq_stick})，(\ref{eq:vertical_eq_stick})式の運動方程式を導くことができる。
 	ただし、$m$は振り子の質量、$l$は回転軸・重心間の距離、$g$は重力加速度、$F_{V}$は振り子が台車から受ける垂直抗力である。
 	また、$\theta$は鉛直上向きを$\theta=0$としたときの角度である。
+	\par
 	最後に(\ref{eq:rotemotion_eq_stick})式は回転に対する運動方程式を考えることで上記と同様に求めることができる。
 	ただし、$J$は重心回りの慣性モーメント、$c$は回転軸摩擦係数である。
 	\par
 	いま、4つの状態変数から成るベクトル、すなわち状態$x$を
 					
-	\begin{eqnarray}
+	\[
 		x=\left[
 		\begin{array}{ccc}
 			r\\
@@ -60,11 +60,10 @@
 		\end{array}
 		\right]
 		\label{eq:array1}
-	\end{eqnarray}
+	\]
 					
-	のように定義し、(\ref{eq:motion_eq_cart}),(\ref{eq:rotemotion_eq_stick}),
-	(\ref{eq:horizonmotion_eq_stick}),(\ref{eq:vertical_eq_stick})
-	式から倒立振子系の非線形状態方程式を求める。
+	のように定義し、(\ref{eq:motion_eq_cart})式,(\ref{eq:rotemotion_eq_stick})式,(\ref{eq:horizonmotion_eq_stick})式,(\ref{eq:vertical_eq_stick})式
+	から倒立振子系の非線形状態方程式を求める。
 	
 	\begin{eqnarray}
 		\dot{x} = f(x,u) = \left[
@@ -93,7 +92,7 @@
 		\label{eq:eq2}
 	\end{align}
 	
-	である。
+	である。\\
 	(\ref{eq:eq1})式を(\ref{eq:motion_eq_cart})式に代入すると
 	
 	\begin{equation}
@@ -101,7 +100,7 @@
 		\label{eq:eq3}
 	\end{equation}
 	
-	である。
+	である。\\
 	(\ref{eq:eq1})式と(\ref{eq:eq2})式を(\ref{eq:rotemotion_eq_stick})式に代入すると
 	
 	\begin{equation}
@@ -109,19 +108,19 @@
 		\label{eq:eq4}
 	\end{equation}
 	
-	である。
+	である。\\
 	(\ref{eq:eq3})式、(\ref{eq:eq4})式を行列表現すると
 	
-	\begin{eqnarray}
+	\[
 		\left[
 		\begin{array}{ccc}
 			(M + m)\ddot{r} + (ml\cos{\theta})\ddot{\theta} + (-ml\sin{\theta}) + f\dot{r} = au \\
 			(ml\cos{\theta})\ddot{r} + (J + ml^{2})\ddot{\theta} -mgl\sin{\theta} + c\dot{\theta} = 0\\
 		\end{array}
 		\right]
-	\end{eqnarray}
+	\]
 	
-	\begin{eqnarray}
+	\[
 		\left[
 		\begin{array}{ccc}
 			M + m & ml\cos{\theta} \\
@@ -146,10 +145,11 @@
 			0\\
 		\end{array}
 		\right]
-	\end{eqnarray}
+	\]
 	
 	$\begin{pmatrix} M + m & ml\cos{\theta} \\ ml\cos{\theta} & J + ml^{2} \end{pmatrix}$を$K$と置いて右辺に逆行列としてかけると\\
-	\begin{equation}
+	
+	\[
 		\left[
 		\begin{array}{ccc}
 			\ddot{r}\\
@@ -162,9 +162,10 @@
 			mgl\sin{\theta} - c\dot{\theta}\\
 		\end{array}
 		\right]
-	\end{equation}
+	\]
 	\\
 	よって以上から(\ref{eq:array2})式は\\
+	
 	\begin{equation}
 		\dot{x} = f(x,u)=\left[
 		\begin{array}{ccc}
@@ -182,6 +183,7 @@
 	\end{equation}
 	\\
 	となる。ただし、$K$は
+	
 	\begin{equation}
 		K=\left[
 		\begin{array}{ccc}
@@ -191,6 +193,7 @@
 		\right]
 		\label{eq:array4}
 	\end{equation}
+	
 	である。
 	よって倒立振子系の非線形状態方程式は(\ref{eq:array3})式のように得られる。
 	\par
@@ -203,9 +206,17 @@
 		\label{eq:eq4}
 	\end{equation}
 	\\
-	となる。\\
-	また、$A=\left.\frac{\partial f}{\partial x}\right|_{x=0,u=0} , B=\left.\frac{\partial f}{\partial u}\right|_{x=0,u=0}$とする。\\
-	ここで、一時近似を施したので、$\theta$を微小範囲と考えることができ、$\sin{\theta} \simeq  \theta , \cos{\theta} \simeq 1 , \dot{\theta}^{2} \simeq 0$のように
+	となる。つまり、(\ref{eq:eq4})を計算すれば求めたい状態方程式を得ることができる。\\
+	(\ref{eq:eq4})式において、
+	
+	\[A=\left.\frac{\partial f}{\partial x}\right|_{x=0,u=0} , B=\left.\frac{\partial f}{\partial u}\right|_{x=0,u=0}\]
+	
+	とすると、(\ref{eq:eq4})式は以下のように計算できる。
+	\begin{equation}
+		f(x,u) = Ax+Bu
+		\label{eq:AxBu}
+	\end{equation}
+	ここで、一時近似を施したので、$\theta$を微小範囲と考えることができ、\\ $\sin{\theta} \simeq  \theta , \cos{\theta} \simeq 1 , \dot{\theta}^{2} \simeq 0$のように
 	近似できる。\\
 	以上の近似から(\ref{eq:array3}),(\ref{eq:array4})式は\\
 	\begin{equation}
@@ -234,22 +245,20 @@
 		\label{eq:array6}
 	\end{equation}
 	
-	となる。\\
-	(\ref{eq:array5})、(\ref{eq:array6})式を用いてA、Bを計算する\\
-	ここで、(\ref{eq:array5})式の3行目を$a_{1}$と置き、4行目を$a_{2}$と置く。\\
-	\begin{equation}
-		A=\frac{\partial \textgt{f}}{\partial \textgt{x}}=\\
+	となる。ここで、(\ref{eq:array5})式の3行目を$a_{1}$と置き、4行目を$a_{2}$と置く。\\\newpage
+	(\ref{eq:array5})、(\ref{eq:array6})式を用いて(\ref{eq:AxBu})式のA、Bを計算する。\\
+	
+	\begin{align*}
+		A=\frac{\partial \textgt{f}}{\partial \textgt{x}}&=
 		\left[
 		\begin{array}{cccc}
 			\frac{\partial \dot{r}}{\partial r} & \frac{\partial \dot{r}}{\partial \theta} & \frac{\partial \dot{r}}{\partial \dot{r}} & \frac{\partial \dot{r}}{\partial \dot{\theta}} \\
 			\frac{\partial \dot{\theta}}{\partial r} & \frac{\partial \dot{\theta}}{\partial \theta} & \frac{\partial \dot{\theta}}{\partial \dot{r}} & \frac{\partial \dot{\theta}}{\partial \dot{\theta}} \\
 			\frac{\partial a_{1}}{\partial r} & \frac{\partial a_{1}}{\partial \theta} & \frac{\partial a_{1}}{\partial \dot{r}} & \frac{\partial a_{1}}{\partial \dot{\theta}} \\
 			\frac{\partial a_{2}}{\partial r} & \frac{\partial a_{2}}{\partial \theta} & \frac{\partial a_{2}}{\partial \dot{r}} & \frac{\partial a_{2}}{\partial \dot{\theta}} \\
-		\end{array}
-		\right]\\
-	\end{equation}
-	\begin{equation}
-		=\left[
+		\end{array} 
+		\right]  \\
+		&=\left[
 		\begin{array}{cccc}
 			0 & 0 & 1 & 0 \\
 			0 & 0 & 0 & 1 \\
@@ -257,9 +266,9 @@
 			0 & K^{'-1}(mgl) & 0 & K^{'-1}(-c) \\
 		\end{array}
 		\right]
-	\end{equation}
+	\end{align*}
 	\\
-	\begin{equation}
+	\[
 		B=\frac{\partial \textgt{f}}{\partial \textgt{u}}=
 		\left[
 		\begin{array}{c}
@@ -278,7 +287,7 @@
 		\end{array}
 		\right]
 		\label{eq:array7}
-	\end{equation}
+	\]
 	\\
 	以上から線形状態方程式は\\
 	\[\dot{x}=A\textgt{x}+B\textgt{u}\]
@@ -310,8 +319,8 @@
 		\label{eq:InPeAboveLiner}
 	\end{equation}
 	\\
-	となる。
-	また、鉛直下向きを$\theta = 0$としたときの非線形状態方程式は(\ref{eq:array4})式の三角関数内の
+	となる。ただし、$K^{'}$は(\ref{eq:array6})式である。上式の線形状態方程式は鉛直上向きを$\theta = 0$としたときの状態方程式である。
+	鉛直下向きを$\theta = 0$とした場合は(\ref{eq:array4})式の三角関数内の
 	$\theta$に+$\pi$すればよいので
 	\begin{equation}
 		\dot{x} = f(x,u)=\left[
@@ -373,47 +382,45 @@
 	\end{equation}
 	\\
 	となる。ただし、$K$は、
-	\begin{equation}
+	\[
 		K=\left[
 		\begin{array}{ccc}
 			M+m & -ml\\
 			-ml & J+ml^{2}\\
 		\end{array}
 		\right]
-	\end{equation}
+	\]
 	である。\\
-	今後、(\ref{eq:InPeAboveLiner})式を鉛直上向き基準の線形状態上程式とし、
+	今後、(\ref{eq:InPeAboveLiner})式を鉛直上向き基準の線形状態方程式とし、
 	(\ref{eq:InPeUnderLiner})式を鉛直下向き基準の線形状態方程式とする。
 	
 \subsection{観測方程式}
 	2つの観測出力は
-	\begin{equation}
+	\[
 		y_{1} = c_{1}r\\
-	\end{equation}
-	\begin{equation}
+	\]
+	\[
 		y_{2} = c_{2}\theta\\
-	\end{equation}
+	\]
 	のように表される。ここで、$c_{1}$は変位・電圧変換係数、$c_{2}$は角度・電圧変換係数である。これから成るベクトル出
 	力$y$を\\
-	\begin{equation}
+	\[
 		y=\left[
 		\begin{array}{c}
 			y_{1}\\
 			y_{2}\\
 		\end{array}
 		\right]
-	\end{equation}
+	\]
 	のように定義すると、倒立振子系に対する観測方程式として\\
-	\begin{equation}
-		y=Cx
-	\end{equation}
-	\begin{equation}
+	\begin{align}
+		y&=Cx \notag \\
 		\left[
 		\begin{array}{c}
 			y_{1}\\
 			y_{2}\\
 		\end{array}
-		\right]=\left[
+		\right]&=\left[
 		\begin{array}{cccc}
 			c_{1} & 0 & 0 & 0 \\
 			0 & c_{2} & 0 & 0\\
@@ -427,9 +434,10 @@
 		\end{array}
 		\right]
 		\label{eq:output}
-	\end{equation}
+	\end{align}
 	を得ることができる。\\
-	なお、鉛直上向きを基準とした場合でも鉛直下向きを基準とした場合でも出力方程式は変化しない。
+	なお、鉛直上向きを基準とした場合でも鉛直下向きを基準とした場合でも出力方程式は変わらない。
+%一次チェック完了:
 %----------------------------------------------------------------------------------------------------
 \section{倒立振子のパラメータの同定}
 数式モデル(\ref{eq:array6})、(\ref{eq:array7})、(\ref{eq:output})に含まれる物理パラメータを実際の倒立振子系で実験
@@ -443,17 +451,18 @@
 \subsection{aの測定}
 	モータに一定電圧を加え、ばねばかりで台車を引き、台車が正の方向に動き出すときの力($au+摩擦力$)を$f_{max}$
 	、負の方向に動き出すときの力($au-摩擦力$)を$f_{min}$とする。図\ref{image:parameterA}に示すように
-	$u$と$f_{max},F_{min}$の関係をいくつかの電圧について調べ、最小2乗法によって1次関数を求め、この傾きを
-	$a$とする。
+	$u$と$f_{max},f_{min}$の関係をいくつかの電圧について調べ、最小2乗法によって1次関数を求め、この傾きを
+	$a$とする。\cite{Koga:Binpe}
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=1.0\linewidth]{gazo/ParameterA.eps}
 		\caption{パラメータaの決定}
 		\label{image:parameterA}
 	\end{figure}
-	以下に測定した結果を示す。
+	なお、振子は台車から取り外して測定を行う。
+	以下に測定した結果から得られた一次関数の傾き$a$を示す。
 	\[
-		a=0.062[\rm{Kg/V}] = 6.1E-1[\rm{N/V}
+		a=0.062[\rm{Kg/V}] = 0.61[\rm{N/V}
 	]\]
 	
 \subsection{Jとcの測定}
@@ -467,14 +476,14 @@
 	\label{eq:Para2}
 	\end{equation}
 	で与えられる。$\theta$を微小範囲で考えると、(\ref{eq:Para1}),(\ref{eq:Para2})式は
-	\begin{equation}
+	\[
 		\ddot{y}_{2} + 2\zeta\omega_{n}\dot{y}_{2} + \omega_{n}^{2}y_{2} = 0
-	\end{equation}
+	\]
 	ただし、
-	\begin{equation}
+	\[
 		\zeta = \frac{c}{2\sqrt{mgl\left(J + ml^{2}\right)}} 
 		,\ \  \omega_{n} = \sqrt{\frac{mgl}{J+ml^{2}}}
-	\end{equation}
+	\]
 	のように書くことができる。この解は
 	\[0<\zeta<1\]
 	のとき、減衰振動となり
@@ -486,7 +495,7 @@
 	\[
 		\phi = \tan^{-1}{\frac{\sqrt{1-\zeta^2}}{\zeta}}
 	\]
-	で与えられる。
+	で与えられる。\cite{Koga:Binpe}
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=1.0\linewidth]{gazo/ParameterJC.eps}
@@ -500,25 +509,25 @@
 		\frac{|y_{2}(t_{2})|}{|y_{2}(t_{1})|} = \exp{(-\lambda)}
 	\]
 	ただし
-	\begin{equation}
+	\[
 		\lambda = \frac{2\pi\zeta}{\omega_{n}\sqrt{1-\zeta^2}}
-	\end{equation}
+	\]
 	となる。この$\lambda$は対数減衰比と呼ばれる。また
 	\[
 		T_{2} = \frac{2\pi}{\omega_{n}\sqrt{1-\zeta^{2}}}
 	\]
 	が成り立つ。したがって、$J$と$c$は
-	\begin{equation}
+	\[
 		J=\frac{mglT_{2}^{2}}{4\pi^{2}+\lambda^{2}}-ml^{2},\ \ 
 		c=\frac{2\lambda(J+ml^{2})}{T_{2}}
-	\end{equation}
-	のように与えられる。\\
-	以下に測定した結果を示す。
+	\]
+	のように与えられる。\cite{Koga:Binpe}
+	以下に振子を自由振動させ得られたデータから計算した$J$と$c$を示す。
 	\[
-		J=2.5E-4[\rm{khm^{2}}]
+		J=2.5\times10^-4[\rm{khm^{2}}]
 	\]
 	\[
-		c=5.4E-5[\rm{kgm^{2}/s}]
+		c=5.4\times10^-5[\rm{kgm^{2}/s}]
 	\]
 	
 \subsection{Mとfの測定}
@@ -582,11 +591,11 @@
 			\caption{台車のフィードバック応答}
 			\label{image:parameterMFfeed}
 		\end{figure}
-		図(\ref{image:parameterMFfeed})を参考にして$M$と$f$を同定する。
+		図\ref{image:parameterMFfeed}を参考にして$M$と$f$を同定する。
 		この方法は$J$と$c$の同定の際に用いた方法とほぼ同じであるため、詳しい説明はそちらに
 		譲る。
 		\par
-		同定した$J$と$c$から以下の式を用いて$\zeta$と$\omega_{n}$を計算し求める。
+		台車のフィードバック応答から求めた$\lambda$と$T_2$から以下の式を用いて$\zeta$と$\omega_{n}$を計算し求める。
 		\begin{equation}
 			\lambda=\frac{2\pi\zeta}{\sqrt{1-\zeta^{2}}}
 		\end{equation}
@@ -601,7 +610,7 @@
 			\omega_{n}=\frac{2\pi}{T_{2}\sqrt{1-\zeta^{2}}}
 		\end{equation}
 		以上の式から求めた$\zeta$と$\omega_{n}$は以下の二次系の伝達関数の基本形に代入することで
-		実験で得られたデータから伝達関数を求めることができる
+		同定に用いたフィードバック制御系の伝達関数を求めることができる
 		\begin{equation}
 			G(s) = \frac{\omega_{n}^{2}}{s^{2}+2\zeta\omega_{n}s + \omega_{n}^{2}}
 		\end{equation}
@@ -610,25 +619,26 @@
 			\centering
 			\includegraphics[width=1.0\linewidth]{gazo/FeedBackCart.eps}\\
 			\caption{フィードバック制御系のブロック線図}
+			\label{image:FeedBackCart}
 		\end{figure}
-		ここで、台車の伝達関数は以下の式である。
+		ここで、$P(s)$は台車の伝達関数であり以下の式で表される。
 		\begin{equation}
 			P(s)=\frac{K}{s(Ts+1)}
 			\label{eq:Ps}
 		\end{equation}
 		ただし、Tは$M/f$、Kは$a/f$である。上のブロック線図から伝達関数を求める。
 		しかし、飽和システムを含んでいると伝達関数を求めることができないので、ここでは飽和システムがなくても
-		台車は問題なく動作するもとして仮定する。以上の仮定から伝達関数は
+		台車は問題なく動作するものとして仮定する。以上の仮定から伝達関数は
 		\begin{equation}
 			G(s) = \frac{AK/T}{s^{2}+(1/T)s+(AK/T)}
 			\label{eq:Gs}
 		\end{equation}
-		となる。ただしAはゲインである。(\ref{eq:Ps})式と(\ref{eq:Gs})式を係数比較し、$M,f=$
+		となる。ただしAはゲインである。(\ref{eq:Ps})式と(\ref{eq:Gs})式を係数比較し、$M,f$イコール
 		の式にすると以下のようになる。
 		\begin{equation}
-			\left\{
+			\left.
 			\begin{array}{l}
-				M=\frac{aA}{\omega_{n}^{2}} \\
+				\displaystyle M=\frac{aA}{\omega_{n}^{2}} \\
 				f=2\zeta\omega_{n}^{2}M
 			\end{array}
 			\right.
@@ -645,23 +655,26 @@
 	\subsubsection{$M$と$f$の決定}
 	パラメータ$M$と$f$についてはステップ応答による方法とフィードバックによる方法の2通りから
 	同定を行った。しかし、それぞれの方法で求めたパラメータを比較するとまるで違うことがわかる。
-	これはフィードバックによる方法では飽和システムを含めずに考えたことが原因であるといえる。
+	これはフィードバックによる方法が十分に正確な方法ではなかったためといえる。
+	その原因は、飽和システムを含めずに同定を行ったことではないかと考える。
 	シミュレーションにおいては入力にどのような値を加えても倒立振子系に何ら影響はないが
 	実際の倒立振子においてはその入力できる値には制限がある。この制限を考えるか否か
-	で結果が変わってくるということである。
+	で結果が変わってくるはずである。
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.8\linewidth]{gazo/feedback_input.eps}\\
 		\caption{飽和器の有無によるフィードバック入力の比較}
 		\label{image:feedback_saturation}
 	\end{figure}
-	図\ref{image:feedback_saturation}より飽和器がない場合(non sturation)
-	、入力は最大500(V)まで加えられることがわかる。本実験で用いる倒立振子系の入力限界は
-	$-15<u<15$であるので、その範囲を大きく超えてしまっている。つまり、フィードバックによる方法で
-	同定したパラメータは現実に即していないといえる。また、今回はフィードバックゲインを2500としたが、
+	図\ref{image:feedback_saturation}は図\ref{image:FeedBackCart}のブロック線図において
+	飽和器を含めた場合の入力と飽和器を含めなかった場合の入力を描画させたものである。
+	この図より、飽和器がない(non Saturation)場合、入力は最大500(V)まで加えられることがわかる。本実験で用いる倒立振子系の入力限界は
+	$-15<u<15$であるので、飽和器を加えた場合、その範囲を超える入力は絶対値15(V)に制限されている。
+	つまり、フィードバックによる方法で同定したパラメータは飽和器を考慮していないので、現実の倒立振子系とは違うパラメータであるといえる。
+	また、今回はフィードバックゲインを2500としたが、
 	フィードバックゲインを小さくすると、入力もそれに伴い小さくなるので、
-	正確なパラメータの計算を行うことができるはずである。
-	以上から本実験においてフィードバックを行う場合必ず飽和システムが必要であるといえる。
+	現実の倒立振子系に近いパラメータを同定することができるはずである。
+	以上から本実験においてフィードバックを行う場合、入力が大きく跳ね上がる可能性があるので、必ず飽和システムが必要であるといえる。
 	なので、飽和システムが存在する限り伝達関数を求めることができないので、
 	正確なパラメータの計算を行うことができないといえる。
 	以降、パラメータ$M,f$はステップ応答による方法で同定した値を用いる。
@@ -683,63 +696,69 @@
 			\caption{同定したパラメータの一覧}
 			\medskip
 			
-			\begin{tabular}{|c|c|}\hline
+			\begin{tabular}{|l|l|}\hline
 				パラメータ & 同定した値 \\ \hline\hline
 				m[kg]  & 0.031\\ \hline
 				l[m] & 0.15\\ \hline
 				M[kg] & 0.69\\ \hline
 				f[kg/s] & 7.6\\ \hline
-				J[$\rm{kgm}^{2}$] & 2.5E-4\\ \hline
-				c[$\rm{kgm}^{2}/\rm{s}$] & 5.4E-5\\ \hline
+				J[$\rm{kgm}^2$] & $2.5\times10^{-4}$\\ \hline
+				c[$\rm{kgm}^2/\rm{s}$] & $5.4\times10^{-5}$\\ \hlinesa
 				a[N/V] & 0.61\\ \hline
 				$c_{1}$[V/m] & 1.0\\ \hline
 				$c_{2}$[V/m] & 1.0\\ \hline
 			\end{tabular}
 		\end{center}
 	\end{table}
-	
+%一次チェック完了:
+%-----------------------------------------------------------------------------------------------------	
 \section{パラメータの検証}
 	前節では、実験によって倒立振子のパラメータを同定した。
 	しかし、その同定したパラメータがどれほど有効性があるか現時点では全く分からない状況である。
 	そこで、本節では同定したパラメータの有効性をがどれほどなのかシミュレーションを用いて検証を
-	行う。シミュレーションに用いたツールは\MaTX{}である。ただし、直接同定を行った$m,l$や最初から
+	行う。シミュレーションに用いたツールはJAMOXである。ただし、直接同定を行った$m,l$や最初から
 	設定してあった$c_1,c_2$については検証は行わない。
 	\subsection{振子の自由振動シミュレーション}
 		ここでは、$J,c$の検証を行う。
 		以下にシミュレーションと実験データを描画したグラフを示す。
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.5\linewidth]{gazo/free45Auto.eps}\\
+			\includegraphics[width=0.8\linewidth]{gazo/free45Auto.eps}\\　
 			\caption{振子の自由振動シミュレーション}
 			\label{image:freependulum}
 		\end{figure}
-		図(\ref{image:freependulum}よりシミュレーションと実験結果に少し差異はあるが
+		図\ref{image:freependulum}において、シミュレーションは0.32(s)程遅らせて実行しているので、それ以前の時間の角度は$0°$である。
+		自由振動の初期角度は$180°$を基準として$10°$である。
+		図\ref{image:freependulum}よりシミュレーションと実験結果に少し差異はあるが
 		大きな違いはないといえる。よって同定したパラメータ$J,c$は有効な値であるといえる。
+		\newpage
 	\subsection{台車のステップ応答による方法のシミュレーション}
 		ここでは、$M,f,a$の検証を行う。$M,f$はステップ応答による方法で求めた値を用いる。
 		以下にシミュレーションと実験データを描画したグラフを示す。
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.5\linewidth]{gazo/nabe8.eps}\\
+			\includegraphics[width=0.8\linewidth]{gazo/nabe8.eps}\\
 			\caption{台車のステップ応答シミュレーションと実験結果の比較}
 			\label{image:step}
 		\end{figure}
 		図(\ref{image:step})よりシミュレーションと実験結果に少し差異はあるが
-		大きな違いはないといえる。0.5秒以降のグラフが大幅に異なっているが、これはシミュレーションの場合は
+		大きな違いはないといえる。0.6秒以降のグラフが大幅に異なっているが、これはシミュレーションの場合は
 		台車の可動範囲に制限がないためずっと台車が移動し続けるが、実験の場合は台車の可動範囲に
 		制限があるため、ある時間を境に移動が止まっている。また、このときの入力電圧は$8[\rm{V}]$
 		である。以上から同定したパラメータ$M,f,a$は有効な値といえる。
+		\newpage
 	\subsection{台車のフィードバック応答シミュレーション}
 		ここでは、$M,f,a$の検証を行う。$M,f$はフィードバックによる方法で求めた値を用いる。
-		以下にシミュレーションと実験データを描画したグラフを示す。
+		%ここの画像はあやしいので差し替え推奨
+		以下にシミュレーションと実験データを描画したグラフを示す。ただし、フィードバックゲインは$1500$である。
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.5\linewidth]{gazo/feedbackExperiment.eps}\\
+			\includegraphics[width=0.8\linewidth]{gazo/feedbackExperiment.eps}
 			\caption{フィードバックによる方法のシミュレーションと実験結果の比較}
 			\label{image:feedback}
 		\end{figure}
-		図(\ref{image:feedback})よりシミュレーションと実験結果には大きな差異があることが確認できる。
-		上述した通りこの方法で同定したパラメータは現実に即しておらず、結果飽和器を加えたシミュレーションとの
+		図\ref{image:feedback}よりシミュレーションと実験結果には大きな差異があることが確認できる。
+		上述した通りこの方法で同定したパラメータは現実の倒立振子系に即しておらず、結果実験で得られた波形との
 		比較において大きな違いが出てきてしまう。よってこの方法で同定したパラメータ$M,f$には
 		有効性がないといえる。
 		
@@ -776,3 +795,5 @@
 		\right]
 	\end{equation}
 	ただし、倒立振子を立たせることを目的とするので、上向きを基準としたときの線形状態方程式である。
+	%一次チェック完了:
+	%---------------------------------------------------------------

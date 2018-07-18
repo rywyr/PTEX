@@ -1,1291 +1,2612 @@
-%!PS-Adobe-2.0 EPSF-2.0
-%%Title: nabe8.qps
-%%Creator: gnuplot 4.0 patchlevel 0
-%%CreationDate: Fri Jun 01 12:29:35 2018
-%%DocumentFonts: (atend)
-%%BoundingBox: 50 50 410 302
+%!PS-Adobe-3.0 EPSF-3.0
+%%Title: 
+%%Creator: PScript5.dll Version 5.2.2
+%%CreationDate: 7/18/2018 15:39:20
+%%For: watanabe
+%%BoundingBox: 0 0 1088 579
+%%Pages: 1
 %%Orientation: Portrait
+%%PageOrder: Ascend
+%%DocumentNeededResources: (atend)
+%%DocumentSuppliedResources: (atend)
+%%DocumentData: Clean7Bit
+%%TargetDevice: () (52.3) 320
+%%LanguageLevel: 1
 %%EndComments
-/gnudict 256 dict def
-gnudict begin
-/Color false def
-/Solid false def
-/gnulinewidth 5.000 def
-/userlinewidth gnulinewidth def
-/vshift -73 def
-/dl {10.0 mul} def
-/hpt_ 31.5 def
-/vpt_ 31.5 def
-/hpt hpt_ def
-/vpt vpt_ def
-/Rounded false def
-/M {moveto} bind def
-/L {lineto} bind def
-/R {rmoveto} bind def
-/V {rlineto} bind def
-/N {newpath moveto} bind def
-/C {setrgbcolor} bind def
-/f {rlineto fill} bind def
-/vpt2 vpt 2 mul def
-/hpt2 hpt 2 mul def
-/Lshow { currentpoint stroke M
-  0 vshift R show } def
-/Rshow { currentpoint stroke M
-  dup stringwidth pop neg vshift R show } def
-/Cshow { currentpoint stroke M
-  dup stringwidth pop -2 div vshift R show } def
-/UP { dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
-  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def } def
-/DL { Color {setrgbcolor Solid {pop []} if 0 setdash }
- {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse } def
-/BL { stroke userlinewidth 2 mul setlinewidth
-      Rounded { 1 setlinejoin 1 setlinecap } if } def
-/AL { stroke userlinewidth 2 div setlinewidth
-      Rounded { 1 setlinejoin 1 setlinecap } if } def
-/UL { dup gnulinewidth mul /userlinewidth exch def
-      dup 1 lt {pop 1} if 10 mul /udl exch def } def
-/PL { stroke userlinewidth setlinewidth
-      Rounded { 1 setlinejoin 1 setlinecap } if } def
-/LTw { PL [] 1 setgray } def
-/LTb { BL [] 0 0 0 DL } def
-/LTa { AL [1 udl mul 2 udl mul] 0 setdash 0 0 0 setrgbcolor } def
-/LT0 { PL [] 1 0 0 DL } def
-/LT1 { PL [4 dl 2 dl] 0 1 0 DL } def
-/LT2 { PL [2 dl 3 dl] 0 0 1 DL } def
-/LT3 { PL [1 dl 1.5 dl] 1 0 1 DL } def
-/LT4 { PL [5 dl 2 dl 1 dl 2 dl] 0 1 1 DL } def
-/LT5 { PL [4 dl 3 dl 1 dl 3 dl] 1 1 0 DL } def
-/LT6 { PL [2 dl 2 dl 2 dl 4 dl] 0 0 0 DL } def
-/LT7 { PL [2 dl 2 dl 2 dl 2 dl 2 dl 4 dl] 1 0.3 0 DL } def
-/LT8 { PL [2 dl 2 dl 2 dl 2 dl 2 dl 2 dl 2 dl 4 dl] 0.5 0.5 0.5 DL } def
-/Pnt { stroke [] 0 setdash
-   gsave 1 setlinecap M 0 0 V stroke grestore } def
-/Dia { stroke [] 0 setdash 2 copy vpt add M
-  hpt neg vpt neg V hpt vpt neg V
-  hpt vpt V hpt neg vpt V closepath stroke
-  Pnt } def
-/Pls { stroke [] 0 setdash vpt sub M 0 vpt2 V
-  currentpoint stroke M
-  hpt neg vpt neg R hpt2 0 V stroke
-  } def
-/Box { stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
-  0 vpt2 neg V hpt2 0 V 0 vpt2 V
-  hpt2 neg 0 V closepath stroke
-  Pnt } def
-/Crs { stroke [] 0 setdash exch hpt sub exch vpt add M
-  hpt2 vpt2 neg V currentpoint stroke M
-  hpt2 neg 0 R hpt2 vpt2 V stroke } def
-/TriU { stroke [] 0 setdash 2 copy vpt 1.12 mul add M
-  hpt neg vpt -1.62 mul V
-  hpt 2 mul 0 V
-  hpt neg vpt 1.62 mul V closepath stroke
-  Pnt  } def
-/Star { 2 copy Pls Crs } def
-/BoxF { stroke [] 0 setdash exch hpt sub exch vpt add M
-  0 vpt2 neg V  hpt2 0 V  0 vpt2 V
-  hpt2 neg 0 V  closepath fill } def
-/TriUF { stroke [] 0 setdash vpt 1.12 mul add M
-  hpt neg vpt -1.62 mul V
-  hpt 2 mul 0 V
-  hpt neg vpt 1.62 mul V closepath fill } def
-/TriD { stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
-  hpt neg vpt 1.62 mul V
-  hpt 2 mul 0 V
-  hpt neg vpt -1.62 mul V closepath stroke
-  Pnt  } def
-/TriDF { stroke [] 0 setdash vpt 1.12 mul sub M
-  hpt neg vpt 1.62 mul V
-  hpt 2 mul 0 V
-  hpt neg vpt -1.62 mul V closepath fill} def
-/DiaF { stroke [] 0 setdash vpt add M
-  hpt neg vpt neg V hpt vpt neg V
-  hpt vpt V hpt neg vpt V closepath fill } def
-/Pent { stroke [] 0 setdash 2 copy gsave
-  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
-  closepath stroke grestore Pnt } def
-/PentF { stroke [] 0 setdash gsave
-  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
-  closepath fill grestore } def
-/Circle { stroke [] 0 setdash 2 copy
-  hpt 0 360 arc stroke Pnt } def
-/CircleF { stroke [] 0 setdash hpt 0 360 arc fill } def
-/C0 { BL [] 0 setdash 2 copy moveto vpt 90 450  arc } bind def
-/C1 { BL [] 0 setdash 2 copy        moveto
-       2 copy  vpt 0 90 arc closepath fill
-               vpt 0 360 arc closepath } bind def
-/C2 { BL [] 0 setdash 2 copy moveto
-       2 copy  vpt 90 180 arc closepath fill
-               vpt 0 360 arc closepath } bind def
-/C3 { BL [] 0 setdash 2 copy moveto
-       2 copy  vpt 0 180 arc closepath fill
-               vpt 0 360 arc closepath } bind def
-/C4 { BL [] 0 setdash 2 copy moveto
-       2 copy  vpt 180 270 arc closepath fill
-               vpt 0 360 arc closepath } bind def
-/C5 { BL [] 0 setdash 2 copy moveto
-       2 copy  vpt 0 90 arc
-       2 copy moveto
-       2 copy  vpt 180 270 arc closepath fill
-               vpt 0 360 arc } bind def
-/C6 { BL [] 0 setdash 2 copy moveto
-      2 copy  vpt 90 270 arc closepath fill
-              vpt 0 360 arc closepath } bind def
-/C7 { BL [] 0 setdash 2 copy moveto
-      2 copy  vpt 0 270 arc closepath fill
-              vpt 0 360 arc closepath } bind def
-/C8 { BL [] 0 setdash 2 copy moveto
-      2 copy vpt 270 360 arc closepath fill
-              vpt 0 360 arc closepath } bind def
-/C9 { BL [] 0 setdash 2 copy moveto
-      2 copy  vpt 270 450 arc closepath fill
-              vpt 0 360 arc closepath } bind def
-/C10 { BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
-       2 copy moveto
-       2 copy vpt 90 180 arc closepath fill
-               vpt 0 360 arc closepath } bind def
-/C11 { BL [] 0 setdash 2 copy moveto
-       2 copy  vpt 0 180 arc closepath fill
-       2 copy moveto
-       2 copy  vpt 270 360 arc closepath fill
-               vpt 0 360 arc closepath } bind def
-/C12 { BL [] 0 setdash 2 copy moveto
-       2 copy  vpt 180 360 arc closepath fill
-               vpt 0 360 arc closepath } bind def
-/C13 { BL [] 0 setdash  2 copy moveto
-       2 copy  vpt 0 90 arc closepath fill
-       2 copy moveto
-       2 copy  vpt 180 360 arc closepath fill
-               vpt 0 360 arc closepath } bind def
-/C14 { BL [] 0 setdash 2 copy moveto
-       2 copy  vpt 90 360 arc closepath fill
-               vpt 0 360 arc } bind def
-/C15 { BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
-               vpt 0 360 arc closepath } bind def
-/Rec   { newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
-       neg 0 rlineto closepath } bind def
-/Square { dup Rec } bind def
-/Bsquare { vpt sub exch vpt sub exch vpt2 Square } bind def
-/S0 { BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare } bind def
-/S1 { BL [] 0 setdash 2 copy vpt Square fill Bsquare } bind def
-/S2 { BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare } bind def
-/S3 { BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare } bind def
-/S4 { BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare } bind def
-/S5 { BL [] 0 setdash 2 copy 2 copy vpt Square fill
-       exch vpt sub exch vpt sub vpt Square fill Bsquare } bind def
-/S6 { BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare } bind def
-/S7 { BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
-       2 copy vpt Square fill
-       Bsquare } bind def
-/S8 { BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare } bind def
-/S9 { BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare } bind def
-/S10 { BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
-       Bsquare } bind def
-/S11 { BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
-       Bsquare } bind def
-/S12 { BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare } bind def
-/S13 { BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
-       2 copy vpt Square fill Bsquare } bind def
-/S14 { BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
-       2 copy exch vpt sub exch vpt Square fill Bsquare } bind def
-/S15 { BL [] 0 setdash 2 copy Bsquare fill Bsquare } bind def
-/D0 { gsave translate 45 rotate 0 0 S0 stroke grestore } bind def
-/D1 { gsave translate 45 rotate 0 0 S1 stroke grestore } bind def
-/D2 { gsave translate 45 rotate 0 0 S2 stroke grestore } bind def
-/D3 { gsave translate 45 rotate 0 0 S3 stroke grestore } bind def
-/D4 { gsave translate 45 rotate 0 0 S4 stroke grestore } bind def
-/D5 { gsave translate 45 rotate 0 0 S5 stroke grestore } bind def
-/D6 { gsave translate 45 rotate 0 0 S6 stroke grestore } bind def
-/D7 { gsave translate 45 rotate 0 0 S7 stroke grestore } bind def
-/D8 { gsave translate 45 rotate 0 0 S8 stroke grestore } bind def
-/D9 { gsave translate 45 rotate 0 0 S9 stroke grestore } bind def
-/D10 { gsave translate 45 rotate 0 0 S10 stroke grestore } bind def
-/D11 { gsave translate 45 rotate 0 0 S11 stroke grestore } bind def
-/D12 { gsave translate 45 rotate 0 0 S12 stroke grestore } bind def
-/D13 { gsave translate 45 rotate 0 0 S13 stroke grestore } bind def
-/D14 { gsave translate 45 rotate 0 0 S14 stroke grestore } bind def
-/D15 { gsave translate 45 rotate 0 0 S15 stroke grestore } bind def
-/DiaE { stroke [] 0 setdash vpt add M
-  hpt neg vpt neg V hpt vpt neg V
-  hpt vpt V hpt neg vpt V closepath stroke } def
-/BoxE { stroke [] 0 setdash exch hpt sub exch vpt add M
-  0 vpt2 neg V hpt2 0 V 0 vpt2 V
-  hpt2 neg 0 V closepath stroke } def
-/TriUE { stroke [] 0 setdash vpt 1.12 mul add M
-  hpt neg vpt -1.62 mul V
-  hpt 2 mul 0 V
-  hpt neg vpt 1.62 mul V closepath stroke } def
-/TriDE { stroke [] 0 setdash vpt 1.12 mul sub M
-  hpt neg vpt 1.62 mul V
-  hpt 2 mul 0 V
-  hpt neg vpt -1.62 mul V closepath stroke } def
-/PentE { stroke [] 0 setdash gsave
-  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
-  closepath stroke grestore } def
-/CircE { stroke [] 0 setdash 
-  hpt 0 360 arc stroke } def
-/Opaque { gsave closepath 1 setgray fill grestore 0 setgray closepath } def
-/DiaW { stroke [] 0 setdash vpt add M
-  hpt neg vpt neg V hpt vpt neg V
-  hpt vpt V hpt neg vpt V Opaque stroke } def
-/BoxW { stroke [] 0 setdash exch hpt sub exch vpt add M
-  0 vpt2 neg V hpt2 0 V 0 vpt2 V
-  hpt2 neg 0 V Opaque stroke } def
-/TriUW { stroke [] 0 setdash vpt 1.12 mul add M
-  hpt neg vpt -1.62 mul V
-  hpt 2 mul 0 V
-  hpt neg vpt 1.62 mul V Opaque stroke } def
-/TriDW { stroke [] 0 setdash vpt 1.12 mul sub M
-  hpt neg vpt 1.62 mul V
-  hpt 2 mul 0 V
-  hpt neg vpt -1.62 mul V Opaque stroke } def
-/PentW { stroke [] 0 setdash gsave
-  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
-  Opaque stroke grestore } def
-/CircW { stroke [] 0 setdash 
-  hpt 0 360 arc Opaque stroke } def
-/BoxFill { gsave Rec 1 setgray fill grestore } def
-/BoxColFill {
-  gsave Rec
-  /Fillden exch def
-  currentrgbcolor
-  /ColB exch def /ColG exch def /ColR exch def
-  /ColR ColR Fillden mul Fillden sub 1 add def
-  /ColG ColG Fillden mul Fillden sub 1 add def
-  /ColB ColB Fillden mul Fillden sub 1 add def
-  ColR ColG ColB setrgbcolor
-  fill grestore } def
-%
-% PostScript Level 1 Pattern Fill routine
-% Usage: x y w h s a XX PatternFill
-%	x,y = lower left corner of box to be filled
-%	w,h = width and height of box
-%	  a = angle in degrees between lines and x-axis
-%	 XX = 0/1 for no/yes cross-hatch
-%
-/PatternFill { gsave /PFa [ 9 2 roll ] def
-    PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
-    PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
-    gsave 1 setgray fill grestore clip
-    currentlinewidth 0.5 mul setlinewidth
-    /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
-    0 0 M PFa 5 get rotate PFs -2 div dup translate
-	0 1 PFs PFa 4 get div 1 add floor cvi
-	{ PFa 4 get mul 0 M 0 PFs V } for
-    0 PFa 6 get ne {
-	0 1 PFs PFa 4 get div 1 add floor cvi
-	{ PFa 4 get mul 0 2 1 roll M PFs 0 V } for
-    } if
-    stroke grestore } def
-%
-/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
-dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
-currentdict end definefont pop
+
+%%BeginDefaults
+%%PageBoundingBox: 0 0 1088 579
+%%ViewingOrientation: 1 0 0 1
+%%EndDefaults
+
+%%BeginProlog
+%%BeginResource: file Pscript_WinNT_VMErrorHandler 5.0 0
+/currentpacking where{pop/oldpack currentpacking def/setpacking where{pop false
+setpacking}if}if/$brkpage 64 dict def $brkpage begin/prnt{dup type/stringtype
+ne{=string cvs}if dup length 6 mul/tx exch def/ty 10 def currentpoint/toy exch
+def/tox exch def 1 setgray newpath tox toy 2 sub moveto 0 ty rlineto tx 0
+rlineto 0 ty neg rlineto closepath fill tox toy moveto 0 setgray show}bind def
+/nl{currentpoint exch pop lmargin exch moveto 0 -10 rmoveto}def/=={/cp 0 def
+typeprint nl}def/typeprint{dup type exec}readonly def/lmargin 72 def/rmargin 72
+def/tprint{dup length cp add rmargin gt{nl/cp 0 def}if dup length cp add/cp
+exch def prnt}readonly def/cvsprint{=string cvs tprint( )tprint}readonly def
+/integertype{cvsprint}readonly def/realtype{cvsprint}readonly def/booleantype
+{cvsprint}readonly def/operatortype{(--)tprint =string cvs tprint(-- )tprint}
+readonly def/marktype{pop(-mark- )tprint}readonly def/dicttype{pop
+(-dictionary- )tprint}readonly def/nulltype{pop(-null- )tprint}readonly def
+/filetype{pop(-filestream- )tprint}readonly def/savetype{pop(-savelevel- )
+tprint}readonly def/fonttype{pop(-fontid- )tprint}readonly def/nametype{dup
+xcheck not{(/)tprint}if cvsprint}readonly def/stringtype{dup rcheck{(\()tprint
+tprint(\))tprint}{pop(-string- )tprint}ifelse}readonly def/arraytype{dup rcheck
+{dup xcheck{({)tprint{typeprint}forall(})tprint}{([)tprint{typeprint}forall(])
+tprint}ifelse}{pop(-array- )tprint}ifelse}readonly def/packedarraytype{dup
+rcheck{dup xcheck{({)tprint{typeprint}forall(})tprint}{([)tprint{typeprint}
+forall(])tprint}ifelse}{pop(-packedarray- )tprint}ifelse}readonly def/courier
+/Courier findfont 10 scalefont def end errordict/handleerror{systemdict begin
+$error begin $brkpage begin newerror{/newerror false store vmstatus pop pop 0
+ne{grestoreall}if initgraphics courier setfont lmargin 720 moveto errorname
+(VMerror)eq{version cvi 2016 ge{userdict/ehsave known{clear userdict/ehsave get
+restore 2 vmreclaim}if vmstatus exch pop exch pop PrtVMMsg}if}if systemdict
+/showpage get exec(%%[ Error: )print errorname =print(; OffendingCommand: )
+print/command load =print( ]%%)= flush}if end end end}dup 0 systemdict put dup
+4 $brkpage put bind readonly put/currentpacking where{pop/setpacking where{pop
+oldpack setpacking}if}if
+%%EndResource
+%%BeginProcSet: Pscript_Res_Emul 5.0 0
+/defineresource where{pop}{userdict begin/defineresource{userdict/Resources 2
+copy known{get begin}{15 dict dup begin put}ifelse exch readonly exch
+currentdict 1 index known not{dup 30 dict def}if load 3 -1 roll 2 index put
+end}bind readonly def/findresource{userdict/Resources get exch get exch get}
+bind readonly def/resourceforall{pop pop pop pop}bind readonly def
+/resourcestatus{userdict/Resources 2 copy known{get exch 2 copy known{get exch
+known{0 -1 true}{false}ifelse}{pop pop pop false}ifelse}{pop pop pop pop false}
+ifelse}bind readonly def end}ifelse
+%%EndProcSet
+userdict /Pscript_WinNT_Incr 230 dict dup begin put
+%%BeginResource: file Pscript_FatalError 5.0 0
+userdict begin/FatalErrorIf{{initgraphics findfont 1 index 0 eq{exch pop}{dup
+length dict begin{1 index/FID ne{def}{pop pop}ifelse}forall/Encoding
+{ISOLatin1Encoding}stopped{StandardEncoding}if def currentdict end
+/ErrFont-Latin1 exch definefont}ifelse exch scalefont setfont counttomark 3 div
+cvi{moveto show}repeat showpage quit}{cleartomark}ifelse}bind def end
+%%EndResource
+userdict begin/PrtVMMsg{vmstatus exch sub exch pop gt{[
+(This job requires more memory than is available in this printer.)100 500
+(Try one or more of the following, and then print again:)100 485
+(For the output format, choose Optimize For Portability.)115 470
+(In the Device Settings page, make sure the Available PostScript Memory is accurate.)
+115 455(Reduce the number of fonts in the document.)115 440
+(Print the document in parts.)115 425 12/Times-Roman[/GothicBBB-Medium-RKSJ-H
+dup{findfont}stopped{cleartomark}{/FontName get eq{pop cleartomark[
+<82B182CC83578387837582CD8CBB8DDD82B182CC8376838A8393835E82C59798977082C582AB82
+E988C88FE382CC83818382838A82F0954B977682C682B582DC82B7814288C889BA82CC8A6590DD9
+2E8>90 500<82CC88EA82C2814182DC82BD82CD82BB82CC916782DD8D8782ED82B982F08E7792
+E882B582BD8CE381418376838A8393836782B592BC82B582C482DD82C482AD82BE82B382A28142>
+90 485<A5506F73745363726970748376838D8370836583428356815B836782A982E7814183478
+389815B82AA8C798CB882B782E982E682A482C98DC5934B89BB2082F0914991F082B782E98142>
+90 455<A58366836F83438358834983768356838783938376838D8370836583428356815B83678
+2CC209798977082C582AB82E98376838A8393835E83818382838A2082CC926C82AA90B382B582A2
+82B182C682F08A6D944682B782E98142>90 440<A58368834C8385838183938367928682C58E6
+7977082B382EA82C482A282E9837483488393836782CC909482F08CB882E782B78142>90 425
+<A58368834C838583818393836782F095AA8A8482B582C48376838A8393836782B782E98142>90
+410 10 0/GothicBBB-Medium-RKSJ-H}{cleartomark}ifelse}ifelse showpage
+(%%[ PrinterError: Low Printer VM ]%%)= true FatalErrorIf}if}bind def end
+version cvi 2016 ge{/VM?{pop}bind def}{/VM? userdict/PrtVMMsg get def}ifelse
+%%BeginResource: file Pscript_Win_Basic 5.0 0
+/d/def load def/,/load load d/~/exch , d/?/ifelse , d/!/pop , d/`/begin , d/^
+/index , d/@/dup , d/+/translate , d/$/roll , d/U/userdict , d/M/moveto , d/-
+/rlineto , d/&/currentdict , d/:/gsave , d/;/grestore , d/F/false , d/T/true ,
+d/N/newpath , d/E/end , d/Ac/arc , d/An/arcn , d/A/ashow , d/D/awidthshow , d/C
+/closepath , d/V/div , d/O/eofill , d/L/fill , d/I/lineto , d/-c/curveto , d/-M
+/rmoveto , d/+S/scale , d/Ji/setfont , d/Lc/setlinecap , d/Lj/setlinejoin , d
+/Lw/setlinewidth , d/Lm/setmiterlimit , d/sd/setdash , d/S/show , d/LH/showpage
+, d/K/stroke , d/W/widthshow , d/R/rotate , d/L2? false/languagelevel where{pop
+languagelevel 2 ge{pop true}if}if d L2?{/xS/xshow , d/yS/yshow , d/zS/xyshow ,
+d}if/b{bind d}bind d/bd{bind d}bind d/xd{~ d}bd/ld{, d}bd/bn/bind ld/lw/Lw ld
+/lc/Lc ld/lj/Lj ld/sg/setgray ld/ADO_mxRot null d/self & d/OrgMx matrix
+currentmatrix d/reinitialize{: OrgMx setmatrix[/TextInit/GraphInit/UtilsInit
+counttomark{@ where{self eq}{F}?{cvx exec}{!}?}repeat cleartomark ;}b
+/initialize{`{/Pscript_Win_Data where{!}{U/Pscript_Win_Data & put}?/ADO_mxRot ~
+d/TextInitialised? F d reinitialize E}{U/Pscript_Win_Data 230 dict @ ` put
+/ADO_mxRot ~ d/TextInitialised? F d reinitialize}?}b/terminate{!{& self eq
+{exit}{E}?}loop E}b/suspend/terminate , d/resume{` Pscript_Win_Data `}b U `
+/lucas 21690 d/featurebegin{countdictstack lucas[}b/featurecleanup{stopped
+{cleartomark @ lucas eq{! exit}if}loop countdictstack ~ sub @ 0 gt{{E}repeat}
+{!}?}b E/snap{transform 0.25 sub round 0.25 add ~ 0.25 sub round 0.25 add ~
+itransform}b/dsnap{dtransform round ~ round ~ idtransform}b/nonzero_round{@ 0.5
+ge{round}{@ -0.5 lt{round}{0 ge{1}{-1}?}?}?}b/nonzero_dsnap{dtransform
+nonzero_round ~ nonzero_round ~ idtransform}b U<04>cvn{}put/rr{1 ^ 0 - 0 ~ -
+neg 0 - C}b/irp{4 -2 $ + +S fx 4 2 $ M 1 ^ 0 - 0 ~ - neg 0 -}b/rp{4 2 $ M 1 ^ 0
+- 0 ~ - neg 0 -}b/solid{[]0 sd}b/g{@ not{U/DefIf_save save put}if U/DefIf_bool
+2 ^ put}b/DefIf_El{if U/DefIf_bool get not @{U/DefIf_save get restore}if}b/e
+{DefIf_El !}b/UDF{L2?{undefinefont}{!}?}b/UDR{L2?{undefineresource}{! !}?}b
+/freeVM{/Courier findfont[40 0 0 -40 0 0]makefont Ji 2 vmreclaim}b/hfRedefFont
+{findfont @ length dict `{1 ^/FID ne{d}{! !}?}forall & E @ ` ~{/CharStrings 1
+dict `/.notdef 0 d & E d}if/Encoding 256 array 0 1 255{1 ^ ~/.notdef put}for d
+E definefont !}bind d/hfMkCIDFont{/CIDFont findresource @ length 2 add dict `{1
+^ @/FID eq ~ @/XUID eq ~/UIDBase eq or or{! !}{d}?}forall/CDevProc ~ d/Metrics2
+16 dict d/CIDFontName 1 ^ d & E 1 ^ ~/CIDFont defineresource ![~]composefont !}
+bind d
+%%EndResource
+%%BeginResource: file Pscript_Win_Utils_L1 5.0 0
+/rf{N rp L}b/fx{1 1 dtransform @ 0 ge{1 sub 1}{1 add -0.25}? 3 -1 $ @ 0 ge{1
+sub 1}{1 add -0.25}? 3 1 $ 4 1 $ idtransform 4 -2 $ idtransform}b/BZ{4 -2 $
+snap + +S fx rf}b/rs{N rp C K}b/rc{N rp clip N}b/UtilsInit{}b/setcolorspace{!}b
+/scol{[/setgray/setrgbcolor/setcolor/setcmykcolor/setcolor/setgray]~ get cvx
+exec}b/colspRefresh{}b/AddFontInfoBegin{/FontInfo 8 dict @ `}bind d/AddFontInfo
+{/GlyphNames2Unicode 16 dict d/GlyphNames2HostCode 16 dict d}bind d
+/AddFontInfoEnd{E d}bind d
+%%EndResource
 end
 %%EndProlog
-gnudict begin
-gsave
-50 50 translate
-0.050 0.050 scale
-0 setgray
-newpath
-(Times-Roman) findfont 220 scalefont setfont
-1.000 UL
-LTb
-902 440 M
-63 0 V
-5861 0 R
--63 0 V
-770 440 M
-gsave 0 setgray
-( 0) Rshow
-grestore
-1.000 UL
-LTb
-902 1059 M
-63 0 V
-5861 0 R
--63 0 V
--5993 0 R
-gsave 0 setgray
-( 0.1) Rshow
-grestore
-1.000 UL
-LTb
-902 1679 M
-63 0 V
-5861 0 R
--63 0 V
--5993 0 R
-gsave 0 setgray
-( 0.2) Rshow
-grestore
-1.000 UL
-LTb
-902 2298 M
-63 0 V
-5861 0 R
--63 0 V
--5993 0 R
-gsave 0 setgray
-( 0.3) Rshow
-grestore
-1.000 UL
-LTb
-902 2918 M
-63 0 V
-5861 0 R
--63 0 V
--5993 0 R
-gsave 0 setgray
-( 0.4) Rshow
-grestore
-1.000 UL
-LTb
-902 3537 M
-63 0 V
-5861 0 R
--63 0 V
--5993 0 R
-gsave 0 setgray
-( 0.5) Rshow
-grestore
-1.000 UL
-LTb
-902 4157 M
-63 0 V
-5861 0 R
--63 0 V
--5993 0 R
-gsave 0 setgray
-( 0.6) Rshow
-grestore
-1.000 UL
-LTb
-902 4776 M
-63 0 V
-5861 0 R
--63 0 V
--5993 0 R
-gsave 0 setgray
-( 0.7) Rshow
-grestore
-1.000 UL
-LTb
-902 440 M
-0 63 V
-0 4273 R
-0 -63 V
-902 220 M
-gsave 0 setgray
-( 0) Cshow
-grestore
-1.000 UL
-LTb
-1748 440 M
-0 63 V
-0 4273 R
-0 -63 V
-0 -4493 R
-gsave 0 setgray
-( 0.5) Cshow
-grestore
-1.000 UL
-LTb
-2595 440 M
-0 63 V
-0 4273 R
-0 -63 V
-0 -4493 R
-gsave 0 setgray
-( 1) Cshow
-grestore
-1.000 UL
-LTb
-3441 440 M
-0 63 V
-0 4273 R
-0 -63 V
-0 -4493 R
-gsave 0 setgray
-( 1.5) Cshow
-grestore
-1.000 UL
-LTb
-4287 440 M
-0 63 V
-0 4273 R
-0 -63 V
-0 -4493 R
-gsave 0 setgray
-( 2) Cshow
-grestore
-1.000 UL
-LTb
-5133 440 M
-0 63 V
-0 4273 R
-0 -63 V
-0 -4493 R
-gsave 0 setgray
-( 2.5) Cshow
-grestore
-1.000 UL
-LTb
-5980 440 M
-0 63 V
-0 4273 R
-0 -63 V
-0 -4493 R
-gsave 0 setgray
-( 3) Cshow
-grestore
-1.000 UL
-LTb
-6826 440 M
-0 63 V
-0 4273 R
-0 -63 V
-0 -4493 R
-gsave 0 setgray
-( 3.5) Cshow
-grestore
-1.000 UL
-LTb
-1.000 UL
-LTb
-902 440 M
-5924 0 V
-0 4336 V
--5924 0 V
-902 440 L
-1.000 UP
-1.000 UL
-LT0
-LTb
-5839 4603 M
-gsave 0 setgray
-(r\(simulation\)) Rshow
-grestore
-LT0
-5971 4603 M
-591 0 V
-902 440 M
-17 3 V
-17 7 V
-18 12 V
-17 15 V
-17 19 V
-19 23 V
-17 24 V
-18 29 V
-19 31 V
-17 30 V
-19 35 V
-18 37 V
-17 34 V
-19 39 V
-17 36 V
-17 37 V
-18 41 V
-17 39 V
-17 38 V
-17 40 V
-19 43 V
-17 41 V
-17 40 V
-18 45 V
-17 41 V
-17 41 V
-17 42 V
-19 45 V
-16 42 V
-17 42 V
-17 42 V
-17 42 V
-17 43 V
-17 42 V
-19 47 V
-17 42 V
-17 43 V
-16 42 V
-17 43 V
-17 42 V
-19 47 V
-17 43 V
-17 43 V
-17 43 V
-17 42 V
-17 43 V
-18 47 V
-17 43 V
-17 43 V
-17 43 V
-17 43 V
-17 43 V
-17 42 V
-17 43 V
-17 43 V
-17 43 V
-18 47 V
-17 43 V
-17 43 V
-17 43 V
-17 43 V
-17 43 V
-17 43 V
-17 43 V
-17 43 V
-16 43 V
-17 43 V
-17 43 V
-19 47 V
-17 43 V
-17 43 V
-17 43 V
-17 43 V
-17 43 V
-17 43 V
-16 43 V
-17 43 V
-17 43 V
-17 42 V
-17 43 V
-17 43 V
-19 48 V
-17 43 V
-17 43 V
-16 42 V
-17 43 V
-17 43 V
-17 43 V
-17 43 V
-17 43 V
-17 43 V
-17 43 V
-17 43 V
-17 43 V
-18 47 V
-17 43 V
-17 43 V
-17 43 V
-4 9 V
-1.000 UL
-LT1
-LTb
-5839 4383 M
-gsave 0 setgray
-(r\(actual\)) Rshow
-grestore
-LT1
-5971 4383 M
-591 0 V
-902 440 M
-8 0 V
-9 0 V
-8 1 V
-9 1 V
-8 1 V
-9 3 V
-8 4 V
-9 5 V
-8 4 V
-9 7 V
-8 5 V
-9 9 V
-8 7 V
-8 8 V
-9 10 V
-8 8 V
-9 11 V
-8 10 V
-9 12 V
-8 12 V
-9 12 V
-8 11 V
-9 13 V
-8 14 V
-9 12 V
-8 15 V
-8 14 V
-9 13 V
-8 15 V
-9 15 V
-8 18 V
-9 14 V
-8 16 V
-9 16 V
-8 17 V
-9 17 V
-8 17 V
-9 20 V
-8 16 V
-9 20 V
-8 16 V
-8 21 V
-9 19 V
-8 19 V
-9 20 V
-8 18 V
-9 20 V
-8 22 V
-9 19 V
-8 22 V
-9 21 V
-8 19 V
-9 22 V
-8 21 V
-8 22 V
-9 20 V
-8 24 V
-9 19 V
-8 24 V
-9 20 V
-8 24 V
-9 22 V
-8 22 V
-9 20 V
-8 22 V
-9 24 V
-8 23 V
-8 19 V
-9 24 V
-8 20 V
-9 23 V
-8 22 V
-9 22 V
-8 20 V
-9 24 V
-8 19 V
-9 24 V
-8 20 V
-9 23 V
-8 22 V
-8 19 V
-9 23 V
-8 22 V
-9 22 V
-8 21 V
-9 21 V
-8 23 V
-9 20 V
-8 23 V
-9 20 V
-8 23 V
-9 22 V
-8 22 V
-9 19 V
-8 22 V
-8 24 V
-9 20 V
-8 24 V
-9 19 V
-8 23 V
-9 23 V
-8 20 V
-stroke
-1765 2185 M
-9 23 V
-8 23 V
-9 21 V
-8 19 V
-9 20 V
-8 17 V
-8 13 V
-9 12 V
-8 9 V
-9 8 V
-8 8 V
-9 6 V
-8 5 V
-9 4 V
-8 4 V
-9 2 V
-8 1 V
-9 0 V
-8 0 V
-8 -1 V
-9 0 V
-8 0 V
-9 0 V
-8 -1 V
-9 -1 V
-8 -1 V
-9 -1 V
-8 1 V
-9 0 V
-8 -1 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-stroke
-2645 2375 M
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-stroke
-3525 2375 M
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-stroke
-4406 2375 M
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-stroke
-5286 2375 M
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-stroke
-6166 2375 M
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-9 0 V
-8 0 V
-1.000 UL
-LTb
-902 440 M
-5924 0 V
-0 4336 V
--5924 0 V
-902 440 L
-1.000 UP
-stroke
-grestore
-end
-showpage
+
+%%BeginSetup
+[ 1 0 0 1 0 0 ] false Pscript_WinNT_Incr dup /initialize get exec
+1 setlinecap 1 setlinejoin
+/mysetup [ 72 600 V 0 0 -72 600 V 0 579.40155 ] def 
+%%EndSetup
+
+%%Page: 1 1
+%%PageBoundingBox: 0 0 1088 579
+%%EndPageComments
+%%BeginPageSetup
+/DeviceRGB dup setcolorspace /colspABC exch def
+mysetup concat colspRefresh
+%%EndPageSetup
+
+Pscript_WinNT_Incr begin
+%%BeginResource: file Pscript_Win_GdiObject 5.0 0
+/SavedCTM null d/CTMsave{/SavedCTM SavedCTM currentmatrix d}b/CTMrestore
+{SavedCTM setmatrix}b/mp null d/ADO_mxRot null d/GDIHMatrix null d
+/GDIHPatternDict 22 dict d GDIHPatternDict `/PatternType 1 d/PaintType 2 d/Reps
+L2?{1}{5}? d/XStep 8 Reps mul d/YStep XStep d/BBox[0 0 XStep YStep]d/TilingType
+1 d/PaintProc{` 1 Lw[]0 sd PaintData , exec E}b/FGnd null d/BGnd null d
+/HS_Horizontal{horiz}b/HS_Vertical{vert}b/HS_FDiagonal{fdiag}b/HS_BDiagonal
+{biag}b/HS_Cross{horiz vert}b/HS_DiagCross{fdiag biag}b/MaxXYStep XStep YStep
+gt{XStep}{YStep}? d/horiz{Reps{0 4 M XStep 0 - 0 8 +}repeat 0 -8 Reps mul + K}b
+/vert{Reps{4 0 M 0 YStep - 8 0 +}repeat 0 -8 Reps mul + K}b/biag{Reps{0 0 M
+MaxXYStep @ - 0 YStep neg M MaxXYStep @ - 0 8 +}repeat 0 -8 Reps mul + 0 YStep
+M 8 8 - K}b/fdiag{Reps{0 0 M MaxXYStep @ neg - 0 YStep M MaxXYStep @ neg - 0 8
++}repeat 0 -8 Reps mul + MaxXYStep @ M 8 -8 - K}b E/makehatch{4 -2 $/yOrg ~ d
+/xOrg ~ d GDIHPatternDict/PaintData 3 -1 $ put CTMsave GDIHMatrix setmatrix
+GDIHPatternDict matrix xOrg yOrg + mp CTMrestore ~ U ~ 2 ^ put}b/h0{/h0
+/HS_Horizontal makehatch}b/h1{/h1/HS_Vertical makehatch}b/h2{/h2/HS_FDiagonal
+makehatch}b/h3{/h3/HS_BDiagonal makehatch}b/h4{/h4/HS_Cross makehatch}b/h5{/h5
+/HS_DiagCross makehatch}b/GDIBWPatternMx null d/pfprep{save 8 1 $
+/PatternOfTheDay 8 1 $ GDIBWPatternDict `/yOrg ~ d/xOrg ~ d/PaintData ~ d/yExt
+~ d/Width ~ d/BGnd ~ d/FGnd ~ d/Height yExt RepsV mul d/mx[Width 0 0 Height 0
+0]d E build_pattern ~ !}b/pfbf{/fEOFill ~ d pfprep hbf fEOFill{O}{L}? restore}b
+/GraphInit{GDIHMatrix null eq{/SavedCTM matrix d : ADO_mxRot concat 0 0 snap +
+: 0.48 @ GDIHPatternDict ` YStep mul ~ XStep mul ~ nonzero_dsnap YStep V ~
+XStep V ~ E +S/GDIHMatrix matrix currentmatrix readonly d ; : 0.24 -0.24 +S
+GDIBWPatternDict ` Width Height E nonzero_dsnap +S/GDIBWPatternMx matrix
+currentmatrix readonly d ; ;}if}b
+%%EndResource
+%%BeginResource: file Pscript_Win_GdiObject_L1 5.0 0
+/GDIBWPatternDict 25 dict @ `/PatternType 1 d/PaintType 2 d/RepsV 6 d/RepsH 5 d
+/BBox[0 0 RepsH 1]d/TilingType 1 d/XStep 1 d/YStep 1 d/Height 8 RepsV mul d
+/Width 8 d/mx[Width 0 0 Height neg 0 Height]d/FGnd null d/BGnd null d
+/SetBGndFGnd{}b/PaintProc{` SetBGndFGnd RepsH{Width Height F mx PaintData
+imagemask Width 0 +}repeat E}b E d/GDIpattfill{@ ` BGnd null ne PaintType 2 eq
+and{: BGnd aload ! scol fEOFill{O}{L}? ; FGnd aload ! U/iCol 2 ^ put @ 0 eq{!
+2}{@ 1 eq ~ 2 eq or{4}{5}?}? -1 $}if E @ patterncalc : 4 ^/PaintType get 2 eq
+{iCol 0 eq{6 -1 $}if iCol 1 eq iCol 2 eq or{8 -3 $}if iCol 3 eq iCol 4 eq or{9
+-4 $}if iCol scol}if fEOFill{eoclip}{clip}? N patternfill ; N}b/hbf
+{GDIpattfill}b/hfMain{/fEOFill ~ d ~/iCol ~ d GDIpattfill}b/hf{: hfMain ;}b
+/mpstr 1 string d/mp{~ @ length 12 add dict copy `/PatternCTM matrix
+currentmatrix d/PatternMatrix ~ d/PatWidth XStep mpstr length mul d/PatHeight
+YStep d/FontType 3 d/Encoding 256 array d 3 string 0 1 255{Encoding ~ @ 3 ^ cvs
+cvn put}for !/FontMatrix matrix d/FontBBox BBox d/BuildChar{! @ ` XStep 0
+FontBBox aload ! setcachedevice/PaintProc , E : exec ;}b & E ~ @ 3 -1 $
+definefont}b/build_pattern{: GDIBWPatternDict ` Width Height E dsnap +S
+/GDIBWPatternMx matrix currentmatrix d ; CTMsave GDIBWPatternMx setmatrix
+GDIBWPatternDict @ ` xOrg yOrg E matrix + mp CTMrestore}b/patterncalc{` :
+PatternCTM setmatrix PatternMatrix concat BBox aload ! ! ! + pathbbox ;
+PatHeight V ceiling 4 1 $ PatWidth V ceiling 4 1 $ PatHeight V floor 4 1 $
+PatWidth V floor 4 1 $ 2 ^ sub cvi abs ~ 3 ^ sub cvi abs ~ 4 2 $ PatHeight mul
+~ PatWidth mul ~ E}b/patternfill{5 -1 $ @ ` Ji PatternCTM setmatrix
+PatternMatrix concat 0 2 ^ 2 ^ M 0 1 mpstr length 1 sub{1 ^ mpstr 3 1 $ put}for
+! 2 ^{currentpoint 5 ^{mpstr S}repeat YStep add M}repeat ! ! ! ! E}b/pbf{: 14
+dict `/fGray ~ d/fEOFill ~ d/yOrg ~ d/xOrg ~ d/PaintData ~ d/OutputBPP ~ d
+/Height ~ d/Width ~ d/mx xOrg yOrg matrix + d fGray{/PaintProc{` Width Height
+OutputBPP mx PaintData image E}b}{/PaintProc{` Width Height 8 mx PaintData F
+OutputBPP 8 idiv colorimage E}b}? pathbbox fEOFill{eoclip}{clip}?/Top ~ d/Right
+~ d/Bottom ~ d/Left ~ d Top Height neg Bottom 1 sub{Left Width Right 1 sub{1 ^
+2 copy + & PaintProc neg ~ neg ~ +}bind for !}bind for E ;}b
+%%EndResource
+end reinitialize
+N 0 0 M 0 6 I 6 6 I 6 0 I 0 0 I C 
+1 1 1 1 scol  O 0.754 0.754 0.754 1 scol 2 Lj 0 Lc 16 Lw solid N 962 4173 M 981 4173 I 981 4179 I 962 4179 I 962 4173 I C 
+1000 4173 M 1019 4173 I 1019 4179 I 1000 4179 I 1000 4173 I C 
+1038 4173 M 1057 4173 I 1057 4179 I 1038 4179 I 1038 4173 I C 
+1076 4173 M 1096 4173 I 1096 4179 I 1076 4179 I 1076 4173 I C 
+1115 4173 M 1134 4173 I 1134 4179 I 1115 4179 I 1115 4173 I C 
+1153 4173 M 1172 4173 I 1172 4179 I 1153 4179 I 1153 4173 I C 
+1191 4173 M 1210 4173 I 1210 4179 I 1191 4179 I 1191 4173 I C 
+1229 4173 M 1249 4173 I 1249 4179 I 1229 4179 I 1229 4173 I C 
+1268 4173 M 1287 4173 I 1287 4179 I 1268 4179 I 1268 4173 I C 
+1306 4173 M 1325 4173 I 1325 4179 I 1306 4179 I 1306 4173 I C 
+1344 4173 M 1363 4173 I 1363 4179 I 1344 4179 I 1344 4173 I C 
+1382 4173 M 1401 4173 I 1401 4179 I 1382 4179 I 1382 4173 I C 
+1421 4173 M 1440 4173 I 1440 4179 I 1421 4179 I 1421 4173 I C 
+1459 4173 M 1478 4173 I 1478 4179 I 1459 4179 I 1459 4173 I C 
+1497 4173 M 1516 4173 I 1516 4179 I 1497 4179 I 1497 4173 I C 
+1535 4173 M 1554 4173 I 1554 4179 I 1535 4179 I 1535 4173 I C 
+1574 4173 M 1593 4173 I 1593 4179 I 1574 4179 I 1574 4173 I C 
+1612 4173 M 1631 4173 I 1631 4179 I 1612 4179 I 1612 4173 I C 
+1650 4173 M 1669 4173 I 1669 4179 I 1650 4179 I 1650 4173 I C 
+1688 4173 M 1707 4173 I 1707 4179 I 1688 4179 I 1688 4173 I C 
+1726 4173 M 1746 4173 I 1746 4179 I 1726 4179 I 1726 4173 I C 
+1765 4173 M 1784 4173 I 1784 4179 I 1765 4179 I 1765 4173 I C 
+1803 4173 M 1822 4173 I 1822 4179 I 1803 4179 I 1803 4173 I C 
+1841 4173 M 1860 4173 I 1860 4179 I 1841 4179 I 1841 4173 I C 
+1879 4173 M 1899 4173 I 1899 4179 I 1879 4179 I 1879 4173 I C 
+1918 4173 M 1937 4173 I 1937 4179 I 1918 4179 I 1918 4173 I C 
+1956 4173 M 1975 4173 I 1975 4179 I 1956 4179 I 1956 4173 I C 
+1994 4173 M 2013 4173 I 2013 4179 I 1994 4179 I 1994 4173 I C 
+2032 4173 M 2051 4173 I 2051 4179 I 2032 4179 I 2032 4173 I C 
+2071 4173 M 2090 4173 I 2090 4179 I 2071 4179 I 2071 4173 I C 
+2109 4173 M 2128 4173 I 2128 4179 I 2109 4179 I 2109 4173 I C 
+2147 4173 M 2166 4173 I 2166 4179 I 2147 4179 I 2147 4173 I C 
+2185 4173 M 2204 4173 I 2204 4179 I 2185 4179 I 2185 4173 I C 
+2224 4173 M 2243 4173 I 2243 4179 I 2224 4179 I 2224 4173 I C 
+2262 4173 M 2281 4173 I 2281 4179 I 2262 4179 I 2262 4173 I C 
+2300 4173 M 2319 4173 I 2319 4179 I 2300 4179 I 2300 4173 I C 
+2338 4173 M 2357 4173 I 2357 4179 I 2338 4179 I 2338 4173 I C 
+2376 4173 M 2396 4173 I 2396 4179 I 2376 4179 I 2376 4173 I C 
+2415 4173 M 2434 4173 I 2434 4179 I 2415 4179 I 2415 4173 I C 
+2453 4173 M 2472 4173 I 2472 4179 I 2453 4179 I 2453 4173 I C 
+2491 4173 M 2510 4173 I 2510 4179 I 2491 4179 I 2491 4173 I C 
+2529 4173 M 2549 4173 I 2549 4179 I 2529 4179 I 2529 4173 I C 
+2568 4173 M 2587 4173 I 2587 4179 I 2568 4179 I 2568 4173 I C 
+2606 4173 M 2625 4173 I 2625 4179 I 2606 4179 I 2606 4173 I C 
+2644 4173 M 2663 4173 I 2663 4179 I 2644 4179 I 2644 4173 I C 
+2682 4173 M 2701 4173 I 2701 4179 I 2682 4179 I 2682 4173 I C 
+2721 4173 M 2740 4173 I 2740 4179 I 2721 4179 I 2721 4173 I C 
+2759 4173 M 2778 4173 I 2778 4179 I 2759 4179 I 2759 4173 I C 
+2797 4173 M 2816 4173 I 2816 4179 I 2797 4179 I 2797 4173 I C 
+2835 4173 M 2854 4173 I 2854 4179 I 2835 4179 I 2835 4173 I C 
+2874 4173 M 2893 4173 I 2893 4179 I 2874 4179 I 2874 4173 I C 
+2912 4173 M 2931 4173 I 2931 4179 I 2912 4179 I 2912 4173 I C 
+2950 4173 M 2969 4173 I 2969 4179 I 2950 4179 I 2950 4173 I C 
+2988 4173 M 3007 4173 I 3007 4179 I 2988 4179 I 2988 4173 I C 
+3026 4173 M 3046 4173 I 3046 4179 I 3026 4179 I 3026 4173 I C 
+3065 4173 M 3084 4173 I 3084 4179 I 3065 4179 I 3065 4173 I C 
+3103 4173 M 3122 4173 I 3122 4179 I 3103 4179 I 3103 4173 I C 
+3141 4173 M 3160 4173 I 3160 4179 I 3141 4179 I 3141 4173 I C 
+3179 4173 M 3199 4173 I 3199 4179 I 3179 4179 I 3179 4173 I C 
+3218 4173 M 3237 4173 I 3237 4179 I 3218 4179 I 3218 4173 I C 
+3256 4173 M 3275 4173 I 3275 4179 I 3256 4179 I 3256 4173 I C 
+3294 4173 M 3313 4173 I 3313 4179 I 3294 4179 I 3294 4173 I C 
+3332 4173 M 3351 4173 I 3351 4179 I 3332 4179 I 3332 4173 I C 
+3371 4173 M 3390 4173 I 3390 4179 I 3371 4179 I 3371 4173 I C 
+3409 4173 M 3428 4173 I 3428 4179 I 3409 4179 I 3409 4173 I C 
+3447 4173 M 3466 4173 I 3466 4179 I 3447 4179 I 3447 4173 I C 
+3485 4173 M 3504 4173 I 3504 4179 I 3485 4179 I 3485 4173 I C 
+3524 4173 M 3543 4173 I 3543 4179 I 3524 4179 I 3524 4173 I C 
+3562 4173 M 3581 4173 I 3581 4179 I 3562 4179 I 3562 4173 I C 
+3600 4173 M 3619 4173 I 3619 4179 I 3600 4179 I 3600 4173 I C 
+3638 4173 M 3657 4173 I 3657 4179 I 3638 4179 I 3638 4173 I C 
+3676 4173 M 3696 4173 I 3696 4179 I 3676 4179 I 3676 4173 I C 
+3715 4173 M 3734 4173 I 3734 4179 I 3715 4179 I 3715 4173 I C 
+3753 4173 M 3772 4173 I 3772 4179 I 3753 4179 I 3753 4173 I C 
+3791 4173 M 3810 4173 I 3810 4179 I 3791 4179 I 3791 4173 I C 
+3829 4173 M 3849 4173 I 3849 4179 I 3829 4179 I 3829 4173 I C 
+3868 4173 M 3887 4173 I 3887 4179 I 3868 4179 I 3868 4173 I C 
+3906 4173 M 3925 4173 I 3925 4179 I 3906 4179 I 3906 4173 I C 
+3944 4173 M 3963 4173 I 3963 4179 I 3944 4179 I 3944 4173 I C 
+3982 4173 M 4001 4173 I 4001 4179 I 3982 4179 I 3982 4173 I C 
+4021 4173 M 4040 4173 I 4040 4179 I 4021 4179 I 4021 4173 I C 
+4059 4173 M 4078 4173 I 4078 4179 I 4059 4179 I 4059 4173 I C 
+4097 4173 M 4116 4173 I 4116 4179 I 4097 4179 I 4097 4173 I C 
+4135 4173 M 4154 4173 I 4154 4179 I 4135 4179 I 4135 4173 I C 
+4174 4173 M 4193 4173 I 4193 4179 I 4174 4179 I 4174 4173 I C 
+4212 4173 M 4231 4173 I 4231 4179 I 4212 4179 I 4212 4173 I C 
+4250 4173 M 4269 4173 I 4269 4179 I 4250 4179 I 4250 4173 I C 
+4288 4173 M 4307 4173 I 4307 4179 I 4288 4179 I 4288 4173 I C 
+4326 4173 M 4346 4173 I 4346 4179 I 4326 4179 I 4326 4173 I C 
+4365 4173 M 4384 4173 I 4384 4179 I 4365 4179 I 4365 4173 I C 
+4403 4173 M 4422 4173 I 4422 4179 I 4403 4179 I 4403 4173 I C 
+4441 4173 M 4460 4173 I 4460 4179 I 4441 4179 I 4441 4173 I C 
+4479 4173 M 4499 4173 I 4499 4179 I 4479 4179 I 4479 4173 I C 
+4518 4173 M 4537 4173 I 4537 4179 I 4518 4179 I 4518 4173 I C 
+4556 4173 M 4575 4173 I 4575 4179 I 4556 4179 I 4556 4173 I C 
+4594 4173 M 4613 4173 I 4613 4179 I 4594 4179 I 4594 4173 I C 
+4632 4173 M 4651 4173 I 4651 4179 I 4632 4179 I 4632 4173 I C 
+4671 4173 M 4690 4173 I 4690 4179 I 4671 4179 I 4671 4173 I C 
+4709 4173 M 4728 4173 I 4728 4179 I 4709 4179 I 4709 4173 I C 
+4747 4173 M 4766 4173 I 4766 4179 I 4747 4179 I 4747 4173 I C 
+4785 4173 M 4804 4173 I 4804 4179 I 4785 4179 I 4785 4173 I C 
+4824 4173 M 4843 4173 I 4843 4179 I 4824 4179 I 4824 4173 I C 
+4862 4173 M 4881 4173 I 4881 4179 I 4862 4179 I 4862 4173 I C 
+4900 4173 M 4919 4173 I 4919 4179 I 4900 4179 I 4900 4173 I C 
+4938 4173 M 4957 4173 I 4957 4179 I 4938 4179 I 4938 4173 I C 
+4976 4173 M 4996 4173 I 4996 4179 I 4976 4179 I 4976 4173 I C 
+5015 4173 M 5034 4173 I 5034 4179 I 5015 4179 I 5015 4173 I C 
+5053 4173 M 5072 4173 I 5072 4179 I 5053 4179 I 5053 4173 I C 
+5091 4173 M 5110 4173 I 5110 4179 I 5091 4179 I 5091 4173 I C 
+5129 4173 M 5149 4173 I 5149 4179 I 5129 4179 I 5129 4173 I C 
+5168 4173 M 5187 4173 I 5187 4179 I 5168 4179 I 5168 4173 I C 
+5206 4173 M 5225 4173 I 5225 4179 I 5206 4179 I 5206 4173 I C 
+5244 4173 M 5263 4173 I 5263 4179 I 5244 4179 I 5244 4173 I C 
+5282 4173 M 5301 4173 I 5301 4179 I 5282 4179 I 5282 4173 I C 
+5321 4173 M 5340 4173 I 5340 4179 I 5321 4179 I 5321 4173 I C 
+5359 4173 M 5378 4173 I 5378 4179 I 5359 4179 I 5359 4173 I C 
+5397 4173 M 5416 4173 I 5416 4179 I 5397 4179 I 5397 4173 I C 
+5435 4173 M 5454 4173 I 5454 4179 I 5435 4179 I 5435 4173 I C 
+5474 4173 M 5493 4173 I 5493 4179 I 5474 4179 I 5474 4173 I C 
+5512 4173 M 5531 4173 I 5531 4179 I 5512 4179 I 5512 4173 I C 
+5550 4173 M 5569 4173 I 5569 4179 I 5550 4179 I 5550 4173 I C 
+5588 4173 M 5607 4173 I 5607 4179 I 5588 4179 I 5588 4173 I C 
+5626 4173 M 5646 4173 I 5646 4179 I 5626 4179 I 5626 4173 I C 
+5665 4173 M 5684 4173 I 5684 4179 I 5665 4179 I 5665 4173 I C 
+5703 4173 M 5722 4173 I 5722 4179 I 5703 4179 I 5703 4173 I C 
+5741 4173 M 5760 4173 I 5760 4179 I 5741 4179 I 5741 4173 I C 
+5779 4173 M 5799 4173 I 5799 4179 I 5779 4179 I 5779 4173 I C 
+5818 4173 M 5837 4173 I 5837 4179 I 5818 4179 I 5818 4173 I C 
+5856 4173 M 5875 4173 I 5875 4179 I 5856 4179 I 5856 4173 I C 
+5894 4173 M 5913 4173 I 5913 4179 I 5894 4179 I 5894 4173 I C 
+5932 4173 M 5951 4173 I 5951 4179 I 5932 4179 I 5932 4173 I C 
+5971 4173 M 5990 4173 I 5990 4179 I 5971 4179 I 5971 4173 I C 
+6009 4173 M 6028 4173 I 6028 4179 I 6009 4179 I 6009 4173 I C 
+6047 4173 M 6066 4173 I 6066 4179 I 6047 4179 I 6047 4173 I C 
+6085 4173 M 6104 4173 I 6104 4179 I 6085 4179 I 6085 4173 I C 
+6124 4173 M 6143 4173 I 6143 4179 I 6124 4179 I 6124 4173 I C 
+6162 4173 M 6181 4173 I 6181 4179 I 6162 4179 I 6162 4173 I C 
+6200 4173 M 6219 4173 I 6219 4179 I 6200 4179 I 6200 4173 I C 
+6238 4173 M 6257 4173 I 6257 4179 I 6238 4179 I 6238 4173 I C 
+6276 4173 M 6296 4173 I 6296 4179 I 6276 4179 I 6276 4173 I C 
+6315 4173 M 6334 4173 I 6334 4179 I 6315 4179 I 6315 4173 I C 
+6353 4173 M 6372 4173 I 6372 4179 I 6353 4179 I 6353 4173 I C 
+6391 4173 M 6410 4173 I 6410 4179 I 6391 4179 I 6391 4173 I C 
+6429 4173 M 6449 4173 I 6449 4179 I 6429 4179 I 6429 4173 I C 
+6468 4173 M 6487 4173 I 6487 4179 I 6468 4179 I 6468 4173 I C 
+6506 4173 M 6525 4173 I 6525 4179 I 6506 4179 I 6506 4173 I C 
+6544 4173 M 6563 4173 I 6563 4179 I 6544 4179 I 6544 4173 I C 
+6582 4173 M 6601 4173 I 6601 4179 I 6582 4179 I 6582 4173 I C 
+6621 4173 M 6640 4173 I 6640 4179 I 6621 4179 I 6621 4173 I C 
+6659 4173 M 6678 4173 I 6678 4179 I 6659 4179 I 6659 4173 I C 
+6697 4173 M 6716 4173 I 6716 4179 I 6697 4179 I 6697 4173 I C 
+6735 4173 M 6754 4173 I 6754 4179 I 6735 4179 I 6735 4173 I C 
+6774 4173 M 6793 4173 I 6793 4179 I 6774 4179 I 6774 4173 I C 
+6812 4173 M 6831 4173 I 6831 4179 I 6812 4179 I 6812 4173 I C 
+6850 4173 M 6869 4173 I 6869 4179 I 6850 4179 I 6850 4173 I C 
+6888 4173 M 6907 4173 I 6907 4179 I 6888 4179 I 6888 4173 I C 
+6926 4173 M 6946 4173 I 6946 4179 I 6926 4179 I 6926 4173 I C 
+6965 4173 M 6984 4173 I 6984 4179 I 6965 4179 I 6965 4173 I C 
+7003 4173 M 7022 4173 I 7022 4179 I 7003 4179 I 7003 4173 I C 
+7041 4173 M 7060 4173 I 7060 4179 I 7041 4179 I 7041 4173 I C 
+7079 4173 M 7099 4173 I 7099 4179 I 7079 4179 I 7079 4173 I C 
+7118 4173 M 7137 4173 I 7137 4179 I 7118 4179 I 7118 4173 I C 
+7156 4173 M 7175 4173 I 7175 4179 I 7156 4179 I 7156 4173 I C 
+7194 4173 M 7213 4173 I 7213 4179 I 7194 4179 I 7194 4173 I C 
+7232 4173 M 7251 4173 I 7251 4179 I 7232 4179 I 7232 4173 I C 
+7271 4173 M 7290 4173 I 7290 4179 I 7271 4179 I 7271 4173 I C 
+7309 4173 M 7328 4173 I 7328 4179 I 7309 4179 I 7309 4173 I C 
+7347 4173 M 7366 4173 I 7366 4179 I 7347 4179 I 7347 4173 I C 
+7385 4173 M 7404 4173 I 7404 4179 I 7385 4179 I 7385 4173 I C 
+7424 4173 M 7443 4173 I 7443 4179 I 7424 4179 I 7424 4173 I C 
+7462 4173 M 7481 4173 I 7481 4179 I 7462 4179 I 7462 4173 I C 
+7500 4173 M 7519 4173 I 7519 4179 I 7500 4179 I 7500 4173 I C 
+7538 4173 M 7557 4173 I 7557 4179 I 7538 4179 I 7538 4173 I C 
+7576 4173 M 7596 4173 I 7596 4179 I 7576 4179 I 7576 4173 I C 
+7615 4173 M 7634 4173 I 7634 4179 I 7615 4179 I 7615 4173 I C 
+7653 4173 M 7672 4173 I 7672 4179 I 7653 4179 I 7653 4173 I C 
+7691 4173 M 7710 4173 I 7710 4179 I 7691 4179 I 7691 4173 I C 
+7729 4173 M 7749 4173 I 7749 4179 I 7729 4179 I 7729 4173 I C 
+7768 4173 M 7787 4173 I 7787 4179 I 7768 4179 I 7768 4173 I C 
+7806 4173 M 7825 4173 I 7825 4179 I 7806 4179 I 7806 4173 I C 
+7844 4173 M 7863 4173 I 7863 4179 I 7844 4179 I 7844 4173 I C 
+7882 4173 M 7901 4173 I 7901 4179 I 7882 4179 I 7882 4173 I C 
+7921 4173 M 7940 4173 I 7940 4179 I 7921 4179 I 7921 4173 I C 
+7959 4173 M 7978 4173 I 7978 4179 I 7959 4179 I 7959 4173 I C 
+7997 4173 M 8016 4173 I 8016 4179 I 7997 4179 I 7997 4173 I C 
+8035 4173 M 8054 4173 I 8054 4179 I 8035 4179 I 8035 4173 I C 
+8074 4173 M 8093 4173 I 8093 4179 I 8074 4179 I 8074 4173 I C 
+8112 4173 M 8131 4173 I 8131 4179 I 8112 4179 I 8112 4173 I C 
+8150 4173 M 8169 4173 I 8169 4179 I 8150 4179 I 8150 4173 I C 
+8188 4173 M 8207 4173 I 8207 4179 I 8188 4179 I 8188 4173 I C 
+8226 4173 M 8246 4173 I 8246 4179 I 8226 4179 I 8226 4173 I C 
+8265 4173 M 8284 4173 I 8284 4179 I 8265 4179 I 8265 4173 I C 
+8303 4173 M 8322 4173 I 8322 4179 I 8303 4179 I 8303 4173 I C 
+8341 4173 M 8360 4173 I 8360 4179 I 8341 4179 I 8341 4173 I C 
+8379 4173 M 8399 4173 I 8399 4179 I 8379 4179 I 8379 4173 I C 
+8418 4173 M 8437 4173 I 8437 4179 I 8418 4179 I 8418 4173 I C 
+8456 4173 M 8475 4173 I 8475 4179 I 8456 4179 I 8456 4173 I C 
+8494 4173 M 8513 4173 I 8513 4179 I 8494 4179 I 8494 4173 I C 
+8532 4173 M 8551 4173 I 8551 4179 I 8532 4179 I 8532 4173 I C 
+8571 4173 M 8577 4173 I 8577 4179 I 8571 4179 I 8571 4173 I C 
+:  L ; : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 0 0 0 1 scol 0 Lj 2 Lc N 962 4176 M 1006 4176 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; N 8577 4176 M 8532 4176 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; Pscript_WinNT_Incr begin
+%%BeginResource: file Pscript_Text 5.0 0
+/TextInit{TextInitialised? not{/Pscript_Windows_Font & d/TextInitialised? T d
+/fM[1 0 0 1 0 0]d/mFM matrix d/iMat[1 0 0.212557 1 0 0]d}if}b/copyfont{1 ^
+length add dict `{1 ^/FID ne{d}{! !}?}forall & E}b/EncodeDict 11 dict d/bullets
+{{/bullet}repeat}b/rF{3 copyfont @ ` ~ EncodeDict ~ get/Encoding ~ 3 ^/0 eq{&
+/CharStrings known{CharStrings/Eth known not{! EncodeDict/ANSIEncodingOld get}
+if}if}if d E}b/mF{@ 7 1 $ findfont ~{@/Encoding get @ StandardEncoding eq{! T}{
+{ISOLatin1Encoding}stopped{! F}{eq}?{T}{@ ` T 32 1 127{Encoding 1 ^ get
+StandardEncoding 3 -1 $ get eq and}for E}?}?}{F}?{1 ^ ~ rF}{0 copyfont}? 6 -2 $
+! ! ~ !/pd_charset @ where{~ get 128 eq{@ FDV 2 copy get @ length array copy
+put pd_CoverFCRange}if}{!}? 2 ^ ~ definefont fM 5 4 -1 $ put fM 4 0 put fM
+makefont Pscript_Windows_Font 3 1 $ put}b/sLT{: Lw -M currentpoint snap M 0 - 0
+Lc K ;}b/xUP null d/yUP null d/uW null d/xSP null d/ySP null d/sW null d/sSU{N
+/uW ~ d/yUP ~ d/xUP ~ d}b/sU{xUP yUP uW sLT}b/sST{N/sW ~ d/ySP ~ d/xSP ~ d}b/sT
+{xSP ySP sW sLT}b/sR{: + R 0 0 M}b/sRxy{: matrix astore concat 0 0 M}b/eR/; , d
+/AddOrigFP{{&/FontInfo known{&/FontInfo get length 6 add}{6}? dict `
+/WinPitchAndFamily ~ d/WinCharSet ~ d/OrigFontType ~ d/OrigFontStyle ~ d
+/OrigFontName ~ d & E/FontInfo ~ d}{! ! ! ! !}?}b/mFS{makefont
+Pscript_Windows_Font 3 1 $ put}b/mF42D{0 copyfont `/FontName ~ d 2 copy ~ sub 1
+add dict `/.notdef 0 d 2 copy 1 ~{@ 3 ^ sub Encoding ~ get ~ d}for & E
+/CharStrings ~ d ! ! & @ E/FontName get ~ definefont}b/mF42{15 dict ` @ 4 1 $
+FontName ~ d/FontType 0 d/FMapType 2 d/FontMatrix[1 0 0 1 0 0]d 1 ^ 254 add 255
+idiv @ array/Encoding ~ d 0 1 3 -1 $ 1 sub{@ Encoding 3 1 $ put}for/FDepVector
+Encoding length array d/CharStrings 2 dict `/.notdef 0 d & E d 0 1 Encoding
+length 1 sub{@ @ 10 lt{! FontName length 1 add string}{100 lt{FontName length 2
+add string}{FontName length 3 add string}?}? @ 0 FontName @ length string cvs
+putinterval @ 3 -1 $ @ 4 1 $ 3 string cvs FontName length ~ putinterval cvn 1 ^
+256 mul @ 255 add 3 -1 $ 4 ^ findfont mF42D FDepVector 3 1 $ put}for & @ E
+/FontName get ~ definefont ! ! ! mF}b/mF_OTF_V{~ ! ~ ! 4 -1 $ ! findfont 2 ^ ~
+definefont fM @ @ 4 6 -1 $ neg put 5 0 put 90 matrix R matrix concatmatrix
+makefont Pscript_Windows_Font 3 1 $ put}b/mF_TTF_V{3{~ !}repeat 3 -1 $ !
+findfont 1 ^ ~ definefont Pscript_Windows_Font 3 1 $ put}b/UmF{L2?
+{Pscript_Windows_Font ~ undef}{!}?}b/UmF42{@ findfont/FDepVector get{/FontName
+get undefinefont}forall undefinefont}b
+%%EndResource
+end reinitialize
+Pscript_WinNT_Incr begin
+%%BeginResource: file Pscript_Encoding256 5.0 0
+/CharCol256Encoding[/.notdef/breve/caron/dotaccent/dotlessi/fi/fl/fraction
+/hungarumlaut/Lslash/lslash/minus/ogonek/ring/Zcaron/zcaron/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/space/exclam/quotedbl/numbersign
+/dollar/percent/ampersand/quotesingle/parenleft/parenright/asterisk/plus/comma
+/hyphen/period/slash/zero/one/two/three/four/five/six/seven/eight/nine/colon
+/semicolon/less/equal/greater/question/at/A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S
+/T/U/V/W/X/Y/Z/bracketleft/backslash/bracketright/asciicircum/underscore/grave
+/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z/braceleft/bar/braceright
+/asciitilde/.notdef/Euro/.notdef/quotesinglbase/florin/quotedblbase/ellipsis
+/dagger/daggerdbl/circumflex/perthousand/Scaron/guilsinglleft/OE/.notdef
+/.notdef/.notdef/.notdef/quoteleft/quoteright/quotedblleft/quotedblright/bullet
+/endash/emdash/tilde/trademark/scaron/guilsinglright/oe/.notdef/.notdef
+/Ydieresis/.notdef/exclamdown/cent/sterling/currency/yen/brokenbar/section
+/dieresis/copyright/ordfeminine/guillemotleft/logicalnot/.notdef/registered
+/macron/degree/plusminus/twosuperior/threesuperior/acute/mu/paragraph
+/periodcentered/cedilla/onesuperior/ordmasculine/guillemotright/onequarter
+/onehalf/threequarters/questiondown/Agrave/Aacute/Acircumflex/Atilde/Adieresis
+/Aring/AE/Ccedilla/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute
+/Icircumflex/Idieresis/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis
+/multiply/Oslash/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls
+/agrave/aacute/acircumflex/atilde/adieresis/aring/ae/ccedilla/egrave/eacute
+/ecircumflex/edieresis/igrave/iacute/icircumflex/idieresis/eth/ntilde/ograve
+/oacute/ocircumflex/otilde/odieresis/divide/oslash/ugrave/uacute/ucircumflex
+/udieresis/yacute/thorn/ydieresis]def EncodeDict/256 CharCol256Encoding put
+%%EndResource
+end reinitialize
+
+%%IncludeResource: font Helvetica
+F /F0 0 /256 T /Helvetica mF 
+/F0SB8YFFFFFF47 F0 [184.945 0 0 -184.918 0 0 ] mFS
+F0SB8YFFFFFF47 Ji 
+701 4240 M ( )S 
+752 4240 M (0)S  
+0.754 0.754 0.754 1 scol 2 Lj 0 Lc N 962 3605 M 981 3605 I 981 3612 I 962 3612 I 962 3605 I C 
+1000 3605 M 1019 3605 I 1019 3612 I 1000 3612 I 1000 3605 I C 
+1038 3605 M 1057 3605 I 1057 3612 I 1038 3612 I 1038 3605 I C 
+1076 3605 M 1096 3605 I 1096 3612 I 1076 3612 I 1076 3605 I C 
+1115 3605 M 1134 3605 I 1134 3612 I 1115 3612 I 1115 3605 I C 
+1153 3605 M 1172 3605 I 1172 3612 I 1153 3612 I 1153 3605 I C 
+1191 3605 M 1210 3605 I 1210 3612 I 1191 3612 I 1191 3605 I C 
+1229 3605 M 1249 3605 I 1249 3612 I 1229 3612 I 1229 3605 I C 
+1268 3605 M 1287 3605 I 1287 3612 I 1268 3612 I 1268 3605 I C 
+1306 3605 M 1325 3605 I 1325 3612 I 1306 3612 I 1306 3605 I C 
+1344 3605 M 1363 3605 I 1363 3612 I 1344 3612 I 1344 3605 I C 
+1382 3605 M 1401 3605 I 1401 3612 I 1382 3612 I 1382 3605 I C 
+1421 3605 M 1440 3605 I 1440 3612 I 1421 3612 I 1421 3605 I C 
+1459 3605 M 1478 3605 I 1478 3612 I 1459 3612 I 1459 3605 I C 
+1497 3605 M 1516 3605 I 1516 3612 I 1497 3612 I 1497 3605 I C 
+1535 3605 M 1554 3605 I 1554 3612 I 1535 3612 I 1535 3605 I C 
+1574 3605 M 1593 3605 I 1593 3612 I 1574 3612 I 1574 3605 I C 
+1612 3605 M 1631 3605 I 1631 3612 I 1612 3612 I 1612 3605 I C 
+1650 3605 M 1669 3605 I 1669 3612 I 1650 3612 I 1650 3605 I C 
+1688 3605 M 1707 3605 I 1707 3612 I 1688 3612 I 1688 3605 I C 
+1726 3605 M 1746 3605 I 1746 3612 I 1726 3612 I 1726 3605 I C 
+1765 3605 M 1784 3605 I 1784 3612 I 1765 3612 I 1765 3605 I C 
+1803 3605 M 1822 3605 I 1822 3612 I 1803 3612 I 1803 3605 I C 
+1841 3605 M 1860 3605 I 1860 3612 I 1841 3612 I 1841 3605 I C 
+1879 3605 M 1899 3605 I 1899 3612 I 1879 3612 I 1879 3605 I C 
+1918 3605 M 1937 3605 I 1937 3612 I 1918 3612 I 1918 3605 I C 
+1956 3605 M 1975 3605 I 1975 3612 I 1956 3612 I 1956 3605 I C 
+1994 3605 M 2013 3605 I 2013 3612 I 1994 3612 I 1994 3605 I C 
+2032 3605 M 2051 3605 I 2051 3612 I 2032 3612 I 2032 3605 I C 
+2071 3605 M 2090 3605 I 2090 3612 I 2071 3612 I 2071 3605 I C 
+2109 3605 M 2128 3605 I 2128 3612 I 2109 3612 I 2109 3605 I C 
+2147 3605 M 2166 3605 I 2166 3612 I 2147 3612 I 2147 3605 I C 
+2185 3605 M 2204 3605 I 2204 3612 I 2185 3612 I 2185 3605 I C 
+2224 3605 M 2243 3605 I 2243 3612 I 2224 3612 I 2224 3605 I C 
+2262 3605 M 2281 3605 I 2281 3612 I 2262 3612 I 2262 3605 I C 
+2300 3605 M 2319 3605 I 2319 3612 I 2300 3612 I 2300 3605 I C 
+2338 3605 M 2357 3605 I 2357 3612 I 2338 3612 I 2338 3605 I C 
+2376 3605 M 2396 3605 I 2396 3612 I 2376 3612 I 2376 3605 I C 
+2415 3605 M 2434 3605 I 2434 3612 I 2415 3612 I 2415 3605 I C 
+2453 3605 M 2472 3605 I 2472 3612 I 2453 3612 I 2453 3605 I C 
+2491 3605 M 2510 3605 I 2510 3612 I 2491 3612 I 2491 3605 I C 
+2529 3605 M 2549 3605 I 2549 3612 I 2529 3612 I 2529 3605 I C 
+2568 3605 M 2587 3605 I 2587 3612 I 2568 3612 I 2568 3605 I C 
+2606 3605 M 2625 3605 I 2625 3612 I 2606 3612 I 2606 3605 I C 
+2644 3605 M 2663 3605 I 2663 3612 I 2644 3612 I 2644 3605 I C 
+2682 3605 M 2701 3605 I 2701 3612 I 2682 3612 I 2682 3605 I C 
+2721 3605 M 2740 3605 I 2740 3612 I 2721 3612 I 2721 3605 I C 
+2759 3605 M 2778 3605 I 2778 3612 I 2759 3612 I 2759 3605 I C 
+2797 3605 M 2816 3605 I 2816 3612 I 2797 3612 I 2797 3605 I C 
+2835 3605 M 2854 3605 I 2854 3612 I 2835 3612 I 2835 3605 I C 
+2874 3605 M 2893 3605 I 2893 3612 I 2874 3612 I 2874 3605 I C 
+2912 3605 M 2931 3605 I 2931 3612 I 2912 3612 I 2912 3605 I C 
+2950 3605 M 2969 3605 I 2969 3612 I 2950 3612 I 2950 3605 I C 
+2988 3605 M 3007 3605 I 3007 3612 I 2988 3612 I 2988 3605 I C 
+3026 3605 M 3046 3605 I 3046 3612 I 3026 3612 I 3026 3605 I C 
+3065 3605 M 3084 3605 I 3084 3612 I 3065 3612 I 3065 3605 I C 
+3103 3605 M 3122 3605 I 3122 3612 I 3103 3612 I 3103 3605 I C 
+3141 3605 M 3160 3605 I 3160 3612 I 3141 3612 I 3141 3605 I C 
+3179 3605 M 3199 3605 I 3199 3612 I 3179 3612 I 3179 3605 I C 
+3218 3605 M 3237 3605 I 3237 3612 I 3218 3612 I 3218 3605 I C 
+3256 3605 M 3275 3605 I 3275 3612 I 3256 3612 I 3256 3605 I C 
+3294 3605 M 3313 3605 I 3313 3612 I 3294 3612 I 3294 3605 I C 
+3332 3605 M 3351 3605 I 3351 3612 I 3332 3612 I 3332 3605 I C 
+3371 3605 M 3390 3605 I 3390 3612 I 3371 3612 I 3371 3605 I C 
+3409 3605 M 3428 3605 I 3428 3612 I 3409 3612 I 3409 3605 I C 
+3447 3605 M 3466 3605 I 3466 3612 I 3447 3612 I 3447 3605 I C 
+3485 3605 M 3504 3605 I 3504 3612 I 3485 3612 I 3485 3605 I C 
+3524 3605 M 3543 3605 I 3543 3612 I 3524 3612 I 3524 3605 I C 
+3562 3605 M 3581 3605 I 3581 3612 I 3562 3612 I 3562 3605 I C 
+3600 3605 M 3619 3605 I 3619 3612 I 3600 3612 I 3600 3605 I C 
+3638 3605 M 3657 3605 I 3657 3612 I 3638 3612 I 3638 3605 I C 
+3676 3605 M 3696 3605 I 3696 3612 I 3676 3612 I 3676 3605 I C 
+3715 3605 M 3734 3605 I 3734 3612 I 3715 3612 I 3715 3605 I C 
+3753 3605 M 3772 3605 I 3772 3612 I 3753 3612 I 3753 3605 I C 
+3791 3605 M 3810 3605 I 3810 3612 I 3791 3612 I 3791 3605 I C 
+3829 3605 M 3849 3605 I 3849 3612 I 3829 3612 I 3829 3605 I C 
+3868 3605 M 3887 3605 I 3887 3612 I 3868 3612 I 3868 3605 I C 
+3906 3605 M 3925 3605 I 3925 3612 I 3906 3612 I 3906 3605 I C 
+3944 3605 M 3963 3605 I 3963 3612 I 3944 3612 I 3944 3605 I C 
+3982 3605 M 4001 3605 I 4001 3612 I 3982 3612 I 3982 3605 I C 
+4021 3605 M 4040 3605 I 4040 3612 I 4021 3612 I 4021 3605 I C 
+4059 3605 M 4078 3605 I 4078 3612 I 4059 3612 I 4059 3605 I C 
+4097 3605 M 4116 3605 I 4116 3612 I 4097 3612 I 4097 3605 I C 
+4135 3605 M 4154 3605 I 4154 3612 I 4135 3612 I 4135 3605 I C 
+4174 3605 M 4193 3605 I 4193 3612 I 4174 3612 I 4174 3605 I C 
+4212 3605 M 4231 3605 I 4231 3612 I 4212 3612 I 4212 3605 I C 
+4250 3605 M 4269 3605 I 4269 3612 I 4250 3612 I 4250 3605 I C 
+4288 3605 M 4307 3605 I 4307 3612 I 4288 3612 I 4288 3605 I C 
+4326 3605 M 4346 3605 I 4346 3612 I 4326 3612 I 4326 3605 I C 
+4365 3605 M 4384 3605 I 4384 3612 I 4365 3612 I 4365 3605 I C 
+4403 3605 M 4422 3605 I 4422 3612 I 4403 3612 I 4403 3605 I C 
+4441 3605 M 4460 3605 I 4460 3612 I 4441 3612 I 4441 3605 I C 
+4479 3605 M 4499 3605 I 4499 3612 I 4479 3612 I 4479 3605 I C 
+4518 3605 M 4537 3605 I 4537 3612 I 4518 3612 I 4518 3605 I C 
+4556 3605 M 4575 3605 I 4575 3612 I 4556 3612 I 4556 3605 I C 
+4594 3605 M 4613 3605 I 4613 3612 I 4594 3612 I 4594 3605 I C 
+4632 3605 M 4651 3605 I 4651 3612 I 4632 3612 I 4632 3605 I C 
+4671 3605 M 4690 3605 I 4690 3612 I 4671 3612 I 4671 3605 I C 
+4709 3605 M 4728 3605 I 4728 3612 I 4709 3612 I 4709 3605 I C 
+4747 3605 M 4766 3605 I 4766 3612 I 4747 3612 I 4747 3605 I C 
+4785 3605 M 4804 3605 I 4804 3612 I 4785 3612 I 4785 3605 I C 
+4824 3605 M 4843 3605 I 4843 3612 I 4824 3612 I 4824 3605 I C 
+4862 3605 M 4881 3605 I 4881 3612 I 4862 3612 I 4862 3605 I C 
+4900 3605 M 4919 3605 I 4919 3612 I 4900 3612 I 4900 3605 I C 
+4938 3605 M 4957 3605 I 4957 3612 I 4938 3612 I 4938 3605 I C 
+4976 3605 M 4996 3605 I 4996 3612 I 4976 3612 I 4976 3605 I C 
+5015 3605 M 5034 3605 I 5034 3612 I 5015 3612 I 5015 3605 I C 
+5053 3605 M 5072 3605 I 5072 3612 I 5053 3612 I 5053 3605 I C 
+5091 3605 M 5110 3605 I 5110 3612 I 5091 3612 I 5091 3605 I C 
+5129 3605 M 5149 3605 I 5149 3612 I 5129 3612 I 5129 3605 I C 
+5168 3605 M 5187 3605 I 5187 3612 I 5168 3612 I 5168 3605 I C 
+5206 3605 M 5225 3605 I 5225 3612 I 5206 3612 I 5206 3605 I C 
+5244 3605 M 5263 3605 I 5263 3612 I 5244 3612 I 5244 3605 I C 
+5282 3605 M 5301 3605 I 5301 3612 I 5282 3612 I 5282 3605 I C 
+5321 3605 M 5340 3605 I 5340 3612 I 5321 3612 I 5321 3605 I C 
+5359 3605 M 5378 3605 I 5378 3612 I 5359 3612 I 5359 3605 I C 
+5397 3605 M 5416 3605 I 5416 3612 I 5397 3612 I 5397 3605 I C 
+5435 3605 M 5454 3605 I 5454 3612 I 5435 3612 I 5435 3605 I C 
+5474 3605 M 5493 3605 I 5493 3612 I 5474 3612 I 5474 3605 I C 
+5512 3605 M 5531 3605 I 5531 3612 I 5512 3612 I 5512 3605 I C 
+5550 3605 M 5569 3605 I 5569 3612 I 5550 3612 I 5550 3605 I C 
+5588 3605 M 5607 3605 I 5607 3612 I 5588 3612 I 5588 3605 I C 
+5626 3605 M 5646 3605 I 5646 3612 I 5626 3612 I 5626 3605 I C 
+5665 3605 M 5684 3605 I 5684 3612 I 5665 3612 I 5665 3605 I C 
+5703 3605 M 5722 3605 I 5722 3612 I 5703 3612 I 5703 3605 I C 
+5741 3605 M 5760 3605 I 5760 3612 I 5741 3612 I 5741 3605 I C 
+5779 3605 M 5799 3605 I 5799 3612 I 5779 3612 I 5779 3605 I C 
+5818 3605 M 5837 3605 I 5837 3612 I 5818 3612 I 5818 3605 I C 
+5856 3605 M 5875 3605 I 5875 3612 I 5856 3612 I 5856 3605 I C 
+5894 3605 M 5913 3605 I 5913 3612 I 5894 3612 I 5894 3605 I C 
+5932 3605 M 5951 3605 I 5951 3612 I 5932 3612 I 5932 3605 I C 
+5971 3605 M 5990 3605 I 5990 3612 I 5971 3612 I 5971 3605 I C 
+6009 3605 M 6028 3605 I 6028 3612 I 6009 3612 I 6009 3605 I C 
+6047 3605 M 6066 3605 I 6066 3612 I 6047 3612 I 6047 3605 I C 
+6085 3605 M 6104 3605 I 6104 3612 I 6085 3612 I 6085 3605 I C 
+6124 3605 M 6143 3605 I 6143 3612 I 6124 3612 I 6124 3605 I C 
+6162 3605 M 6181 3605 I 6181 3612 I 6162 3612 I 6162 3605 I C 
+6200 3605 M 6219 3605 I 6219 3612 I 6200 3612 I 6200 3605 I C 
+6238 3605 M 6257 3605 I 6257 3612 I 6238 3612 I 6238 3605 I C 
+6276 3605 M 6296 3605 I 6296 3612 I 6276 3612 I 6276 3605 I C 
+6315 3605 M 6334 3605 I 6334 3612 I 6315 3612 I 6315 3605 I C 
+6353 3605 M 6372 3605 I 6372 3612 I 6353 3612 I 6353 3605 I C 
+6391 3605 M 6410 3605 I 6410 3612 I 6391 3612 I 6391 3605 I C 
+6429 3605 M 6449 3605 I 6449 3612 I 6429 3612 I 6429 3605 I C 
+6468 3605 M 6487 3605 I 6487 3612 I 6468 3612 I 6468 3605 I C 
+6506 3605 M 6525 3605 I 6525 3612 I 6506 3612 I 6506 3605 I C 
+6544 3605 M 6563 3605 I 6563 3612 I 6544 3612 I 6544 3605 I C 
+6582 3605 M 6601 3605 I 6601 3612 I 6582 3612 I 6582 3605 I C 
+6621 3605 M 6640 3605 I 6640 3612 I 6621 3612 I 6621 3605 I C 
+6659 3605 M 6678 3605 I 6678 3612 I 6659 3612 I 6659 3605 I C 
+6697 3605 M 6716 3605 I 6716 3612 I 6697 3612 I 6697 3605 I C 
+6735 3605 M 6754 3605 I 6754 3612 I 6735 3612 I 6735 3605 I C 
+6774 3605 M 6793 3605 I 6793 3612 I 6774 3612 I 6774 3605 I C 
+6812 3605 M 6831 3605 I 6831 3612 I 6812 3612 I 6812 3605 I C 
+6850 3605 M 6869 3605 I 6869 3612 I 6850 3612 I 6850 3605 I C 
+6888 3605 M 6907 3605 I 6907 3612 I 6888 3612 I 6888 3605 I C 
+6926 3605 M 6946 3605 I 6946 3612 I 6926 3612 I 6926 3605 I C 
+6965 3605 M 6984 3605 I 6984 3612 I 6965 3612 I 6965 3605 I C 
+7003 3605 M 7022 3605 I 7022 3612 I 7003 3612 I 7003 3605 I C 
+7041 3605 M 7060 3605 I 7060 3612 I 7041 3612 I 7041 3605 I C 
+7079 3605 M 7099 3605 I 7099 3612 I 7079 3612 I 7079 3605 I C 
+7118 3605 M 7137 3605 I 7137 3612 I 7118 3612 I 7118 3605 I C 
+7156 3605 M 7175 3605 I 7175 3612 I 7156 3612 I 7156 3605 I C 
+7194 3605 M 7213 3605 I 7213 3612 I 7194 3612 I 7194 3605 I C 
+7232 3605 M 7251 3605 I 7251 3612 I 7232 3612 I 7232 3605 I C 
+7271 3605 M 7290 3605 I 7290 3612 I 7271 3612 I 7271 3605 I C 
+7309 3605 M 7328 3605 I 7328 3612 I 7309 3612 I 7309 3605 I C 
+7347 3605 M 7366 3605 I 7366 3612 I 7347 3612 I 7347 3605 I C 
+7385 3605 M 7404 3605 I 7404 3612 I 7385 3612 I 7385 3605 I C 
+7424 3605 M 7443 3605 I 7443 3612 I 7424 3612 I 7424 3605 I C 
+7462 3605 M 7481 3605 I 7481 3612 I 7462 3612 I 7462 3605 I C 
+7500 3605 M 7519 3605 I 7519 3612 I 7500 3612 I 7500 3605 I C 
+7538 3605 M 7557 3605 I 7557 3612 I 7538 3612 I 7538 3605 I C 
+7576 3605 M 7596 3605 I 7596 3612 I 7576 3612 I 7576 3605 I C 
+7615 3605 M 7634 3605 I 7634 3612 I 7615 3612 I 7615 3605 I C 
+7653 3605 M 7672 3605 I 7672 3612 I 7653 3612 I 7653 3605 I C 
+7691 3605 M 7710 3605 I 7710 3612 I 7691 3612 I 7691 3605 I C 
+7729 3605 M 7749 3605 I 7749 3612 I 7729 3612 I 7729 3605 I C 
+7768 3605 M 7787 3605 I 7787 3612 I 7768 3612 I 7768 3605 I C 
+7806 3605 M 7825 3605 I 7825 3612 I 7806 3612 I 7806 3605 I C 
+7844 3605 M 7863 3605 I 7863 3612 I 7844 3612 I 7844 3605 I C 
+7882 3605 M 7901 3605 I 7901 3612 I 7882 3612 I 7882 3605 I C 
+7921 3605 M 7940 3605 I 7940 3612 I 7921 3612 I 7921 3605 I C 
+7959 3605 M 7978 3605 I 7978 3612 I 7959 3612 I 7959 3605 I C 
+7997 3605 M 8016 3605 I 8016 3612 I 7997 3612 I 7997 3605 I C 
+8035 3605 M 8054 3605 I 8054 3612 I 8035 3612 I 8035 3605 I C 
+8074 3605 M 8093 3605 I 8093 3612 I 8074 3612 I 8074 3605 I C 
+8112 3605 M 8131 3605 I 8131 3612 I 8112 3612 I 8112 3605 I C 
+8150 3605 M 8169 3605 I 8169 3612 I 8150 3612 I 8150 3605 I C 
+8188 3605 M 8207 3605 I 8207 3612 I 8188 3612 I 8188 3605 I C 
+8226 3605 M 8246 3605 I 8246 3612 I 8226 3612 I 8226 3605 I C 
+8265 3605 M 8284 3605 I 8284 3612 I 8265 3612 I 8265 3605 I C 
+8303 3605 M 8322 3605 I 8322 3612 I 8303 3612 I 8303 3605 I C 
+8341 3605 M 8360 3605 I 8360 3612 I 8341 3612 I 8341 3605 I C 
+8379 3605 M 8399 3605 I 8399 3612 I 8379 3612 I 8379 3605 I C 
+8418 3605 M 8437 3605 I 8437 3612 I 8418 3612 I 8418 3605 I C 
+8456 3605 M 8475 3605 I 8475 3612 I 8456 3612 I 8456 3605 I C 
+8494 3605 M 8513 3605 I 8513 3612 I 8494 3612 I 8494 3605 I C 
+8532 3605 M 8551 3605 I 8551 3612 I 8532 3612 I 8532 3605 I C 
+8571 3605 M 8577 3605 I 8577 3612 I 8571 3612 I 8571 3605 I C 
+:  L ; : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 0 0 0 1 scol 0 Lj 2 Lc N 962 3609 M 1006 3609 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; N 8577 3609 M 8532 3609 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 554 3673 M ( )S 
+605 3673 M (0)S  707 3673 M (.)S  758 3673 M (1)S  
+0.754 0.754 0.754 1 scol 2 Lj 0 Lc N 962 3038 M 981 3038 I 981 3044 I 962 3044 I 962 3038 I C 
+1000 3038 M 1019 3038 I 1019 3044 I 1000 3044 I 1000 3038 I C 
+1038 3038 M 1057 3038 I 1057 3044 I 1038 3044 I 1038 3038 I C 
+1076 3038 M 1096 3038 I 1096 3044 I 1076 3044 I 1076 3038 I C 
+1115 3038 M 1134 3038 I 1134 3044 I 1115 3044 I 1115 3038 I C 
+1153 3038 M 1172 3038 I 1172 3044 I 1153 3044 I 1153 3038 I C 
+1191 3038 M 1210 3038 I 1210 3044 I 1191 3044 I 1191 3038 I C 
+1229 3038 M 1249 3038 I 1249 3044 I 1229 3044 I 1229 3038 I C 
+1268 3038 M 1287 3038 I 1287 3044 I 1268 3044 I 1268 3038 I C 
+1306 3038 M 1325 3038 I 1325 3044 I 1306 3044 I 1306 3038 I C 
+1344 3038 M 1363 3038 I 1363 3044 I 1344 3044 I 1344 3038 I C 
+1382 3038 M 1401 3038 I 1401 3044 I 1382 3044 I 1382 3038 I C 
+1421 3038 M 1440 3038 I 1440 3044 I 1421 3044 I 1421 3038 I C 
+1459 3038 M 1478 3038 I 1478 3044 I 1459 3044 I 1459 3038 I C 
+1497 3038 M 1516 3038 I 1516 3044 I 1497 3044 I 1497 3038 I C 
+1535 3038 M 1554 3038 I 1554 3044 I 1535 3044 I 1535 3038 I C 
+1574 3038 M 1593 3038 I 1593 3044 I 1574 3044 I 1574 3038 I C 
+1612 3038 M 1631 3038 I 1631 3044 I 1612 3044 I 1612 3038 I C 
+1650 3038 M 1669 3038 I 1669 3044 I 1650 3044 I 1650 3038 I C 
+1688 3038 M 1707 3038 I 1707 3044 I 1688 3044 I 1688 3038 I C 
+1726 3038 M 1746 3038 I 1746 3044 I 1726 3044 I 1726 3038 I C 
+1765 3038 M 1784 3038 I 1784 3044 I 1765 3044 I 1765 3038 I C 
+1803 3038 M 1822 3038 I 1822 3044 I 1803 3044 I 1803 3038 I C 
+1841 3038 M 1860 3038 I 1860 3044 I 1841 3044 I 1841 3038 I C 
+1879 3038 M 1899 3038 I 1899 3044 I 1879 3044 I 1879 3038 I C 
+1918 3038 M 1937 3038 I 1937 3044 I 1918 3044 I 1918 3038 I C 
+1956 3038 M 1975 3038 I 1975 3044 I 1956 3044 I 1956 3038 I C 
+1994 3038 M 2013 3038 I 2013 3044 I 1994 3044 I 1994 3038 I C 
+2032 3038 M 2051 3038 I 2051 3044 I 2032 3044 I 2032 3038 I C 
+2071 3038 M 2090 3038 I 2090 3044 I 2071 3044 I 2071 3038 I C 
+2109 3038 M 2128 3038 I 2128 3044 I 2109 3044 I 2109 3038 I C 
+2147 3038 M 2166 3038 I 2166 3044 I 2147 3044 I 2147 3038 I C 
+2185 3038 M 2204 3038 I 2204 3044 I 2185 3044 I 2185 3038 I C 
+2224 3038 M 2243 3038 I 2243 3044 I 2224 3044 I 2224 3038 I C 
+2262 3038 M 2281 3038 I 2281 3044 I 2262 3044 I 2262 3038 I C 
+2300 3038 M 2319 3038 I 2319 3044 I 2300 3044 I 2300 3038 I C 
+2338 3038 M 2357 3038 I 2357 3044 I 2338 3044 I 2338 3038 I C 
+2376 3038 M 2396 3038 I 2396 3044 I 2376 3044 I 2376 3038 I C 
+2415 3038 M 2434 3038 I 2434 3044 I 2415 3044 I 2415 3038 I C 
+2453 3038 M 2472 3038 I 2472 3044 I 2453 3044 I 2453 3038 I C 
+2491 3038 M 2510 3038 I 2510 3044 I 2491 3044 I 2491 3038 I C 
+2529 3038 M 2549 3038 I 2549 3044 I 2529 3044 I 2529 3038 I C 
+2568 3038 M 2587 3038 I 2587 3044 I 2568 3044 I 2568 3038 I C 
+2606 3038 M 2625 3038 I 2625 3044 I 2606 3044 I 2606 3038 I C 
+2644 3038 M 2663 3038 I 2663 3044 I 2644 3044 I 2644 3038 I C 
+2682 3038 M 2701 3038 I 2701 3044 I 2682 3044 I 2682 3038 I C 
+2721 3038 M 2740 3038 I 2740 3044 I 2721 3044 I 2721 3038 I C 
+2759 3038 M 2778 3038 I 2778 3044 I 2759 3044 I 2759 3038 I C 
+2797 3038 M 2816 3038 I 2816 3044 I 2797 3044 I 2797 3038 I C 
+2835 3038 M 2854 3038 I 2854 3044 I 2835 3044 I 2835 3038 I C 
+2874 3038 M 2893 3038 I 2893 3044 I 2874 3044 I 2874 3038 I C 
+2912 3038 M 2931 3038 I 2931 3044 I 2912 3044 I 2912 3038 I C 
+2950 3038 M 2969 3038 I 2969 3044 I 2950 3044 I 2950 3038 I C 
+2988 3038 M 3007 3038 I 3007 3044 I 2988 3044 I 2988 3038 I C 
+3026 3038 M 3046 3038 I 3046 3044 I 3026 3044 I 3026 3038 I C 
+3065 3038 M 3084 3038 I 3084 3044 I 3065 3044 I 3065 3038 I C 
+3103 3038 M 3122 3038 I 3122 3044 I 3103 3044 I 3103 3038 I C 
+3141 3038 M 3160 3038 I 3160 3044 I 3141 3044 I 3141 3038 I C 
+3179 3038 M 3199 3038 I 3199 3044 I 3179 3044 I 3179 3038 I C 
+3218 3038 M 3237 3038 I 3237 3044 I 3218 3044 I 3218 3038 I C 
+3256 3038 M 3275 3038 I 3275 3044 I 3256 3044 I 3256 3038 I C 
+3294 3038 M 3313 3038 I 3313 3044 I 3294 3044 I 3294 3038 I C 
+3332 3038 M 3351 3038 I 3351 3044 I 3332 3044 I 3332 3038 I C 
+3371 3038 M 3390 3038 I 3390 3044 I 3371 3044 I 3371 3038 I C 
+3409 3038 M 3428 3038 I 3428 3044 I 3409 3044 I 3409 3038 I C 
+3447 3038 M 3466 3038 I 3466 3044 I 3447 3044 I 3447 3038 I C 
+3485 3038 M 3504 3038 I 3504 3044 I 3485 3044 I 3485 3038 I C 
+3524 3038 M 3543 3038 I 3543 3044 I 3524 3044 I 3524 3038 I C 
+3562 3038 M 3581 3038 I 3581 3044 I 3562 3044 I 3562 3038 I C 
+3600 3038 M 3619 3038 I 3619 3044 I 3600 3044 I 3600 3038 I C 
+3638 3038 M 3657 3038 I 3657 3044 I 3638 3044 I 3638 3038 I C 
+3676 3038 M 3696 3038 I 3696 3044 I 3676 3044 I 3676 3038 I C 
+3715 3038 M 3734 3038 I 3734 3044 I 3715 3044 I 3715 3038 I C 
+3753 3038 M 3772 3038 I 3772 3044 I 3753 3044 I 3753 3038 I C 
+3791 3038 M 3810 3038 I 3810 3044 I 3791 3044 I 3791 3038 I C 
+3829 3038 M 3849 3038 I 3849 3044 I 3829 3044 I 3829 3038 I C 
+3868 3038 M 3887 3038 I 3887 3044 I 3868 3044 I 3868 3038 I C 
+3906 3038 M 3925 3038 I 3925 3044 I 3906 3044 I 3906 3038 I C 
+3944 3038 M 3963 3038 I 3963 3044 I 3944 3044 I 3944 3038 I C 
+3982 3038 M 4001 3038 I 4001 3044 I 3982 3044 I 3982 3038 I C 
+4021 3038 M 4040 3038 I 4040 3044 I 4021 3044 I 4021 3038 I C 
+4059 3038 M 4078 3038 I 4078 3044 I 4059 3044 I 4059 3038 I C 
+4097 3038 M 4116 3038 I 4116 3044 I 4097 3044 I 4097 3038 I C 
+4135 3038 M 4154 3038 I 4154 3044 I 4135 3044 I 4135 3038 I C 
+4174 3038 M 4193 3038 I 4193 3044 I 4174 3044 I 4174 3038 I C 
+4212 3038 M 4231 3038 I 4231 3044 I 4212 3044 I 4212 3038 I C 
+4250 3038 M 4269 3038 I 4269 3044 I 4250 3044 I 4250 3038 I C 
+4288 3038 M 4307 3038 I 4307 3044 I 4288 3044 I 4288 3038 I C 
+4326 3038 M 4346 3038 I 4346 3044 I 4326 3044 I 4326 3038 I C 
+4365 3038 M 4384 3038 I 4384 3044 I 4365 3044 I 4365 3038 I C 
+4403 3038 M 4422 3038 I 4422 3044 I 4403 3044 I 4403 3038 I C 
+4441 3038 M 4460 3038 I 4460 3044 I 4441 3044 I 4441 3038 I C 
+4479 3038 M 4499 3038 I 4499 3044 I 4479 3044 I 4479 3038 I C 
+4518 3038 M 4537 3038 I 4537 3044 I 4518 3044 I 4518 3038 I C 
+4556 3038 M 4575 3038 I 4575 3044 I 4556 3044 I 4556 3038 I C 
+4594 3038 M 4613 3038 I 4613 3044 I 4594 3044 I 4594 3038 I C 
+4632 3038 M 4651 3038 I 4651 3044 I 4632 3044 I 4632 3038 I C 
+4671 3038 M 4690 3038 I 4690 3044 I 4671 3044 I 4671 3038 I C 
+4709 3038 M 4728 3038 I 4728 3044 I 4709 3044 I 4709 3038 I C 
+4747 3038 M 4766 3038 I 4766 3044 I 4747 3044 I 4747 3038 I C 
+4785 3038 M 4804 3038 I 4804 3044 I 4785 3044 I 4785 3038 I C 
+4824 3038 M 4843 3038 I 4843 3044 I 4824 3044 I 4824 3038 I C 
+4862 3038 M 4881 3038 I 4881 3044 I 4862 3044 I 4862 3038 I C 
+4900 3038 M 4919 3038 I 4919 3044 I 4900 3044 I 4900 3038 I C 
+4938 3038 M 4957 3038 I 4957 3044 I 4938 3044 I 4938 3038 I C 
+4976 3038 M 4996 3038 I 4996 3044 I 4976 3044 I 4976 3038 I C 
+5015 3038 M 5034 3038 I 5034 3044 I 5015 3044 I 5015 3038 I C 
+5053 3038 M 5072 3038 I 5072 3044 I 5053 3044 I 5053 3038 I C 
+5091 3038 M 5110 3038 I 5110 3044 I 5091 3044 I 5091 3038 I C 
+5129 3038 M 5149 3038 I 5149 3044 I 5129 3044 I 5129 3038 I C 
+5168 3038 M 5187 3038 I 5187 3044 I 5168 3044 I 5168 3038 I C 
+5206 3038 M 5225 3038 I 5225 3044 I 5206 3044 I 5206 3038 I C 
+5244 3038 M 5263 3038 I 5263 3044 I 5244 3044 I 5244 3038 I C 
+5282 3038 M 5301 3038 I 5301 3044 I 5282 3044 I 5282 3038 I C 
+5321 3038 M 5340 3038 I 5340 3044 I 5321 3044 I 5321 3038 I C 
+5359 3038 M 5378 3038 I 5378 3044 I 5359 3044 I 5359 3038 I C 
+5397 3038 M 5416 3038 I 5416 3044 I 5397 3044 I 5397 3038 I C 
+5435 3038 M 5454 3038 I 5454 3044 I 5435 3044 I 5435 3038 I C 
+5474 3038 M 5493 3038 I 5493 3044 I 5474 3044 I 5474 3038 I C 
+5512 3038 M 5531 3038 I 5531 3044 I 5512 3044 I 5512 3038 I C 
+5550 3038 M 5569 3038 I 5569 3044 I 5550 3044 I 5550 3038 I C 
+5588 3038 M 5607 3038 I 5607 3044 I 5588 3044 I 5588 3038 I C 
+5626 3038 M 5646 3038 I 5646 3044 I 5626 3044 I 5626 3038 I C 
+5665 3038 M 5684 3038 I 5684 3044 I 5665 3044 I 5665 3038 I C 
+5703 3038 M 5722 3038 I 5722 3044 I 5703 3044 I 5703 3038 I C 
+5741 3038 M 5760 3038 I 5760 3044 I 5741 3044 I 5741 3038 I C 
+5779 3038 M 5799 3038 I 5799 3044 I 5779 3044 I 5779 3038 I C 
+5818 3038 M 5837 3038 I 5837 3044 I 5818 3044 I 5818 3038 I C 
+5856 3038 M 5875 3038 I 5875 3044 I 5856 3044 I 5856 3038 I C 
+5894 3038 M 5913 3038 I 5913 3044 I 5894 3044 I 5894 3038 I C 
+5932 3038 M 5951 3038 I 5951 3044 I 5932 3044 I 5932 3038 I C 
+5971 3038 M 5990 3038 I 5990 3044 I 5971 3044 I 5971 3038 I C 
+6009 3038 M 6028 3038 I 6028 3044 I 6009 3044 I 6009 3038 I C 
+6047 3038 M 6066 3038 I 6066 3044 I 6047 3044 I 6047 3038 I C 
+6085 3038 M 6104 3038 I 6104 3044 I 6085 3044 I 6085 3038 I C 
+6124 3038 M 6143 3038 I 6143 3044 I 6124 3044 I 6124 3038 I C 
+6162 3038 M 6181 3038 I 6181 3044 I 6162 3044 I 6162 3038 I C 
+6200 3038 M 6219 3038 I 6219 3044 I 6200 3044 I 6200 3038 I C 
+6238 3038 M 6257 3038 I 6257 3044 I 6238 3044 I 6238 3038 I C 
+6276 3038 M 6296 3038 I 6296 3044 I 6276 3044 I 6276 3038 I C 
+6315 3038 M 6334 3038 I 6334 3044 I 6315 3044 I 6315 3038 I C 
+6353 3038 M 6372 3038 I 6372 3044 I 6353 3044 I 6353 3038 I C 
+6391 3038 M 6410 3038 I 6410 3044 I 6391 3044 I 6391 3038 I C 
+6429 3038 M 6449 3038 I 6449 3044 I 6429 3044 I 6429 3038 I C 
+6468 3038 M 6487 3038 I 6487 3044 I 6468 3044 I 6468 3038 I C 
+6506 3038 M 6525 3038 I 6525 3044 I 6506 3044 I 6506 3038 I C 
+6544 3038 M 6563 3038 I 6563 3044 I 6544 3044 I 6544 3038 I C 
+6582 3038 M 6601 3038 I 6601 3044 I 6582 3044 I 6582 3038 I C 
+6621 3038 M 6640 3038 I 6640 3044 I 6621 3044 I 6621 3038 I C 
+6659 3038 M 6678 3038 I 6678 3044 I 6659 3044 I 6659 3038 I C 
+6697 3038 M 6716 3038 I 6716 3044 I 6697 3044 I 6697 3038 I C 
+6735 3038 M 6754 3038 I 6754 3044 I 6735 3044 I 6735 3038 I C 
+6774 3038 M 6793 3038 I 6793 3044 I 6774 3044 I 6774 3038 I C 
+6812 3038 M 6831 3038 I 6831 3044 I 6812 3044 I 6812 3038 I C 
+6850 3038 M 6869 3038 I 6869 3044 I 6850 3044 I 6850 3038 I C 
+6888 3038 M 6907 3038 I 6907 3044 I 6888 3044 I 6888 3038 I C 
+6926 3038 M 6946 3038 I 6946 3044 I 6926 3044 I 6926 3038 I C 
+6965 3038 M 6984 3038 I 6984 3044 I 6965 3044 I 6965 3038 I C 
+7003 3038 M 7022 3038 I 7022 3044 I 7003 3044 I 7003 3038 I C 
+7041 3038 M 7060 3038 I 7060 3044 I 7041 3044 I 7041 3038 I C 
+7079 3038 M 7099 3038 I 7099 3044 I 7079 3044 I 7079 3038 I C 
+7118 3038 M 7137 3038 I 7137 3044 I 7118 3044 I 7118 3038 I C 
+7156 3038 M 7175 3038 I 7175 3044 I 7156 3044 I 7156 3038 I C 
+7194 3038 M 7213 3038 I 7213 3044 I 7194 3044 I 7194 3038 I C 
+7232 3038 M 7251 3038 I 7251 3044 I 7232 3044 I 7232 3038 I C 
+7271 3038 M 7290 3038 I 7290 3044 I 7271 3044 I 7271 3038 I C 
+7309 3038 M 7328 3038 I 7328 3044 I 7309 3044 I 7309 3038 I C 
+7347 3038 M 7366 3038 I 7366 3044 I 7347 3044 I 7347 3038 I C 
+7385 3038 M 7404 3038 I 7404 3044 I 7385 3044 I 7385 3038 I C 
+7424 3038 M 7443 3038 I 7443 3044 I 7424 3044 I 7424 3038 I C 
+7462 3038 M 7481 3038 I 7481 3044 I 7462 3044 I 7462 3038 I C 
+7500 3038 M 7519 3038 I 7519 3044 I 7500 3044 I 7500 3038 I C 
+7538 3038 M 7557 3038 I 7557 3044 I 7538 3044 I 7538 3038 I C 
+7576 3038 M 7596 3038 I 7596 3044 I 7576 3044 I 7576 3038 I C 
+7615 3038 M 7634 3038 I 7634 3044 I 7615 3044 I 7615 3038 I C 
+7653 3038 M 7672 3038 I 7672 3044 I 7653 3044 I 7653 3038 I C 
+7691 3038 M 7710 3038 I 7710 3044 I 7691 3044 I 7691 3038 I C 
+7729 3038 M 7749 3038 I 7749 3044 I 7729 3044 I 7729 3038 I C 
+7768 3038 M 7787 3038 I 7787 3044 I 7768 3044 I 7768 3038 I C 
+7806 3038 M 7825 3038 I 7825 3044 I 7806 3044 I 7806 3038 I C 
+7844 3038 M 7863 3038 I 7863 3044 I 7844 3044 I 7844 3038 I C 
+7882 3038 M 7901 3038 I 7901 3044 I 7882 3044 I 7882 3038 I C 
+7921 3038 M 7940 3038 I 7940 3044 I 7921 3044 I 7921 3038 I C 
+7959 3038 M 7978 3038 I 7978 3044 I 7959 3044 I 7959 3038 I C 
+7997 3038 M 8016 3038 I 8016 3044 I 7997 3044 I 7997 3038 I C 
+8035 3038 M 8054 3038 I 8054 3044 I 8035 3044 I 8035 3038 I C 
+8074 3038 M 8093 3038 I 8093 3044 I 8074 3044 I 8074 3038 I C 
+8112 3038 M 8131 3038 I 8131 3044 I 8112 3044 I 8112 3038 I C 
+8150 3038 M 8169 3038 I 8169 3044 I 8150 3044 I 8150 3038 I C 
+8188 3038 M 8207 3038 I 8207 3044 I 8188 3044 I 8188 3038 I C 
+8226 3038 M 8246 3038 I 8246 3044 I 8226 3044 I 8226 3038 I C 
+8265 3038 M 8284 3038 I 8284 3044 I 8265 3044 I 8265 3038 I C 
+8303 3038 M 8322 3038 I 8322 3044 I 8303 3044 I 8303 3038 I C 
+8341 3038 M 8360 3038 I 8360 3044 I 8341 3044 I 8341 3038 I C 
+8379 3038 M 8399 3038 I 8399 3044 I 8379 3044 I 8379 3038 I C 
+8418 3038 M 8437 3038 I 8437 3044 I 8418 3044 I 8418 3038 I C 
+8456 3038 M 8475 3038 I 8475 3044 I 8456 3044 I 8456 3038 I C 
+8494 3038 M 8513 3038 I 8513 3044 I 8494 3044 I 8494 3038 I C 
+8532 3038 M 8551 3038 I 8551 3044 I 8532 3044 I 8532 3038 I C 
+8571 3038 M 8577 3038 I 8577 3044 I 8571 3044 I 8571 3038 I C 
+:  L ; : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 0 0 0 1 scol 0 Lj 2 Lc N 962 3041 M 1006 3041 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; N 8577 3041 M 8532 3041 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 554 3105 M ( )S 
+605 3105 M (0)S  707 3105 M (.)S  758 3105 M (2)S  
+0.754 0.754 0.754 1 scol 2 Lj 0 Lc N 962 2470 M 981 2470 I 981 2477 I 962 2477 I 962 2470 I C 
+1000 2470 M 1019 2470 I 1019 2477 I 1000 2477 I 1000 2470 I C 
+1038 2470 M 1057 2470 I 1057 2477 I 1038 2477 I 1038 2470 I C 
+1076 2470 M 1096 2470 I 1096 2477 I 1076 2477 I 1076 2470 I C 
+1115 2470 M 1134 2470 I 1134 2477 I 1115 2477 I 1115 2470 I C 
+1153 2470 M 1172 2470 I 1172 2477 I 1153 2477 I 1153 2470 I C 
+1191 2470 M 1210 2470 I 1210 2477 I 1191 2477 I 1191 2470 I C 
+1229 2470 M 1249 2470 I 1249 2477 I 1229 2477 I 1229 2470 I C 
+1268 2470 M 1287 2470 I 1287 2477 I 1268 2477 I 1268 2470 I C 
+1306 2470 M 1325 2470 I 1325 2477 I 1306 2477 I 1306 2470 I C 
+1344 2470 M 1363 2470 I 1363 2477 I 1344 2477 I 1344 2470 I C 
+1382 2470 M 1401 2470 I 1401 2477 I 1382 2477 I 1382 2470 I C 
+1421 2470 M 1440 2470 I 1440 2477 I 1421 2477 I 1421 2470 I C 
+1459 2470 M 1478 2470 I 1478 2477 I 1459 2477 I 1459 2470 I C 
+1497 2470 M 1516 2470 I 1516 2477 I 1497 2477 I 1497 2470 I C 
+1535 2470 M 1554 2470 I 1554 2477 I 1535 2477 I 1535 2470 I C 
+1574 2470 M 1593 2470 I 1593 2477 I 1574 2477 I 1574 2470 I C 
+1612 2470 M 1631 2470 I 1631 2477 I 1612 2477 I 1612 2470 I C 
+1650 2470 M 1669 2470 I 1669 2477 I 1650 2477 I 1650 2470 I C 
+1688 2470 M 1707 2470 I 1707 2477 I 1688 2477 I 1688 2470 I C 
+1726 2470 M 1746 2470 I 1746 2477 I 1726 2477 I 1726 2470 I C 
+1765 2470 M 1784 2470 I 1784 2477 I 1765 2477 I 1765 2470 I C 
+1803 2470 M 1822 2470 I 1822 2477 I 1803 2477 I 1803 2470 I C 
+1841 2470 M 1860 2470 I 1860 2477 I 1841 2477 I 1841 2470 I C 
+1879 2470 M 1899 2470 I 1899 2477 I 1879 2477 I 1879 2470 I C 
+1918 2470 M 1937 2470 I 1937 2477 I 1918 2477 I 1918 2470 I C 
+1956 2470 M 1975 2470 I 1975 2477 I 1956 2477 I 1956 2470 I C 
+1994 2470 M 2013 2470 I 2013 2477 I 1994 2477 I 1994 2470 I C 
+2032 2470 M 2051 2470 I 2051 2477 I 2032 2477 I 2032 2470 I C 
+2071 2470 M 2090 2470 I 2090 2477 I 2071 2477 I 2071 2470 I C 
+2109 2470 M 2128 2470 I 2128 2477 I 2109 2477 I 2109 2470 I C 
+2147 2470 M 2166 2470 I 2166 2477 I 2147 2477 I 2147 2470 I C 
+2185 2470 M 2204 2470 I 2204 2477 I 2185 2477 I 2185 2470 I C 
+2224 2470 M 2243 2470 I 2243 2477 I 2224 2477 I 2224 2470 I C 
+2262 2470 M 2281 2470 I 2281 2477 I 2262 2477 I 2262 2470 I C 
+2300 2470 M 2319 2470 I 2319 2477 I 2300 2477 I 2300 2470 I C 
+2338 2470 M 2357 2470 I 2357 2477 I 2338 2477 I 2338 2470 I C 
+2376 2470 M 2396 2470 I 2396 2477 I 2376 2477 I 2376 2470 I C 
+2415 2470 M 2434 2470 I 2434 2477 I 2415 2477 I 2415 2470 I C 
+2453 2470 M 2472 2470 I 2472 2477 I 2453 2477 I 2453 2470 I C 
+2491 2470 M 2510 2470 I 2510 2477 I 2491 2477 I 2491 2470 I C 
+2529 2470 M 2549 2470 I 2549 2477 I 2529 2477 I 2529 2470 I C 
+2568 2470 M 2587 2470 I 2587 2477 I 2568 2477 I 2568 2470 I C 
+2606 2470 M 2625 2470 I 2625 2477 I 2606 2477 I 2606 2470 I C 
+2644 2470 M 2663 2470 I 2663 2477 I 2644 2477 I 2644 2470 I C 
+2682 2470 M 2701 2470 I 2701 2477 I 2682 2477 I 2682 2470 I C 
+2721 2470 M 2740 2470 I 2740 2477 I 2721 2477 I 2721 2470 I C 
+2759 2470 M 2778 2470 I 2778 2477 I 2759 2477 I 2759 2470 I C 
+2797 2470 M 2816 2470 I 2816 2477 I 2797 2477 I 2797 2470 I C 
+2835 2470 M 2854 2470 I 2854 2477 I 2835 2477 I 2835 2470 I C 
+2874 2470 M 2893 2470 I 2893 2477 I 2874 2477 I 2874 2470 I C 
+2912 2470 M 2931 2470 I 2931 2477 I 2912 2477 I 2912 2470 I C 
+2950 2470 M 2969 2470 I 2969 2477 I 2950 2477 I 2950 2470 I C 
+2988 2470 M 3007 2470 I 3007 2477 I 2988 2477 I 2988 2470 I C 
+3026 2470 M 3046 2470 I 3046 2477 I 3026 2477 I 3026 2470 I C 
+3065 2470 M 3084 2470 I 3084 2477 I 3065 2477 I 3065 2470 I C 
+3103 2470 M 3122 2470 I 3122 2477 I 3103 2477 I 3103 2470 I C 
+3141 2470 M 3160 2470 I 3160 2477 I 3141 2477 I 3141 2470 I C 
+3179 2470 M 3199 2470 I 3199 2477 I 3179 2477 I 3179 2470 I C 
+3218 2470 M 3237 2470 I 3237 2477 I 3218 2477 I 3218 2470 I C 
+3256 2470 M 3275 2470 I 3275 2477 I 3256 2477 I 3256 2470 I C 
+3294 2470 M 3313 2470 I 3313 2477 I 3294 2477 I 3294 2470 I C 
+3332 2470 M 3351 2470 I 3351 2477 I 3332 2477 I 3332 2470 I C 
+3371 2470 M 3390 2470 I 3390 2477 I 3371 2477 I 3371 2470 I C 
+3409 2470 M 3428 2470 I 3428 2477 I 3409 2477 I 3409 2470 I C 
+3447 2470 M 3466 2470 I 3466 2477 I 3447 2477 I 3447 2470 I C 
+3485 2470 M 3504 2470 I 3504 2477 I 3485 2477 I 3485 2470 I C 
+3524 2470 M 3543 2470 I 3543 2477 I 3524 2477 I 3524 2470 I C 
+3562 2470 M 3581 2470 I 3581 2477 I 3562 2477 I 3562 2470 I C 
+3600 2470 M 3619 2470 I 3619 2477 I 3600 2477 I 3600 2470 I C 
+3638 2470 M 3657 2470 I 3657 2477 I 3638 2477 I 3638 2470 I C 
+3676 2470 M 3696 2470 I 3696 2477 I 3676 2477 I 3676 2470 I C 
+3715 2470 M 3734 2470 I 3734 2477 I 3715 2477 I 3715 2470 I C 
+3753 2470 M 3772 2470 I 3772 2477 I 3753 2477 I 3753 2470 I C 
+3791 2470 M 3810 2470 I 3810 2477 I 3791 2477 I 3791 2470 I C 
+3829 2470 M 3849 2470 I 3849 2477 I 3829 2477 I 3829 2470 I C 
+3868 2470 M 3887 2470 I 3887 2477 I 3868 2477 I 3868 2470 I C 
+3906 2470 M 3925 2470 I 3925 2477 I 3906 2477 I 3906 2470 I C 
+3944 2470 M 3963 2470 I 3963 2477 I 3944 2477 I 3944 2470 I C 
+3982 2470 M 4001 2470 I 4001 2477 I 3982 2477 I 3982 2470 I C 
+4021 2470 M 4040 2470 I 4040 2477 I 4021 2477 I 4021 2470 I C 
+4059 2470 M 4078 2470 I 4078 2477 I 4059 2477 I 4059 2470 I C 
+4097 2470 M 4116 2470 I 4116 2477 I 4097 2477 I 4097 2470 I C 
+4135 2470 M 4154 2470 I 4154 2477 I 4135 2477 I 4135 2470 I C 
+4174 2470 M 4193 2470 I 4193 2477 I 4174 2477 I 4174 2470 I C 
+4212 2470 M 4231 2470 I 4231 2477 I 4212 2477 I 4212 2470 I C 
+4250 2470 M 4269 2470 I 4269 2477 I 4250 2477 I 4250 2470 I C 
+4288 2470 M 4307 2470 I 4307 2477 I 4288 2477 I 4288 2470 I C 
+4326 2470 M 4346 2470 I 4346 2477 I 4326 2477 I 4326 2470 I C 
+4365 2470 M 4384 2470 I 4384 2477 I 4365 2477 I 4365 2470 I C 
+4403 2470 M 4422 2470 I 4422 2477 I 4403 2477 I 4403 2470 I C 
+4441 2470 M 4460 2470 I 4460 2477 I 4441 2477 I 4441 2470 I C 
+4479 2470 M 4499 2470 I 4499 2477 I 4479 2477 I 4479 2470 I C 
+4518 2470 M 4537 2470 I 4537 2477 I 4518 2477 I 4518 2470 I C 
+4556 2470 M 4575 2470 I 4575 2477 I 4556 2477 I 4556 2470 I C 
+4594 2470 M 4613 2470 I 4613 2477 I 4594 2477 I 4594 2470 I C 
+4632 2470 M 4651 2470 I 4651 2477 I 4632 2477 I 4632 2470 I C 
+4671 2470 M 4690 2470 I 4690 2477 I 4671 2477 I 4671 2470 I C 
+4709 2470 M 4728 2470 I 4728 2477 I 4709 2477 I 4709 2470 I C 
+4747 2470 M 4766 2470 I 4766 2477 I 4747 2477 I 4747 2470 I C 
+4785 2470 M 4804 2470 I 4804 2477 I 4785 2477 I 4785 2470 I C 
+4824 2470 M 4843 2470 I 4843 2477 I 4824 2477 I 4824 2470 I C 
+4862 2470 M 4881 2470 I 4881 2477 I 4862 2477 I 4862 2470 I C 
+4900 2470 M 4919 2470 I 4919 2477 I 4900 2477 I 4900 2470 I C 
+4938 2470 M 4957 2470 I 4957 2477 I 4938 2477 I 4938 2470 I C 
+4976 2470 M 4996 2470 I 4996 2477 I 4976 2477 I 4976 2470 I C 
+5015 2470 M 5034 2470 I 5034 2477 I 5015 2477 I 5015 2470 I C 
+5053 2470 M 5072 2470 I 5072 2477 I 5053 2477 I 5053 2470 I C 
+5091 2470 M 5110 2470 I 5110 2477 I 5091 2477 I 5091 2470 I C 
+5129 2470 M 5149 2470 I 5149 2477 I 5129 2477 I 5129 2470 I C 
+5168 2470 M 5187 2470 I 5187 2477 I 5168 2477 I 5168 2470 I C 
+5206 2470 M 5225 2470 I 5225 2477 I 5206 2477 I 5206 2470 I C 
+5244 2470 M 5263 2470 I 5263 2477 I 5244 2477 I 5244 2470 I C 
+5282 2470 M 5301 2470 I 5301 2477 I 5282 2477 I 5282 2470 I C 
+5321 2470 M 5340 2470 I 5340 2477 I 5321 2477 I 5321 2470 I C 
+5359 2470 M 5378 2470 I 5378 2477 I 5359 2477 I 5359 2470 I C 
+5397 2470 M 5416 2470 I 5416 2477 I 5397 2477 I 5397 2470 I C 
+5435 2470 M 5454 2470 I 5454 2477 I 5435 2477 I 5435 2470 I C 
+5474 2470 M 5493 2470 I 5493 2477 I 5474 2477 I 5474 2470 I C 
+5512 2470 M 5531 2470 I 5531 2477 I 5512 2477 I 5512 2470 I C 
+5550 2470 M 5569 2470 I 5569 2477 I 5550 2477 I 5550 2470 I C 
+5588 2470 M 5607 2470 I 5607 2477 I 5588 2477 I 5588 2470 I C 
+5626 2470 M 5646 2470 I 5646 2477 I 5626 2477 I 5626 2470 I C 
+5665 2470 M 5684 2470 I 5684 2477 I 5665 2477 I 5665 2470 I C 
+5703 2470 M 5722 2470 I 5722 2477 I 5703 2477 I 5703 2470 I C 
+5741 2470 M 5760 2470 I 5760 2477 I 5741 2477 I 5741 2470 I C 
+5779 2470 M 5799 2470 I 5799 2477 I 5779 2477 I 5779 2470 I C 
+5818 2470 M 5837 2470 I 5837 2477 I 5818 2477 I 5818 2470 I C 
+5856 2470 M 5875 2470 I 5875 2477 I 5856 2477 I 5856 2470 I C 
+5894 2470 M 5913 2470 I 5913 2477 I 5894 2477 I 5894 2470 I C 
+5932 2470 M 5951 2470 I 5951 2477 I 5932 2477 I 5932 2470 I C 
+5971 2470 M 5990 2470 I 5990 2477 I 5971 2477 I 5971 2470 I C 
+6009 2470 M 6028 2470 I 6028 2477 I 6009 2477 I 6009 2470 I C 
+6047 2470 M 6066 2470 I 6066 2477 I 6047 2477 I 6047 2470 I C 
+6085 2470 M 6104 2470 I 6104 2477 I 6085 2477 I 6085 2470 I C 
+6124 2470 M 6143 2470 I 6143 2477 I 6124 2477 I 6124 2470 I C 
+6162 2470 M 6181 2470 I 6181 2477 I 6162 2477 I 6162 2470 I C 
+6200 2470 M 6219 2470 I 6219 2477 I 6200 2477 I 6200 2470 I C 
+6238 2470 M 6257 2470 I 6257 2477 I 6238 2477 I 6238 2470 I C 
+6276 2470 M 6296 2470 I 6296 2477 I 6276 2477 I 6276 2470 I C 
+6315 2470 M 6334 2470 I 6334 2477 I 6315 2477 I 6315 2470 I C 
+6353 2470 M 6372 2470 I 6372 2477 I 6353 2477 I 6353 2470 I C 
+6391 2470 M 6410 2470 I 6410 2477 I 6391 2477 I 6391 2470 I C 
+6429 2470 M 6449 2470 I 6449 2477 I 6429 2477 I 6429 2470 I C 
+6468 2470 M 6487 2470 I 6487 2477 I 6468 2477 I 6468 2470 I C 
+6506 2470 M 6525 2470 I 6525 2477 I 6506 2477 I 6506 2470 I C 
+6544 2470 M 6563 2470 I 6563 2477 I 6544 2477 I 6544 2470 I C 
+6582 2470 M 6601 2470 I 6601 2477 I 6582 2477 I 6582 2470 I C 
+6621 2470 M 6640 2470 I 6640 2477 I 6621 2477 I 6621 2470 I C 
+6659 2470 M 6678 2470 I 6678 2477 I 6659 2477 I 6659 2470 I C 
+6697 2470 M 6716 2470 I 6716 2477 I 6697 2477 I 6697 2470 I C 
+6735 2470 M 6754 2470 I 6754 2477 I 6735 2477 I 6735 2470 I C 
+6774 2470 M 6793 2470 I 6793 2477 I 6774 2477 I 6774 2470 I C 
+6812 2470 M 6831 2470 I 6831 2477 I 6812 2477 I 6812 2470 I C 
+6850 2470 M 6869 2470 I 6869 2477 I 6850 2477 I 6850 2470 I C 
+6888 2470 M 6907 2470 I 6907 2477 I 6888 2477 I 6888 2470 I C 
+6926 2470 M 6946 2470 I 6946 2477 I 6926 2477 I 6926 2470 I C 
+6965 2470 M 6984 2470 I 6984 2477 I 6965 2477 I 6965 2470 I C 
+7003 2470 M 7022 2470 I 7022 2477 I 7003 2477 I 7003 2470 I C 
+7041 2470 M 7060 2470 I 7060 2477 I 7041 2477 I 7041 2470 I C 
+7079 2470 M 7099 2470 I 7099 2477 I 7079 2477 I 7079 2470 I C 
+7118 2470 M 7137 2470 I 7137 2477 I 7118 2477 I 7118 2470 I C 
+7156 2470 M 7175 2470 I 7175 2477 I 7156 2477 I 7156 2470 I C 
+7194 2470 M 7213 2470 I 7213 2477 I 7194 2477 I 7194 2470 I C 
+7232 2470 M 7251 2470 I 7251 2477 I 7232 2477 I 7232 2470 I C 
+7271 2470 M 7290 2470 I 7290 2477 I 7271 2477 I 7271 2470 I C 
+7309 2470 M 7328 2470 I 7328 2477 I 7309 2477 I 7309 2470 I C 
+7347 2470 M 7366 2470 I 7366 2477 I 7347 2477 I 7347 2470 I C 
+7385 2470 M 7404 2470 I 7404 2477 I 7385 2477 I 7385 2470 I C 
+7424 2470 M 7443 2470 I 7443 2477 I 7424 2477 I 7424 2470 I C 
+7462 2470 M 7481 2470 I 7481 2477 I 7462 2477 I 7462 2470 I C 
+7500 2470 M 7519 2470 I 7519 2477 I 7500 2477 I 7500 2470 I C 
+7538 2470 M 7557 2470 I 7557 2477 I 7538 2477 I 7538 2470 I C 
+7576 2470 M 7596 2470 I 7596 2477 I 7576 2477 I 7576 2470 I C 
+7615 2470 M 7634 2470 I 7634 2477 I 7615 2477 I 7615 2470 I C 
+7653 2470 M 7672 2470 I 7672 2477 I 7653 2477 I 7653 2470 I C 
+7691 2470 M 7710 2470 I 7710 2477 I 7691 2477 I 7691 2470 I C 
+7729 2470 M 7749 2470 I 7749 2477 I 7729 2477 I 7729 2470 I C 
+7768 2470 M 7787 2470 I 7787 2477 I 7768 2477 I 7768 2470 I C 
+7806 2470 M 7825 2470 I 7825 2477 I 7806 2477 I 7806 2470 I C 
+7844 2470 M 7863 2470 I 7863 2477 I 7844 2477 I 7844 2470 I C 
+7882 2470 M 7901 2470 I 7901 2477 I 7882 2477 I 7882 2470 I C 
+7921 2470 M 7940 2470 I 7940 2477 I 7921 2477 I 7921 2470 I C 
+7959 2470 M 7978 2470 I 7978 2477 I 7959 2477 I 7959 2470 I C 
+7997 2470 M 8016 2470 I 8016 2477 I 7997 2477 I 7997 2470 I C 
+8035 2470 M 8054 2470 I 8054 2477 I 8035 2477 I 8035 2470 I C 
+8074 2470 M 8093 2470 I 8093 2477 I 8074 2477 I 8074 2470 I C 
+8112 2470 M 8131 2470 I 8131 2477 I 8112 2477 I 8112 2470 I C 
+8150 2470 M 8169 2470 I 8169 2477 I 8150 2477 I 8150 2470 I C 
+8188 2470 M 8207 2470 I 8207 2477 I 8188 2477 I 8188 2470 I C 
+8226 2470 M 8246 2470 I 8246 2477 I 8226 2477 I 8226 2470 I C 
+8265 2470 M 8284 2470 I 8284 2477 I 8265 2477 I 8265 2470 I C 
+8303 2470 M 8322 2470 I 8322 2477 I 8303 2477 I 8303 2470 I C 
+8341 2470 M 8360 2470 I 8360 2477 I 8341 2477 I 8341 2470 I C 
+8379 2470 M 8399 2470 I 8399 2477 I 8379 2477 I 8379 2470 I C 
+8418 2470 M 8437 2470 I 8437 2477 I 8418 2477 I 8418 2470 I C 
+8456 2470 M 8475 2470 I 8475 2477 I 8456 2477 I 8456 2470 I C 
+8494 2470 M 8513 2470 I 8513 2477 I 8494 2477 I 8494 2470 I C 
+8532 2470 M 8551 2470 I 8551 2477 I 8532 2477 I 8532 2470 I C 
+8571 2470 M 8577 2470 I 8577 2477 I 8571 2477 I 8571 2470 I C 
+:  L ; : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 0 0 0 1 scol 0 Lj 2 Lc N 962 2474 M 1006 2474 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; N 8577 2474 M 8532 2474 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 554 2538 M ( )S 
+605 2538 M (0)S  707 2538 M (.)S  758 2538 M (3)S  
+0.754 0.754 0.754 1 scol 2 Lj 0 Lc N 962 1903 M 981 1903 I 981 1909 I 962 1909 I 962 1903 I C 
+1000 1903 M 1019 1903 I 1019 1909 I 1000 1909 I 1000 1903 I C 
+1038 1903 M 1057 1903 I 1057 1909 I 1038 1909 I 1038 1903 I C 
+1076 1903 M 1096 1903 I 1096 1909 I 1076 1909 I 1076 1903 I C 
+1115 1903 M 1134 1903 I 1134 1909 I 1115 1909 I 1115 1903 I C 
+1153 1903 M 1172 1903 I 1172 1909 I 1153 1909 I 1153 1903 I C 
+1191 1903 M 1210 1903 I 1210 1909 I 1191 1909 I 1191 1903 I C 
+1229 1903 M 1249 1903 I 1249 1909 I 1229 1909 I 1229 1903 I C 
+1268 1903 M 1287 1903 I 1287 1909 I 1268 1909 I 1268 1903 I C 
+1306 1903 M 1325 1903 I 1325 1909 I 1306 1909 I 1306 1903 I C 
+1344 1903 M 1363 1903 I 1363 1909 I 1344 1909 I 1344 1903 I C 
+1382 1903 M 1401 1903 I 1401 1909 I 1382 1909 I 1382 1903 I C 
+1421 1903 M 1440 1903 I 1440 1909 I 1421 1909 I 1421 1903 I C 
+1459 1903 M 1478 1903 I 1478 1909 I 1459 1909 I 1459 1903 I C 
+1497 1903 M 1516 1903 I 1516 1909 I 1497 1909 I 1497 1903 I C 
+1535 1903 M 1554 1903 I 1554 1909 I 1535 1909 I 1535 1903 I C 
+1574 1903 M 1593 1903 I 1593 1909 I 1574 1909 I 1574 1903 I C 
+1612 1903 M 1631 1903 I 1631 1909 I 1612 1909 I 1612 1903 I C 
+1650 1903 M 1669 1903 I 1669 1909 I 1650 1909 I 1650 1903 I C 
+1688 1903 M 1707 1903 I 1707 1909 I 1688 1909 I 1688 1903 I C 
+1726 1903 M 1746 1903 I 1746 1909 I 1726 1909 I 1726 1903 I C 
+1765 1903 M 1784 1903 I 1784 1909 I 1765 1909 I 1765 1903 I C 
+1803 1903 M 1822 1903 I 1822 1909 I 1803 1909 I 1803 1903 I C 
+1841 1903 M 1860 1903 I 1860 1909 I 1841 1909 I 1841 1903 I C 
+1879 1903 M 1899 1903 I 1899 1909 I 1879 1909 I 1879 1903 I C 
+1918 1903 M 1937 1903 I 1937 1909 I 1918 1909 I 1918 1903 I C 
+1956 1903 M 1975 1903 I 1975 1909 I 1956 1909 I 1956 1903 I C 
+1994 1903 M 2013 1903 I 2013 1909 I 1994 1909 I 1994 1903 I C 
+2032 1903 M 2051 1903 I 2051 1909 I 2032 1909 I 2032 1903 I C 
+2071 1903 M 2090 1903 I 2090 1909 I 2071 1909 I 2071 1903 I C 
+2109 1903 M 2128 1903 I 2128 1909 I 2109 1909 I 2109 1903 I C 
+2147 1903 M 2166 1903 I 2166 1909 I 2147 1909 I 2147 1903 I C 
+2185 1903 M 2204 1903 I 2204 1909 I 2185 1909 I 2185 1903 I C 
+2224 1903 M 2243 1903 I 2243 1909 I 2224 1909 I 2224 1903 I C 
+2262 1903 M 2281 1903 I 2281 1909 I 2262 1909 I 2262 1903 I C 
+2300 1903 M 2319 1903 I 2319 1909 I 2300 1909 I 2300 1903 I C 
+2338 1903 M 2357 1903 I 2357 1909 I 2338 1909 I 2338 1903 I C 
+2376 1903 M 2396 1903 I 2396 1909 I 2376 1909 I 2376 1903 I C 
+2415 1903 M 2434 1903 I 2434 1909 I 2415 1909 I 2415 1903 I C 
+2453 1903 M 2472 1903 I 2472 1909 I 2453 1909 I 2453 1903 I C 
+2491 1903 M 2510 1903 I 2510 1909 I 2491 1909 I 2491 1903 I C 
+2529 1903 M 2549 1903 I 2549 1909 I 2529 1909 I 2529 1903 I C 
+2568 1903 M 2587 1903 I 2587 1909 I 2568 1909 I 2568 1903 I C 
+2606 1903 M 2625 1903 I 2625 1909 I 2606 1909 I 2606 1903 I C 
+2644 1903 M 2663 1903 I 2663 1909 I 2644 1909 I 2644 1903 I C 
+2682 1903 M 2701 1903 I 2701 1909 I 2682 1909 I 2682 1903 I C 
+2721 1903 M 2740 1903 I 2740 1909 I 2721 1909 I 2721 1903 I C 
+2759 1903 M 2778 1903 I 2778 1909 I 2759 1909 I 2759 1903 I C 
+2797 1903 M 2816 1903 I 2816 1909 I 2797 1909 I 2797 1903 I C 
+2835 1903 M 2854 1903 I 2854 1909 I 2835 1909 I 2835 1903 I C 
+2874 1903 M 2893 1903 I 2893 1909 I 2874 1909 I 2874 1903 I C 
+2912 1903 M 2931 1903 I 2931 1909 I 2912 1909 I 2912 1903 I C 
+2950 1903 M 2969 1903 I 2969 1909 I 2950 1909 I 2950 1903 I C 
+2988 1903 M 3007 1903 I 3007 1909 I 2988 1909 I 2988 1903 I C 
+3026 1903 M 3046 1903 I 3046 1909 I 3026 1909 I 3026 1903 I C 
+3065 1903 M 3084 1903 I 3084 1909 I 3065 1909 I 3065 1903 I C 
+3103 1903 M 3122 1903 I 3122 1909 I 3103 1909 I 3103 1903 I C 
+3141 1903 M 3160 1903 I 3160 1909 I 3141 1909 I 3141 1903 I C 
+3179 1903 M 3199 1903 I 3199 1909 I 3179 1909 I 3179 1903 I C 
+3218 1903 M 3237 1903 I 3237 1909 I 3218 1909 I 3218 1903 I C 
+3256 1903 M 3275 1903 I 3275 1909 I 3256 1909 I 3256 1903 I C 
+3294 1903 M 3313 1903 I 3313 1909 I 3294 1909 I 3294 1903 I C 
+3332 1903 M 3351 1903 I 3351 1909 I 3332 1909 I 3332 1903 I C 
+3371 1903 M 3390 1903 I 3390 1909 I 3371 1909 I 3371 1903 I C 
+3409 1903 M 3428 1903 I 3428 1909 I 3409 1909 I 3409 1903 I C 
+3447 1903 M 3466 1903 I 3466 1909 I 3447 1909 I 3447 1903 I C 
+3485 1903 M 3504 1903 I 3504 1909 I 3485 1909 I 3485 1903 I C 
+3524 1903 M 3543 1903 I 3543 1909 I 3524 1909 I 3524 1903 I C 
+3562 1903 M 3581 1903 I 3581 1909 I 3562 1909 I 3562 1903 I C 
+3600 1903 M 3619 1903 I 3619 1909 I 3600 1909 I 3600 1903 I C 
+3638 1903 M 3657 1903 I 3657 1909 I 3638 1909 I 3638 1903 I C 
+3676 1903 M 3696 1903 I 3696 1909 I 3676 1909 I 3676 1903 I C 
+3715 1903 M 3734 1903 I 3734 1909 I 3715 1909 I 3715 1903 I C 
+3753 1903 M 3772 1903 I 3772 1909 I 3753 1909 I 3753 1903 I C 
+3791 1903 M 3810 1903 I 3810 1909 I 3791 1909 I 3791 1903 I C 
+3829 1903 M 3849 1903 I 3849 1909 I 3829 1909 I 3829 1903 I C 
+3868 1903 M 3887 1903 I 3887 1909 I 3868 1909 I 3868 1903 I C 
+3906 1903 M 3925 1903 I 3925 1909 I 3906 1909 I 3906 1903 I C 
+3944 1903 M 3963 1903 I 3963 1909 I 3944 1909 I 3944 1903 I C 
+3982 1903 M 4001 1903 I 4001 1909 I 3982 1909 I 3982 1903 I C 
+4021 1903 M 4040 1903 I 4040 1909 I 4021 1909 I 4021 1903 I C 
+4059 1903 M 4078 1903 I 4078 1909 I 4059 1909 I 4059 1903 I C 
+4097 1903 M 4116 1903 I 4116 1909 I 4097 1909 I 4097 1903 I C 
+4135 1903 M 4154 1903 I 4154 1909 I 4135 1909 I 4135 1903 I C 
+4174 1903 M 4193 1903 I 4193 1909 I 4174 1909 I 4174 1903 I C 
+4212 1903 M 4231 1903 I 4231 1909 I 4212 1909 I 4212 1903 I C 
+4250 1903 M 4269 1903 I 4269 1909 I 4250 1909 I 4250 1903 I C 
+4288 1903 M 4307 1903 I 4307 1909 I 4288 1909 I 4288 1903 I C 
+4326 1903 M 4346 1903 I 4346 1909 I 4326 1909 I 4326 1903 I C 
+4365 1903 M 4384 1903 I 4384 1909 I 4365 1909 I 4365 1903 I C 
+4403 1903 M 4422 1903 I 4422 1909 I 4403 1909 I 4403 1903 I C 
+4441 1903 M 4460 1903 I 4460 1909 I 4441 1909 I 4441 1903 I C 
+4479 1903 M 4499 1903 I 4499 1909 I 4479 1909 I 4479 1903 I C 
+4518 1903 M 4537 1903 I 4537 1909 I 4518 1909 I 4518 1903 I C 
+4556 1903 M 4575 1903 I 4575 1909 I 4556 1909 I 4556 1903 I C 
+4594 1903 M 4613 1903 I 4613 1909 I 4594 1909 I 4594 1903 I C 
+4632 1903 M 4651 1903 I 4651 1909 I 4632 1909 I 4632 1903 I C 
+4671 1903 M 4690 1903 I 4690 1909 I 4671 1909 I 4671 1903 I C 
+4709 1903 M 4728 1903 I 4728 1909 I 4709 1909 I 4709 1903 I C 
+4747 1903 M 4766 1903 I 4766 1909 I 4747 1909 I 4747 1903 I C 
+4785 1903 M 4804 1903 I 4804 1909 I 4785 1909 I 4785 1903 I C 
+4824 1903 M 4843 1903 I 4843 1909 I 4824 1909 I 4824 1903 I C 
+4862 1903 M 4881 1903 I 4881 1909 I 4862 1909 I 4862 1903 I C 
+4900 1903 M 4919 1903 I 4919 1909 I 4900 1909 I 4900 1903 I C 
+4938 1903 M 4957 1903 I 4957 1909 I 4938 1909 I 4938 1903 I C 
+4976 1903 M 4996 1903 I 4996 1909 I 4976 1909 I 4976 1903 I C 
+5015 1903 M 5034 1903 I 5034 1909 I 5015 1909 I 5015 1903 I C 
+5053 1903 M 5072 1903 I 5072 1909 I 5053 1909 I 5053 1903 I C 
+5091 1903 M 5110 1903 I 5110 1909 I 5091 1909 I 5091 1903 I C 
+5129 1903 M 5149 1903 I 5149 1909 I 5129 1909 I 5129 1903 I C 
+5168 1903 M 5187 1903 I 5187 1909 I 5168 1909 I 5168 1903 I C 
+5206 1903 M 5225 1903 I 5225 1909 I 5206 1909 I 5206 1903 I C 
+5244 1903 M 5263 1903 I 5263 1909 I 5244 1909 I 5244 1903 I C 
+5282 1903 M 5301 1903 I 5301 1909 I 5282 1909 I 5282 1903 I C 
+5321 1903 M 5340 1903 I 5340 1909 I 5321 1909 I 5321 1903 I C 
+5359 1903 M 5378 1903 I 5378 1909 I 5359 1909 I 5359 1903 I C 
+5397 1903 M 5416 1903 I 5416 1909 I 5397 1909 I 5397 1903 I C 
+5435 1903 M 5454 1903 I 5454 1909 I 5435 1909 I 5435 1903 I C 
+5474 1903 M 5493 1903 I 5493 1909 I 5474 1909 I 5474 1903 I C 
+5512 1903 M 5531 1903 I 5531 1909 I 5512 1909 I 5512 1903 I C 
+5550 1903 M 5569 1903 I 5569 1909 I 5550 1909 I 5550 1903 I C 
+5588 1903 M 5607 1903 I 5607 1909 I 5588 1909 I 5588 1903 I C 
+5626 1903 M 5646 1903 I 5646 1909 I 5626 1909 I 5626 1903 I C 
+5665 1903 M 5684 1903 I 5684 1909 I 5665 1909 I 5665 1903 I C 
+5703 1903 M 5722 1903 I 5722 1909 I 5703 1909 I 5703 1903 I C 
+5741 1903 M 5760 1903 I 5760 1909 I 5741 1909 I 5741 1903 I C 
+5779 1903 M 5799 1903 I 5799 1909 I 5779 1909 I 5779 1903 I C 
+5818 1903 M 5837 1903 I 5837 1909 I 5818 1909 I 5818 1903 I C 
+5856 1903 M 5875 1903 I 5875 1909 I 5856 1909 I 5856 1903 I C 
+5894 1903 M 5913 1903 I 5913 1909 I 5894 1909 I 5894 1903 I C 
+5932 1903 M 5951 1903 I 5951 1909 I 5932 1909 I 5932 1903 I C 
+5971 1903 M 5990 1903 I 5990 1909 I 5971 1909 I 5971 1903 I C 
+6009 1903 M 6028 1903 I 6028 1909 I 6009 1909 I 6009 1903 I C 
+6047 1903 M 6066 1903 I 6066 1909 I 6047 1909 I 6047 1903 I C 
+6085 1903 M 6104 1903 I 6104 1909 I 6085 1909 I 6085 1903 I C 
+6124 1903 M 6143 1903 I 6143 1909 I 6124 1909 I 6124 1903 I C 
+6162 1903 M 6181 1903 I 6181 1909 I 6162 1909 I 6162 1903 I C 
+6200 1903 M 6219 1903 I 6219 1909 I 6200 1909 I 6200 1903 I C 
+6238 1903 M 6257 1903 I 6257 1909 I 6238 1909 I 6238 1903 I C 
+6276 1903 M 6296 1903 I 6296 1909 I 6276 1909 I 6276 1903 I C 
+6315 1903 M 6334 1903 I 6334 1909 I 6315 1909 I 6315 1903 I C 
+6353 1903 M 6372 1903 I 6372 1909 I 6353 1909 I 6353 1903 I C 
+6391 1903 M 6410 1903 I 6410 1909 I 6391 1909 I 6391 1903 I C 
+6429 1903 M 6449 1903 I 6449 1909 I 6429 1909 I 6429 1903 I C 
+6468 1903 M 6487 1903 I 6487 1909 I 6468 1909 I 6468 1903 I C 
+6506 1903 M 6525 1903 I 6525 1909 I 6506 1909 I 6506 1903 I C 
+6544 1903 M 6563 1903 I 6563 1909 I 6544 1909 I 6544 1903 I C 
+6582 1903 M 6601 1903 I 6601 1909 I 6582 1909 I 6582 1903 I C 
+6621 1903 M 6640 1903 I 6640 1909 I 6621 1909 I 6621 1903 I C 
+6659 1903 M 6678 1903 I 6678 1909 I 6659 1909 I 6659 1903 I C 
+6697 1903 M 6716 1903 I 6716 1909 I 6697 1909 I 6697 1903 I C 
+6735 1903 M 6754 1903 I 6754 1909 I 6735 1909 I 6735 1903 I C 
+6774 1903 M 6793 1903 I 6793 1909 I 6774 1909 I 6774 1903 I C 
+6812 1903 M 6831 1903 I 6831 1909 I 6812 1909 I 6812 1903 I C 
+6850 1903 M 6869 1903 I 6869 1909 I 6850 1909 I 6850 1903 I C 
+6888 1903 M 6907 1903 I 6907 1909 I 6888 1909 I 6888 1903 I C 
+6926 1903 M 6946 1903 I 6946 1909 I 6926 1909 I 6926 1903 I C 
+6965 1903 M 6984 1903 I 6984 1909 I 6965 1909 I 6965 1903 I C 
+7003 1903 M 7022 1903 I 7022 1909 I 7003 1909 I 7003 1903 I C 
+7041 1903 M 7060 1903 I 7060 1909 I 7041 1909 I 7041 1903 I C 
+7079 1903 M 7099 1903 I 7099 1909 I 7079 1909 I 7079 1903 I C 
+7118 1903 M 7137 1903 I 7137 1909 I 7118 1909 I 7118 1903 I C 
+7156 1903 M 7175 1903 I 7175 1909 I 7156 1909 I 7156 1903 I C 
+7194 1903 M 7213 1903 I 7213 1909 I 7194 1909 I 7194 1903 I C 
+7232 1903 M 7251 1903 I 7251 1909 I 7232 1909 I 7232 1903 I C 
+7271 1903 M 7290 1903 I 7290 1909 I 7271 1909 I 7271 1903 I C 
+7309 1903 M 7328 1903 I 7328 1909 I 7309 1909 I 7309 1903 I C 
+7347 1903 M 7366 1903 I 7366 1909 I 7347 1909 I 7347 1903 I C 
+7385 1903 M 7404 1903 I 7404 1909 I 7385 1909 I 7385 1903 I C 
+7424 1903 M 7443 1903 I 7443 1909 I 7424 1909 I 7424 1903 I C 
+7462 1903 M 7481 1903 I 7481 1909 I 7462 1909 I 7462 1903 I C 
+7500 1903 M 7519 1903 I 7519 1909 I 7500 1909 I 7500 1903 I C 
+7538 1903 M 7557 1903 I 7557 1909 I 7538 1909 I 7538 1903 I C 
+7576 1903 M 7596 1903 I 7596 1909 I 7576 1909 I 7576 1903 I C 
+7615 1903 M 7634 1903 I 7634 1909 I 7615 1909 I 7615 1903 I C 
+7653 1903 M 7672 1903 I 7672 1909 I 7653 1909 I 7653 1903 I C 
+7691 1903 M 7710 1903 I 7710 1909 I 7691 1909 I 7691 1903 I C 
+7729 1903 M 7749 1903 I 7749 1909 I 7729 1909 I 7729 1903 I C 
+7768 1903 M 7787 1903 I 7787 1909 I 7768 1909 I 7768 1903 I C 
+7806 1903 M 7825 1903 I 7825 1909 I 7806 1909 I 7806 1903 I C 
+7844 1903 M 7863 1903 I 7863 1909 I 7844 1909 I 7844 1903 I C 
+7882 1903 M 7901 1903 I 7901 1909 I 7882 1909 I 7882 1903 I C 
+7921 1903 M 7940 1903 I 7940 1909 I 7921 1909 I 7921 1903 I C 
+7959 1903 M 7978 1903 I 7978 1909 I 7959 1909 I 7959 1903 I C 
+7997 1903 M 8016 1903 I 8016 1909 I 7997 1909 I 7997 1903 I C 
+8035 1903 M 8054 1903 I 8054 1909 I 8035 1909 I 8035 1903 I C 
+8074 1903 M 8093 1903 I 8093 1909 I 8074 1909 I 8074 1903 I C 
+8112 1903 M 8131 1903 I 8131 1909 I 8112 1909 I 8112 1903 I C 
+8150 1903 M 8169 1903 I 8169 1909 I 8150 1909 I 8150 1903 I C 
+8188 1903 M 8207 1903 I 8207 1909 I 8188 1909 I 8188 1903 I C 
+8226 1903 M 8246 1903 I 8246 1909 I 8226 1909 I 8226 1903 I C 
+8265 1903 M 8284 1903 I 8284 1909 I 8265 1909 I 8265 1903 I C 
+8303 1903 M 8322 1903 I 8322 1909 I 8303 1909 I 8303 1903 I C 
+8341 1903 M 8360 1903 I 8360 1909 I 8341 1909 I 8341 1903 I C 
+8379 1903 M 8399 1903 I 8399 1909 I 8379 1909 I 8379 1903 I C 
+8418 1903 M 8437 1903 I 8437 1909 I 8418 1909 I 8418 1903 I C 
+8456 1903 M 8475 1903 I 8475 1909 I 8456 1909 I 8456 1903 I C 
+8494 1903 M 8513 1903 I 8513 1909 I 8494 1909 I 8494 1903 I C 
+8532 1903 M 8551 1903 I 8551 1909 I 8532 1909 I 8532 1903 I C 
+8571 1903 M 8577 1903 I 8577 1909 I 8571 1909 I 8571 1903 I C 
+:  L ; : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 0 0 0 1 scol 0 Lj 2 Lc N 962 1906 M 1006 1906 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; N 8577 1906 M 8532 1906 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 554 1970 M ( )S 
+605 1970 M (0)S  707 1970 M (.)S  758 1970 M (4)S  
+0.754 0.754 0.754 1 scol 2 Lj 0 Lc N 962 1335 M 981 1335 I 981 1342 I 962 1342 I 962 1335 I C 
+1000 1335 M 1019 1335 I 1019 1342 I 1000 1342 I 1000 1335 I C 
+1038 1335 M 1057 1335 I 1057 1342 I 1038 1342 I 1038 1335 I C 
+1076 1335 M 1096 1335 I 1096 1342 I 1076 1342 I 1076 1335 I C 
+1115 1335 M 1134 1335 I 1134 1342 I 1115 1342 I 1115 1335 I C 
+1153 1335 M 1172 1335 I 1172 1342 I 1153 1342 I 1153 1335 I C 
+1191 1335 M 1210 1335 I 1210 1342 I 1191 1342 I 1191 1335 I C 
+1229 1335 M 1249 1335 I 1249 1342 I 1229 1342 I 1229 1335 I C 
+1268 1335 M 1287 1335 I 1287 1342 I 1268 1342 I 1268 1335 I C 
+1306 1335 M 1325 1335 I 1325 1342 I 1306 1342 I 1306 1335 I C 
+1344 1335 M 1363 1335 I 1363 1342 I 1344 1342 I 1344 1335 I C 
+1382 1335 M 1401 1335 I 1401 1342 I 1382 1342 I 1382 1335 I C 
+1421 1335 M 1440 1335 I 1440 1342 I 1421 1342 I 1421 1335 I C 
+1459 1335 M 1478 1335 I 1478 1342 I 1459 1342 I 1459 1335 I C 
+1497 1335 M 1516 1335 I 1516 1342 I 1497 1342 I 1497 1335 I C 
+1535 1335 M 1554 1335 I 1554 1342 I 1535 1342 I 1535 1335 I C 
+1574 1335 M 1593 1335 I 1593 1342 I 1574 1342 I 1574 1335 I C 
+1612 1335 M 1631 1335 I 1631 1342 I 1612 1342 I 1612 1335 I C 
+1650 1335 M 1669 1335 I 1669 1342 I 1650 1342 I 1650 1335 I C 
+1688 1335 M 1707 1335 I 1707 1342 I 1688 1342 I 1688 1335 I C 
+1726 1335 M 1746 1335 I 1746 1342 I 1726 1342 I 1726 1335 I C 
+1765 1335 M 1784 1335 I 1784 1342 I 1765 1342 I 1765 1335 I C 
+1803 1335 M 1822 1335 I 1822 1342 I 1803 1342 I 1803 1335 I C 
+1841 1335 M 1860 1335 I 1860 1342 I 1841 1342 I 1841 1335 I C 
+1879 1335 M 1899 1335 I 1899 1342 I 1879 1342 I 1879 1335 I C 
+1918 1335 M 1937 1335 I 1937 1342 I 1918 1342 I 1918 1335 I C 
+1956 1335 M 1975 1335 I 1975 1342 I 1956 1342 I 1956 1335 I C 
+1994 1335 M 2013 1335 I 2013 1342 I 1994 1342 I 1994 1335 I C 
+2032 1335 M 2051 1335 I 2051 1342 I 2032 1342 I 2032 1335 I C 
+2071 1335 M 2090 1335 I 2090 1342 I 2071 1342 I 2071 1335 I C 
+2109 1335 M 2128 1335 I 2128 1342 I 2109 1342 I 2109 1335 I C 
+2147 1335 M 2166 1335 I 2166 1342 I 2147 1342 I 2147 1335 I C 
+2185 1335 M 2204 1335 I 2204 1342 I 2185 1342 I 2185 1335 I C 
+2224 1335 M 2243 1335 I 2243 1342 I 2224 1342 I 2224 1335 I C 
+2262 1335 M 2281 1335 I 2281 1342 I 2262 1342 I 2262 1335 I C 
+2300 1335 M 2319 1335 I 2319 1342 I 2300 1342 I 2300 1335 I C 
+2338 1335 M 2357 1335 I 2357 1342 I 2338 1342 I 2338 1335 I C 
+2376 1335 M 2396 1335 I 2396 1342 I 2376 1342 I 2376 1335 I C 
+2415 1335 M 2434 1335 I 2434 1342 I 2415 1342 I 2415 1335 I C 
+2453 1335 M 2472 1335 I 2472 1342 I 2453 1342 I 2453 1335 I C 
+2491 1335 M 2510 1335 I 2510 1342 I 2491 1342 I 2491 1335 I C 
+2529 1335 M 2549 1335 I 2549 1342 I 2529 1342 I 2529 1335 I C 
+2568 1335 M 2587 1335 I 2587 1342 I 2568 1342 I 2568 1335 I C 
+2606 1335 M 2625 1335 I 2625 1342 I 2606 1342 I 2606 1335 I C 
+2644 1335 M 2663 1335 I 2663 1342 I 2644 1342 I 2644 1335 I C 
+2682 1335 M 2701 1335 I 2701 1342 I 2682 1342 I 2682 1335 I C 
+2721 1335 M 2740 1335 I 2740 1342 I 2721 1342 I 2721 1335 I C 
+2759 1335 M 2778 1335 I 2778 1342 I 2759 1342 I 2759 1335 I C 
+2797 1335 M 2816 1335 I 2816 1342 I 2797 1342 I 2797 1335 I C 
+2835 1335 M 2854 1335 I 2854 1342 I 2835 1342 I 2835 1335 I C 
+2874 1335 M 2893 1335 I 2893 1342 I 2874 1342 I 2874 1335 I C 
+2912 1335 M 2931 1335 I 2931 1342 I 2912 1342 I 2912 1335 I C 
+2950 1335 M 2969 1335 I 2969 1342 I 2950 1342 I 2950 1335 I C 
+2988 1335 M 3007 1335 I 3007 1342 I 2988 1342 I 2988 1335 I C 
+3026 1335 M 3046 1335 I 3046 1342 I 3026 1342 I 3026 1335 I C 
+3065 1335 M 3084 1335 I 3084 1342 I 3065 1342 I 3065 1335 I C 
+3103 1335 M 3122 1335 I 3122 1342 I 3103 1342 I 3103 1335 I C 
+3141 1335 M 3160 1335 I 3160 1342 I 3141 1342 I 3141 1335 I C 
+3179 1335 M 3199 1335 I 3199 1342 I 3179 1342 I 3179 1335 I C 
+3218 1335 M 3237 1335 I 3237 1342 I 3218 1342 I 3218 1335 I C 
+3256 1335 M 3275 1335 I 3275 1342 I 3256 1342 I 3256 1335 I C 
+3294 1335 M 3313 1335 I 3313 1342 I 3294 1342 I 3294 1335 I C 
+3332 1335 M 3351 1335 I 3351 1342 I 3332 1342 I 3332 1335 I C 
+3371 1335 M 3390 1335 I 3390 1342 I 3371 1342 I 3371 1335 I C 
+3409 1335 M 3428 1335 I 3428 1342 I 3409 1342 I 3409 1335 I C 
+3447 1335 M 3466 1335 I 3466 1342 I 3447 1342 I 3447 1335 I C 
+3485 1335 M 3504 1335 I 3504 1342 I 3485 1342 I 3485 1335 I C 
+3524 1335 M 3543 1335 I 3543 1342 I 3524 1342 I 3524 1335 I C 
+3562 1335 M 3581 1335 I 3581 1342 I 3562 1342 I 3562 1335 I C 
+3600 1335 M 3619 1335 I 3619 1342 I 3600 1342 I 3600 1335 I C 
+3638 1335 M 3657 1335 I 3657 1342 I 3638 1342 I 3638 1335 I C 
+3676 1335 M 3696 1335 I 3696 1342 I 3676 1342 I 3676 1335 I C 
+3715 1335 M 3734 1335 I 3734 1342 I 3715 1342 I 3715 1335 I C 
+3753 1335 M 3772 1335 I 3772 1342 I 3753 1342 I 3753 1335 I C 
+3791 1335 M 3810 1335 I 3810 1342 I 3791 1342 I 3791 1335 I C 
+3829 1335 M 3849 1335 I 3849 1342 I 3829 1342 I 3829 1335 I C 
+3868 1335 M 3887 1335 I 3887 1342 I 3868 1342 I 3868 1335 I C 
+3906 1335 M 3925 1335 I 3925 1342 I 3906 1342 I 3906 1335 I C 
+3944 1335 M 3963 1335 I 3963 1342 I 3944 1342 I 3944 1335 I C 
+3982 1335 M 4001 1335 I 4001 1342 I 3982 1342 I 3982 1335 I C 
+4021 1335 M 4040 1335 I 4040 1342 I 4021 1342 I 4021 1335 I C 
+4059 1335 M 4078 1335 I 4078 1342 I 4059 1342 I 4059 1335 I C 
+4097 1335 M 4116 1335 I 4116 1342 I 4097 1342 I 4097 1335 I C 
+4135 1335 M 4154 1335 I 4154 1342 I 4135 1342 I 4135 1335 I C 
+4174 1335 M 4193 1335 I 4193 1342 I 4174 1342 I 4174 1335 I C 
+4212 1335 M 4231 1335 I 4231 1342 I 4212 1342 I 4212 1335 I C 
+4250 1335 M 4269 1335 I 4269 1342 I 4250 1342 I 4250 1335 I C 
+4288 1335 M 4307 1335 I 4307 1342 I 4288 1342 I 4288 1335 I C 
+4326 1335 M 4346 1335 I 4346 1342 I 4326 1342 I 4326 1335 I C 
+4365 1335 M 4384 1335 I 4384 1342 I 4365 1342 I 4365 1335 I C 
+4403 1335 M 4422 1335 I 4422 1342 I 4403 1342 I 4403 1335 I C 
+4441 1335 M 4460 1335 I 4460 1342 I 4441 1342 I 4441 1335 I C 
+4479 1335 M 4499 1335 I 4499 1342 I 4479 1342 I 4479 1335 I C 
+4518 1335 M 4537 1335 I 4537 1342 I 4518 1342 I 4518 1335 I C 
+4556 1335 M 4575 1335 I 4575 1342 I 4556 1342 I 4556 1335 I C 
+4594 1335 M 4613 1335 I 4613 1342 I 4594 1342 I 4594 1335 I C 
+4632 1335 M 4651 1335 I 4651 1342 I 4632 1342 I 4632 1335 I C 
+4671 1335 M 4690 1335 I 4690 1342 I 4671 1342 I 4671 1335 I C 
+4709 1335 M 4728 1335 I 4728 1342 I 4709 1342 I 4709 1335 I C 
+4747 1335 M 4766 1335 I 4766 1342 I 4747 1342 I 4747 1335 I C 
+4785 1335 M 4804 1335 I 4804 1342 I 4785 1342 I 4785 1335 I C 
+4824 1335 M 4843 1335 I 4843 1342 I 4824 1342 I 4824 1335 I C 
+4862 1335 M 4881 1335 I 4881 1342 I 4862 1342 I 4862 1335 I C 
+4900 1335 M 4919 1335 I 4919 1342 I 4900 1342 I 4900 1335 I C 
+4938 1335 M 4957 1335 I 4957 1342 I 4938 1342 I 4938 1335 I C 
+4976 1335 M 4996 1335 I 4996 1342 I 4976 1342 I 4976 1335 I C 
+5015 1335 M 5034 1335 I 5034 1342 I 5015 1342 I 5015 1335 I C 
+5053 1335 M 5072 1335 I 5072 1342 I 5053 1342 I 5053 1335 I C 
+5091 1335 M 5110 1335 I 5110 1342 I 5091 1342 I 5091 1335 I C 
+5129 1335 M 5149 1335 I 5149 1342 I 5129 1342 I 5129 1335 I C 
+5168 1335 M 5187 1335 I 5187 1342 I 5168 1342 I 5168 1335 I C 
+5206 1335 M 5225 1335 I 5225 1342 I 5206 1342 I 5206 1335 I C 
+5244 1335 M 5263 1335 I 5263 1342 I 5244 1342 I 5244 1335 I C 
+5282 1335 M 5301 1335 I 5301 1342 I 5282 1342 I 5282 1335 I C 
+5321 1335 M 5340 1335 I 5340 1342 I 5321 1342 I 5321 1335 I C 
+5359 1335 M 5378 1335 I 5378 1342 I 5359 1342 I 5359 1335 I C 
+5397 1335 M 5416 1335 I 5416 1342 I 5397 1342 I 5397 1335 I C 
+5435 1335 M 5454 1335 I 5454 1342 I 5435 1342 I 5435 1335 I C 
+5474 1335 M 5493 1335 I 5493 1342 I 5474 1342 I 5474 1335 I C 
+5512 1335 M 5531 1335 I 5531 1342 I 5512 1342 I 5512 1335 I C 
+5550 1335 M 5569 1335 I 5569 1342 I 5550 1342 I 5550 1335 I C 
+5588 1335 M 5607 1335 I 5607 1342 I 5588 1342 I 5588 1335 I C 
+5626 1335 M 5646 1335 I 5646 1342 I 5626 1342 I 5626 1335 I C 
+5665 1335 M 5684 1335 I 5684 1342 I 5665 1342 I 5665 1335 I C 
+5703 1335 M 5722 1335 I 5722 1342 I 5703 1342 I 5703 1335 I C 
+5741 1335 M 5760 1335 I 5760 1342 I 5741 1342 I 5741 1335 I C 
+5779 1335 M 5799 1335 I 5799 1342 I 5779 1342 I 5779 1335 I C 
+5818 1335 M 5837 1335 I 5837 1342 I 5818 1342 I 5818 1335 I C 
+5856 1335 M 5875 1335 I 5875 1342 I 5856 1342 I 5856 1335 I C 
+5894 1335 M 5913 1335 I 5913 1342 I 5894 1342 I 5894 1335 I C 
+5932 1335 M 5951 1335 I 5951 1342 I 5932 1342 I 5932 1335 I C 
+5971 1335 M 5990 1335 I 5990 1342 I 5971 1342 I 5971 1335 I C 
+6009 1335 M 6028 1335 I 6028 1342 I 6009 1342 I 6009 1335 I C 
+6047 1335 M 6066 1335 I 6066 1342 I 6047 1342 I 6047 1335 I C 
+6085 1335 M 6104 1335 I 6104 1342 I 6085 1342 I 6085 1335 I C 
+6124 1335 M 6143 1335 I 6143 1342 I 6124 1342 I 6124 1335 I C 
+6162 1335 M 6181 1335 I 6181 1342 I 6162 1342 I 6162 1335 I C 
+6200 1335 M 6219 1335 I 6219 1342 I 6200 1342 I 6200 1335 I C 
+6238 1335 M 6257 1335 I 6257 1342 I 6238 1342 I 6238 1335 I C 
+6276 1335 M 6296 1335 I 6296 1342 I 6276 1342 I 6276 1335 I C 
+6315 1335 M 6334 1335 I 6334 1342 I 6315 1342 I 6315 1335 I C 
+6353 1335 M 6372 1335 I 6372 1342 I 6353 1342 I 6353 1335 I C 
+6391 1335 M 6410 1335 I 6410 1342 I 6391 1342 I 6391 1335 I C 
+6429 1335 M 6449 1335 I 6449 1342 I 6429 1342 I 6429 1335 I C 
+6468 1335 M 6487 1335 I 6487 1342 I 6468 1342 I 6468 1335 I C 
+6506 1335 M 6525 1335 I 6525 1342 I 6506 1342 I 6506 1335 I C 
+6544 1335 M 6563 1335 I 6563 1342 I 6544 1342 I 6544 1335 I C 
+6582 1335 M 6601 1335 I 6601 1342 I 6582 1342 I 6582 1335 I C 
+6621 1335 M 6640 1335 I 6640 1342 I 6621 1342 I 6621 1335 I C 
+6659 1335 M 6678 1335 I 6678 1342 I 6659 1342 I 6659 1335 I C 
+6697 1335 M 6716 1335 I 6716 1342 I 6697 1342 I 6697 1335 I C 
+6735 1335 M 6754 1335 I 6754 1342 I 6735 1342 I 6735 1335 I C 
+6774 1335 M 6793 1335 I 6793 1342 I 6774 1342 I 6774 1335 I C 
+6812 1335 M 6831 1335 I 6831 1342 I 6812 1342 I 6812 1335 I C 
+6850 1335 M 6869 1335 I 6869 1342 I 6850 1342 I 6850 1335 I C 
+6888 1335 M 6907 1335 I 6907 1342 I 6888 1342 I 6888 1335 I C 
+6926 1335 M 6946 1335 I 6946 1342 I 6926 1342 I 6926 1335 I C 
+6965 1335 M 6984 1335 I 6984 1342 I 6965 1342 I 6965 1335 I C 
+7003 1335 M 7022 1335 I 7022 1342 I 7003 1342 I 7003 1335 I C 
+7041 1335 M 7060 1335 I 7060 1342 I 7041 1342 I 7041 1335 I C 
+7079 1335 M 7099 1335 I 7099 1342 I 7079 1342 I 7079 1335 I C 
+7118 1335 M 7137 1335 I 7137 1342 I 7118 1342 I 7118 1335 I C 
+7156 1335 M 7175 1335 I 7175 1342 I 7156 1342 I 7156 1335 I C 
+7194 1335 M 7213 1335 I 7213 1342 I 7194 1342 I 7194 1335 I C 
+7232 1335 M 7251 1335 I 7251 1342 I 7232 1342 I 7232 1335 I C 
+7271 1335 M 7290 1335 I 7290 1342 I 7271 1342 I 7271 1335 I C 
+7309 1335 M 7328 1335 I 7328 1342 I 7309 1342 I 7309 1335 I C 
+7347 1335 M 7366 1335 I 7366 1342 I 7347 1342 I 7347 1335 I C 
+7385 1335 M 7404 1335 I 7404 1342 I 7385 1342 I 7385 1335 I C 
+7424 1335 M 7443 1335 I 7443 1342 I 7424 1342 I 7424 1335 I C 
+7462 1335 M 7481 1335 I 7481 1342 I 7462 1342 I 7462 1335 I C 
+7500 1335 M 7519 1335 I 7519 1342 I 7500 1342 I 7500 1335 I C 
+7538 1335 M 7557 1335 I 7557 1342 I 7538 1342 I 7538 1335 I C 
+7576 1335 M 7596 1335 I 7596 1342 I 7576 1342 I 7576 1335 I C 
+7615 1335 M 7634 1335 I 7634 1342 I 7615 1342 I 7615 1335 I C 
+7653 1335 M 7672 1335 I 7672 1342 I 7653 1342 I 7653 1335 I C 
+7691 1335 M 7710 1335 I 7710 1342 I 7691 1342 I 7691 1335 I C 
+7729 1335 M 7749 1335 I 7749 1342 I 7729 1342 I 7729 1335 I C 
+7768 1335 M 7787 1335 I 7787 1342 I 7768 1342 I 7768 1335 I C 
+7806 1335 M 7825 1335 I 7825 1342 I 7806 1342 I 7806 1335 I C 
+7844 1335 M 7863 1335 I 7863 1342 I 7844 1342 I 7844 1335 I C 
+7882 1335 M 7901 1335 I 7901 1342 I 7882 1342 I 7882 1335 I C 
+7921 1335 M 7940 1335 I 7940 1342 I 7921 1342 I 7921 1335 I C 
+7959 1335 M 7978 1335 I 7978 1342 I 7959 1342 I 7959 1335 I C 
+7997 1335 M 8016 1335 I 8016 1342 I 7997 1342 I 7997 1335 I C 
+8035 1335 M 8054 1335 I 8054 1342 I 8035 1342 I 8035 1335 I C 
+8074 1335 M 8093 1335 I 8093 1342 I 8074 1342 I 8074 1335 I C 
+8112 1335 M 8131 1335 I 8131 1342 I 8112 1342 I 8112 1335 I C 
+8150 1335 M 8169 1335 I 8169 1342 I 8150 1342 I 8150 1335 I C 
+8188 1335 M 8207 1335 I 8207 1342 I 8188 1342 I 8188 1335 I C 
+8226 1335 M 8246 1335 I 8246 1342 I 8226 1342 I 8226 1335 I C 
+8265 1335 M 8284 1335 I 8284 1342 I 8265 1342 I 8265 1335 I C 
+8303 1335 M 8322 1335 I 8322 1342 I 8303 1342 I 8303 1335 I C 
+8341 1335 M 8360 1335 I 8360 1342 I 8341 1342 I 8341 1335 I C 
+8379 1335 M 8399 1335 I 8399 1342 I 8379 1342 I 8379 1335 I C 
+8418 1335 M 8437 1335 I 8437 1342 I 8418 1342 I 8418 1335 I C 
+8456 1335 M 8475 1335 I 8475 1342 I 8456 1342 I 8456 1335 I C 
+8494 1335 M 8513 1335 I 8513 1342 I 8494 1342 I 8494 1335 I C 
+8532 1335 M 8551 1335 I 8551 1342 I 8532 1342 I 8532 1335 I C 
+8571 1335 M 8577 1335 I 8577 1342 I 8571 1342 I 8571 1335 I C 
+:  L ; : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 0 0 0 1 scol 0 Lj 2 Lc N 962 1339 M 1006 1339 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; N 8577 1339 M 8532 1339 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 554 1403 M ( )S 
+605 1403 M (0)S  707 1403 M (.)S  758 1403 M (5)S  
+0.754 0.754 0.754 1 scol 2 Lj 0 Lc N 962 768 M 981 768 I 981 774 I 962 774 I 962 768 I C 
+1000 768 M 1019 768 I 1019 774 I 1000 774 I 1000 768 I C 
+1038 768 M 1057 768 I 1057 774 I 1038 774 I 1038 768 I C 
+1076 768 M 1096 768 I 1096 774 I 1076 774 I 1076 768 I C 
+1115 768 M 1134 768 I 1134 774 I 1115 774 I 1115 768 I C 
+1153 768 M 1172 768 I 1172 774 I 1153 774 I 1153 768 I C 
+1191 768 M 1210 768 I 1210 774 I 1191 774 I 1191 768 I C 
+1229 768 M 1249 768 I 1249 774 I 1229 774 I 1229 768 I C 
+1268 768 M 1287 768 I 1287 774 I 1268 774 I 1268 768 I C 
+1306 768 M 1325 768 I 1325 774 I 1306 774 I 1306 768 I C 
+1344 768 M 1363 768 I 1363 774 I 1344 774 I 1344 768 I C 
+1382 768 M 1401 768 I 1401 774 I 1382 774 I 1382 768 I C 
+1421 768 M 1440 768 I 1440 774 I 1421 774 I 1421 768 I C 
+1459 768 M 1478 768 I 1478 774 I 1459 774 I 1459 768 I C 
+1497 768 M 1516 768 I 1516 774 I 1497 774 I 1497 768 I C 
+1535 768 M 1554 768 I 1554 774 I 1535 774 I 1535 768 I C 
+1574 768 M 1593 768 I 1593 774 I 1574 774 I 1574 768 I C 
+1612 768 M 1631 768 I 1631 774 I 1612 774 I 1612 768 I C 
+1650 768 M 1669 768 I 1669 774 I 1650 774 I 1650 768 I C 
+1688 768 M 1707 768 I 1707 774 I 1688 774 I 1688 768 I C 
+1726 768 M 1746 768 I 1746 774 I 1726 774 I 1726 768 I C 
+1765 768 M 1784 768 I 1784 774 I 1765 774 I 1765 768 I C 
+1803 768 M 1822 768 I 1822 774 I 1803 774 I 1803 768 I C 
+1841 768 M 1860 768 I 1860 774 I 1841 774 I 1841 768 I C 
+1879 768 M 1899 768 I 1899 774 I 1879 774 I 1879 768 I C 
+1918 768 M 1937 768 I 1937 774 I 1918 774 I 1918 768 I C 
+1956 768 M 1975 768 I 1975 774 I 1956 774 I 1956 768 I C 
+1994 768 M 2013 768 I 2013 774 I 1994 774 I 1994 768 I C 
+2032 768 M 2051 768 I 2051 774 I 2032 774 I 2032 768 I C 
+2071 768 M 2090 768 I 2090 774 I 2071 774 I 2071 768 I C 
+2109 768 M 2128 768 I 2128 774 I 2109 774 I 2109 768 I C 
+2147 768 M 2166 768 I 2166 774 I 2147 774 I 2147 768 I C 
+2185 768 M 2204 768 I 2204 774 I 2185 774 I 2185 768 I C 
+2224 768 M 2243 768 I 2243 774 I 2224 774 I 2224 768 I C 
+2262 768 M 2281 768 I 2281 774 I 2262 774 I 2262 768 I C 
+2300 768 M 2319 768 I 2319 774 I 2300 774 I 2300 768 I C 
+2338 768 M 2357 768 I 2357 774 I 2338 774 I 2338 768 I C 
+2376 768 M 2396 768 I 2396 774 I 2376 774 I 2376 768 I C 
+2415 768 M 2434 768 I 2434 774 I 2415 774 I 2415 768 I C 
+2453 768 M 2472 768 I 2472 774 I 2453 774 I 2453 768 I C 
+2491 768 M 2510 768 I 2510 774 I 2491 774 I 2491 768 I C 
+2529 768 M 2549 768 I 2549 774 I 2529 774 I 2529 768 I C 
+2568 768 M 2587 768 I 2587 774 I 2568 774 I 2568 768 I C 
+2606 768 M 2625 768 I 2625 774 I 2606 774 I 2606 768 I C 
+2644 768 M 2663 768 I 2663 774 I 2644 774 I 2644 768 I C 
+2682 768 M 2701 768 I 2701 774 I 2682 774 I 2682 768 I C 
+2721 768 M 2740 768 I 2740 774 I 2721 774 I 2721 768 I C 
+2759 768 M 2778 768 I 2778 774 I 2759 774 I 2759 768 I C 
+2797 768 M 2816 768 I 2816 774 I 2797 774 I 2797 768 I C 
+2835 768 M 2854 768 I 2854 774 I 2835 774 I 2835 768 I C 
+2874 768 M 2893 768 I 2893 774 I 2874 774 I 2874 768 I C 
+2912 768 M 2931 768 I 2931 774 I 2912 774 I 2912 768 I C 
+2950 768 M 2969 768 I 2969 774 I 2950 774 I 2950 768 I C 
+2988 768 M 3007 768 I 3007 774 I 2988 774 I 2988 768 I C 
+3026 768 M 3046 768 I 3046 774 I 3026 774 I 3026 768 I C 
+3065 768 M 3084 768 I 3084 774 I 3065 774 I 3065 768 I C 
+3103 768 M 3122 768 I 3122 774 I 3103 774 I 3103 768 I C 
+3141 768 M 3160 768 I 3160 774 I 3141 774 I 3141 768 I C 
+3179 768 M 3199 768 I 3199 774 I 3179 774 I 3179 768 I C 
+3218 768 M 3237 768 I 3237 774 I 3218 774 I 3218 768 I C 
+3256 768 M 3275 768 I 3275 774 I 3256 774 I 3256 768 I C 
+3294 768 M 3313 768 I 3313 774 I 3294 774 I 3294 768 I C 
+3332 768 M 3351 768 I 3351 774 I 3332 774 I 3332 768 I C 
+3371 768 M 3390 768 I 3390 774 I 3371 774 I 3371 768 I C 
+3409 768 M 3428 768 I 3428 774 I 3409 774 I 3409 768 I C 
+3447 768 M 3466 768 I 3466 774 I 3447 774 I 3447 768 I C 
+3485 768 M 3504 768 I 3504 774 I 3485 774 I 3485 768 I C 
+3524 768 M 3543 768 I 3543 774 I 3524 774 I 3524 768 I C 
+3562 768 M 3581 768 I 3581 774 I 3562 774 I 3562 768 I C 
+3600 768 M 3619 768 I 3619 774 I 3600 774 I 3600 768 I C 
+3638 768 M 3657 768 I 3657 774 I 3638 774 I 3638 768 I C 
+3676 768 M 3696 768 I 3696 774 I 3676 774 I 3676 768 I C 
+3715 768 M 3734 768 I 3734 774 I 3715 774 I 3715 768 I C 
+3753 768 M 3772 768 I 3772 774 I 3753 774 I 3753 768 I C 
+3791 768 M 3810 768 I 3810 774 I 3791 774 I 3791 768 I C 
+3829 768 M 3849 768 I 3849 774 I 3829 774 I 3829 768 I C 
+3868 768 M 3887 768 I 3887 774 I 3868 774 I 3868 768 I C 
+3906 768 M 3925 768 I 3925 774 I 3906 774 I 3906 768 I C 
+3944 768 M 3963 768 I 3963 774 I 3944 774 I 3944 768 I C 
+3982 768 M 4001 768 I 4001 774 I 3982 774 I 3982 768 I C 
+4021 768 M 4040 768 I 4040 774 I 4021 774 I 4021 768 I C 
+4059 768 M 4078 768 I 4078 774 I 4059 774 I 4059 768 I C 
+4097 768 M 4116 768 I 4116 774 I 4097 774 I 4097 768 I C 
+4135 768 M 4154 768 I 4154 774 I 4135 774 I 4135 768 I C 
+4174 768 M 4193 768 I 4193 774 I 4174 774 I 4174 768 I C 
+4212 768 M 4231 768 I 4231 774 I 4212 774 I 4212 768 I C 
+4250 768 M 4269 768 I 4269 774 I 4250 774 I 4250 768 I C 
+4288 768 M 4307 768 I 4307 774 I 4288 774 I 4288 768 I C 
+4326 768 M 4346 768 I 4346 774 I 4326 774 I 4326 768 I C 
+4365 768 M 4384 768 I 4384 774 I 4365 774 I 4365 768 I C 
+4403 768 M 4422 768 I 4422 774 I 4403 774 I 4403 768 I C 
+4441 768 M 4460 768 I 4460 774 I 4441 774 I 4441 768 I C 
+4479 768 M 4499 768 I 4499 774 I 4479 774 I 4479 768 I C 
+4518 768 M 4537 768 I 4537 774 I 4518 774 I 4518 768 I C 
+4556 768 M 4575 768 I 4575 774 I 4556 774 I 4556 768 I C 
+4594 768 M 4613 768 I 4613 774 I 4594 774 I 4594 768 I C 
+4632 768 M 4651 768 I 4651 774 I 4632 774 I 4632 768 I C 
+4671 768 M 4690 768 I 4690 774 I 4671 774 I 4671 768 I C 
+4709 768 M 4728 768 I 4728 774 I 4709 774 I 4709 768 I C 
+4747 768 M 4766 768 I 4766 774 I 4747 774 I 4747 768 I C 
+4785 768 M 4804 768 I 4804 774 I 4785 774 I 4785 768 I C 
+4824 768 M 4843 768 I 4843 774 I 4824 774 I 4824 768 I C 
+4862 768 M 4881 768 I 4881 774 I 4862 774 I 4862 768 I C 
+4900 768 M 4919 768 I 4919 774 I 4900 774 I 4900 768 I C 
+4938 768 M 4957 768 I 4957 774 I 4938 774 I 4938 768 I C 
+4976 768 M 4996 768 I 4996 774 I 4976 774 I 4976 768 I C 
+5015 768 M 5034 768 I 5034 774 I 5015 774 I 5015 768 I C 
+5053 768 M 5072 768 I 5072 774 I 5053 774 I 5053 768 I C 
+5091 768 M 5110 768 I 5110 774 I 5091 774 I 5091 768 I C 
+5129 768 M 5149 768 I 5149 774 I 5129 774 I 5129 768 I C 
+5168 768 M 5187 768 I 5187 774 I 5168 774 I 5168 768 I C 
+5206 768 M 5225 768 I 5225 774 I 5206 774 I 5206 768 I C 
+5244 768 M 5263 768 I 5263 774 I 5244 774 I 5244 768 I C 
+5282 768 M 5301 768 I 5301 774 I 5282 774 I 5282 768 I C 
+5321 768 M 5340 768 I 5340 774 I 5321 774 I 5321 768 I C 
+5359 768 M 5378 768 I 5378 774 I 5359 774 I 5359 768 I C 
+5397 768 M 5416 768 I 5416 774 I 5397 774 I 5397 768 I C 
+5435 768 M 5454 768 I 5454 774 I 5435 774 I 5435 768 I C 
+5474 768 M 5493 768 I 5493 774 I 5474 774 I 5474 768 I C 
+5512 768 M 5531 768 I 5531 774 I 5512 774 I 5512 768 I C 
+5550 768 M 5569 768 I 5569 774 I 5550 774 I 5550 768 I C 
+5588 768 M 5607 768 I 5607 774 I 5588 774 I 5588 768 I C 
+5626 768 M 5646 768 I 5646 774 I 5626 774 I 5626 768 I C 
+5665 768 M 5684 768 I 5684 774 I 5665 774 I 5665 768 I C 
+5703 768 M 5722 768 I 5722 774 I 5703 774 I 5703 768 I C 
+5741 768 M 5760 768 I 5760 774 I 5741 774 I 5741 768 I C 
+5779 768 M 5799 768 I 5799 774 I 5779 774 I 5779 768 I C 
+5818 768 M 5837 768 I 5837 774 I 5818 774 I 5818 768 I C 
+5856 768 M 5875 768 I 5875 774 I 5856 774 I 5856 768 I C 
+5894 768 M 5913 768 I 5913 774 I 5894 774 I 5894 768 I C 
+5932 768 M 5951 768 I 5951 774 I 5932 774 I 5932 768 I C 
+5971 768 M 5990 768 I 5990 774 I 5971 774 I 5971 768 I C 
+6009 768 M 6028 768 I 6028 774 I 6009 774 I 6009 768 I C 
+6047 768 M 6066 768 I 6066 774 I 6047 774 I 6047 768 I C 
+6085 768 M 6104 768 I 6104 774 I 6085 774 I 6085 768 I C 
+6124 768 M 6143 768 I 6143 774 I 6124 774 I 6124 768 I C 
+6162 768 M 6181 768 I 6181 774 I 6162 774 I 6162 768 I C 
+6200 768 M 6219 768 I 6219 774 I 6200 774 I 6200 768 I C 
+6238 768 M 6257 768 I 6257 774 I 6238 774 I 6238 768 I C 
+6276 768 M 6296 768 I 6296 774 I 6276 774 I 6276 768 I C 
+6315 768 M 6334 768 I 6334 774 I 6315 774 I 6315 768 I C 
+6353 768 M 6372 768 I 6372 774 I 6353 774 I 6353 768 I C 
+6391 768 M 6410 768 I 6410 774 I 6391 774 I 6391 768 I C 
+6429 768 M 6449 768 I 6449 774 I 6429 774 I 6429 768 I C 
+6468 768 M 6487 768 I 6487 774 I 6468 774 I 6468 768 I C 
+6506 768 M 6525 768 I 6525 774 I 6506 774 I 6506 768 I C 
+6544 768 M 6563 768 I 6563 774 I 6544 774 I 6544 768 I C 
+6582 768 M 6601 768 I 6601 774 I 6582 774 I 6582 768 I C 
+6621 768 M 6640 768 I 6640 774 I 6621 774 I 6621 768 I C 
+6659 768 M 6678 768 I 6678 774 I 6659 774 I 6659 768 I C 
+6697 768 M 6716 768 I 6716 774 I 6697 774 I 6697 768 I C 
+6735 768 M 6754 768 I 6754 774 I 6735 774 I 6735 768 I C 
+6774 768 M 6793 768 I 6793 774 I 6774 774 I 6774 768 I C 
+6812 768 M 6831 768 I 6831 774 I 6812 774 I 6812 768 I C 
+6850 768 M 6869 768 I 6869 774 I 6850 774 I 6850 768 I C 
+6888 768 M 6907 768 I 6907 774 I 6888 774 I 6888 768 I C 
+6926 768 M 6946 768 I 6946 774 I 6926 774 I 6926 768 I C 
+6965 768 M 6984 768 I 6984 774 I 6965 774 I 6965 768 I C 
+7003 768 M 7022 768 I 7022 774 I 7003 774 I 7003 768 I C 
+7041 768 M 7060 768 I 7060 774 I 7041 774 I 7041 768 I C 
+7079 768 M 7099 768 I 7099 774 I 7079 774 I 7079 768 I C 
+7118 768 M 7137 768 I 7137 774 I 7118 774 I 7118 768 I C 
+7156 768 M 7175 768 I 7175 774 I 7156 774 I 7156 768 I C 
+7194 768 M 7213 768 I 7213 774 I 7194 774 I 7194 768 I C 
+7232 768 M 7251 768 I 7251 774 I 7232 774 I 7232 768 I C 
+7271 768 M 7290 768 I 7290 774 I 7271 774 I 7271 768 I C 
+7309 768 M 7328 768 I 7328 774 I 7309 774 I 7309 768 I C 
+7347 768 M 7366 768 I 7366 774 I 7347 774 I 7347 768 I C 
+7385 768 M 7404 768 I 7404 774 I 7385 774 I 7385 768 I C 
+7424 768 M 7443 768 I 7443 774 I 7424 774 I 7424 768 I C 
+7462 768 M 7481 768 I 7481 774 I 7462 774 I 7462 768 I C 
+7500 768 M 7519 768 I 7519 774 I 7500 774 I 7500 768 I C 
+7538 768 M 7557 768 I 7557 774 I 7538 774 I 7538 768 I C 
+7576 768 M 7596 768 I 7596 774 I 7576 774 I 7576 768 I C 
+7615 768 M 7634 768 I 7634 774 I 7615 774 I 7615 768 I C 
+7653 768 M 7672 768 I 7672 774 I 7653 774 I 7653 768 I C 
+7691 768 M 7710 768 I 7710 774 I 7691 774 I 7691 768 I C 
+7729 768 M 7749 768 I 7749 774 I 7729 774 I 7729 768 I C 
+7768 768 M 7787 768 I 7787 774 I 7768 774 I 7768 768 I C 
+7806 768 M 7825 768 I 7825 774 I 7806 774 I 7806 768 I C 
+7844 768 M 7863 768 I 7863 774 I 7844 774 I 7844 768 I C 
+7882 768 M 7901 768 I 7901 774 I 7882 774 I 7882 768 I C 
+7921 768 M 7940 768 I 7940 774 I 7921 774 I 7921 768 I C 
+7959 768 M 7978 768 I 7978 774 I 7959 774 I 7959 768 I C 
+7997 768 M 8016 768 I 8016 774 I 7997 774 I 7997 768 I C 
+8035 768 M 8054 768 I 8054 774 I 8035 774 I 8035 768 I C 
+8074 768 M 8093 768 I 8093 774 I 8074 774 I 8074 768 I C 
+8112 768 M 8131 768 I 8131 774 I 8112 774 I 8112 768 I C 
+8150 768 M 8169 768 I 8169 774 I 8150 774 I 8150 768 I C 
+8188 768 M 8207 768 I 8207 774 I 8188 774 I 8188 768 I C 
+8226 768 M 8246 768 I 8246 774 I 8226 774 I 8226 768 I C 
+8265 768 M 8284 768 I 8284 774 I 8265 774 I 8265 768 I C 
+8303 768 M 8322 768 I 8322 774 I 8303 774 I 8303 768 I C 
+8341 768 M 8360 768 I 8360 774 I 8341 774 I 8341 768 I C 
+8379 768 M 8399 768 I 8399 774 I 8379 774 I 8379 768 I C 
+8418 768 M 8437 768 I 8437 774 I 8418 774 I 8418 768 I C 
+8456 768 M 8475 768 I 8475 774 I 8456 774 I 8456 768 I C 
+8494 768 M 8513 768 I 8513 774 I 8494 774 I 8494 768 I C 
+8532 768 M 8551 768 I 8551 774 I 8532 774 I 8532 768 I C 
+8571 768 M 8577 768 I 8577 774 I 8571 774 I 8571 768 I C 
+:  L ; : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 0 0 0 1 scol 0 Lj 2 Lc N 962 771 M 1006 771 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; N 8577 771 M 8532 771 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 554 842 M ( )S 
+605 842 M (0)S  707 842 M (.)S  758 842 M (6)S  
+0.754 0.754 0.754 1 scol 2 Lj 0 Lc N 962 200 M 981 200 I 981 207 I 962 207 I 962 200 I C 
+1000 200 M 1019 200 I 1019 207 I 1000 207 I 1000 200 I C 
+1038 200 M 1057 200 I 1057 207 I 1038 207 I 1038 200 I C 
+1076 200 M 1096 200 I 1096 207 I 1076 207 I 1076 200 I C 
+1115 200 M 1134 200 I 1134 207 I 1115 207 I 1115 200 I C 
+1153 200 M 1172 200 I 1172 207 I 1153 207 I 1153 200 I C 
+1191 200 M 1210 200 I 1210 207 I 1191 207 I 1191 200 I C 
+1229 200 M 1249 200 I 1249 207 I 1229 207 I 1229 200 I C 
+1268 200 M 1287 200 I 1287 207 I 1268 207 I 1268 200 I C 
+1306 200 M 1325 200 I 1325 207 I 1306 207 I 1306 200 I C 
+1344 200 M 1363 200 I 1363 207 I 1344 207 I 1344 200 I C 
+1382 200 M 1401 200 I 1401 207 I 1382 207 I 1382 200 I C 
+1421 200 M 1440 200 I 1440 207 I 1421 207 I 1421 200 I C 
+1459 200 M 1478 200 I 1478 207 I 1459 207 I 1459 200 I C 
+1497 200 M 1516 200 I 1516 207 I 1497 207 I 1497 200 I C 
+1535 200 M 1554 200 I 1554 207 I 1535 207 I 1535 200 I C 
+1574 200 M 1593 200 I 1593 207 I 1574 207 I 1574 200 I C 
+1612 200 M 1631 200 I 1631 207 I 1612 207 I 1612 200 I C 
+1650 200 M 1669 200 I 1669 207 I 1650 207 I 1650 200 I C 
+1688 200 M 1707 200 I 1707 207 I 1688 207 I 1688 200 I C 
+1726 200 M 1746 200 I 1746 207 I 1726 207 I 1726 200 I C 
+1765 200 M 1784 200 I 1784 207 I 1765 207 I 1765 200 I C 
+1803 200 M 1822 200 I 1822 207 I 1803 207 I 1803 200 I C 
+1841 200 M 1860 200 I 1860 207 I 1841 207 I 1841 200 I C 
+1879 200 M 1899 200 I 1899 207 I 1879 207 I 1879 200 I C 
+1918 200 M 1937 200 I 1937 207 I 1918 207 I 1918 200 I C 
+1956 200 M 1975 200 I 1975 207 I 1956 207 I 1956 200 I C 
+1994 200 M 2013 200 I 2013 207 I 1994 207 I 1994 200 I C 
+2032 200 M 2051 200 I 2051 207 I 2032 207 I 2032 200 I C 
+2071 200 M 2090 200 I 2090 207 I 2071 207 I 2071 200 I C 
+2109 200 M 2128 200 I 2128 207 I 2109 207 I 2109 200 I C 
+2147 200 M 2166 200 I 2166 207 I 2147 207 I 2147 200 I C 
+2185 200 M 2204 200 I 2204 207 I 2185 207 I 2185 200 I C 
+2224 200 M 2243 200 I 2243 207 I 2224 207 I 2224 200 I C 
+2262 200 M 2281 200 I 2281 207 I 2262 207 I 2262 200 I C 
+2300 200 M 2319 200 I 2319 207 I 2300 207 I 2300 200 I C 
+2338 200 M 2357 200 I 2357 207 I 2338 207 I 2338 200 I C 
+2376 200 M 2396 200 I 2396 207 I 2376 207 I 2376 200 I C 
+2415 200 M 2434 200 I 2434 207 I 2415 207 I 2415 200 I C 
+2453 200 M 2472 200 I 2472 207 I 2453 207 I 2453 200 I C 
+2491 200 M 2510 200 I 2510 207 I 2491 207 I 2491 200 I C 
+2529 200 M 2549 200 I 2549 207 I 2529 207 I 2529 200 I C 
+2568 200 M 2587 200 I 2587 207 I 2568 207 I 2568 200 I C 
+2606 200 M 2625 200 I 2625 207 I 2606 207 I 2606 200 I C 
+2644 200 M 2663 200 I 2663 207 I 2644 207 I 2644 200 I C 
+2682 200 M 2701 200 I 2701 207 I 2682 207 I 2682 200 I C 
+2721 200 M 2740 200 I 2740 207 I 2721 207 I 2721 200 I C 
+2759 200 M 2778 200 I 2778 207 I 2759 207 I 2759 200 I C 
+2797 200 M 2816 200 I 2816 207 I 2797 207 I 2797 200 I C 
+2835 200 M 2854 200 I 2854 207 I 2835 207 I 2835 200 I C 
+2874 200 M 2893 200 I 2893 207 I 2874 207 I 2874 200 I C 
+2912 200 M 2931 200 I 2931 207 I 2912 207 I 2912 200 I C 
+2950 200 M 2969 200 I 2969 207 I 2950 207 I 2950 200 I C 
+2988 200 M 3007 200 I 3007 207 I 2988 207 I 2988 200 I C 
+3026 200 M 3046 200 I 3046 207 I 3026 207 I 3026 200 I C 
+3065 200 M 3084 200 I 3084 207 I 3065 207 I 3065 200 I C 
+3103 200 M 3122 200 I 3122 207 I 3103 207 I 3103 200 I C 
+3141 200 M 3160 200 I 3160 207 I 3141 207 I 3141 200 I C 
+3179 200 M 3199 200 I 3199 207 I 3179 207 I 3179 200 I C 
+3218 200 M 3237 200 I 3237 207 I 3218 207 I 3218 200 I C 
+3256 200 M 3275 200 I 3275 207 I 3256 207 I 3256 200 I C 
+3294 200 M 3313 200 I 3313 207 I 3294 207 I 3294 200 I C 
+3332 200 M 3351 200 I 3351 207 I 3332 207 I 3332 200 I C 
+3371 200 M 3390 200 I 3390 207 I 3371 207 I 3371 200 I C 
+3409 200 M 3428 200 I 3428 207 I 3409 207 I 3409 200 I C 
+3447 200 M 3466 200 I 3466 207 I 3447 207 I 3447 200 I C 
+3485 200 M 3504 200 I 3504 207 I 3485 207 I 3485 200 I C 
+3524 200 M 3543 200 I 3543 207 I 3524 207 I 3524 200 I C 
+3562 200 M 3581 200 I 3581 207 I 3562 207 I 3562 200 I C 
+3600 200 M 3619 200 I 3619 207 I 3600 207 I 3600 200 I C 
+3638 200 M 3657 200 I 3657 207 I 3638 207 I 3638 200 I C 
+3676 200 M 3696 200 I 3696 207 I 3676 207 I 3676 200 I C 
+3715 200 M 3734 200 I 3734 207 I 3715 207 I 3715 200 I C 
+3753 200 M 3772 200 I 3772 207 I 3753 207 I 3753 200 I C 
+3791 200 M 3810 200 I 3810 207 I 3791 207 I 3791 200 I C 
+3829 200 M 3849 200 I 3849 207 I 3829 207 I 3829 200 I C 
+3868 200 M 3887 200 I 3887 207 I 3868 207 I 3868 200 I C 
+3906 200 M 3925 200 I 3925 207 I 3906 207 I 3906 200 I C 
+3944 200 M 3963 200 I 3963 207 I 3944 207 I 3944 200 I C 
+3982 200 M 4001 200 I 4001 207 I 3982 207 I 3982 200 I C 
+4021 200 M 4040 200 I 4040 207 I 4021 207 I 4021 200 I C 
+4059 200 M 4078 200 I 4078 207 I 4059 207 I 4059 200 I C 
+4097 200 M 4116 200 I 4116 207 I 4097 207 I 4097 200 I C 
+4135 200 M 4154 200 I 4154 207 I 4135 207 I 4135 200 I C 
+4174 200 M 4193 200 I 4193 207 I 4174 207 I 4174 200 I C 
+4212 200 M 4231 200 I 4231 207 I 4212 207 I 4212 200 I C 
+4250 200 M 4269 200 I 4269 207 I 4250 207 I 4250 200 I C 
+4288 200 M 4307 200 I 4307 207 I 4288 207 I 4288 200 I C 
+4326 200 M 4346 200 I 4346 207 I 4326 207 I 4326 200 I C 
+4365 200 M 4384 200 I 4384 207 I 4365 207 I 4365 200 I C 
+4403 200 M 4422 200 I 4422 207 I 4403 207 I 4403 200 I C 
+4441 200 M 4460 200 I 4460 207 I 4441 207 I 4441 200 I C 
+4479 200 M 4499 200 I 4499 207 I 4479 207 I 4479 200 I C 
+4518 200 M 4537 200 I 4537 207 I 4518 207 I 4518 200 I C 
+4556 200 M 4575 200 I 4575 207 I 4556 207 I 4556 200 I C 
+4594 200 M 4613 200 I 4613 207 I 4594 207 I 4594 200 I C 
+4632 200 M 4651 200 I 4651 207 I 4632 207 I 4632 200 I C 
+4671 200 M 4690 200 I 4690 207 I 4671 207 I 4671 200 I C 
+4709 200 M 4728 200 I 4728 207 I 4709 207 I 4709 200 I C 
+4747 200 M 4766 200 I 4766 207 I 4747 207 I 4747 200 I C 
+4785 200 M 4804 200 I 4804 207 I 4785 207 I 4785 200 I C 
+4824 200 M 4843 200 I 4843 207 I 4824 207 I 4824 200 I C 
+4862 200 M 4881 200 I 4881 207 I 4862 207 I 4862 200 I C 
+4900 200 M 4919 200 I 4919 207 I 4900 207 I 4900 200 I C 
+4938 200 M 4957 200 I 4957 207 I 4938 207 I 4938 200 I C 
+4976 200 M 4996 200 I 4996 207 I 4976 207 I 4976 200 I C 
+5015 200 M 5034 200 I 5034 207 I 5015 207 I 5015 200 I C 
+5053 200 M 5072 200 I 5072 207 I 5053 207 I 5053 200 I C 
+5091 200 M 5110 200 I 5110 207 I 5091 207 I 5091 200 I C 
+5129 200 M 5149 200 I 5149 207 I 5129 207 I 5129 200 I C 
+5168 200 M 5187 200 I 5187 207 I 5168 207 I 5168 200 I C 
+5206 200 M 5225 200 I 5225 207 I 5206 207 I 5206 200 I C 
+5244 200 M 5263 200 I 5263 207 I 5244 207 I 5244 200 I C 
+5282 200 M 5301 200 I 5301 207 I 5282 207 I 5282 200 I C 
+5321 200 M 5340 200 I 5340 207 I 5321 207 I 5321 200 I C 
+5359 200 M 5378 200 I 5378 207 I 5359 207 I 5359 200 I C 
+5397 200 M 5416 200 I 5416 207 I 5397 207 I 5397 200 I C 
+5435 200 M 5454 200 I 5454 207 I 5435 207 I 5435 200 I C 
+5474 200 M 5493 200 I 5493 207 I 5474 207 I 5474 200 I C 
+5512 200 M 5531 200 I 5531 207 I 5512 207 I 5512 200 I C 
+5550 200 M 5569 200 I 5569 207 I 5550 207 I 5550 200 I C 
+5588 200 M 5607 200 I 5607 207 I 5588 207 I 5588 200 I C 
+5626 200 M 5646 200 I 5646 207 I 5626 207 I 5626 200 I C 
+5665 200 M 5684 200 I 5684 207 I 5665 207 I 5665 200 I C 
+5703 200 M 5722 200 I 5722 207 I 5703 207 I 5703 200 I C 
+5741 200 M 5760 200 I 5760 207 I 5741 207 I 5741 200 I C 
+5779 200 M 5799 200 I 5799 207 I 5779 207 I 5779 200 I C 
+5818 200 M 5837 200 I 5837 207 I 5818 207 I 5818 200 I C 
+5856 200 M 5875 200 I 5875 207 I 5856 207 I 5856 200 I C 
+5894 200 M 5913 200 I 5913 207 I 5894 207 I 5894 200 I C 
+5932 200 M 5951 200 I 5951 207 I 5932 207 I 5932 200 I C 
+5971 200 M 5990 200 I 5990 207 I 5971 207 I 5971 200 I C 
+6009 200 M 6028 200 I 6028 207 I 6009 207 I 6009 200 I C 
+6047 200 M 6066 200 I 6066 207 I 6047 207 I 6047 200 I C 
+6085 200 M 6104 200 I 6104 207 I 6085 207 I 6085 200 I C 
+6124 200 M 6143 200 I 6143 207 I 6124 207 I 6124 200 I C 
+6162 200 M 6181 200 I 6181 207 I 6162 207 I 6162 200 I C 
+6200 200 M 6219 200 I 6219 207 I 6200 207 I 6200 200 I C 
+6238 200 M 6257 200 I 6257 207 I 6238 207 I 6238 200 I C 
+6276 200 M 6296 200 I 6296 207 I 6276 207 I 6276 200 I C 
+6315 200 M 6334 200 I 6334 207 I 6315 207 I 6315 200 I C 
+6353 200 M 6372 200 I 6372 207 I 6353 207 I 6353 200 I C 
+6391 200 M 6410 200 I 6410 207 I 6391 207 I 6391 200 I C 
+6429 200 M 6449 200 I 6449 207 I 6429 207 I 6429 200 I C 
+6468 200 M 6487 200 I 6487 207 I 6468 207 I 6468 200 I C 
+6506 200 M 6525 200 I 6525 207 I 6506 207 I 6506 200 I C 
+6544 200 M 6563 200 I 6563 207 I 6544 207 I 6544 200 I C 
+6582 200 M 6601 200 I 6601 207 I 6582 207 I 6582 200 I C 
+6621 200 M 6640 200 I 6640 207 I 6621 207 I 6621 200 I C 
+6659 200 M 6678 200 I 6678 207 I 6659 207 I 6659 200 I C 
+6697 200 M 6716 200 I 6716 207 I 6697 207 I 6697 200 I C 
+6735 200 M 6754 200 I 6754 207 I 6735 207 I 6735 200 I C 
+6774 200 M 6793 200 I 6793 207 I 6774 207 I 6774 200 I C 
+6812 200 M 6831 200 I 6831 207 I 6812 207 I 6812 200 I C 
+6850 200 M 6869 200 I 6869 207 I 6850 207 I 6850 200 I C 
+6888 200 M 6907 200 I 6907 207 I 6888 207 I 6888 200 I C 
+6926 200 M 6946 200 I 6946 207 I 6926 207 I 6926 200 I C 
+6965 200 M 6984 200 I 6984 207 I 6965 207 I 6965 200 I C 
+7003 200 M 7022 200 I 7022 207 I 7003 207 I 7003 200 I C 
+7041 200 M 7060 200 I 7060 207 I 7041 207 I 7041 200 I C 
+7079 200 M 7099 200 I 7099 207 I 7079 207 I 7079 200 I C 
+7118 200 M 7137 200 I 7137 207 I 7118 207 I 7118 200 I C 
+7156 200 M 7175 200 I 7175 207 I 7156 207 I 7156 200 I C 
+7194 200 M 7213 200 I 7213 207 I 7194 207 I 7194 200 I C 
+7232 200 M 7251 200 I 7251 207 I 7232 207 I 7232 200 I C 
+7271 200 M 7290 200 I 7290 207 I 7271 207 I 7271 200 I C 
+7309 200 M 7328 200 I 7328 207 I 7309 207 I 7309 200 I C 
+7347 200 M 7366 200 I 7366 207 I 7347 207 I 7347 200 I C 
+7385 200 M 7404 200 I 7404 207 I 7385 207 I 7385 200 I C 
+7424 200 M 7443 200 I 7443 207 I 7424 207 I 7424 200 I C 
+7462 200 M 7481 200 I 7481 207 I 7462 207 I 7462 200 I C 
+7500 200 M 7519 200 I 7519 207 I 7500 207 I 7500 200 I C 
+7538 200 M 7557 200 I 7557 207 I 7538 207 I 7538 200 I C 
+7576 200 M 7596 200 I 7596 207 I 7576 207 I 7576 200 I C 
+7615 200 M 7634 200 I 7634 207 I 7615 207 I 7615 200 I C 
+7653 200 M 7672 200 I 7672 207 I 7653 207 I 7653 200 I C 
+7691 200 M 7710 200 I 7710 207 I 7691 207 I 7691 200 I C 
+7729 200 M 7749 200 I 7749 207 I 7729 207 I 7729 200 I C 
+7768 200 M 7787 200 I 7787 207 I 7768 207 I 7768 200 I C 
+7806 200 M 7825 200 I 7825 207 I 7806 207 I 7806 200 I C 
+7844 200 M 7863 200 I 7863 207 I 7844 207 I 7844 200 I C 
+7882 200 M 7901 200 I 7901 207 I 7882 207 I 7882 200 I C 
+7921 200 M 7940 200 I 7940 207 I 7921 207 I 7921 200 I C 
+7959 200 M 7978 200 I 7978 207 I 7959 207 I 7959 200 I C 
+7997 200 M 8016 200 I 8016 207 I 7997 207 I 7997 200 I C 
+8035 200 M 8054 200 I 8054 207 I 8035 207 I 8035 200 I C 
+8074 200 M 8093 200 I 8093 207 I 8074 207 I 8074 200 I C 
+8112 200 M 8131 200 I 8131 207 I 8112 207 I 8112 200 I C 
+8150 200 M 8169 200 I 8169 207 I 8150 207 I 8150 200 I C 
+8188 200 M 8207 200 I 8207 207 I 8188 207 I 8188 200 I C 
+8226 200 M 8246 200 I 8246 207 I 8226 207 I 8226 200 I C 
+8265 200 M 8284 200 I 8284 207 I 8265 207 I 8265 200 I C 
+8303 200 M 8322 200 I 8322 207 I 8303 207 I 8303 200 I C 
+8341 200 M 8360 200 I 8360 207 I 8341 207 I 8341 200 I C 
+8379 200 M 8399 200 I 8399 207 I 8379 207 I 8379 200 I C 
+8418 200 M 8437 200 I 8437 207 I 8418 207 I 8418 200 I C 
+8456 200 M 8475 200 I 8475 207 I 8456 207 I 8456 200 I C 
+8494 200 M 8513 200 I 8513 207 I 8494 207 I 8494 200 I C 
+8532 200 M 8551 200 I 8551 207 I 8532 207 I 8532 200 I C 
+8571 200 M 8577 200 I 8577 207 I 8571 207 I 8571 200 I C 
+:  L ; : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 0 0 0 1 scol 0 Lj 2 Lc N 962 204 M 1006 204 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; N 8577 204 M 8532 204 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 554 274 M ( )S 
+605 274 M (0)S  707 274 M (.)S  758 274 M (7)S  
+0.754 0.754 0.754 1 scol 2 Lj 0 Lc N 959 4176 M 959 4157 I 965 4157 I 965 4176 I 959 4176 I C 
+959 4138 M 959 4119 I 965 4119 I 965 4138 I 959 4138 I C 
+959 4100 M 959 4080 I 965 4080 I 965 4100 I 959 4100 I C 
+959 4061 M 959 4042 I 965 4042 I 965 4061 I 959 4061 I C 
+959 4023 M 959 4004 I 965 4004 I 965 4023 I 959 4023 I C 
+959 3985 M 959 3966 I 965 3966 I 965 3985 I 959 3985 I C 
+959 3947 M 959 3927 I 965 3927 I 965 3947 I 959 3947 I C 
+959 3908 M 959 3889 I 965 3889 I 965 3908 I 959 3908 I C 
+959 3870 M 959 3851 I 965 3851 I 965 3870 I 959 3870 I C 
+959 3832 M 959 3813 I 965 3813 I 965 3832 I 959 3832 I C 
+959 3794 M 959 3774 I 965 3774 I 965 3794 I 959 3794 I C 
+959 3755 M 959 3736 I 965 3736 I 965 3755 I 959 3755 I C 
+959 3717 M 959 3698 I 965 3698 I 965 3717 I 959 3717 I C 
+959 3679 M 959 3660 I 965 3660 I 965 3679 I 959 3679 I C 
+959 3641 M 959 3621 I 965 3621 I 965 3641 I 959 3641 I C 
+959 3602 M 959 3583 I 965 3583 I 965 3602 I 959 3602 I C 
+959 3564 M 959 3545 I 965 3545 I 965 3564 I 959 3564 I C 
+959 3526 M 959 3507 I 965 3507 I 965 3526 I 959 3526 I C 
+959 3487 M 959 3468 I 965 3468 I 965 3487 I 959 3487 I C 
+959 3449 M 959 3430 I 965 3430 I 965 3449 I 959 3449 I C 
+959 3411 M 959 3392 I 965 3392 I 965 3411 I 959 3411 I C 
+959 3373 M 959 3354 I 965 3354 I 965 3373 I 959 3373 I C 
+959 3334 M 959 3315 I 965 3315 I 965 3334 I 959 3334 I C 
+959 3296 M 959 3277 I 965 3277 I 965 3296 I 959 3296 I C 
+959 3258 M 959 3239 I 965 3239 I 965 3258 I 959 3258 I C 
+959 3220 M 959 3201 I 965 3201 I 965 3220 I 959 3220 I C 
+959 3181 M 959 3162 I 965 3162 I 965 3181 I 959 3181 I C 
+959 3143 M 959 3124 I 965 3124 I 965 3143 I 959 3143 I C 
+959 3105 M 959 3086 I 965 3086 I 965 3105 I 959 3105 I C 
+959 3067 M 959 3047 I 965 3047 I 965 3067 I 959 3067 I C 
+959 3028 M 959 3009 I 965 3009 I 965 3028 I 959 3028 I C 
+959 2990 M 959 2971 I 965 2971 I 965 2990 I 959 2990 I C 
+959 2952 M 959 2933 I 965 2933 I 965 2952 I 959 2952 I C 
+959 2914 M 959 2894 I 965 2894 I 965 2914 I 959 2914 I C 
+959 2875 M 959 2856 I 965 2856 I 965 2875 I 959 2875 I C 
+959 2837 M 959 2818 I 965 2818 I 965 2837 I 959 2837 I C 
+959 2799 M 959 2780 I 965 2780 I 965 2799 I 959 2799 I C 
+959 2761 M 959 2741 I 965 2741 I 965 2761 I 959 2761 I C 
+959 2722 M 959 2703 I 965 2703 I 965 2722 I 959 2722 I C 
+959 2684 M 959 2665 I 965 2665 I 965 2684 I 959 2684 I C 
+959 2646 M 959 2627 I 965 2627 I 965 2646 I 959 2646 I C 
+959 2608 M 959 2588 I 965 2588 I 965 2608 I 959 2608 I C 
+959 2569 M 959 2550 I 965 2550 I 965 2569 I 959 2569 I C 
+959 2531 M 959 2512 I 965 2512 I 965 2531 I 959 2531 I C 
+959 2493 M 959 2474 I 965 2474 I 965 2493 I 959 2493 I C 
+959 2454 M 959 2435 I 965 2435 I 965 2454 I 959 2454 I C 
+959 2416 M 959 2397 I 965 2397 I 965 2416 I 959 2416 I C 
+959 2378 M 959 2359 I 965 2359 I 965 2378 I 959 2378 I C 
+959 2340 M 959 2321 I 965 2321 I 965 2340 I 959 2340 I C 
+959 2301 M 959 2282 I 965 2282 I 965 2301 I 959 2301 I C 
+959 2263 M 959 2244 I 965 2244 I 965 2263 I 959 2263 I C 
+959 2225 M 959 2206 I 965 2206 I 965 2225 I 959 2225 I C 
+959 2187 M 959 2168 I 965 2168 I 965 2187 I 959 2187 I C 
+959 2148 M 959 2129 I 965 2129 I 965 2148 I 959 2148 I C 
+959 2110 M 959 2091 I 965 2091 I 965 2110 I 959 2110 I C 
+959 2072 M 959 2053 I 965 2053 I 965 2072 I 959 2072 I C 
+959 2034 M 959 2015 I 965 2015 I 965 2034 I 959 2034 I C 
+959 1995 M 959 1976 I 965 1976 I 965 1995 I 959 1995 I C 
+959 1957 M 959 1938 I 965 1938 I 965 1957 I 959 1957 I C 
+959 1919 M 959 1900 I 965 1900 I 965 1919 I 959 1919 I C 
+959 1881 M 959 1861 I 965 1861 I 965 1881 I 959 1881 I C 
+959 1842 M 959 1823 I 965 1823 I 965 1842 I 959 1842 I C 
+959 1804 M 959 1785 I 965 1785 I 965 1804 I 959 1804 I C 
+959 1766 M 959 1747 I 965 1747 I 965 1766 I 959 1766 I C 
+959 1728 M 959 1708 I 965 1708 I 965 1728 I 959 1728 I C 
+959 1689 M 959 1670 I 965 1670 I 965 1689 I 959 1689 I C 
+959 1651 M 959 1632 I 965 1632 I 965 1651 I 959 1651 I C 
+959 1613 M 959 1594 I 965 1594 I 965 1613 I 959 1613 I C 
+959 1575 M 959 1555 I 965 1555 I 965 1575 I 959 1575 I C 
+959 1536 M 959 1517 I 965 1517 I 965 1536 I 959 1536 I C 
+959 1498 M 959 1479 I 965 1479 I 965 1498 I 959 1498 I C 
+959 1460 M 959 1441 I 965 1441 I 965 1460 I 959 1460 I C 
+959 1421 M 959 1402 I 965 1402 I 965 1421 I 959 1421 I C 
+959 1383 M 959 1364 I 965 1364 I 965 1383 I 959 1383 I C 
+959 1345 M 959 1326 I 965 1326 I 965 1345 I 959 1345 I C 
+959 1307 M 959 1288 I 965 1288 I 965 1307 I 959 1307 I C 
+959 1268 M 959 1249 I 965 1249 I 965 1268 I 959 1268 I C 
+959 1230 M 959 1211 I 965 1211 I 965 1230 I 959 1230 I C 
+959 1192 M 959 1173 I 965 1173 I 965 1192 I 959 1192 I C 
+959 1154 M 959 1135 I 965 1135 I 965 1154 I 959 1154 I C 
+959 1115 M 959 1096 I 965 1096 I 965 1115 I 959 1115 I C 
+959 1077 M 959 1058 I 965 1058 I 965 1077 I 959 1077 I C 
+959 1039 M 959 1020 I 965 1020 I 965 1039 I 959 1039 I C 
+959 1001 M 959 982 I 965 982 I 965 1001 I 959 1001 I C 
+959 962 M 959 943 I 965 943 I 965 962 I 959 962 I C 
+959 924 M 959 905 I 965 905 I 965 924 I 959 924 I C 
+959 886 M 959 867 I 965 867 I 965 886 I 959 886 I C 
+959 848 M 959 828 I 965 828 I 965 848 I 959 848 I C 
+959 809 M 959 790 I 965 790 I 965 809 I 959 809 I C 
+959 771 M 959 752 I 965 752 I 965 771 I 959 771 I C 
+959 733 M 959 714 I 965 714 I 965 733 I 959 733 I C 
+959 695 M 959 675 I 965 675 I 965 695 I 959 695 I C 
+959 656 M 959 637 I 965 637 I 965 656 I 959 656 I C 
+959 618 M 959 599 I 965 599 I 965 618 I 959 618 I C 
+959 580 M 959 561 I 965 561 I 965 580 I 959 580 I C 
+959 542 M 959 522 I 965 522 I 965 542 I 959 542 I C 
+959 503 M 959 484 I 965 484 I 965 503 I 959 503 I C 
+959 465 M 959 446 I 965 446 I 965 465 I 959 465 I C 
+959 427 M 959 408 I 965 408 I 965 427 I 959 427 I C 
+959 388 M 959 369 I 965 369 I 965 388 I 959 388 I C 
+959 350 M 959 331 I 965 331 I 965 350 I 959 350 I C 
+959 312 M 959 293 I 965 293 I 965 312 I 959 312 I C 
+959 274 M 959 255 I 965 255 I 965 274 I 959 274 I C 
+959 235 M 959 216 I 965 216 I 965 235 I 959 235 I C 
+:  L ; : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 0 0 0 1 scol 0 Lj 2 Lc N 962 4176 M 962 4131 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; N 962 204 M 962 248 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 886 4444 M ( )S 
+937 4444 M (0)S  
+0.754 0.754 0.754 1 scol 2 Lj 0 Lc N 2482 4176 M 2482 4157 I 2488 4157 I 2488 4176 I 2482 4176 I C 
+2482 4138 M 2482 4119 I 2488 4119 I 2488 4138 I 2482 4138 I C 
+2482 4100 M 2482 4080 I 2488 4080 I 2488 4100 I 2482 4100 I C 
+2482 4061 M 2482 4042 I 2488 4042 I 2488 4061 I 2482 4061 I C 
+2482 4023 M 2482 4004 I 2488 4004 I 2488 4023 I 2482 4023 I C 
+2482 3985 M 2482 3966 I 2488 3966 I 2488 3985 I 2482 3985 I C 
+2482 3947 M 2482 3927 I 2488 3927 I 2488 3947 I 2482 3947 I C 
+2482 3908 M 2482 3889 I 2488 3889 I 2488 3908 I 2482 3908 I C 
+2482 3870 M 2482 3851 I 2488 3851 I 2488 3870 I 2482 3870 I C 
+2482 3832 M 2482 3813 I 2488 3813 I 2488 3832 I 2482 3832 I C 
+2482 3794 M 2482 3774 I 2488 3774 I 2488 3794 I 2482 3794 I C 
+2482 3755 M 2482 3736 I 2488 3736 I 2488 3755 I 2482 3755 I C 
+2482 3717 M 2482 3698 I 2488 3698 I 2488 3717 I 2482 3717 I C 
+2482 3679 M 2482 3660 I 2488 3660 I 2488 3679 I 2482 3679 I C 
+2482 3641 M 2482 3621 I 2488 3621 I 2488 3641 I 2482 3641 I C 
+2482 3602 M 2482 3583 I 2488 3583 I 2488 3602 I 2482 3602 I C 
+2482 3564 M 2482 3545 I 2488 3545 I 2488 3564 I 2482 3564 I C 
+2482 3526 M 2482 3507 I 2488 3507 I 2488 3526 I 2482 3526 I C 
+2482 3487 M 2482 3468 I 2488 3468 I 2488 3487 I 2482 3487 I C 
+2482 3449 M 2482 3430 I 2488 3430 I 2488 3449 I 2482 3449 I C 
+2482 3411 M 2482 3392 I 2488 3392 I 2488 3411 I 2482 3411 I C 
+2482 3373 M 2482 3354 I 2488 3354 I 2488 3373 I 2482 3373 I C 
+2482 3334 M 2482 3315 I 2488 3315 I 2488 3334 I 2482 3334 I C 
+2482 3296 M 2482 3277 I 2488 3277 I 2488 3296 I 2482 3296 I C 
+2482 3258 M 2482 3239 I 2488 3239 I 2488 3258 I 2482 3258 I C 
+2482 3220 M 2482 3201 I 2488 3201 I 2488 3220 I 2482 3220 I C 
+2482 3181 M 2482 3162 I 2488 3162 I 2488 3181 I 2482 3181 I C 
+2482 3143 M 2482 3124 I 2488 3124 I 2488 3143 I 2482 3143 I C 
+2482 3105 M 2482 3086 I 2488 3086 I 2488 3105 I 2482 3105 I C 
+2482 3067 M 2482 3047 I 2488 3047 I 2488 3067 I 2482 3067 I C 
+2482 3028 M 2482 3009 I 2488 3009 I 2488 3028 I 2482 3028 I C 
+2482 2990 M 2482 2971 I 2488 2971 I 2488 2990 I 2482 2990 I C 
+2482 2952 M 2482 2933 I 2488 2933 I 2488 2952 I 2482 2952 I C 
+2482 2914 M 2482 2894 I 2488 2894 I 2488 2914 I 2482 2914 I C 
+2482 2875 M 2482 2856 I 2488 2856 I 2488 2875 I 2482 2875 I C 
+2482 2837 M 2482 2818 I 2488 2818 I 2488 2837 I 2482 2837 I C 
+2482 2799 M 2482 2780 I 2488 2780 I 2488 2799 I 2482 2799 I C 
+2482 2761 M 2482 2741 I 2488 2741 I 2488 2761 I 2482 2761 I C 
+2482 2722 M 2482 2703 I 2488 2703 I 2488 2722 I 2482 2722 I C 
+2482 2684 M 2482 2665 I 2488 2665 I 2488 2684 I 2482 2684 I C 
+2482 2646 M 2482 2627 I 2488 2627 I 2488 2646 I 2482 2646 I C 
+2482 2608 M 2482 2588 I 2488 2588 I 2488 2608 I 2482 2608 I C 
+2482 2569 M 2482 2550 I 2488 2550 I 2488 2569 I 2482 2569 I C 
+2482 2531 M 2482 2512 I 2488 2512 I 2488 2531 I 2482 2531 I C 
+2482 2493 M 2482 2474 I 2488 2474 I 2488 2493 I 2482 2493 I C 
+2482 2454 M 2482 2435 I 2488 2435 I 2488 2454 I 2482 2454 I C 
+2482 2416 M 2482 2397 I 2488 2397 I 2488 2416 I 2482 2416 I C 
+2482 2378 M 2482 2359 I 2488 2359 I 2488 2378 I 2482 2378 I C 
+2482 2340 M 2482 2321 I 2488 2321 I 2488 2340 I 2482 2340 I C 
+2482 2301 M 2482 2282 I 2488 2282 I 2488 2301 I 2482 2301 I C 
+2482 2263 M 2482 2244 I 2488 2244 I 2488 2263 I 2482 2263 I C 
+2482 2225 M 2482 2206 I 2488 2206 I 2488 2225 I 2482 2225 I C 
+2482 2187 M 2482 2168 I 2488 2168 I 2488 2187 I 2482 2187 I C 
+2482 2148 M 2482 2129 I 2488 2129 I 2488 2148 I 2482 2148 I C 
+2482 2110 M 2482 2091 I 2488 2091 I 2488 2110 I 2482 2110 I C 
+2482 2072 M 2482 2053 I 2488 2053 I 2488 2072 I 2482 2072 I C 
+2482 2034 M 2482 2015 I 2488 2015 I 2488 2034 I 2482 2034 I C 
+2482 1995 M 2482 1976 I 2488 1976 I 2488 1995 I 2482 1995 I C 
+2482 1957 M 2482 1938 I 2488 1938 I 2488 1957 I 2482 1957 I C 
+2482 1919 M 2482 1900 I 2488 1900 I 2488 1919 I 2482 1919 I C 
+2482 1881 M 2482 1861 I 2488 1861 I 2488 1881 I 2482 1881 I C 
+2482 1842 M 2482 1823 I 2488 1823 I 2488 1842 I 2482 1842 I C 
+2482 1804 M 2482 1785 I 2488 1785 I 2488 1804 I 2482 1804 I C 
+2482 1766 M 2482 1747 I 2488 1747 I 2488 1766 I 2482 1766 I C 
+2482 1728 M 2482 1708 I 2488 1708 I 2488 1728 I 2482 1728 I C 
+2482 1689 M 2482 1670 I 2488 1670 I 2488 1689 I 2482 1689 I C 
+2482 1651 M 2482 1632 I 2488 1632 I 2488 1651 I 2482 1651 I C 
+2482 1613 M 2482 1594 I 2488 1594 I 2488 1613 I 2482 1613 I C 
+2482 1575 M 2482 1555 I 2488 1555 I 2488 1575 I 2482 1575 I C 
+2482 1536 M 2482 1517 I 2488 1517 I 2488 1536 I 2482 1536 I C 
+2482 1498 M 2482 1479 I 2488 1479 I 2488 1498 I 2482 1498 I C 
+2482 1460 M 2482 1441 I 2488 1441 I 2488 1460 I 2482 1460 I C 
+2482 1421 M 2482 1402 I 2488 1402 I 2488 1421 I 2482 1421 I C 
+2482 1383 M 2482 1364 I 2488 1364 I 2488 1383 I 2482 1383 I C 
+2482 1345 M 2482 1326 I 2488 1326 I 2488 1345 I 2482 1345 I C 
+2482 1307 M 2482 1288 I 2488 1288 I 2488 1307 I 2482 1307 I C 
+2482 1268 M 2482 1249 I 2488 1249 I 2488 1268 I 2482 1268 I C 
+2482 1230 M 2482 1211 I 2488 1211 I 2488 1230 I 2482 1230 I C 
+2482 1192 M 2482 1173 I 2488 1173 I 2488 1192 I 2482 1192 I C 
+2482 1154 M 2482 1135 I 2488 1135 I 2488 1154 I 2482 1154 I C 
+2482 1115 M 2482 1096 I 2488 1096 I 2488 1115 I 2482 1115 I C 
+2482 1077 M 2482 1058 I 2488 1058 I 2488 1077 I 2482 1077 I C 
+2482 1039 M 2482 1020 I 2488 1020 I 2488 1039 I 2482 1039 I C 
+2482 1001 M 2482 982 I 2488 982 I 2488 1001 I 2482 1001 I C 
+2482 962 M 2482 943 I 2488 943 I 2488 962 I 2482 962 I C 
+2482 924 M 2482 905 I 2488 905 I 2488 924 I 2482 924 I C 
+2482 886 M 2482 867 I 2488 867 I 2488 886 I 2482 886 I C 
+2482 848 M 2482 828 I 2488 828 I 2488 848 I 2482 848 I C 
+2482 809 M 2482 790 I 2488 790 I 2488 809 I 2482 809 I C 
+2482 771 M 2482 752 I 2488 752 I 2488 771 I 2482 771 I C 
+2482 733 M 2482 714 I 2488 714 I 2488 733 I 2482 733 I C 
+2482 695 M 2482 675 I 2488 675 I 2488 695 I 2482 695 I C 
+2482 656 M 2482 637 I 2488 637 I 2488 656 I 2482 656 I C 
+2482 618 M 2482 599 I 2488 599 I 2488 618 I 2482 618 I C 
+2482 580 M 2482 561 I 2488 561 I 2488 580 I 2482 580 I C 
+2482 542 M 2482 522 I 2488 522 I 2488 542 I 2482 542 I C 
+2482 503 M 2482 484 I 2488 484 I 2488 503 I 2482 503 I C 
+2482 465 M 2482 446 I 2488 446 I 2488 465 I 2482 465 I C 
+2482 427 M 2482 408 I 2488 408 I 2488 427 I 2482 427 I C 
+2482 388 M 2482 369 I 2488 369 I 2488 388 I 2482 388 I C 
+2482 350 M 2482 331 I 2488 331 I 2488 350 I 2482 350 I C 
+2482 312 M 2482 293 I 2488 293 I 2488 312 I 2482 312 I C 
+2482 274 M 2482 255 I 2488 255 I 2488 274 I 2482 274 I C 
+2482 235 M 2482 216 I 2488 216 I 2488 235 I 2482 235 I C 
+:  L ; : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 0 0 0 1 scol 0 Lj 2 Lc N 2485 4176 M 2485 4131 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; N 2485 204 M 2485 248 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 2332 4444 M ( )S 
+2383 4444 M (0)S  2485 4444 M (.)S  2536 4444 M (2)S  
+0.754 0.754 0.754 1 scol 2 Lj 0 Lc N 4005 4176 M 4005 4157 I 4011 4157 I 4011 4176 I 4005 4176 I C 
+4005 4138 M 4005 4119 I 4011 4119 I 4011 4138 I 4005 4138 I C 
+4005 4100 M 4005 4080 I 4011 4080 I 4011 4100 I 4005 4100 I C 
+4005 4061 M 4005 4042 I 4011 4042 I 4011 4061 I 4005 4061 I C 
+4005 4023 M 4005 4004 I 4011 4004 I 4011 4023 I 4005 4023 I C 
+4005 3985 M 4005 3966 I 4011 3966 I 4011 3985 I 4005 3985 I C 
+4005 3947 M 4005 3927 I 4011 3927 I 4011 3947 I 4005 3947 I C 
+4005 3908 M 4005 3889 I 4011 3889 I 4011 3908 I 4005 3908 I C 
+4005 3870 M 4005 3851 I 4011 3851 I 4011 3870 I 4005 3870 I C 
+4005 3832 M 4005 3813 I 4011 3813 I 4011 3832 I 4005 3832 I C 
+4005 3794 M 4005 3774 I 4011 3774 I 4011 3794 I 4005 3794 I C 
+4005 3755 M 4005 3736 I 4011 3736 I 4011 3755 I 4005 3755 I C 
+4005 3717 M 4005 3698 I 4011 3698 I 4011 3717 I 4005 3717 I C 
+4005 3679 M 4005 3660 I 4011 3660 I 4011 3679 I 4005 3679 I C 
+4005 3641 M 4005 3621 I 4011 3621 I 4011 3641 I 4005 3641 I C 
+4005 3602 M 4005 3583 I 4011 3583 I 4011 3602 I 4005 3602 I C 
+4005 3564 M 4005 3545 I 4011 3545 I 4011 3564 I 4005 3564 I C 
+4005 3526 M 4005 3507 I 4011 3507 I 4011 3526 I 4005 3526 I C 
+4005 3487 M 4005 3468 I 4011 3468 I 4011 3487 I 4005 3487 I C 
+4005 3449 M 4005 3430 I 4011 3430 I 4011 3449 I 4005 3449 I C 
+4005 3411 M 4005 3392 I 4011 3392 I 4011 3411 I 4005 3411 I C 
+4005 3373 M 4005 3354 I 4011 3354 I 4011 3373 I 4005 3373 I C 
+4005 3334 M 4005 3315 I 4011 3315 I 4011 3334 I 4005 3334 I C 
+4005 3296 M 4005 3277 I 4011 3277 I 4011 3296 I 4005 3296 I C 
+4005 3258 M 4005 3239 I 4011 3239 I 4011 3258 I 4005 3258 I C 
+4005 3220 M 4005 3201 I 4011 3201 I 4011 3220 I 4005 3220 I C 
+4005 3181 M 4005 3162 I 4011 3162 I 4011 3181 I 4005 3181 I C 
+4005 3143 M 4005 3124 I 4011 3124 I 4011 3143 I 4005 3143 I C 
+4005 3105 M 4005 3086 I 4011 3086 I 4011 3105 I 4005 3105 I C 
+4005 3067 M 4005 3047 I 4011 3047 I 4011 3067 I 4005 3067 I C 
+4005 3028 M 4005 3009 I 4011 3009 I 4011 3028 I 4005 3028 I C 
+4005 2990 M 4005 2971 I 4011 2971 I 4011 2990 I 4005 2990 I C 
+4005 2952 M 4005 2933 I 4011 2933 I 4011 2952 I 4005 2952 I C 
+4005 2914 M 4005 2894 I 4011 2894 I 4011 2914 I 4005 2914 I C 
+4005 2875 M 4005 2856 I 4011 2856 I 4011 2875 I 4005 2875 I C 
+4005 2837 M 4005 2818 I 4011 2818 I 4011 2837 I 4005 2837 I C 
+4005 2799 M 4005 2780 I 4011 2780 I 4011 2799 I 4005 2799 I C 
+4005 2761 M 4005 2741 I 4011 2741 I 4011 2761 I 4005 2761 I C 
+4005 2722 M 4005 2703 I 4011 2703 I 4011 2722 I 4005 2722 I C 
+4005 2684 M 4005 2665 I 4011 2665 I 4011 2684 I 4005 2684 I C 
+4005 2646 M 4005 2627 I 4011 2627 I 4011 2646 I 4005 2646 I C 
+4005 2608 M 4005 2588 I 4011 2588 I 4011 2608 I 4005 2608 I C 
+4005 2569 M 4005 2550 I 4011 2550 I 4011 2569 I 4005 2569 I C 
+4005 2531 M 4005 2512 I 4011 2512 I 4011 2531 I 4005 2531 I C 
+4005 2493 M 4005 2474 I 4011 2474 I 4011 2493 I 4005 2493 I C 
+4005 2454 M 4005 2435 I 4011 2435 I 4011 2454 I 4005 2454 I C 
+4005 2416 M 4005 2397 I 4011 2397 I 4011 2416 I 4005 2416 I C 
+4005 2378 M 4005 2359 I 4011 2359 I 4011 2378 I 4005 2378 I C 
+4005 2340 M 4005 2321 I 4011 2321 I 4011 2340 I 4005 2340 I C 
+4005 2301 M 4005 2282 I 4011 2282 I 4011 2301 I 4005 2301 I C 
+4005 2263 M 4005 2244 I 4011 2244 I 4011 2263 I 4005 2263 I C 
+4005 2225 M 4005 2206 I 4011 2206 I 4011 2225 I 4005 2225 I C 
+4005 2187 M 4005 2168 I 4011 2168 I 4011 2187 I 4005 2187 I C 
+4005 2148 M 4005 2129 I 4011 2129 I 4011 2148 I 4005 2148 I C 
+4005 2110 M 4005 2091 I 4011 2091 I 4011 2110 I 4005 2110 I C 
+4005 2072 M 4005 2053 I 4011 2053 I 4011 2072 I 4005 2072 I C 
+4005 2034 M 4005 2015 I 4011 2015 I 4011 2034 I 4005 2034 I C 
+4005 1995 M 4005 1976 I 4011 1976 I 4011 1995 I 4005 1995 I C 
+4005 1957 M 4005 1938 I 4011 1938 I 4011 1957 I 4005 1957 I C 
+4005 1919 M 4005 1900 I 4011 1900 I 4011 1919 I 4005 1919 I C 
+4005 1881 M 4005 1861 I 4011 1861 I 4011 1881 I 4005 1881 I C 
+4005 1842 M 4005 1823 I 4011 1823 I 4011 1842 I 4005 1842 I C 
+4005 1804 M 4005 1785 I 4011 1785 I 4011 1804 I 4005 1804 I C 
+4005 1766 M 4005 1747 I 4011 1747 I 4011 1766 I 4005 1766 I C 
+4005 1728 M 4005 1708 I 4011 1708 I 4011 1728 I 4005 1728 I C 
+4005 1689 M 4005 1670 I 4011 1670 I 4011 1689 I 4005 1689 I C 
+4005 1651 M 4005 1632 I 4011 1632 I 4011 1651 I 4005 1651 I C 
+4005 1613 M 4005 1594 I 4011 1594 I 4011 1613 I 4005 1613 I C 
+4005 1575 M 4005 1555 I 4011 1555 I 4011 1575 I 4005 1575 I C 
+4005 1536 M 4005 1517 I 4011 1517 I 4011 1536 I 4005 1536 I C 
+4005 1498 M 4005 1479 I 4011 1479 I 4011 1498 I 4005 1498 I C 
+4005 1460 M 4005 1441 I 4011 1441 I 4011 1460 I 4005 1460 I C 
+4005 1421 M 4005 1402 I 4011 1402 I 4011 1421 I 4005 1421 I C 
+4005 1383 M 4005 1364 I 4011 1364 I 4011 1383 I 4005 1383 I C 
+4005 1345 M 4005 1326 I 4011 1326 I 4011 1345 I 4005 1345 I C 
+4005 1307 M 4005 1288 I 4011 1288 I 4011 1307 I 4005 1307 I C 
+4005 1268 M 4005 1249 I 4011 1249 I 4011 1268 I 4005 1268 I C 
+4005 1230 M 4005 1211 I 4011 1211 I 4011 1230 I 4005 1230 I C 
+4005 1192 M 4005 1173 I 4011 1173 I 4011 1192 I 4005 1192 I C 
+4005 1154 M 4005 1135 I 4011 1135 I 4011 1154 I 4005 1154 I C 
+4005 1115 M 4005 1096 I 4011 1096 I 4011 1115 I 4005 1115 I C 
+4005 1077 M 4005 1058 I 4011 1058 I 4011 1077 I 4005 1077 I C 
+4005 1039 M 4005 1020 I 4011 1020 I 4011 1039 I 4005 1039 I C 
+4005 1001 M 4005 982 I 4011 982 I 4011 1001 I 4005 1001 I C 
+4005 962 M 4005 943 I 4011 943 I 4011 962 I 4005 962 I C 
+4005 924 M 4005 905 I 4011 905 I 4011 924 I 4005 924 I C 
+4005 886 M 4005 867 I 4011 867 I 4011 886 I 4005 886 I C 
+4005 848 M 4005 828 I 4011 828 I 4011 848 I 4005 848 I C 
+4005 809 M 4005 790 I 4011 790 I 4011 809 I 4005 809 I C 
+4005 771 M 4005 752 I 4011 752 I 4011 771 I 4005 771 I C 
+4005 733 M 4005 714 I 4011 714 I 4011 733 I 4005 733 I C 
+4005 695 M 4005 675 I 4011 675 I 4011 695 I 4005 695 I C 
+4005 656 M 4005 637 I 4011 637 I 4011 656 I 4005 656 I C 
+4005 618 M 4005 599 I 4011 599 I 4011 618 I 4005 618 I C 
+4005 580 M 4005 561 I 4011 561 I 4011 580 I 4005 580 I C 
+4005 542 M 4005 522 I 4011 522 I 4011 542 I 4005 542 I C 
+4005 503 M 4005 484 I 4011 484 I 4011 503 I 4005 503 I C 
+4005 465 M 4005 446 I 4011 446 I 4011 465 I 4005 465 I C 
+4005 427 M 4005 408 I 4011 408 I 4011 427 I 4005 427 I C 
+4005 388 M 4005 369 I 4011 369 I 4011 388 I 4005 388 I C 
+4005 350 M 4005 331 I 4011 331 I 4011 350 I 4005 350 I C 
+4005 312 M 4005 293 I 4011 293 I 4011 312 I 4005 312 I C 
+4005 274 M 4005 255 I 4011 255 I 4011 274 I 4005 274 I C 
+4005 235 M 4005 216 I 4011 216 I 4011 235 I 4005 235 I C 
+:  L ; : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 0 0 0 1 scol 0 Lj 2 Lc N 4008 4176 M 4008 4131 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; N 4008 204 M 4008 248 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 3855 4444 M ( )S 
+3906 4444 M (0)S  4008 4444 M (.)S  4059 4444 M (4)S  
+0.754 0.754 0.754 1 scol 2 Lj 0 Lc N 5528 4176 M 5528 4157 I 5534 4157 I 5534 4176 I 5528 4176 I C 
+5528 4138 M 5528 4119 I 5534 4119 I 5534 4138 I 5528 4138 I C 
+5528 4100 M 5528 4080 I 5534 4080 I 5534 4100 I 5528 4100 I C 
+5528 4061 M 5528 4042 I 5534 4042 I 5534 4061 I 5528 4061 I C 
+5528 4023 M 5528 4004 I 5534 4004 I 5534 4023 I 5528 4023 I C 
+5528 3985 M 5528 3966 I 5534 3966 I 5534 3985 I 5528 3985 I C 
+5528 3947 M 5528 3927 I 5534 3927 I 5534 3947 I 5528 3947 I C 
+5528 3908 M 5528 3889 I 5534 3889 I 5534 3908 I 5528 3908 I C 
+5528 3870 M 5528 3851 I 5534 3851 I 5534 3870 I 5528 3870 I C 
+5528 3832 M 5528 3813 I 5534 3813 I 5534 3832 I 5528 3832 I C 
+5528 3794 M 5528 3774 I 5534 3774 I 5534 3794 I 5528 3794 I C 
+5528 3755 M 5528 3736 I 5534 3736 I 5534 3755 I 5528 3755 I C 
+5528 3717 M 5528 3698 I 5534 3698 I 5534 3717 I 5528 3717 I C 
+5528 3679 M 5528 3660 I 5534 3660 I 5534 3679 I 5528 3679 I C 
+5528 3641 M 5528 3621 I 5534 3621 I 5534 3641 I 5528 3641 I C 
+5528 3602 M 5528 3583 I 5534 3583 I 5534 3602 I 5528 3602 I C 
+5528 3564 M 5528 3545 I 5534 3545 I 5534 3564 I 5528 3564 I C 
+5528 3526 M 5528 3507 I 5534 3507 I 5534 3526 I 5528 3526 I C 
+5528 3487 M 5528 3468 I 5534 3468 I 5534 3487 I 5528 3487 I C 
+5528 3449 M 5528 3430 I 5534 3430 I 5534 3449 I 5528 3449 I C 
+5528 3411 M 5528 3392 I 5534 3392 I 5534 3411 I 5528 3411 I C 
+5528 3373 M 5528 3354 I 5534 3354 I 5534 3373 I 5528 3373 I C 
+5528 3334 M 5528 3315 I 5534 3315 I 5534 3334 I 5528 3334 I C 
+5528 3296 M 5528 3277 I 5534 3277 I 5534 3296 I 5528 3296 I C 
+5528 3258 M 5528 3239 I 5534 3239 I 5534 3258 I 5528 3258 I C 
+5528 3220 M 5528 3201 I 5534 3201 I 5534 3220 I 5528 3220 I C 
+5528 3181 M 5528 3162 I 5534 3162 I 5534 3181 I 5528 3181 I C 
+5528 3143 M 5528 3124 I 5534 3124 I 5534 3143 I 5528 3143 I C 
+5528 3105 M 5528 3086 I 5534 3086 I 5534 3105 I 5528 3105 I C 
+5528 3067 M 5528 3047 I 5534 3047 I 5534 3067 I 5528 3067 I C 
+5528 3028 M 5528 3009 I 5534 3009 I 5534 3028 I 5528 3028 I C 
+5528 2990 M 5528 2971 I 5534 2971 I 5534 2990 I 5528 2990 I C 
+5528 2952 M 5528 2933 I 5534 2933 I 5534 2952 I 5528 2952 I C 
+5528 2914 M 5528 2894 I 5534 2894 I 5534 2914 I 5528 2914 I C 
+5528 2875 M 5528 2856 I 5534 2856 I 5534 2875 I 5528 2875 I C 
+5528 2837 M 5528 2818 I 5534 2818 I 5534 2837 I 5528 2837 I C 
+5528 2799 M 5528 2780 I 5534 2780 I 5534 2799 I 5528 2799 I C 
+5528 2761 M 5528 2741 I 5534 2741 I 5534 2761 I 5528 2761 I C 
+5528 2722 M 5528 2703 I 5534 2703 I 5534 2722 I 5528 2722 I C 
+5528 2684 M 5528 2665 I 5534 2665 I 5534 2684 I 5528 2684 I C 
+5528 2646 M 5528 2627 I 5534 2627 I 5534 2646 I 5528 2646 I C 
+5528 2608 M 5528 2588 I 5534 2588 I 5534 2608 I 5528 2608 I C 
+5528 2569 M 5528 2550 I 5534 2550 I 5534 2569 I 5528 2569 I C 
+5528 2531 M 5528 2512 I 5534 2512 I 5534 2531 I 5528 2531 I C 
+5528 2493 M 5528 2474 I 5534 2474 I 5534 2493 I 5528 2493 I C 
+5528 2454 M 5528 2435 I 5534 2435 I 5534 2454 I 5528 2454 I C 
+5528 2416 M 5528 2397 I 5534 2397 I 5534 2416 I 5528 2416 I C 
+5528 2378 M 5528 2359 I 5534 2359 I 5534 2378 I 5528 2378 I C 
+5528 2340 M 5528 2321 I 5534 2321 I 5534 2340 I 5528 2340 I C 
+5528 2301 M 5528 2282 I 5534 2282 I 5534 2301 I 5528 2301 I C 
+5528 2263 M 5528 2244 I 5534 2244 I 5534 2263 I 5528 2263 I C 
+5528 2225 M 5528 2206 I 5534 2206 I 5534 2225 I 5528 2225 I C 
+5528 2187 M 5528 2168 I 5534 2168 I 5534 2187 I 5528 2187 I C 
+5528 2148 M 5528 2129 I 5534 2129 I 5534 2148 I 5528 2148 I C 
+5528 2110 M 5528 2091 I 5534 2091 I 5534 2110 I 5528 2110 I C 
+5528 2072 M 5528 2053 I 5534 2053 I 5534 2072 I 5528 2072 I C 
+5528 2034 M 5528 2015 I 5534 2015 I 5534 2034 I 5528 2034 I C 
+5528 1995 M 5528 1976 I 5534 1976 I 5534 1995 I 5528 1995 I C 
+5528 1957 M 5528 1938 I 5534 1938 I 5534 1957 I 5528 1957 I C 
+5528 1919 M 5528 1900 I 5534 1900 I 5534 1919 I 5528 1919 I C 
+5528 1881 M 5528 1861 I 5534 1861 I 5534 1881 I 5528 1881 I C 
+5528 1842 M 5528 1823 I 5534 1823 I 5534 1842 I 5528 1842 I C 
+5528 1804 M 5528 1785 I 5534 1785 I 5534 1804 I 5528 1804 I C 
+5528 1766 M 5528 1747 I 5534 1747 I 5534 1766 I 5528 1766 I C 
+5528 1728 M 5528 1708 I 5534 1708 I 5534 1728 I 5528 1728 I C 
+5528 1689 M 5528 1670 I 5534 1670 I 5534 1689 I 5528 1689 I C 
+5528 1651 M 5528 1632 I 5534 1632 I 5534 1651 I 5528 1651 I C 
+5528 1613 M 5528 1594 I 5534 1594 I 5534 1613 I 5528 1613 I C 
+5528 1575 M 5528 1555 I 5534 1555 I 5534 1575 I 5528 1575 I C 
+5528 1536 M 5528 1517 I 5534 1517 I 5534 1536 I 5528 1536 I C 
+5528 1498 M 5528 1479 I 5534 1479 I 5534 1498 I 5528 1498 I C 
+5528 1460 M 5528 1441 I 5534 1441 I 5534 1460 I 5528 1460 I C 
+5528 1421 M 5528 1402 I 5534 1402 I 5534 1421 I 5528 1421 I C 
+5528 1383 M 5528 1364 I 5534 1364 I 5534 1383 I 5528 1383 I C 
+5528 1345 M 5528 1326 I 5534 1326 I 5534 1345 I 5528 1345 I C 
+5528 1307 M 5528 1288 I 5534 1288 I 5534 1307 I 5528 1307 I C 
+5528 1268 M 5528 1249 I 5534 1249 I 5534 1268 I 5528 1268 I C 
+5528 1230 M 5528 1211 I 5534 1211 I 5534 1230 I 5528 1230 I C 
+5528 1192 M 5528 1173 I 5534 1173 I 5534 1192 I 5528 1192 I C 
+5528 1154 M 5528 1135 I 5534 1135 I 5534 1154 I 5528 1154 I C 
+5528 1115 M 5528 1096 I 5534 1096 I 5534 1115 I 5528 1115 I C 
+5528 1077 M 5528 1058 I 5534 1058 I 5534 1077 I 5528 1077 I C 
+5528 1039 M 5528 1020 I 5534 1020 I 5534 1039 I 5528 1039 I C 
+5528 1001 M 5528 982 I 5534 982 I 5534 1001 I 5528 1001 I C 
+5528 962 M 5528 943 I 5534 943 I 5534 962 I 5528 962 I C 
+5528 924 M 5528 905 I 5534 905 I 5534 924 I 5528 924 I C 
+5528 886 M 5528 867 I 5534 867 I 5534 886 I 5528 886 I C 
+5528 848 M 5528 828 I 5534 828 I 5534 848 I 5528 848 I C 
+5528 809 M 5528 790 I 5534 790 I 5534 809 I 5528 809 I C 
+5528 771 M 5528 752 I 5534 752 I 5534 771 I 5528 771 I C 
+5528 733 M 5528 714 I 5534 714 I 5534 733 I 5528 733 I C 
+5528 695 M 5528 675 I 5534 675 I 5534 695 I 5528 695 I C 
+5528 656 M 5528 637 I 5534 637 I 5534 656 I 5528 656 I C 
+5528 618 M 5528 599 I 5534 599 I 5534 618 I 5528 618 I C 
+5528 580 M 5528 561 I 5534 561 I 5534 580 I 5528 580 I C 
+5528 542 M 5528 522 I 5534 522 I 5534 542 I 5528 542 I C 
+5528 503 M 5528 484 I 5534 484 I 5534 503 I 5528 503 I C 
+5528 465 M 5528 446 I 5534 446 I 5534 465 I 5528 465 I C 
+5528 427 M 5528 408 I 5534 408 I 5534 427 I 5528 427 I C 
+5528 388 M 5528 369 I 5534 369 I 5534 388 I 5528 388 I C 
+5528 350 M 5528 331 I 5534 331 I 5534 350 I 5528 350 I C 
+5528 312 M 5528 293 I 5534 293 I 5534 312 I 5528 312 I C 
+5528 274 M 5528 255 I 5534 255 I 5534 274 I 5528 274 I C 
+5528 235 M 5528 216 I 5534 216 I 5534 235 I 5528 235 I C 
+:  L ; : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 0 0 0 1 scol 0 Lj 2 Lc N 5531 4176 M 5531 4131 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; N 5531 204 M 5531 248 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 5378 4444 M ( )S 
+5429 4444 M (0)S  5531 4444 M (.)S  5582 4444 M (6)S  
+0.754 0.754 0.754 1 scol 2 Lj 0 Lc N 7051 4176 M 7051 4157 I 7057 4157 I 7057 4176 I 7051 4176 I C 
+7051 4138 M 7051 4119 I 7057 4119 I 7057 4138 I 7051 4138 I C 
+7051 4100 M 7051 4080 I 7057 4080 I 7057 4100 I 7051 4100 I C 
+7051 4061 M 7051 4042 I 7057 4042 I 7057 4061 I 7051 4061 I C 
+7051 4023 M 7051 4004 I 7057 4004 I 7057 4023 I 7051 4023 I C 
+7051 3985 M 7051 3966 I 7057 3966 I 7057 3985 I 7051 3985 I C 
+7051 3947 M 7051 3927 I 7057 3927 I 7057 3947 I 7051 3947 I C 
+7051 3908 M 7051 3889 I 7057 3889 I 7057 3908 I 7051 3908 I C 
+7051 3870 M 7051 3851 I 7057 3851 I 7057 3870 I 7051 3870 I C 
+7051 3832 M 7051 3813 I 7057 3813 I 7057 3832 I 7051 3832 I C 
+7051 3794 M 7051 3774 I 7057 3774 I 7057 3794 I 7051 3794 I C 
+7051 3755 M 7051 3736 I 7057 3736 I 7057 3755 I 7051 3755 I C 
+7051 3717 M 7051 3698 I 7057 3698 I 7057 3717 I 7051 3717 I C 
+7051 3679 M 7051 3660 I 7057 3660 I 7057 3679 I 7051 3679 I C 
+7051 3641 M 7051 3621 I 7057 3621 I 7057 3641 I 7051 3641 I C 
+7051 3602 M 7051 3583 I 7057 3583 I 7057 3602 I 7051 3602 I C 
+7051 3564 M 7051 3545 I 7057 3545 I 7057 3564 I 7051 3564 I C 
+7051 3526 M 7051 3507 I 7057 3507 I 7057 3526 I 7051 3526 I C 
+7051 3487 M 7051 3468 I 7057 3468 I 7057 3487 I 7051 3487 I C 
+7051 3449 M 7051 3430 I 7057 3430 I 7057 3449 I 7051 3449 I C 
+7051 3411 M 7051 3392 I 7057 3392 I 7057 3411 I 7051 3411 I C 
+7051 3373 M 7051 3354 I 7057 3354 I 7057 3373 I 7051 3373 I C 
+7051 3334 M 7051 3315 I 7057 3315 I 7057 3334 I 7051 3334 I C 
+7051 3296 M 7051 3277 I 7057 3277 I 7057 3296 I 7051 3296 I C 
+7051 3258 M 7051 3239 I 7057 3239 I 7057 3258 I 7051 3258 I C 
+7051 3220 M 7051 3201 I 7057 3201 I 7057 3220 I 7051 3220 I C 
+7051 3181 M 7051 3162 I 7057 3162 I 7057 3181 I 7051 3181 I C 
+7051 3143 M 7051 3124 I 7057 3124 I 7057 3143 I 7051 3143 I C 
+7051 3105 M 7051 3086 I 7057 3086 I 7057 3105 I 7051 3105 I C 
+7051 3067 M 7051 3047 I 7057 3047 I 7057 3067 I 7051 3067 I C 
+7051 3028 M 7051 3009 I 7057 3009 I 7057 3028 I 7051 3028 I C 
+7051 2990 M 7051 2971 I 7057 2971 I 7057 2990 I 7051 2990 I C 
+7051 2952 M 7051 2933 I 7057 2933 I 7057 2952 I 7051 2952 I C 
+7051 2914 M 7051 2894 I 7057 2894 I 7057 2914 I 7051 2914 I C 
+7051 2875 M 7051 2856 I 7057 2856 I 7057 2875 I 7051 2875 I C 
+7051 2837 M 7051 2818 I 7057 2818 I 7057 2837 I 7051 2837 I C 
+7051 2799 M 7051 2780 I 7057 2780 I 7057 2799 I 7051 2799 I C 
+7051 2761 M 7051 2741 I 7057 2741 I 7057 2761 I 7051 2761 I C 
+7051 2722 M 7051 2703 I 7057 2703 I 7057 2722 I 7051 2722 I C 
+7051 2684 M 7051 2665 I 7057 2665 I 7057 2684 I 7051 2684 I C 
+7051 2646 M 7051 2627 I 7057 2627 I 7057 2646 I 7051 2646 I C 
+7051 2608 M 7051 2588 I 7057 2588 I 7057 2608 I 7051 2608 I C 
+7051 2569 M 7051 2550 I 7057 2550 I 7057 2569 I 7051 2569 I C 
+7051 2531 M 7051 2512 I 7057 2512 I 7057 2531 I 7051 2531 I C 
+7051 2493 M 7051 2474 I 7057 2474 I 7057 2493 I 7051 2493 I C 
+7051 2454 M 7051 2435 I 7057 2435 I 7057 2454 I 7051 2454 I C 
+7051 2416 M 7051 2397 I 7057 2397 I 7057 2416 I 7051 2416 I C 
+7051 2378 M 7051 2359 I 7057 2359 I 7057 2378 I 7051 2378 I C 
+7051 2340 M 7051 2321 I 7057 2321 I 7057 2340 I 7051 2340 I C 
+7051 2301 M 7051 2282 I 7057 2282 I 7057 2301 I 7051 2301 I C 
+7051 2263 M 7051 2244 I 7057 2244 I 7057 2263 I 7051 2263 I C 
+7051 2225 M 7051 2206 I 7057 2206 I 7057 2225 I 7051 2225 I C 
+7051 2187 M 7051 2168 I 7057 2168 I 7057 2187 I 7051 2187 I C 
+7051 2148 M 7051 2129 I 7057 2129 I 7057 2148 I 7051 2148 I C 
+7051 2110 M 7051 2091 I 7057 2091 I 7057 2110 I 7051 2110 I C 
+7051 2072 M 7051 2053 I 7057 2053 I 7057 2072 I 7051 2072 I C 
+7051 2034 M 7051 2015 I 7057 2015 I 7057 2034 I 7051 2034 I C 
+7051 1995 M 7051 1976 I 7057 1976 I 7057 1995 I 7051 1995 I C 
+7051 1957 M 7051 1938 I 7057 1938 I 7057 1957 I 7051 1957 I C 
+7051 1919 M 7051 1900 I 7057 1900 I 7057 1919 I 7051 1919 I C 
+7051 1881 M 7051 1861 I 7057 1861 I 7057 1881 I 7051 1881 I C 
+7051 1842 M 7051 1823 I 7057 1823 I 7057 1842 I 7051 1842 I C 
+7051 1804 M 7051 1785 I 7057 1785 I 7057 1804 I 7051 1804 I C 
+7051 1766 M 7051 1747 I 7057 1747 I 7057 1766 I 7051 1766 I C 
+7051 1728 M 7051 1708 I 7057 1708 I 7057 1728 I 7051 1728 I C 
+7051 1689 M 7051 1670 I 7057 1670 I 7057 1689 I 7051 1689 I C 
+7051 1651 M 7051 1632 I 7057 1632 I 7057 1651 I 7051 1651 I C 
+7051 1613 M 7051 1594 I 7057 1594 I 7057 1613 I 7051 1613 I C 
+7051 1575 M 7051 1555 I 7057 1555 I 7057 1575 I 7051 1575 I C 
+7051 1536 M 7051 1517 I 7057 1517 I 7057 1536 I 7051 1536 I C 
+7051 1498 M 7051 1479 I 7057 1479 I 7057 1498 I 7051 1498 I C 
+7051 1460 M 7051 1441 I 7057 1441 I 7057 1460 I 7051 1460 I C 
+7051 1421 M 7051 1402 I 7057 1402 I 7057 1421 I 7051 1421 I C 
+7051 1383 M 7051 1364 I 7057 1364 I 7057 1383 I 7051 1383 I C 
+7051 1345 M 7051 1326 I 7057 1326 I 7057 1345 I 7051 1345 I C 
+7051 1307 M 7051 1288 I 7057 1288 I 7057 1307 I 7051 1307 I C 
+7051 1268 M 7051 1249 I 7057 1249 I 7057 1268 I 7051 1268 I C 
+7051 1230 M 7051 1211 I 7057 1211 I 7057 1230 I 7051 1230 I C 
+7051 1192 M 7051 1173 I 7057 1173 I 7057 1192 I 7051 1192 I C 
+7051 1154 M 7051 1135 I 7057 1135 I 7057 1154 I 7051 1154 I C 
+7051 1115 M 7051 1096 I 7057 1096 I 7057 1115 I 7051 1115 I C 
+7051 1077 M 7051 1058 I 7057 1058 I 7057 1077 I 7051 1077 I C 
+7051 1039 M 7051 1020 I 7057 1020 I 7057 1039 I 7051 1039 I C 
+7051 1001 M 7051 982 I 7057 982 I 7057 1001 I 7051 1001 I C 
+7051 962 M 7051 943 I 7057 943 I 7057 962 I 7051 962 I C 
+7051 924 M 7051 905 I 7057 905 I 7057 924 I 7051 924 I C 
+7051 886 M 7051 867 I 7057 867 I 7057 886 I 7051 886 I C 
+7051 848 M 7051 828 I 7057 828 I 7057 848 I 7051 848 I C 
+7051 809 M 7051 790 I 7057 790 I 7057 809 I 7051 809 I C 
+7051 771 M 7051 752 I 7057 752 I 7057 771 I 7051 771 I C 
+7051 733 M 7051 714 I 7057 714 I 7057 733 I 7051 733 I C 
+7051 695 M 7051 675 I 7057 675 I 7057 695 I 7051 695 I C 
+:  L ; : [ 0.395 0 0 0.398 0 0 ] concat K 
+; N 7051 248 M 7051 229 I 7057 229 I 7057 248 I 7051 248 I C 
+7051 210 M 7051 204 I 7057 204 I 7057 210 I 7051 210 I C 
+:  L ; : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 0 0 0 1 scol 0 Lj 2 Lc N 7054 4176 M 7054 4131 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; N 7054 204 M 7054 248 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 6901 4444 M ( )S 
+6952 4444 M (0)S  7054 4444 M (.)S  7105 4444 M (8)S  
+0.754 0.754 0.754 1 scol 2 Lj 0 Lc N 8574 4176 M 8574 4157 I 8580 4157 I 8580 4176 I 8574 4176 I C 
+8574 4138 M 8574 4119 I 8580 4119 I 8580 4138 I 8574 4138 I C 
+8574 4100 M 8574 4080 I 8580 4080 I 8580 4100 I 8574 4100 I C 
+8574 4061 M 8574 4042 I 8580 4042 I 8580 4061 I 8574 4061 I C 
+8574 4023 M 8574 4004 I 8580 4004 I 8580 4023 I 8574 4023 I C 
+8574 3985 M 8574 3966 I 8580 3966 I 8580 3985 I 8574 3985 I C 
+8574 3947 M 8574 3927 I 8580 3927 I 8580 3947 I 8574 3947 I C 
+8574 3908 M 8574 3889 I 8580 3889 I 8580 3908 I 8574 3908 I C 
+8574 3870 M 8574 3851 I 8580 3851 I 8580 3870 I 8574 3870 I C 
+8574 3832 M 8574 3813 I 8580 3813 I 8580 3832 I 8574 3832 I C 
+8574 3794 M 8574 3774 I 8580 3774 I 8580 3794 I 8574 3794 I C 
+8574 3755 M 8574 3736 I 8580 3736 I 8580 3755 I 8574 3755 I C 
+8574 3717 M 8574 3698 I 8580 3698 I 8580 3717 I 8574 3717 I C 
+8574 3679 M 8574 3660 I 8580 3660 I 8580 3679 I 8574 3679 I C 
+8574 3641 M 8574 3621 I 8580 3621 I 8580 3641 I 8574 3641 I C 
+8574 3602 M 8574 3583 I 8580 3583 I 8580 3602 I 8574 3602 I C 
+8574 3564 M 8574 3545 I 8580 3545 I 8580 3564 I 8574 3564 I C 
+8574 3526 M 8574 3507 I 8580 3507 I 8580 3526 I 8574 3526 I C 
+8574 3487 M 8574 3468 I 8580 3468 I 8580 3487 I 8574 3487 I C 
+8574 3449 M 8574 3430 I 8580 3430 I 8580 3449 I 8574 3449 I C 
+8574 3411 M 8574 3392 I 8580 3392 I 8580 3411 I 8574 3411 I C 
+8574 3373 M 8574 3354 I 8580 3354 I 8580 3373 I 8574 3373 I C 
+8574 3334 M 8574 3315 I 8580 3315 I 8580 3334 I 8574 3334 I C 
+8574 3296 M 8574 3277 I 8580 3277 I 8580 3296 I 8574 3296 I C 
+8574 3258 M 8574 3239 I 8580 3239 I 8580 3258 I 8574 3258 I C 
+8574 3220 M 8574 3201 I 8580 3201 I 8580 3220 I 8574 3220 I C 
+8574 3181 M 8574 3162 I 8580 3162 I 8580 3181 I 8574 3181 I C 
+8574 3143 M 8574 3124 I 8580 3124 I 8580 3143 I 8574 3143 I C 
+8574 3105 M 8574 3086 I 8580 3086 I 8580 3105 I 8574 3105 I C 
+8574 3067 M 8574 3047 I 8580 3047 I 8580 3067 I 8574 3067 I C 
+8574 3028 M 8574 3009 I 8580 3009 I 8580 3028 I 8574 3028 I C 
+8574 2990 M 8574 2971 I 8580 2971 I 8580 2990 I 8574 2990 I C 
+8574 2952 M 8574 2933 I 8580 2933 I 8580 2952 I 8574 2952 I C 
+8574 2914 M 8574 2894 I 8580 2894 I 8580 2914 I 8574 2914 I C 
+8574 2875 M 8574 2856 I 8580 2856 I 8580 2875 I 8574 2875 I C 
+8574 2837 M 8574 2818 I 8580 2818 I 8580 2837 I 8574 2837 I C 
+8574 2799 M 8574 2780 I 8580 2780 I 8580 2799 I 8574 2799 I C 
+8574 2761 M 8574 2741 I 8580 2741 I 8580 2761 I 8574 2761 I C 
+8574 2722 M 8574 2703 I 8580 2703 I 8580 2722 I 8574 2722 I C 
+8574 2684 M 8574 2665 I 8580 2665 I 8580 2684 I 8574 2684 I C 
+8574 2646 M 8574 2627 I 8580 2627 I 8580 2646 I 8574 2646 I C 
+8574 2608 M 8574 2588 I 8580 2588 I 8580 2608 I 8574 2608 I C 
+8574 2569 M 8574 2550 I 8580 2550 I 8580 2569 I 8574 2569 I C 
+8574 2531 M 8574 2512 I 8580 2512 I 8580 2531 I 8574 2531 I C 
+8574 2493 M 8574 2474 I 8580 2474 I 8580 2493 I 8574 2493 I C 
+8574 2454 M 8574 2435 I 8580 2435 I 8580 2454 I 8574 2454 I C 
+8574 2416 M 8574 2397 I 8580 2397 I 8580 2416 I 8574 2416 I C 
+8574 2378 M 8574 2359 I 8580 2359 I 8580 2378 I 8574 2378 I C 
+8574 2340 M 8574 2321 I 8580 2321 I 8580 2340 I 8574 2340 I C 
+8574 2301 M 8574 2282 I 8580 2282 I 8580 2301 I 8574 2301 I C 
+8574 2263 M 8574 2244 I 8580 2244 I 8580 2263 I 8574 2263 I C 
+8574 2225 M 8574 2206 I 8580 2206 I 8580 2225 I 8574 2225 I C 
+8574 2187 M 8574 2168 I 8580 2168 I 8580 2187 I 8574 2187 I C 
+8574 2148 M 8574 2129 I 8580 2129 I 8580 2148 I 8574 2148 I C 
+8574 2110 M 8574 2091 I 8580 2091 I 8580 2110 I 8574 2110 I C 
+8574 2072 M 8574 2053 I 8580 2053 I 8580 2072 I 8574 2072 I C 
+8574 2034 M 8574 2015 I 8580 2015 I 8580 2034 I 8574 2034 I C 
+8574 1995 M 8574 1976 I 8580 1976 I 8580 1995 I 8574 1995 I C 
+8574 1957 M 8574 1938 I 8580 1938 I 8580 1957 I 8574 1957 I C 
+8574 1919 M 8574 1900 I 8580 1900 I 8580 1919 I 8574 1919 I C 
+8574 1881 M 8574 1861 I 8580 1861 I 8580 1881 I 8574 1881 I C 
+8574 1842 M 8574 1823 I 8580 1823 I 8580 1842 I 8574 1842 I C 
+8574 1804 M 8574 1785 I 8580 1785 I 8580 1804 I 8574 1804 I C 
+8574 1766 M 8574 1747 I 8580 1747 I 8580 1766 I 8574 1766 I C 
+8574 1728 M 8574 1708 I 8580 1708 I 8580 1728 I 8574 1728 I C 
+8574 1689 M 8574 1670 I 8580 1670 I 8580 1689 I 8574 1689 I C 
+8574 1651 M 8574 1632 I 8580 1632 I 8580 1651 I 8574 1651 I C 
+8574 1613 M 8574 1594 I 8580 1594 I 8580 1613 I 8574 1613 I C 
+8574 1575 M 8574 1555 I 8580 1555 I 8580 1575 I 8574 1575 I C 
+8574 1536 M 8574 1517 I 8580 1517 I 8580 1536 I 8574 1536 I C 
+8574 1498 M 8574 1479 I 8580 1479 I 8580 1498 I 8574 1498 I C 
+8574 1460 M 8574 1441 I 8580 1441 I 8580 1460 I 8574 1460 I C 
+8574 1421 M 8574 1402 I 8580 1402 I 8580 1421 I 8574 1421 I C 
+8574 1383 M 8574 1364 I 8580 1364 I 8580 1383 I 8574 1383 I C 
+8574 1345 M 8574 1326 I 8580 1326 I 8580 1345 I 8574 1345 I C 
+8574 1307 M 8574 1288 I 8580 1288 I 8580 1307 I 8574 1307 I C 
+8574 1268 M 8574 1249 I 8580 1249 I 8580 1268 I 8574 1268 I C 
+8574 1230 M 8574 1211 I 8580 1211 I 8580 1230 I 8574 1230 I C 
+8574 1192 M 8574 1173 I 8580 1173 I 8580 1192 I 8574 1192 I C 
+8574 1154 M 8574 1135 I 8580 1135 I 8580 1154 I 8574 1154 I C 
+8574 1115 M 8574 1096 I 8580 1096 I 8580 1115 I 8574 1115 I C 
+8574 1077 M 8574 1058 I 8580 1058 I 8580 1077 I 8574 1077 I C 
+8574 1039 M 8574 1020 I 8580 1020 I 8580 1039 I 8574 1039 I C 
+8574 1001 M 8574 982 I 8580 982 I 8580 1001 I 8574 1001 I C 
+8574 962 M 8574 943 I 8580 943 I 8580 962 I 8574 962 I C 
+8574 924 M 8574 905 I 8580 905 I 8580 924 I 8574 924 I C 
+8574 886 M 8574 867 I 8580 867 I 8580 886 I 8574 886 I C 
+8574 848 M 8574 828 I 8580 828 I 8580 848 I 8574 848 I C 
+8574 809 M 8574 790 I 8580 790 I 8580 809 I 8574 809 I C 
+8574 771 M 8574 752 I 8580 752 I 8580 771 I 8574 771 I C 
+8574 733 M 8574 714 I 8580 714 I 8580 733 I 8574 733 I C 
+8574 695 M 8574 675 I 8580 675 I 8580 695 I 8574 695 I C 
+8574 656 M 8574 637 I 8580 637 I 8580 656 I 8574 656 I C 
+8574 618 M 8574 599 I 8580 599 I 8580 618 I 8574 618 I C 
+8574 580 M 8574 561 I 8580 561 I 8580 580 I 8574 580 I C 
+8574 542 M 8574 522 I 8580 522 I 8580 542 I 8574 542 I C 
+8574 503 M 8574 484 I 8580 484 I 8580 503 I 8574 503 I C 
+8574 465 M 8574 446 I 8580 446 I 8580 465 I 8574 465 I C 
+8574 427 M 8574 408 I 8580 408 I 8580 427 I 8574 427 I C 
+8574 388 M 8574 369 I 8580 369 I 8580 388 I 8574 388 I C 
+8574 350 M 8574 331 I 8580 331 I 8580 350 I 8574 350 I C 
+8574 312 M 8574 293 I 8580 293 I 8580 312 I 8574 312 I C 
+8574 274 M 8574 255 I 8580 255 I 8580 274 I 8574 274 I C 
+8574 235 M 8574 216 I 8580 216 I 8580 235 I 8574 235 I C 
+:  L ; : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 0 0 0 1 scol 0 Lj 2 Lc N 8577 4176 M 8577 4131 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; N 8577 204 M 8577 248 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 8495 4444 M ( )S 
+8546 4444 M (1)S  
+N 962 204 M 962 4176 I 8577 4176 I 8577 204 I C 
+: [ 0.395 0 0 0.398 0 0 ] concat K 
+; /F0S00IFFFFFF47YFFFFFF47 F0 [0 -184.945 -184.918 0 0 0 ] mFS
+F0S00IFFFFFF47YFFFFFF47 Ji 
+223 2347 M (r)S 
+223 2283 M ([)S 
+223 2232 M (m)S 
+223 2079 M (])S 
+F0SB8YFFFFFF47 Ji 
+4646 4751 M (t)S 
+4697 4751 M ([)S  4748 4751 M (s)S  4843 4751 M (])S  
+6793 421 M (r)S 
+6857 421 M (\()S  6921 421 M (s)S  7016 421 M (i)S  7054 421 M (m)S  7207 421 M (u)S  7309 421 M (l)S  7348 421 M (a)S  7450 421 M (t)S  7501 421 M (i)S  7539 421 M (o)S  7641 421 M (n)S  7743 421 M (\))S  
+1 0 0 1 scol 48 Lw N 7908 350 M 8367 350 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; N 962 4175 M 1098 4169 I 1241 4151 I 1389 4123 I 1542 4085 I 1703 4037 I 1871 3982 I 2047 3917 I 2232 3845 I 2425 3765 I 2630 3678 I 2846 3582 I 3075 3479 I 3318 3367 I 3577 3246 I 3856 3116 I 4155 2974 I 4479 2821 I 4831 2653 I 5217 2469 I 5642 2266 I 6117 2038 I 6651 1783 I 7261 1491 I 7969 1152 I 8575 863 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 0 0 0 1 scol 6704 619 M (r)S 
+6768 619 M (\()S  6831 619 M (e)S  6933 619 M (x)S  7029 619 M (p)S  7131 619 M (e)S  7233 619 M (r)S  7297 619 M (i)S  7335 619 M (m)S  7488 619 M (e)S  7590 619 M (n)S  7692 619 M (t)S  7743 619 M (\))S  
+0 1 0 1 scol N 7908 554 M 8367 554 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; N 962 4175 M 1098 4173 I 1241 4164 I 1389 4144 I 1542 4114 I 1703 4072 I 1871 4022 I 2047 3964 I 2232 3895 I 2425 3813 I 2630 3722 I 2846 3617 I 3075 3502 I 3318 3373 I 3577 3237 I 3856 3092 I 4155 2935 I 4479 2766 I 4831 2583 I 5217 2427 I 5642 2399 I 6117 2402 I 6651 2402 I 7261 2402 I 7969 2402 I 8575 2402 I : [ 0.395 0 0 0.398 0 0 ] concat K 
+; 0 0 0 1 scol 16 Lw N 962 204 M 962 4176 I 8577 4176 I 8577 204 I C 
+: [ 0.395 0 0 0.398 0 0 ] concat K 
+; LH
+%%PageTrailer
+
 %%Trailer
-%%DocumentFonts: Times-Roman
+%%DocumentNeededResources: 
+%%+ font Helvetica
+%%DocumentSuppliedResources: 
+%%+ procset Pscript_WinNT_VMErrorHandler 5.0 0
+%%+ procset Pscript_FatalError 5.0 0
+%%+ procset Pscript_Win_Basic 5.0 0
+%%+ procset Pscript_Win_Utils_L1 5.0 0
+%%+ procset Pscript_Win_GdiObject 5.0 0
+%%+ procset Pscript_Win_GdiObject_L1 5.0 0
+%%+ procset Pscript_Text 5.0 0
+%%+ procset Pscript_Encoding256 5.0 0
+Pscript_WinNT_Incr dup /terminate get exec
+%%EOF

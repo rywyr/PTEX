@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.7.2)  18 JUL 2018 16:18
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.7.2)  18 JUL 2018 16:19
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -403,24 +403,13 @@ File: gazo/FeedBackCart.eps Graphic file (type eps)
 File: gazo/feedback_input.eps Graphic file (type eps)
 
 <gazo/feedback_input.eps> [23]
-! Undefined control sequence.
-<recently read> \hlinesa 
-                         
-l.706 .../\rm{s}$] & $5.4\times10^{-5}$\\ \hlinesa
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 File: gazo/free45Auto.eps Graphic file (type eps)
-<gazo/free45Auto.eps> [24] [25]
+ <gazo/free45Auto.eps> [24] [25]
 File: gazo/nabe8.eps Graphic file (type eps)
- <gazo/nabe8.eps> [26]
-File: gazo/feedbackExperiment.eps Graphic file (type eps)
 
-<gazo/feedbackExperiment.eps> [27]) [28]
+<gazo/nabe8.eps> [26]
+File: gazo/feedbackExperiment.eps Graphic file (type eps)
+ <gazo/feedbackExperiment.eps> [27]) [28]
 第 4 章
 (./controldesign.tex [29
 
@@ -603,12 +592,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4638 strings out of 493281
- 60597 string characters out of 6148127
+ 4637 strings out of 493281
+ 60590 string characters out of 6148127
  299350 words of memory out of 5000000
- 8397 multiletter control sequences out of 15000+600000
+ 8396 multiletter control sequences out of 15000+600000
  20609 words of font info for 82 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  32i,16n,32p,276b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (85 pages, 269036 bytes).
+Output written on main.dvi (85 pages, 269044 bytes).

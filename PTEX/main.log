@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.7.2)  18 JUL 2018 16:19
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.7.2)  19 JUL 2018 16:05
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -272,12 +272,6 @@ LaTeX Warning: Label `eq:eq4' multiply defined.
 LaTeX Warning: Label `eq:Aeig' multiply defined.
 
 
-LaTeX Warning: Label `table:QRF' multiply defined.
-
-
-LaTeX Warning: Label `table:QRF' multiply defined.
-
-
 LaTeX Warning: Label `table:huriage_control' multiply defined.
 
 
@@ -415,18 +409,18 @@ File: gazo/feedbackExperiment.eps Graphic file (type eps)
 
 ] [30]
 File: gazo/controll_F.eps Graphic file (type eps)
- <gazo/controll_F.eps> [31]
+ <gazo/controll_F.eps>
 File: gazo/controll_obs.eps Graphic file (type eps)
-
-<gazo/controll_obs.eps>
+ <gazo/controll_obs.eps>
+[31]
 File: gazo/controll_discrete.eps Graphic file (type eps)
  <gazo/controll_discrete.eps> [32] [33]
 File: gazo/controll_huriage.eps Graphic file (type eps)
-
-<gazo/controll_huriage.eps>) [34]
+ <gazo/controll_huriage.eps>)
+[34]
 第 5 章
 (./simulation.tex
-Overfull \hbox (1.84451pt too wide) in paragraph at lines 18--24
+Overfull \hbox (1.84451pt too wide) in paragraph at lines 19--25
  [][][][] 
  []
 
@@ -437,7 +431,7 @@ File: gazo/simulation_QRF_compare_THETA.eps Graphic file (type eps)
 [35
 
 ] [36]
-Overfull \hbox (1.84451pt too wide) in paragraph at lines 90--95
+Overfull \hbox (1.84451pt too wide) in paragraph at lines 92--97
  [][][][] 
  []
 
@@ -451,7 +445,7 @@ File: gazo/simulation_obs_compare_RminusRH.eps Graphic file (type eps)
 File: gazo/simulation_obs_compare_THETAminusTHETAH.eps Graphic file (type eps)
 
 <gazo/simulation_obs_compare_THETAminusTHETAH.eps> [38] [39]
-Overfull \hbox (1.84451pt too wide) in paragraph at lines 149--154
+Overfull \hbox (1.84451pt too wide) in paragraph at lines 152--157
  [][][][] 
  []
 
@@ -478,23 +472,22 @@ File: gazo/experiment_control_R.eps Graphic file (type eps)
  <gazo/experiment_control_R.eps>
 File: gazo/experiment_control_TH.eps Graphic file (type eps)
 
-<gazo/experiment_control_TH.eps> [45]
+<gazo/experiment_control_TH.eps> [45] [46]
 File: gazo/Compare_Q_R.eps Graphic file (type eps)
  <gazo/Compare_Q_R.eps>
 File: gazo/Compare_Q_TH.eps Graphic file (type eps)
 
-<gazo/Compare_Q_TH.eps> [46]
+<gazo/Compare_Q_TH.eps>
 File: gazo/Compare_obs_R.eps Graphic file (type eps)
  <gazo/Compare_obs_R.eps>
 File: gazo/Compare_obs_TH.eps Graphic file (type eps)
-
-<gazo/Compare_obs_TH.eps> [47]
+ <gazo/Compare_obs_TH.eps>
+[47] [48]
 File: gazo/Compare_dt_R.eps Graphic file (type eps)
  <gazo/Compare_dt_R.eps>
 File: gazo/Compare_dt_TH.eps Graphic file (type eps)
-
-<gazo/Compare_dt_TH.eps>
-Overfull \hbox (36.109pt too wide) in paragraph at lines 137--152
+ <gazo/Compare_dt_TH.eps> [49]
+Overfull \hbox (36.109pt too wide) in paragraph at lines 140--155
  [][][][] 
  []
 
@@ -512,7 +505,7 @@ File: gazo/experiment_Q65obs30dt05R.eps Graphic file (type eps)
 <gazo/experiment_Q65obs30dt05R.eps>
 File: gazo/experiment_Q65obs30dt05TH.eps Graphic file (type eps)
  <gazo/experiment_Q65obs30dt05TH.eps>
-[48]
+[50]
 File: gazo/experiment_Q55obs60dt05R.eps Graphic file (type eps)
  <gazo/experiment_Q55obs60dt05R.eps>
 File: gazo/experiment_Q55obs60dt05TH.eps Graphic file (type eps)
@@ -522,14 +515,14 @@ File: gazo/experiment_Q56obs60dt05R.eps Graphic file (type eps)
 <gazo/experiment_Q56obs60dt05R.eps>
 File: gazo/experiment_Q56obs60dt05TH.eps Graphic file (type eps)
  <gazo/experiment_Q56obs60dt05TH.eps>
-[49]
 File: gazo/experiment_Q65obs60dt05R.eps Graphic file (type eps)
- <gazo/experiment_Q65obs60dt05R.eps>
+
+<gazo/experiment_Q65obs60dt05R.eps>
 File: gazo/experiment_Q65obs60dt05TH.eps Graphic file (type eps)
  <gazo/experiment_Q65obs60dt05TH.eps>
+[51]
 File: gazo/experiment_Q55obs30dt10R.eps Graphic file (type eps)
-
-<gazo/experiment_Q55obs30dt10R.eps>
+ <gazo/experiment_Q55obs30dt10R.eps>
 File: gazo/experiment_Q55obs30dt10TH.eps Graphic file (type eps)
  <gazo/experiment_Q55obs30dt10TH.eps>
 File: gazo/experiment_Q56obs30dt10R.eps Graphic file (type eps)
@@ -542,26 +535,26 @@ File: gazo/experiment_Q65obs30dt10R.eps Graphic file (type eps)
 <gazo/experiment_Q65obs30dt10R.eps>
 File: gazo/experiment_Q65obs30dt10TH.eps Graphic file (type eps)
  <gazo/experiment_Q65obs30dt10TH.eps>
-[50]
+[52]
 File: gazo/experiment_Q55obs60dt10R.eps Graphic file (type eps)
  <gazo/experiment_Q55obs60dt10R.eps>
 File: gazo/experiment_Q55obs60dt10TH.eps Graphic file (type eps)
  <gazo/experiment_Q55obs60dt10TH.eps>
-File: gazo/experiment_Q56obs60dt10R.eps Graphic file (type eps)
+File: gazo/experiment_Q56obs60dt10R2.eps Graphic file (type eps)
 
-<gazo/experiment_Q56obs60dt10R.eps>
-File: gazo/experiment_Q56obs60dt10TH.eps Graphic file (type eps)
- <gazo/experiment_Q56obs60dt10TH.eps>
-File: gazo/experiment_Q65obs60dt10R.eps Graphic file (type eps)
+<gazo/experiment_Q56obs60dt10R2.eps>
+File: gazo/experiment_Q56obs60dt10TH2.eps Graphic file (type eps)
+ <gazo/experiment_Q56obs60dt10TH2.eps>
+File: gazo/experiment_Q65obs60dt10R2.eps Graphic file (type eps)
 
-<gazo/experiment_Q65obs60dt10R.eps>
-File: gazo/experiment_Q65obs60dt10TH.eps Graphic file (type eps)
- <gazo/experiment_Q65obs60dt10TH.eps>
-[51]
+<gazo/experiment_Q65obs60dt10R2.eps>
+File: gazo/experiment_Q65obs60dt10TH2.eps Graphic file (type eps)
+ <gazo/experiment_Q65obs60dt10TH2.eps>
+[53] [54]
 File: gazo/Hexpe_R.eps Graphic file (type eps)
  <gazo/Hexpe_R.eps>
 File: gazo/Hexpe_TH.eps Graphic file (type eps)
- <gazo/Hexpe_TH.eps> [52]
+ <gazo/Hexpe_TH.eps>
 File: gazo/HcompP1R.eps Graphic file (type eps)
  <gazo/HcompP1R.eps>
 File: gazo/HcompP1TH.eps Graphic file (type eps)
@@ -575,29 +568,29 @@ File: gazo/HcompP3R.eps Graphic file (type eps)
 
 <gazo/HcompP3R.eps>
 File: gazo/HcompP3TH.eps Graphic file (type eps)
- <gazo/HcompP3TH.eps> [53]) [54]
+ <gazo/HcompP3TH.eps> [55]) [56]
 第 7 章
-(./conclusion.tex) (./main.bbl [55
+(./conclusion.tex) (./main.bbl [57
 
-] [56
+] [58
 
-]) [57] [58
+]) [59] [60
 
 ]
 付 録 A  
-(./program.tex [59] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70]
-[71] [72] [73] [74] [75]) [76] (./main.aux)
+(./program.tex [61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72]
+[73] [74] [75] [76] [77]) [78] (./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4637 strings out of 493281
- 60590 string characters out of 6148127
- 299350 words of memory out of 5000000
- 8396 multiletter control sequences out of 15000+600000
+ 4639 strings out of 493281
+ 60624 string characters out of 6148127
+ 299307 words of memory out of 5000000
+ 8398 multiletter control sequences out of 15000+600000
  20609 words of font info for 82 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  32i,16n,32p,276b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (85 pages, 269044 bytes).
+Output written on main.dvi (87 pages, 271512 bytes).

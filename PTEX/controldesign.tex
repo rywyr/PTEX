@@ -1,5 +1,5 @@
 \section{システム解析}
-	前章で確定した線形モデルについてシステム解析を行う。これにより今回用いるモデルが安定化制御可能か
+	前章で確定した線形モデルについてシステム解析を行う。これにより今回用いるモデル(上向きを基準とした線形状態方程式)が安定化制御可能か
 	判定することができる。具体的には可制御性と可観測性を調べ、それらが存在すれば安定化制御可能であるといえる。
 	以下で行う計算はすべて\MaTX{}を用いた。
 	\subsection{安定性}
@@ -19,21 +19,21 @@
 		不安定であるといえる。
 	\subsection{可制御性}
 		可制御性行列は以下のようになる。
-		\begin{equation}
+		\[
 			N_{c} = \left[
 			\begin{array}{cccc}
 				C & CA & CA^{2} & CA^{3} \\
 			\end{array}
 			\right]
-		\end{equation}
+		\]
 		上の行列よりランクは4になれば可制御性があるといえる。ランクを計算したところ
-		\begin{equation}
+		\[
 			\rm{rank}  = 4
-		\end{equation}
+		\]
 		となった。よって可制御性を確認できる。\\
 	\subsection{可制御性}
 		可観測性行列は以下のようになる。
-		\begin{equation}
+		\[
 			N_{o} = \left[
 			\begin{array}{c}
 				C\\
@@ -42,16 +42,16 @@
 				CA^{3}\\
 			\end{array}
 			\right]
-		\end{equation}
+		\]
 		上の行列よりランクは4になれば可観測性があるといえる。ランクを計算したところ
-		\begin{equation}
+		\[
 			\rm{rank} = 4
-		\end{equation}
+		\]
 		となった。よって、可観測性を確認できる。\\
 	\par
 	以上から倒立振子系の上向き基準の線形モデルは不安定なシステムであるが、4つの状態を観測することができ、
 	制御することが可能なシステムといえる。次の節では倒立振子を立たせるための制御器を設計していく。
-	その際にここで計算したシステム行列Aと入力行列Bを用いる。
+	その際に前章で計算したシステム行列Aと入力行列Bを用いる。
 		
 %----------------------------------------------------------------------------------
 \section{状態フィードバックの設計}
@@ -61,13 +61,13 @@
 		u = -Fx
 	\]
 	として求めればよい。
-	また、本実験においては台車が目標値へ移動を行う場合があるので、目標値$x_{ref}$
+	また、本実験においては台車が目標値へ移動を行うので、目標値$x_{ref}$
 	として以下を設計することになる。
 	\begin{equation}
 		u(t) = F(x_{ref} - x)
 		\label{eq:Feq1}
 	\end{equation}
-	% TODO
+	% TODO←？？？
 	この状態フィードバックの設計法には、極配置に基づく状態フィードバック測と
 	LQ最適制御に基づく状態フィードバック測の2通りがあるが今回は後者の方法を用いて設計を行う。
 	\par
@@ -104,7 +104,7 @@
 		\caption{状態フィードバックを含めたブロック線図}
 		\label{image:cF}
 	\end{figure}
-
+%一次チェック完了
 %----------------------------------------------------------------------------------
 \section{最小次元オブザーバの設計}
 	第二段階として、
@@ -137,8 +137,8 @@
 	においては計測するためのセンサーが存在しないため、推測でしかこれらを得ることができない。
 	その推測を行うのに、最小次元オブザーバーを用いる。
 	\par
-	具体的には、オブザーバの係数行列$\hat{A},\hat{B},\hat{J},\hat{C},\hat{D}$を設計する。これらは
-	オブザーバの極ともいえるので、以下これらの係数行列をオブザーバの極と呼ぶ。
+	具体的には、オブザーバの係数行列$\hat{A},\hat{B},\hat{J},\hat{C},\hat{D}$を求める。これらは適当な
+	オブザーバの極を選択することで得ることができる。。
 	また、オブザーバの極を決める際に、状態フィードバック制御
 	\[
 		u(t) = F(x_{ref}(t)-x(t))
@@ -148,14 +148,13 @@
 		\dot{x}(t) = (A-BF)x(t) + BFx_{ref}(t)
 	\]
 	の極との位置関係を考慮する必要がある。
-	% TODO B.6:制御システムの構成の図を作成する必要がある。図は二つに分けて作ってね
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.8\linewidth]{gazo/controll_obs.eps}
 		\caption{最小次元オブザーバーを含めたブロック線図}
 		\label{image:cOBS}
 	\end{figure}
-
+%一次チェック完了
 %----------------------------------------------------------------------------------
 \section{コントローラの離散化}
 	コントローラは連続時間で記述された(\ref{eq:Feq1})、(\ref{eq:obs2})、(\ref{eq:obs3})式
@@ -171,7 +170,7 @@
 	\begin{equation}
 		u[k] = F(x_{ref}[k] - \hat{x}[k])
 	\end{equation}
-	ただし、$k = 0,1・・・$であり
+	ただし、$k = 0,1\ldots$であり
 	\[
 		\left(
 		\begin{array}{cc}
@@ -186,22 +185,24 @@
 		\right)\right)
 	\]
 	である。
-	具体的には、サンプリング周期を$\Delta$を調整する。
+	具体的には、適当なサンプリング周期を$\Delta$を設定すればよい。
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.8\linewidth]{gazo/controll_discrete.eps}
 		\caption{離散器（0次ホールド)を含めたブロック線図}
 		\label{image:cDISCRETE}
 	\end{figure}
+%一次チェック完了
 %----------------------------------------------------------------------------------
 \section{振り上げ制御及び安定化の実現}
 	ここでは振子の振り上げ制御を行うためのコントローラを設計する。振り上げ制御とは、
-	振り子を下向きにしたままで台車を動かすことで振り子を上向きに立たせようという制御のことである。
+	振り子を下向きにしたままで台車を動かすことで振り子を倒立させようという制御のことである。
 	この制御には振り子を振り上げる制御と振り子の安定化制御を使い分けることで実現させる。
-	具体的には下向きの振り子を振り上げ制御により徐々に上に持っていく（$\theta$を0に近づけていく）
+	具体的には下向きの振り子を振り上げ制御により徐々に上に持っていく（$\theta$を0に近づけていく）、
 	このときある一定の角度を境界値と定め、その境界値まで振り子の角度がちいさくなったところで制御を
-	安定化制御に切り替えるというものである。振り子の安定化制御についてはこれまでのコントローラを用いるので、
-	ここでは振り子の振り上げ制御の理論とその実現方法について述べる\\
+	安定化制御に切り替え、安定化制御を行うというものである。振り子の安定化制御についてはこれまでのコントローラを用いるので、
+	ここでは振り子の振り上げ制御の理論とその実現方法について述べる。
+	\par
 	台車と振り子の運動方程式は
 	\begin{equation}
 		(M+m)\ddot{r}+ml\cos{\theta}\ddot{\theta} = -f\dot{r} + ml\sin{\theta}\dot{\theta}^{2}+au\\
@@ -212,9 +213,9 @@
 		\label{eq:huriage5}
 	\end{equation}
 	で与えられる。振り子が垂直上向きのときを基準とする振り子の力学的エネルギーは
-	\begin{equation}
+	\[
 		E = \frac{1}{2}(J+ml^{2})\dot{\theta}^{2}+mgl(\cos{\theta}-1)
-	\end{equation}
+	\]
 	で与えられる。第一項が回転に関するエネルギーであり、第二項が傾きを考慮した位置エネルギーである。
 	なお、基準において静止しているとき、力学的エネルギーはE=0である。
 	このとき、力学的エネルギーの時間微分は
@@ -228,49 +229,41 @@
 		\label{eq:huriage1}
 	\end{equation}
 	\begin{equation}
-		v = -\frac{c\dot{\theta}}{ml\cos{\theta}}+k(E-E_{0})sign(\dot{\theta}\cos{\theta})
+		v = -\frac{c\dot{\theta}}{ml\cos{\theta}}+k(E-E_{0})\rm{sign}(\dot{\theta}\cos{\theta})
 		\label{eq:huriage4}
 	\end{equation}
-	ただし、signは符合関数であり、引数の値が負のときー１、正のとき１、０のとき０となる。
+	ただし、signは符合関数であり、引数の値が負のとき$-１$、正のとき1、0のとき0となる。
 	(\ref{eq:huriage1})式を(\ref{eq:huriage2})式に代入すると、
 	\begin{equation}
 		\ddot{r} = v
 		\label{eq:huriage3}
 	\end{equation}
 	を得る。(\ref{eq:huriage3})式と(\ref{eq:huriage4})式を(\ref{eq:huriage5})式に代入すると
-	\begin{equation}
-		(J+ml^{2})\ddot{\theta} = mgl\sin{\theta}-ml\cos{\theta}(k(E-E_{0})sign(\dot{theta}\cos{\theta})
-	\end{equation}
+	\[
+		(J+ml^{2})\ddot{\theta} = mgl\sin{\theta}-ml\cos{\theta}(k(E-E_{0})\rm{sign}(\dot{\theta}\cos{\theta})
+	\]
 	を得る。この式を(\ref{eq:huriage6})式に代入すると
-	\begin{equation}
-		\begin{array}{l}
-			\frac{dE}{dt} = -ml\dot{\theta}(k(E-E_{0})sign(\dot{\theta}\cos{\theta}))\\
-			\ = -mlk(E-E_{0})sign(\dot{\theta}\cos{\theta})(\dot{\theta}\cos{\theta})
-		\end{array}
-	\end{equation}
+	\begin{align*}
+			\displaystyle\frac{dE}{dt} &= -ml\dot{\theta}(k(E-E_{0})\rm{sign}(\dot{\theta}\cos{\theta})) \notag\\
+			&= -mlk(E-E_{0})\rm{sign}(\dot{\theta}\cos{\theta})(\dot{\theta}\cos{\theta})
+	\end{align*}
 	となる。リアプノフ関数の候補として、
-	\begin{equation}
+	\[
 		V = \frac{(E-E_{0})^{2}}{2}≧0
-	\end{equation}
+	\]
 	を考える。Vの時間微分を求めると、
-	\begin{equation}
-		\begin{array}{l}
-			\frac{dV}{dt} = (E - E_{0})\frac{dE}{dt}\\
-			\ \ = -mlk(E-E_{0})^{2}sign(\dot{\theta}\cos{\theta})(\dot{\theta}\cos{\theta})≦0
-		\end{array}
-	\end{equation}
+	\begin{align*}
+			\displaystyle \frac{dV}{dt} &= (E - E_{0})\frac{dE}{dt} \notag \\
+			&= -mlk(E-E_{0})^{2}\rm{sign}(\dot{\theta}\cos{\theta})(\dot{\theta}\cos{\theta})≦0
+	\end{align*}
 	これより、$\dot{\theta}\cos{\theta}≠0$のとき、$\dot{V}<0$であるので$V$は減少して$0$に収束し、
 	$E$は$E_0$に収束する。なお、$k$を大きくすると、早く$E$が$E_0$に収束する。
 	実際の制御では、台車の加速度目標vを制限し、
-	\begin{equation}
-		\left\{
-		\begin{array}{l}
-			u = \frac{1}{a}\left(f\dot{r} - ml\sin{\theta}\dot{\theta}^2 + ml\cos{\theta}\ddot{\theta}+(M+m)v \right)\\
-			v = -\frac{c\dot{\theta}}{ml\cos{\theta}}+sat_{ng}(k(E-E_{0})sign(\dot{\theta}\cos{\theta})
-		\end{array}
-		\right.
-	\end{equation}
-	とする。ただし、satは最小値が-ng,最大値がngの飽和関数である。ｎは、重力加速度（鉛直下向き）
+	\begin{align}
+			u &= \displaystyle\frac{1}{a}\left(f\dot{r} - ml\sin{\theta}\dot{\theta}^2 + ml\cos{\theta}\ddot{\theta}+(M+m)v \right) \notag\\
+			v &= -\displaystyle\frac{c\dot{\theta}}{ml\cos{\theta}}+\rm{sat}_{ng}(k(E-E_{0})\rm{sign}(\dot{\theta}\cos{\theta}) \notag
+	\end{align}
+	とする。ただし、satは最小値が$-ng$,最大値が$ng$の飽和関数である。$n$は、重力加速度（鉛直下向き）
 	と台車の加速度（水平方向）の比である。\\
 	具体的には、$k$と重力加速度と台車の加速度の比である$n$を調整し、振り上げ制御を実現させる。
 	\begin{figure}[H]
@@ -279,5 +272,5 @@
 		\caption{振り上げ制御及び安定化制御を行うためのブロック線図}
 		\label{image:cHURIAGE}
 	\end{figure}
-
+%一次チェック完了
 %----------------------------------------------------------------------------------

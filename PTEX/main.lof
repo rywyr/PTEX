@@ -33,24 +33,24 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces 安定化制御実験結果（台車位置)}}{45}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces 安定化制御実験結果（振子角度)}}{46}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces 重み行列の違いによる実験結果の比較}}{46}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces オブザーバの極の違いによる実験結果の比較}}{47}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces サンプリング周期の違いによる実験結果の比較}}{48}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces 比較結果その１(左図がr,右図が$\theta $)}}{48}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces 比較結果その2(左図がr,右図が$\theta $)}}{49}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces 比較結果その3(左図がr,右図が$\theta $)}}{49}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces 比較結果その4(左図がr,右図が$\theta $)}}{50}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces 比較結果その5(左図がr,右図が$\theta $)}}{50}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces 比較結果その6(左図がr,右図が$\theta $)}}{50}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces 比較結果その7(左図がr,右図が$\theta $)}}{50}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces 比較結果その8(左図がr,右図が$\theta $)}}{51}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces 比較結果その9(左図がr,右図が$\theta $)}}{51}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces 比較結果その10(左図がr,右図が$\theta $)}}{51}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces 比較結果その11(左図がr,右図が$\theta $)}}{51}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces 比較結果その12(左図がr,右図が$\theta $)}}{52}
-\contentsline {figure}{\numberline {6.18}{\ignorespaces $k$の違いによる実験結果の比較}}{52}
-\contentsline {figure}{\numberline {6.19}{\ignorespaces 比較結果(Pattern1)}}{53}
-\contentsline {figure}{\numberline {6.20}{\ignorespaces 比較結果(Pattern2)}}{53}
-\contentsline {figure}{\numberline {6.21}{\ignorespaces 比較結果(Pattern3)}}{54}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces 重み行列の違いによる実験結果の比較}}{47}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces オブザーバの極の違いによる実験結果の比較}}{48}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces サンプリング周期の違いによる実験結果の比較}}{49}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces 比較結果その１(左図がr,右図が$\theta $)}}{50}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces 比較結果その2(左図がr,右図が$\theta $)}}{51}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces 比較結果その3(左図がr,右図が$\theta $)}}{51}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces 比較結果その4(左図がr,右図が$\theta $)}}{51}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces 比較結果その5(左図がr,右図が$\theta $)}}{52}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces 比較結果その6(左図がr,右図が$\theta $)}}{52}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces 比較結果その7(左図がr,右図が$\theta $)}}{52}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces 比較結果その8(左図がr,右図が$\theta $)}}{53}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces 比較結果その9(左図がr,右図が$\theta $)}}{53}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces 比較結果その10(左図がr,右図が$\theta $)}}{53}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces 比較結果その11(左図がr,右図が$\theta $)}}{54}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces 比較結果その12(左図がr,右図が$\theta $)}}{54}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces $k$の違いによる実験結果の比較}}{55}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces 比較結果(Pattern1)}}{55}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces 比較結果(Pattern2)}}{56}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces 比較結果(Pattern3)}}{56}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

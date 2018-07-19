@@ -55,16 +55,20 @@
 \contentsline {section}{\numberline {5.4}振り上げ制御及び安定化に対する制御性能評価}{42}
 \contentsline {chapter}{\numberline {第6章}実験}{45}
 \contentsline {section}{\numberline {6.1}安定化制御実験}{45}
-\contentsline {section}{\numberline {6.2}目標値の変更実験}{46}
-\contentsline {section}{\numberline {6.3}振り上げ制御及び安定化実験}{52}
-\contentsline {chapter}{\numberline {第7章}おわりに}{55}
-\contentsline {chapter}{\numberline {付 録A }プログラム}{59}
-\contentsline {section}{\numberline {A.1}非線形モデル}{59}
-\contentsline {section}{\numberline {A.2}線形モデル}{59}
-\contentsline {section}{\numberline {A.3}システム解析}{60}
-\contentsline {section}{\numberline {A.4}状態フィードバック}{60}
-\contentsline {section}{\numberline {A.5}最小次元オブザーバ}{61}
-\contentsline {section}{\numberline {A.6}コントローラの離散化}{61}
-\contentsline {section}{\numberline {A.7}シミュレーション}{61}
-\contentsline {section}{\numberline {A.8}安定化制御及び目標値変更実験}{65}
-\contentsline {section}{\numberline {A.9}振り上げ制御及び安定化実験}{69}
+\contentsline {section}{\numberline {6.2}目標値の変更実験}{47}
+\contentsline {subsection}{\numberline {6.2.1}重み行列の違いによる実験結果の比較}{47}
+\contentsline {subsection}{\numberline {6.2.2}オブザーバの極の違いによる実験結果の比較}{48}
+\contentsline {subsection}{\numberline {6.2.3}サンプリング周期の違いによる実験結果の比較}{49}
+\contentsline {subsection}{\numberline {6.2.4}シミュレーション結果と実験結果の比較}{50}
+\contentsline {section}{\numberline {6.3}振り上げ制御及び安定化実験}{55}
+\contentsline {chapter}{\numberline {第7章}おわりに}{57}
+\contentsline {chapter}{\numberline {付 録A }プログラム}{61}
+\contentsline {section}{\numberline {A.1}非線形モデル}{61}
+\contentsline {section}{\numberline {A.2}線形モデル}{61}
+\contentsline {section}{\numberline {A.3}システム解析}{62}
+\contentsline {section}{\numberline {A.4}状態フィードバック}{62}
+\contentsline {section}{\numberline {A.5}最小次元オブザーバ}{63}
+\contentsline {section}{\numberline {A.6}コントローラの離散化}{63}
+\contentsline {section}{\numberline {A.7}シミュレーション}{63}
+\contentsline {section}{\numberline {A.8}安定化制御及び目標値変更実験}{67}
+\contentsline {section}{\numberline {A.9}振り上げ制御及び安定化実験}{71}

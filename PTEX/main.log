@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.7.2)  19 JUL 2018 16:18
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.7.2)  20 JUL 2018 10:49
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -346,79 +346,75 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
 
 ]
 第 1 章
-(./todolist.tex
+(./introduction.tex
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 9.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 9.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 11.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 5.
  (c:/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
- [1
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
+
+[1
 
 ]
-[2] [3] [4]) [5] [6
-
-]
-第 2 章
-(./introduction.tex [7]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 17.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 17.
 File: gazo/pendulum.eps Graphic file (type eps)
  <gazo/pendulum.eps>
 File: gazo/Pendulum.pdf Graphic file (type pdf)
 <gazo/Pendulum.pdf>
- [8]) [9] [10
+ [2]) [3] [4
 
 ]
-第 3 章
+第 2 章
 (./modeling.tex
 File: gazo/cart.eps Graphic file (type eps)
  <gazo/cart.eps>
 File: gazo/stick.eps Graphic file (type eps)
- <gazo/stick.eps> [11] [12] [13] [14] [15]
-[16]
+ <gazo/stick.eps> [5] [6] [7] [8] [9] [10]
 File: gazo/ParameterA.eps Graphic file (type eps)
- <gazo/ParameterA.eps> [17]
-File: gazo/ParameterJC.eps Graphic file (type eps)
- <gazo/ParameterJC.eps> [18] [19]
-File: gazo/step.eps Graphic file (type eps)
 
-<gazo/step.eps> [20]
+<gazo/ParameterA.eps> [11]
+File: gazo/ParameterJC.eps Graphic file (type eps)
+ <gazo/ParameterJC.eps> [12] [13]
+File: gazo/step.eps Graphic file (type eps)
+ <gazo/step.eps>
+[14]
 File: gazo/feedback.eps Graphic file (type eps)
- <gazo/feedback.eps> [21]
+ <gazo/feedback.eps> [15]
 File: gazo/FeedBackCart.eps Graphic file (type eps)
- <gazo/FeedBackCart.eps> [22]
+ <gazo/FeedBackCart.eps> [16]
 File: gazo/feedback_input.eps Graphic file (type eps)
 
-<gazo/feedback_input.eps> [23]
+<gazo/feedback_input.eps> [17]
 File: gazo/free45Auto.eps Graphic file (type eps)
- <gazo/free45Auto.eps> [24] [25]
+ <gazo/free45Auto.eps> [18] [19]
 File: gazo/nabe8.eps Graphic file (type eps)
 
-<gazo/nabe8.eps> [26]
+<gazo/nabe8.eps> [20]
 File: gazo/feedbackExperiment.eps Graphic file (type eps)
- <gazo/feedbackExperiment.eps> [27]) [28]
-第 4 章
-(./controldesign.tex [29
+ <gazo/feedbackExperiment.eps> [21]) [22]
+第 3 章
+(./controldesign.tex [23
 
-] [30]
+] [24]
 File: gazo/controll_F.eps Graphic file (type eps)
  <gazo/controll_F.eps>
 File: gazo/controll_obs.eps Graphic file (type eps)
  <gazo/controll_obs.eps>
-[31]
+[25]
 File: gazo/controll_discrete.eps Graphic file (type eps)
- <gazo/controll_discrete.eps> [32] [33]
+ <gazo/controll_discrete.eps> [26] [27]
 File: gazo/controll_huriage.eps Graphic file (type eps)
  <gazo/controll_huriage.eps>)
-[34]
-第 5 章
+[28]
+第 4 章
 (./simulation.tex
 Overfull \hbox (1.84451pt too wide) in paragraph at lines 19--25
  [][][][] 
@@ -428,9 +424,9 @@ File: gazo/simulation_QRF_compare_R.eps Graphic file (type eps)
 <gazo/simulation_QRF_compare_R.eps>
 File: gazo/simulation_QRF_compare_THETA.eps Graphic file (type eps)
  <gazo/simulation_QRF_compare_THETA.eps>
-[35
+[29
 
-] [36]
+] [30]
 Overfull \hbox (1.84451pt too wide) in paragraph at lines 92--97
  [][][][] 
  []
@@ -439,12 +435,12 @@ File: gazo/simulation_obs_compare_R.eps Graphic file (type eps)
 <gazo/simulation_obs_compare_R.eps>
 File: gazo/simulation_obs_compare_THETA.eps Graphic file (type eps)
  <gazo/simulation_obs_compare_THETA.eps>
-[37]
+[31]
 File: gazo/simulation_obs_compare_RminusRH.eps Graphic file (type eps)
  <gazo/simulation_obs_compare_RminusRH.eps>
 File: gazo/simulation_obs_compare_THETAminusTHETAH.eps Graphic file (type eps)
 
-<gazo/simulation_obs_compare_THETAminusTHETAH.eps> [38] [39]
+<gazo/simulation_obs_compare_THETAminusTHETAH.eps> [32] [33]
 Overfull \hbox (1.84451pt too wide) in paragraph at lines 152--157
  [][][][] 
  []
@@ -453,26 +449,26 @@ File: gazo/simulation_dt_compare_R.eps Graphic file (type eps)
 <gazo/simulation_dt_compare_R.eps>
 File: gazo/simulation_dt_compare_THETA.eps Graphic file (type eps)
  <gazo/simulation_dt_compare_THETA.eps>
-[40]
+[34]
 File: gazo/simulation_dt_compare_RminusRH.eps Graphic file (type eps)
  <gazo/simulation_dt_compare_RminusRH.eps>
 File: gazo/simulation_dt_compare_THETAminusTHETAH.eps Graphic file (type eps)
 
-<gazo/simulation_dt_compare_THETAminusTHETAH.eps> [41] [42]
+<gazo/simulation_dt_compare_THETAminusTHETAH.eps> [35] [36]
 File: gazo/Hsimu_R.eps Graphic file (type eps)
  <gazo/Hsimu_R.eps>
 File: gazo/Hsimu_TH.eps Graphic file (type eps)
 
-<gazo/Hsimu_TH.eps>) [43] [44
+<gazo/Hsimu_TH.eps>) [37] [38
 
 ]
-第 6 章
+第 5 章
 (./experiment.tex
 File: gazo/experiment_control_R.eps Graphic file (type eps)
  <gazo/experiment_control_R.eps>
 File: gazo/experiment_control_TH.eps Graphic file (type eps)
 
-<gazo/experiment_control_TH.eps> [45] [46]
+<gazo/experiment_control_TH.eps> [39] [40]
 File: gazo/Compare_Q_R.eps Graphic file (type eps)
  <gazo/Compare_Q_R.eps>
 File: gazo/Compare_Q_TH.eps Graphic file (type eps)
@@ -482,11 +478,11 @@ File: gazo/Compare_obs_R.eps Graphic file (type eps)
  <gazo/Compare_obs_R.eps>
 File: gazo/Compare_obs_TH.eps Graphic file (type eps)
  <gazo/Compare_obs_TH.eps>
-[47] [48]
+[41] [42]
 File: gazo/Compare_dt_R.eps Graphic file (type eps)
  <gazo/Compare_dt_R.eps>
 File: gazo/Compare_dt_TH.eps Graphic file (type eps)
- <gazo/Compare_dt_TH.eps> [49]
+ <gazo/Compare_dt_TH.eps> [43]
 Overfull \hbox (36.109pt too wide) in paragraph at lines 140--155
  [][][][] 
  []
@@ -505,7 +501,7 @@ File: gazo/experiment_Q65obs30dt05R2.eps Graphic file (type eps)
 <gazo/experiment_Q65obs30dt05R2.eps>
 File: gazo/experiment_Q65obs30dt05TH2.eps Graphic file (type eps)
  <gazo/experiment_Q65obs30dt05TH2.eps>
-[50]
+[44]
 File: gazo/experiment_Q55obs60dt05R2.eps Graphic file (type eps)
  <gazo/experiment_Q55obs60dt05R2.eps>
 File: gazo/experiment_Q55obs60dt05TH2.eps Graphic file (type eps)
@@ -520,7 +516,7 @@ File: gazo/experiment_Q65obs60dt05R2.eps Graphic file (type eps)
  <gazo/experiment_Q65obs60dt05R2.eps>
 File: gazo/experiment_Q65obs60dt05TH2.eps Graphic file (type eps)
 
-<gazo/experiment_Q65obs60dt05TH2.eps> [51]
+<gazo/experiment_Q65obs60dt05TH2.eps> [45]
 File: gazo/experiment_Q55obs30dt10R2.eps Graphic file (type eps)
 
 <gazo/experiment_Q55obs30dt10R2.eps>
@@ -536,7 +532,7 @@ File: gazo/experiment_Q65obs30dt10R2.eps Graphic file (type eps)
 <gazo/experiment_Q65obs30dt10R2.eps>
 File: gazo/experiment_Q65obs30dt10TH2.eps Graphic file (type eps)
  <gazo/experiment_Q65obs30dt10TH2.eps>
-[52]
+[46]
 File: gazo/experiment_Q55obs60dt10R2.eps Graphic file (type eps)
  <gazo/experiment_Q55obs60dt10R2.eps>
 File: gazo/experiment_Q55obs60dt10TH2.eps Graphic file (type eps)
@@ -551,7 +547,7 @@ File: gazo/experiment_Q65obs60dt10R2.eps Graphic file (type eps)
  <gazo/experiment_Q65obs60dt10R2.eps>
 File: gazo/experiment_Q65obs60dt10TH2.eps Graphic file (type eps)
 
-<gazo/experiment_Q65obs60dt10TH2.eps> [53] [54]
+<gazo/experiment_Q65obs60dt10TH2.eps> [47] [48]
 File: gazo/Hexpe_R.eps Graphic file (type eps)
  <gazo/Hexpe_R.eps>
 File: gazo/Hexpe_TH.eps Graphic file (type eps)
@@ -570,29 +566,29 @@ File: gazo/HcompP3R.eps Graphic file (type eps)
  <gazo/HcompP3R.eps>
 File: gazo/HcompP3TH.eps Graphic file (type eps)
 
-<gazo/HcompP3TH.eps> [55]) [56]
-第 7 章
-(./conclusion.tex) (./main.bbl [57
+<gazo/HcompP3TH.eps> [49]) [50]
+第 6 章
+(./conclusion.tex) (./main.bbl [51
 
-] [58
+] [52
 
-]) [59] [60
+]) [53] [54
 
 ]
 付 録 A  
-(./program.tex [61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72]
-[73] [74] [75] [76] [77]) [78] (./main.aux)
+(./program.tex [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66]
+[67] [68] [69] [70] [71]) [72] (./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4639 strings out of 493281
- 60684 string characters out of 6148127
+ 4636 strings out of 493281
+ 60650 string characters out of 6148127
  299307 words of memory out of 5000000
  8398 multiletter control sequences out of 15000+600000
  20609 words of font info for 82 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  32i,16n,32p,276b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (87 pages, 271532 bytes).
+Output written on main.dvi (81 pages, 259908 bytes).

@@ -45,13 +45,14 @@
 \contentsline {subsection}{\numberline {5.2.4}シミュレーション結果と実験結果の比較}{44}
 \contentsline {section}{\numberline {5.3}振り上げ制御及び安定化実験}{49}
 \contentsline {chapter}{\numberline {第6章}おわりに}{51}
-\contentsline {chapter}{\numberline {付 録A }プログラム}{55}
-\contentsline {section}{\numberline {A.1}非線形モデル}{55}
-\contentsline {section}{\numberline {A.2}線形モデル}{55}
-\contentsline {section}{\numberline {A.3}システム解析}{56}
-\contentsline {section}{\numberline {A.4}状態フィードバック}{56}
-\contentsline {section}{\numberline {A.5}最小次元オブザーバ}{57}
-\contentsline {section}{\numberline {A.6}コントローラの離散化}{57}
-\contentsline {section}{\numberline {A.7}シミュレーション}{57}
-\contentsline {section}{\numberline {A.8}安定化制御及び目標値変更実験}{61}
-\contentsline {section}{\numberline {A.9}振り上げ制御及び安定化実験}{65}
+\contentsline {chapter}{\numberline {第7章}感想}{53}
+\contentsline {chapter}{\numberline {付 録A }プログラム}{57}
+\contentsline {section}{\numberline {A.1}非線形モデル}{57}
+\contentsline {section}{\numberline {A.2}線形モデル}{57}
+\contentsline {section}{\numberline {A.3}システム解析}{58}
+\contentsline {section}{\numberline {A.4}状態フィードバック}{58}
+\contentsline {section}{\numberline {A.5}最小次元オブザーバ}{59}
+\contentsline {section}{\numberline {A.6}コントローラの離散化}{59}
+\contentsline {section}{\numberline {A.7}シミュレーション}{59}
+\contentsline {section}{\numberline {A.8}安定化制御及び目標値変更実験}{63}
+\contentsline {section}{\numberline {A.9}振り上げ制御及び安定化実験}{67}

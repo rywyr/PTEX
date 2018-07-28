@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.7.2)  28 JUL 2018 13:50
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.7.2)  28 JUL 2018 14:11
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -568,27 +568,31 @@ File: gazo/HcompP3TH.eps Graphic file (type eps)
 
 <gazo/HcompP3TH.eps> [49]) [50]
 第 6 章
-(./conclusion.tex) (./main.bbl [51
+(./conclusion.tex) [51
 
 ] [52
 
-]) [53] [54
+]
+第 7 章
+(./impression.tex) (./main.bbl [53] [54
+
+]) [55] [56
 
 ]
 付 録 A  
-(./program.tex [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66]
-[67] [68] [69] [70] [71]) [72] (./main.aux)
+(./program.tex [57] [58] [59] [60] [61] [62] [63] [64] [65] [66] [67] [68]
+[69] [70] [71] [72] [73]) [74] (./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4636 strings out of 493281
- 60668 string characters out of 6148127
+ 4639 strings out of 493281
+ 60708 string characters out of 6148127
  299287 words of memory out of 5000000
  8398 multiletter control sequences out of 15000+600000
  20609 words of font info for 82 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  32i,16n,32p,276b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (79 pages, 253712 bytes).
+Output written on main.dvi (81 pages, 254132 bytes).

@@ -34,7 +34,7 @@ Matrix x,u;
 %-------------------------------------------------------------------
 \section{線形モデル}
 	倒立振子の線形モデルのコードを載せる。下向きを基準としている。
-	\begin{breakitembox}[l]{main.}\baselineskip=1ex
+	\begin{breakitembox}[l]{diff\_eqs}\baselineskip=1ex
 		\begin{verbatimtab}[4]
 Func void diff_eqs(DX,t,X,UY)
 Real t;
@@ -71,7 +71,7 @@ Matrix X,DX,UY;
 \section{システム解析}
 	第4章4.1節のシステム解析に用いたコードを載せる。
 	ただし、行列A,B,Cについては別の部分で計算している。
-	\begin{breakitembox}[l]{main.c}\baselineskip=1ex
+	\begin{breakitembox}[l]{system\_analysis}\baselineskip=1ex
 		\begin{verbatimtab}[4]
 //システムの極(Aの固有値)を計算
 D=eigval(A);

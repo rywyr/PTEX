@@ -16,13 +16,16 @@
 		\label{eq:motion_eq_cart}
 	\end{equation}
 	
+	\noindent
 	倒立振子の回転の運動方程式は
 	
 	\begin{equation}
 		J\ddot{\theta}=lF_{V}\sin \theta -lF_{H}\cos \theta -c\dot{\theta}
 		\label{eq:rotemotion_eq_stick}
 	\end{equation}
-	\\
+	
+	\newpage
+	\noindent
 	倒立振子の水平方向の運動方程式は
 	
 	\begin{equation}
@@ -36,6 +39,7 @@
 		\label{eq:vertical_eq_stick}
 	\end{equation}
 	
+	\noindent
 	となる。
 	\par
 	ここで各式の導出過程を述べる。図\ref{image:reference}より台車の運動方程式は、振り子からの水平抗力$F_{H}$を考慮してニュートンの第二法則より(\ref{eq:motion_eq_cart})
@@ -45,7 +49,7 @@
 	ただし、$m$は振り子の質量、$l$は回転軸・重心間の距離、$g$は重力加速度、$F_{V}$は振り子が台車から受ける垂直抗力である。
 	また、$\theta$は鉛直上向きを$\theta=0$としたときの角度である。
 	\par
-	最後に(\ref{eq:rotemotion_eq_stick})式は回転に対する運動方程式を考えることで上記と同様に求めることができる。
+	最後に(\ref{eq:rotemotion_eq_stick})式は回転に対する運動方程式を考えることで求めることができる。
 	ただし、$J$は重心回りの慣性モーメント、$c$は回転軸摩擦係数である。
 	\par
 	いま、4つの状態変数から成るベクトル、すなわち状態$x$を
@@ -61,8 +65,9 @@
 		\right]
 		\label{eq:array1}
 	\]
-					
-	のように定義し、(\ref{eq:motion_eq_cart})式,(\ref{eq:rotemotion_eq_stick})式,(\ref{eq:horizonmotion_eq_stick})式,(\ref{eq:vertical_eq_stick})式
+	
+	\noindent		
+	のように定義し、(\ref{eq:motion_eq_cart})式、(\ref{eq:rotemotion_eq_stick})式、(\ref{eq:horizonmotion_eq_stick})式、(\ref{eq:vertical_eq_stick})式
 	から倒立振子系の非線形状態方程式を求める。
 	
 	\begin{eqnarray}
@@ -77,6 +82,7 @@
 		\label{eq:array2}
 	\end{eqnarray}
 					
+	\noindent
 	ここで(\ref{eq:horizonmotion_eq_stick})式より$F_{H}$を、
 	(\ref{eq:vertical_eq_stick})式より$F_{V}$を求めると
 	

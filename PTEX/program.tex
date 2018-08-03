@@ -2,6 +2,7 @@
 	倒立振子の非線形モデルのコードを載せる。下向きを基準としている。
 	\begin{breakitembox}[l]{diff\_eqs}\baselineskip=1ex
 		\begin{verbatimtab}[4]
+		
 Func Matrix diff_eqs(t,x,u)
 Real t;
 Matrix x,u;
@@ -36,6 +37,7 @@ Matrix x,u;
 	倒立振子の線形モデルのコードを載せる。下向きを基準としている。
 	\begin{breakitembox}[l]{diff\_eqs}\baselineskip=1ex
 		\begin{verbatimtab}[4]
+		
 Func void diff_eqs(DX,t,X,UY)
 Real t;
 Matrix X,DX,UY;
@@ -69,10 +71,11 @@ Matrix X,DX,UY;
 	\end{breakitembox}
 %-------------------------------------------------------------------
 \section{システム解析}
-	第4章4.1節のシステム解析に用いたコードを載せる。
+	第3章3.1節のシステム解析に用いたコードを載せる。
 	ただし、行列A,B,Cについては別の部分で計算している。
 	\begin{breakitembox}[l]{system\_analysis}\baselineskip=1ex
 		\begin{verbatimtab}[4]
+		
 //システムの極(Aの固有値)を計算
 D=eigval(A);
 
@@ -88,6 +91,7 @@ No=[[C][C*A][C*A*A][C*A*A*A]];
 	状態フィードバックを設計算するのに用いたコードを載せる。ただし、LQ最適制御に基づくフィードバック則とする。
 	\begin{breakitembox}[l]{lqr}\baselineskip=1ex
 		\begin{verbatimtab}[4]
+		
 Matrix A, B, Q, R, F, P;
 
 Q = diag(1, 1, 1, 1);
@@ -100,6 +104,7 @@ R = [1];
 	最小次元オブザーバをゴピナスの方法で計算するのに用いたコードを載せる。
 	\begin{breakitembox}[l]{obsg}\baselineskip=1ex
 		\begin{verbatimtab}[4]
+		
 CoMatrix obs_p;
 
 obs_p = trans([(-2,0), (-2,0)]);
@@ -111,6 +116,7 @@ obs_p = trans([(-2,0), (-2,0)]);
 	連続時間オブザーバを離散化するたために用いたコードを載せる。
 	\begin{breakitembox}[l]{c2d}\baselineskip=1ex
 		\begin{verbatimtab}[4]
+		
 // ここは関数の先頭
 Real dt;
 Matrix Ah,Bh,Jh;
@@ -125,9 +131,11 @@ Jhd = Hhd(:,3);
 	\end{breakitembox}
 %-------------------------------------------------------------------
 \section{シミュレーション}
-	第5章でシミュレーションを行ったコードを載せる。
+	第4章でシミュレーションを行ったコードを載せる。
+	以下のコードは目標値変更シミュレーションを行うものである。
 	\begin{breakitembox}[l]{InPeAboveNonLinerDesign3.mm}\baselineskip=1ex
 		\begin{verbatimtab}[4]
+		
 Matrix A; //システム行列
 Matrix B; //入力行列
 Matrix C; //出力行列
@@ -310,6 +318,7 @@ Func void calcParameter(){
 	安定化制御及び目標値変更実験を行うために使用したコードを載せる。
 	\begin{breakitembox}[l]{sample.mm}\baselineskip=1ex
 		\begin{verbatimtab}[4]
+		
 #define LOGMAX 10000
 
 Integer cmd, count;
@@ -583,10 +592,8 @@ print "aa" >> "a.txt";
 	振り上げ制御及び安定化実験を行うために使用したコードを載せる。
 	\begin{breakitembox}[l]{sample.mm}\baselineskip=1ex
 		\begin{verbatimtab}[4]
+		
 #define LOGMAX 10000
-
-
-
 
 
 Integer cmd, count;

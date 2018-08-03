@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.7.2)  30 JUL 2018 15:04
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.7.2)  1 AUG 2018 16:05
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -388,10 +388,10 @@ File: gazo/step.eps Graphic file (type eps)
 File: gazo/feedback.eps Graphic file (type eps)
  <gazo/feedback.eps> [15]
 File: gazo/FeedBackCart.eps Graphic file (type eps)
- <gazo/FeedBackCart.eps> [16]
+ <gazo/FeedBackCart.eps>
 File: gazo/feedback_input.eps Graphic file (type eps)
 
-<gazo/feedback_input.eps> [17]
+<gazo/feedback_input.eps> [16] [17]
 File: gazo/free45Auto.eps Graphic file (type eps)
  <gazo/free45Auto.eps> [18] [19]
 File: gazo/nabe8.eps Graphic file (type eps)
@@ -458,16 +458,16 @@ File: gazo/Hsimu_R.eps Graphic file (type eps)
  <gazo/Hsimu_R.eps>
 File: gazo/Hsimu_TH.eps Graphic file (type eps)
 
-<gazo/Hsimu_TH.eps>) [37] [38
-
-]
+<gazo/Hsimu_TH.eps> [37]) [38]
 第 5 章
 (./experiment.tex
 File: gazo/experiment_control_R.eps Graphic file (type eps)
  <gazo/experiment_control_R.eps>
 File: gazo/experiment_control_TH.eps Graphic file (type eps)
 
-<gazo/experiment_control_TH.eps> [39] [40]
+<gazo/experiment_control_TH.eps> [39
+
+] [40]
 File: gazo/Compare_Q_R2.eps Graphic file (type eps)
  <gazo/Compare_Q_R2.eps>
 File: gazo/Compare_Q_TH2.eps Graphic file (type eps)
@@ -483,7 +483,7 @@ File: gazo/Compare_dt_R2.eps Graphic file (type eps)
 File: gazo/Compare_dt_TH2.eps Graphic file (type eps)
 
 <gazo/Compare_dt_TH2.eps> [43]
-Overfull \hbox (36.109pt too wide) in paragraph at lines 143--158
+Overfull \hbox (36.109pt too wide) in paragraph at lines 147--162
  [][][][] 
  []
 
@@ -561,12 +561,12 @@ File: gazo/HcompP2R.eps Graphic file (type eps)
 
 <gazo/HcompP2R.eps>
 File: gazo/HcompP2TH.eps Graphic file (type eps)
- <gazo/HcompP2TH.eps>
+ <gazo/HcompP2TH.eps> [49]
 File: gazo/HcompP3R.eps Graphic file (type eps)
  <gazo/HcompP3R.eps>
 File: gazo/HcompP3TH.eps Graphic file (type eps)
 
-<gazo/HcompP3TH.eps> [49]) [50]
+<gazo/HcompP3TH.eps>) [50]
 第 6 章
 (./conclusion.tex) [51
 
@@ -587,12 +587,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4639 strings out of 493281
- 60708 string characters out of 6148127
- 299287 words of memory out of 5000000
- 8398 multiletter control sequences out of 15000+600000
+ 4640 strings out of 493281
+ 60731 string characters out of 6148127
+ 288522 words of memory out of 5000000
+ 8399 multiletter control sequences out of 15000+600000
  20609 words of font info for 82 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  32i,16n,32p,276b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (81 pages, 256300 bytes).
+Output written on main.dvi (81 pages, 260472 bytes).

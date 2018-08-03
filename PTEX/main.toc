@@ -18,7 +18,7 @@
 \contentsline {subsection}{\numberline {2.2.5}$c_1$と$c_2$の測定}{18}
 \contentsline {subsection}{\numberline {2.2.6}同定結果}{18}
 \contentsline {section}{\numberline {2.3}パラメータの検証}{18}
-\contentsline {subsection}{\numberline {2.3.1}振子の自由振動シミュレーション}{19}
+\contentsline {subsection}{\numberline {2.3.1}振子の自由振動シミュレーション}{18}
 \contentsline {subsection}{\numberline {2.3.2}台車のステップ応答による方法のシミュレーション}{20}
 \contentsline {subsection}{\numberline {2.3.3}台車のフィードバック応答シミュレーション}{21}
 \contentsline {section}{\numberline {2.4}設計（線形）モデルの決定}{21}
@@ -55,4 +55,4 @@
 \contentsline {section}{\numberline {A.6}コントローラの離散化}{59}
 \contentsline {section}{\numberline {A.7}シミュレーション}{59}
 \contentsline {section}{\numberline {A.8}安定化制御及び目標値変更実験}{63}
-\contentsline {section}{\numberline {A.9}振り上げ制御及び安定化実験}{67}
+\contentsline {section}{\numberline {A.9}振り上げ制御及び安定化実験}{68}

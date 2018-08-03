@@ -27,8 +27,9 @@
 \contentsline {figure}{\numberline {4.7}{\ignorespaces サンプリング周期での比較結果（台車位置）}}{34}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces サンプリング周期での比較結果（振子角度）}}{35}
 \contentsline {figure}{\numberline {4.9}{\ignorespaces サンプリング周期での推定誤差の比較（台車の速度）}}{35}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces サンプリング周期での推定誤差の比較（振子の各速度）}}{36}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces 振り上げ制御のシミュレーション比較結果}}{37}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces サンプリング周期での推定誤差の比較（振子の角速度）}}{36}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces 振り上げ制御のシミュレーション比較結果(台車の位置)}}{37}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces 振り上げ制御のシミュレーション比較結果(振子の角度)}}{37}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces 安定化制御実験結果（台車位置)}}{39}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces 安定化制御実験結果（振子角度)}}{40}
@@ -48,7 +49,7 @@
 \contentsline {figure}{\numberline {5.16}{\ignorespaces 比較結果その11(左図がr,右図が$\theta $)}}{48}
 \contentsline {figure}{\numberline {5.17}{\ignorespaces 比較結果その12(左図がr,右図が$\theta $)}}{48}
 \contentsline {figure}{\numberline {5.18}{\ignorespaces $k$の違いによる実験結果の比較}}{49}
-\contentsline {figure}{\numberline {5.19}{\ignorespaces 比較結果(Pattern1)}}{49}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces 比較結果(Pattern1)}}{50}
 \contentsline {figure}{\numberline {5.20}{\ignorespaces 比較結果(Pattern2)}}{50}
 \contentsline {figure}{\numberline {5.21}{\ignorespaces 比較結果(Pattern3)}}{50}
 \addvspace {10\p@ }
